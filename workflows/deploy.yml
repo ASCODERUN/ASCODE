@@ -1,0 +1,330 @@
+name: Deployment Pipeline
+
+# Define when the workflow should run
+on:
+  push:
+    branches:
+      - main
+      - release/**
+  workflow_dispatch: # Allow manual triggering for emergency deployments or testing
+    inputs:
+      environment:
+        description: 'Target environment for deployment (dev, staging, prod)'
+        required: true
+        default: 'dev'
+        type: choice
+        options:
+          - dev
+          - staging
+          - prod
+      force:
+        description: 'Force deployment even if checks fail (true/false)'
+        required: false
+        default: 'false'
+        type: boolean
+
+# Define permissions for the workflow
+permissions:
+  contents: read
+  checks: write
+  deployments: write # Required for deployment status updates
+  pull-requests: write # Required for commenting on PRs if needed
+
+# Define environment variables accessible across all jobs
+env:
+  RUST_VERSION: '1.74.0' # Rust version for Solana smart contracts
+  NODE_VERSION: '20' # Node.js version for frontend deployment
+  CACHE_VERSION: 'v1' # Cache version for dependency caching
+  SOLANA_NETWORK: 'devnet' # Default Solana network (override in specific environments)
+  AWS_REGION: 'us-east-1' # Default AWS region (override as needed)
+
+# Define jobs for deployment to Solana and cloud environments
+jobs:
+  # Job to deploy Solana smart contracts
+  deploy-solana:
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ github.event.inputs.environment || 'dev' }}
+      url: ${{ steps.deployment-status.outputs.deployment_url || 'https://explorer.solana.com' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-options: '--depth=1' # Shallow clone for faster checkout
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: ${{ env.RUST_VERSION }}
+          components: rustfmt, clippy
+
+      - name: Cache Rust dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-rust-${{ env.RUST_VERSION }}-${{ env.CACHE_VERSION }}-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Install Solana CLI
+        run: |
+          sh -c "$(curl -sSfL https://release.solana.com/v1.18.0/install)"
+          echo "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
+        shell: bash
+
+      - name: Set Solana network based on environment
+        run: |
+          if [ "${{ github.event.inputs.environment || 'dev' }}" = "prod" ]; then
+            echo "SOLANA_NETWORK=mainnet-beta" >> $GITHUB_ENV
+          elif [ "${{ github.event.inputs.environment || 'dev' }}" = "staging" ]; then
+            echo "SOLANA_NETWORK=testnet" >> $GITHUB_ENV
+          else
+            echo "SOLANA_NETWORK=devnet" >> $GITHUB_ENV
+          fi
+
+      - name: Configure Solana CLI with private key
+        run: |
+          solana config set --url https://api.${{ env.SOLANA_NETWORK }}.solana.com
+          echo "${{ secrets.SOLANA_PRIVATE_KEY }}" > keypair.json
+          solana config set --keypair keypair.json
+        working-directory: ./smart-contracts # Adjust path if needed
+        continue-on-error: false
+
+      - name: Build Solana smart contract
+        run: |
+          cargo build-bpf --manifest-path=./Cargo.toml
+        working-directory: ./smart-contracts
+        env:
+          RUST_BACKTRACE: 1
+
+      - name: Deploy Solana smart contract
+        run: |
+          solana program deploy ./target/deploy/ontora_ai.so
+        working-directory: ./smart-contracts
+        env:
+          RUST_BACKTRACE: 1
+
+      - name: Capture deployment details
+        id: deployment-status
+        run: |
+          PROGRAM_ID=$(solana program show --programs | grep ontora_ai | awk '{print \$1}')
+          echo "deployment_url=https://explorer.solana.com/address/${PROGRAM_ID}?cluster=${{ env.SOLANA_NETWORK }}" >> $GITHUB_OUTPUT
+        working-directory: ./smart-contracts
+        continue-on-error: true
+
+      - name: Upload Solana deployment artifact
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: solana-deployment-log
+          path: ./smart-contracts/*.log
+          retention-days: 7
+
+      - name: Notify on Solana deployment success
+        if: success()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'deployment-notifications'
+          text: 'Solana smart contract deployed to ${{ env.SOLANA_NETWORK }} for ${{ github.repository }} on branch ${{ github.ref_name }}. Program ID: ${{ steps.deployment-status.outputs.deployment_url }}'
+        continue-on-error: true
+
+      - name: Notify on Solana deployment failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'deployment-notifications'
+          text: 'Solana smart contract deployment failed for ${{ github.repository }} on branch ${{ github.ref_name }} to ${{ env.SOLANA_NETWORK }}. Check workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true
+
+  # Job to deploy backend services to cloud environment (AWS as example)
+  deploy-backend:
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ github.event.inputs.environment || 'dev' }}
+      url: ${{ steps.deployment-status.outputs.backend_url || 'https://example.com' }}
+    needs: deploy-solana # Ensure Solana deployment completes first
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-options: '--depth=1'
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Cache Go dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/go/pkg/mod
+            ~/.cache/go-build
+          key: ${{ runner.os }}-go-1.21-${{ env.CACHE_VERSION }}-${{ hashFiles('**/go.sum') }}
+
+      - name: Configure AWS CLI
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Build backend application
+        run: |
+          go build -o app ./...
+        working-directory: ./backend # Adjust path if needed
+
+      - name: Deploy backend to AWS ECS (example)
+        id: deployment-status
+        run: |
+          # Update ECS service (placeholder command, replace with actual deployment script)
+          aws ecs update-service --cluster ontora-cluster --service ontora-backend --force-new-deployment
+          echo "backend_url=https://api-${{ github.event.inputs.environment || 'dev' }}.ontora.ai" >> $GITHUB_OUTPUT
+        working-directory: ./backend
+        continue-on-error: false
+
+      - name: Upload backend deployment artifact
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: backend-deployment-log
+          path: ./backend/*.log
+          retention-days: 7
+
+      - name: Notify on backend deployment success
+        if: success()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'deployment-notifications'
+          text: 'Backend deployed to ${{ github.event.inputs.environment || 'dev' }} for ${{ github.repository }} on branch ${{ github.ref_name }}. URL: ${{ steps.deployment-status.outputs.backend_url }}'
+        continue-on-error: true
+
+      - name: Notify on backend deployment failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'deployment-notifications'
+          text: 'Backend deployment failed for ${{ github.repository }} on branch ${{ github.ref_name }} to ${{ github.event.inputs.environment || 'dev' }}. Check workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true
+
+  # Job to deploy frontend to cloud environment (e.g., AWS S3 + CloudFront)
+  deploy-frontend:
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ github.event.inputs.environment || 'dev' }}
+      url: ${{ steps.deployment-status.outputs.frontend_url || 'https://example.com' }}
+    needs: deploy-backend # Ensure backend deployment completes first
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-options: '--depth=1'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Cache Node.js dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ env.NODE_VERSION }}-${{ env.CACHE_VERSION }}-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}
+
+      - name: Configure AWS CLI
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Install frontend dependencies
+        run: |
+          npm ci || yarn install --frozen-lockfile
+        working-directory: ./frontend # Adjust path if needed
+
+      - name: Build frontend application
+        run: |
+          npm run build || yarn build
+        working-directory: ./frontend
+        env:
+          NODE_ENV: ${{ github.event.inputs.environment == 'prod' && 'production' || 'development' }}
+
+      - name: Deploy frontend to AWS S3 and CloudFront (example)
+        id: deployment-status
+        run: |
+          aws s3 sync ./dist/ s3://ontora-frontend-${{ github.event.inputs.environment || 'dev' }}/ --delete
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+          echo "frontend_url=https://${{ github.event.inputs.environment || 'dev' }}.ontora.ai" >> $GITHUB_OUTPUT
+        working-directory: ./frontend
+        continue-on-error: false
+
+      - name: Upload frontend deployment artifact
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: frontend-deployment-log
+          path: ./frontend/*.log
+          retention-days: 7
+
+      - name: Notify on frontend deployment success
+        if: success()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'deployment-notifications'
+          text: 'Frontend deployed to ${{ github.event.inputs.environment || 'dev' }} for ${{ github.repository }} on branch ${{ github.ref_name }}. URL: ${{ steps.deployment-status.outputs.frontend_url }}'
+        continue-on-error: true
+
+      - name: Notify on frontend deployment failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'deployment-notifications'
+          text: 'Frontend deployment failed for ${{ github.repository }} on branch ${{ github.ref_name }} to ${{ github.event.inputs.environment || 'dev' }}. Check workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true
+
+  # Summary job to ensure all deployments are successful
+  deployment-summary:
+    runs-on: ubuntu-latest
+    needs: [deploy-solana, deploy-backend, deploy-frontend]
+    environment:
+      name: ${{ github.event.inputs.environment || 'dev' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-options: '--depth=1'
+
+      - name: Check deployment results
+        run: |
+          echo "All deployments completed successfully for environment: ${{ github.event.inputs.environment || 'dev' }}."
+          echo "Solana Network: ${{ needs.deploy-solana.outputs.solana_network || 'devnet' }}"
+          echo "Deployment triggered by: ${{ github.actor }} on branch: ${{ github.ref_name }}"
+
+      - name: Notify on overall deployment success
+        if: success()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'deployment-notifications'
+          text: 'All components deployed successfully to ${{ github.event.inputs.environment || 'dev' }} for ${{ github.repository }} on branch ${{ github.ref_name }}. Workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true
+
+      - name: Notify on overall deployment failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'deployment-notifications'
+          text: 'One or more deployments failed for ${{ github.repository }} on branch ${{ github.ref_name }} to ${{ github.event.inputs.environment || 'dev' }}. Check workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true
