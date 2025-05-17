@@ -1,0 +1,264 @@
+name: Security Vulnerability Scanning Pipeline
+
+# Define when the workflow should run
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - feature/**
+  pull_request:
+    branches:
+      - main
+      - develop
+  schedule:
+    - cron: '0 0 * * 0' # Run weekly on Sunday at midnight UTC
+  workflow_dispatch: # Allow manual triggering for testing or debugging
+
+# Define permissions for the workflow
+permissions:
+  contents: read
+  security-events: write
+  pull-requests: write
+  issues: write
+
+# Define environment variables for reuse across jobs
+env:
+  RUST_VERSION: '1.74.0'
+  PYTHON_VERSION: '3.11'
+  GO_VERSION: '1.21'
+  NODE_VERSION: '18'
+  TRIVY_VERSION: '0.48.1'
+
+# Define jobs for security scanning
+jobs:
+  # Job for dependency scanning using GitHub's Dependabot alerts (via GitHub Security)
+  dependabot-alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Enable Dependabot Alerts
+        run: echo "Dependabot alerts are managed via GitHub Security settings. Ensure Dependabot is enabled in repository settings."
+        # Note: Dependabot alerts are configured in repository settings or dependabot.yml, not directly in this workflow.
+        # This step is a placeholder to remind users to enable it.
+
+      - name: Check for Dependabot PRs or Alerts
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const prs = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open'
+            });
+            const dependabotPrs = prs.data.filter(pr => pr.user.login === 'dependabot[bot]');
+            if (dependabotPrs.length > 0) {
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `Dependabot has open PRs for dependency updates. Please review: ${dependabotPrs.map(pr => `#${pr.number}`).join(', ')}`
+              });
+            }
+
+  # Job for dependency vulnerability scanning using OWASP Dependency-Check
+  dependency-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java (required for Dependency-Check)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Cache Dependency-Check data
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-dependency-check-${{ hashFiles('**/pom.xml', '**/package.json', '**/Cargo.lock', '**/requirements.txt', '**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-dependency-check-
+
+      - name: Install OWASP Dependency-Check CLI
+        run: |
+          curl -sSfL https://github.com/jeremylong/DependencyCheck/releases/download/v8.4.0/dependency-check-8.4.0-release.zip -o dependency-check.zip
+          unzip dependency-check.zip -d dependency-check
+          chmod +x dependency-check/dependency-check/bin/dependency-check.sh
+
+      - name: Run OWASP Dependency-Check
+        run: |
+          ./dependency-check/dependency-check/bin/dependency-check.sh \
+            --scan . \
+            --format HTML \
+            --format JSON \
+            --out dependency-check-report \
+            --failOnCVSS 7 \
+            --enableExperimental
+        continue-on-error: false
+
+      - name: Upload Dependency-Check Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependency-check-report
+          path: dependency-check-report
+
+      - name: Annotate Dependency Issues in PR
+        if: github.event_name == 'pull_request' && failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Dependency vulnerabilities detected. Check the Dependency-Check report artifact for details.`
+            });
+
+  # Job for container and filesystem scanning using Trivy
+  trivy-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Trivy
+        run: |
+          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin v${{ env.TRIVY_VERSION }}
+
+      - name: Cache Trivy database
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/trivy
+          key: ${{ runner.os }}-trivy-db-${{ env.TRIVY_VERSION }}
+          restore-keys: |
+            ${{ runner.os }}-trivy-db-
+
+      - name: Run Trivy filesystem scan (for code and dependencies)
+        run: |
+          trivy fs \
+            --severity HIGH,CRITICAL \
+            --format json \
+            --output trivy-fs-report.json \
+            --scanners vuln,secret,config \
+            .
+        continue-on-error: false
+
+      - name: Run Trivy image scan (if Docker images are built)
+        run: |
+          if docker images | grep -q "ontora-ai"; then
+            trivy image \
+              --severity HIGH,CRITICAL \
+              --format json \
+              --output trivy-image-report.json \
+              ontora-ai:latest
+          else
+            echo "No local Docker image found for ontora-ai. Skipping image scan."
+          fi
+        continue-on-error: true
+
+      - name: Upload Trivy Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trivy-reports
+          path: |
+            trivy-fs-report.json
+            trivy-image-report.json
+
+      - name: Annotate Trivy Issues in PR
+        if: github.event_name == 'pull_request' && failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Security vulnerabilities detected by Trivy. Check the Trivy reports artifact for details.`
+            });
+
+  # Job for static code analysis for security issues using Semgrep
+  semgrep-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python (required for Semgrep)
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install Semgrep
+        run: python -m pip install semgrep
+
+      - name: Run Semgrep scan
+        run: |
+          semgrep scan \
+            --config auto \
+            --output semgrep-report.json \
+            --json \
+            --severity ERROR \
+            --exclude '**/node_modules/**' \
+            --exclude '**/target/**' \
+            .
+        continue-on-error: false
+        env:
+          SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }} # Optional: for Semgrep Pro or custom rules
+
+      - name: Upload Semgrep Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: semgrep-report
+          path: semgrep-report.json
+
+      - name: Annotate Semgrep Issues in PR
+        if: github.event_name == 'pull_request' && failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Security issues detected by Semgrep. Check the Semgrep report artifact for details.`
+            });
+
+  # Final job to summarize security scan results
+  security-summary:
+    runs-on: ubuntu-latest
+    needs: [dependabot-alerts, dependency-check, trivy-scan, semgrep-scan]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Summarize security scan results
+        run: |
+          echo "Security scanning completed for all tools."
+          echo "Check individual job logs and artifacts for detailed reports."
+          if [ "${{ needs.dependency-check.result }}" != "success" ] || \
+             [ "${{ needs.trivy-scan.result }}" != "success" ] || \
+             [ "${{ needs.semgrep-scan.result }}" != "success" ]; then
+            echo "Security issues were detected. Failing the pipeline to ensure review."
+            exit 1
+          else
+            echo "No critical security issues detected. Pipeline passed."
+          fi
+        continue-on-error: false
+
+      - name: Notify team on failure
+        if: github.event_name != 'workflow_dispatch' && failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'security-alerts'
+          text: 'Security vulnerabilities detected in ${{ github.repository }} on branch ${{ github.ref_name }}. Check GitHub Actions for details: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true
