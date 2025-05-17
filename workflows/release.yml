@@ -1,0 +1,342 @@
+name: Automated Release Management and Versioning
+
+# Define when the workflow should run
+on:
+  push:
+    branches:
+      - main
+      - release/**
+    tags:
+      - 'v*.*.*' # Trigger on version tags (e.g., v1.0.0)
+  workflow_dispatch: # Allow manual triggering for testing or ad-hoc releases
+    inputs:
+      release_type:
+        description: 'Type of release (major, minor, patch)'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+      pre_release:
+        description: 'Is this a pre-release? (e.g., alpha, beta)'
+        required: false
+        default: 'false'
+        type: boolean
+
+# Define permissions for the workflow
+permissions:
+  contents: write # Required for creating releases and pushing tags
+  pull-requests: write # Required for PR comments or updates
+  issues: write # Required for issue comments or linking
+
+# Define environment variables for reuse across jobs
+env:
+  RUST_VERSION: '1.74.0'
+  PYTHON_VERSION: '3.11'
+  GO_VERSION: '1.21'
+  NODE_VERSION: '18'
+  SEMVER_TOOL: 'semantic-release' # Tool or approach for versioning
+
+# Define jobs for release management
+jobs:
+  # Job to determine the release version based on commit messages or manual input
+  determine-version:
+    runs-on: ubuntu-latest
+    outputs:
+      new_version: ${{ steps.set-version.outputs.new_version }}
+      release_type: ${{ steps.set-version.outputs.release_type }}
+      is_pre_release: ${{ steps.set-version.outputs.is_pre_release }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-options: '--depth=0' # Fetch full history for commit analysis
+
+      - name: Setup Node.js for semantic-release tools
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install semantic-release and plugins
+        run: |
+          npm install -g semantic-release
+          npm install @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/git @semantic-release/github -D
+
+      - name: Determine version from commits or manual input
+        id: set-version
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            RELEASE_TYPE="${{ github.event.inputs.release_type }}"
+            IS_PRE_RELEASE="${{ github.event.inputs.pre_release }}"
+            echo "Using manual release type: $RELEASE_TYPE, pre-release: $IS_PRE_RELEASE"
+          else
+            # Analyze commits for automated release type (based on conventional commits)
+            npx semantic-release --dry-run --no-ci > semantic-release-output.txt
+            if grep -q "major release" semantic-release-output.txt; then
+              RELEASE_TYPE="major"
+            elif grep -q "minor release" semantic-release-output.txt; then
+              RELEASE_TYPE="minor"
+            elif grep -q "patch release" semantic-release-output.txt; then
+              RELEASE_TYPE="patch"
+            else
+              RELEASE_TYPE="none"
+            fi
+            IS_PRE_RELEASE="false"
+            if grep -q "pre-release" semantic-release-output.txt; then
+              IS_PRE_RELEASE="true"
+            fi
+          fi
+          # Extract or calculate the new version (fallback to manual logic if semantic-release fails)
+          NEW_VERSION=$(npx semantic-release --dry-run --no-ci | grep "The next release version is" | awk '{print $NF}' || echo "v0.0.0")
+          if [ "$NEW_VERSION" == "v0.0.0" ] && [ "$RELEASE_TYPE" != "none" ]; then
+            LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+            IFS='.' read -r MAJOR MINOR PATCH <<< "${LATEST_TAG#v}"
+            case $RELEASE_TYPE in
+              "major") NEW_VERSION="v$((MAJOR+1)).0.0";;
+              "minor") NEW_VERSION="v$MAJOR.$((MINOR+1)).0";;
+              "patch") NEW_VERSION="v$MAJOR.$MINOR.$((PATCH+1))";;
+            esac
+          fi
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          echo "release_type=$RELEASE_TYPE" >> $GITHUB_OUTPUT
+          echo "is_pre_release=$IS_PRE_RELEASE" >> $GITHUB_OUTPUT
+          echo "Determined version: $NEW_VERSION, type: $RELEASE_TYPE, pre-release: $IS_PRE_RELEASE"
+
+  # Job to build Rust components (Solana smart contracts)
+  build-rust:
+    runs-on: ubuntu-latest
+    needs: determine-version
+    if: needs.determine-version.outputs.release_type != 'none'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: ${{ env.RUST_VERSION }}
+          target: wasm32-unknown-unknown
+          components: rustfmt, clippy
+
+      - name: Cache Rust dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-
+
+      - name: Build Solana smart contracts
+        run: |
+          cargo build-bpf --manifest-path=./solana-contracts/Cargo.toml --no-default-features
+          cargo build --release --manifest-path=./solana-contracts/Cargo.toml
+
+      - name: Package Rust artifacts
+        run: |
+          mkdir -p release-artifacts/rust
+          cp target/deploy/*.so release-artifacts/rust/
+          cp target/release/ontora-ai-cli release-artifacts/rust/ 2>/dev/null || echo "CLI binary not found, skipping."
+          tar -czvf release-artifacts/rust-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz -C release-artifacts/rust .
+
+      - name: Upload Rust artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: rust-artifacts-${{ needs.determine-version.outputs.new_version }}
+          path: release-artifacts/rust-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz
+
+  # Job to build Python components (AI models)
+  build-python:
+    runs-on: ubuntu-latest
+    needs: determine-version
+    if: needs.determine-version.outputs.release_type != 'none'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r ai-models/requirements.txt || echo "No requirements.txt found, skipping."
+
+      - name: Package Python artifacts
+        run: |
+          mkdir -p release-artifacts/python
+          cp -r ai-models/* release-artifacts/python/ 2>/dev/null || echo "No AI models directory found, skipping."
+          tar -czvf release-artifacts/python-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz -C release-artifacts/python .
+
+      - name: Upload Python artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-artifacts-${{ needs.determine-version.outputs.new_version }}
+          path: release-artifacts/python-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz
+
+  # Job to build Go components (backend services)
+  build-go:
+    runs-on: ubuntu-latest
+    needs: determine-version
+    if: needs.determine-version.outputs.release_type != 'none'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache: true
+
+      - name: Build Go binaries
+        run: |
+          go build -o ontora-ai-backend ./backend/main.go || echo "No backend directory found, skipping."
+          mkdir -p release-artifacts/go
+          mv ontora-ai-backend release-artifacts/go/ 2>/dev/null || echo "Binary not built, skipping."
+
+      - name: Package Go artifacts
+        run: |
+          tar -czvf release-artifacts/go-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz -C release-artifacts/go .
+
+      - name: Upload Go artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: go-artifacts-${{ needs.determine-version.outputs.new_version }}
+          path: release-artifacts/go-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz
+
+  # Job to build TypeScript components (frontend)
+  build-typescript:
+    runs-on: ubuntu-latest
+    needs: determine-version
+    if: needs.determine-version.outputs.release_type != 'none'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install frontend dependencies
+        run: |
+          cd frontend || echo "No frontend directory found, skipping."
+          npm install
+
+      - name: Build frontend
+        run: |
+          cd frontend || exit 0
+          npm run build || echo "Build failed, skipping."
+
+      - name: Package TypeScript artifacts
+        run: |
+          mkdir -p release-artifacts/typescript
+          cp -r frontend/build/* release-artifacts/typescript/ 2>/dev/null || echo "No build output found, skipping."
+          tar -czvf release-artifacts/typescript-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz -C release-artifacts/typescript .
+
+      - name: Upload TypeScript artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: typescript-artifacts-${{ needs.determine-version.outputs.new_version }}
+          path: release-artifacts/typescript-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz
+
+  # Job to create GitHub Release with changelog and artifacts
+  create-release:
+    runs-on: ubuntu-latest
+    needs: [determine-version, build-rust, build-python, build-go, build-typescript]
+    if: needs.determine-version.outputs.release_type != 'none'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-options: '--depth=0' # Fetch full history for changelog
+
+      - name: Setup Node.js for semantic-release
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install semantic-release and plugins
+        run: |
+          npm install -g semantic-release
+          npm install @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/git @semantic-release/github -D
+
+      - name: Download all build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: downloaded-artifacts
+
+      - name: Generate changelog
+        id: generate-changelog
+        run: |
+          npx semantic-release --dry-run --no-ci > semantic-release-output.txt
+          cat semantic-release-output.txt | grep -A 100 "Release Notes" | grep -v "Release Notes" > changelog.md
+          if [ ! -s changelog.md ]; then
+            echo "No changelog generated, using default."
+            echo "Release ${{ needs.determine-version.outputs.new_version }} - Automated release for Ontora AI" > changelog.md
+            echo "- See commit history for details." >> changelog.md
+          fi
+          echo "changelog_path=changelog.md" >> $GITHUB_OUTPUT
+
+      - name: Create or update GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ needs.determine-version.outputs.new_version }}
+          name: Release ${{ needs.determine-version.outputs.new_version }}
+          body_path: ${{ steps.generate-changelog.outputs.changelog_path }}
+          draft: false
+          prerelease: ${{ needs.determine-version.outputs.is_pre_release == 'true' }}
+          files: |
+            downloaded-artifacts/rust-artifacts-${{ needs.determine-version.outputs.new_version }}/rust-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz
+            downloaded-artifacts/python-artifacts-${{ needs.determine-version.outputs.new_version }}/python-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz
+            downloaded-artifacts/go-artifacts-${{ needs.determine-version.outputs.new_version }}/go-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz
+            downloaded-artifacts/typescript-artifacts-${{ needs.determine-version.outputs.new_version }}/typescript-ontora-ai-${{ needs.determine-version.outputs.new_version }}.tar.gz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push version tag to repository
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git tag -a ${{ needs.determine-version.outputs.new_version }} -m "Release ${{ needs.determine-version.outputs.new_version }}"
+          git push origin ${{ needs.determine-version.outputs.new_version }}
+        continue-on-error: false
+
+      - name: Notify team on successful release
+        if: success()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'releases'
+          text: 'New release ${{ needs.determine-version.outputs.new_version }} for ${{ github.repository }} has been published. Check GitHub Releases for details: ${{ github.server_url }}/${{ github.repository }}/releases/tag/${{ needs.determine-version.outputs.new_version }}'
+        continue-on-error: true
+
+      - name: Notify team on release failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'releases'
+          text: 'Release process failed for ${{ github.repository }} on branch ${{ github.ref_name }}. Check GitHub Actions for details: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true
