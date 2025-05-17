@@ -1,0 +1,275 @@
+name: Continuous Integration
+
+# Define when the workflow should run
+on:
+  push:
+    branches:
+      - main
+      - dev
+      - feature/**
+      - release/**
+  pull_request:
+    branches:
+      - main
+      - dev
+    types: [opened, synchronize, reopened]
+  workflow_dispatch: # Allow manual triggering for testing or debugging
+
+# Define permissions for the workflow
+permissions:
+  contents: read
+  checks: write # Required for annotating PRs with test results
+  pull-requests: write # Required for commenting on PRs with test results
+
+# Define environment variables accessible across all jobs
+env:
+  RUST_VERSION: '1.74.0' # Specify Rust version for consistency
+  PYTHON_VERSION: '3.11' # Specify Python version for AI/ML components
+  GO_VERSION: '1.21' # Specify Go version for backend services
+  NODE_VERSION: '20' # Specify Node.js version for TypeScript frontend
+  CACHE_VERSION: 'v1' # Version for cache keys to invalidate when needed
+
+# Define jobs for testing and building across different components
+jobs:
+  # Job for testing and building Rust code (used for Solana smart contracts)
+  test-rust:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-options: '--depth=1' # Shallow clone for faster checkout
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: ${{ env.RUST_VERSION }}
+          components: rustfmt, clippy # Include rustfmt and clippy for formatting and linting
+
+      - name: Cache Rust dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-rust-${{ env.RUST_VERSION }}-${{ env.CACHE_VERSION }}-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Install Solana CLI
+        run: |
+          sh -c "$(curl -sSfL https://release.solana.com/v1.18.0/install)"
+          echo "$HOME/.local/share/solana/install/active_release/bin" >> $GITHUB_PATH
+        shell: bash
+
+      - name: Run Rust tests
+        run: |
+          cargo test --all-features --verbose
+        working-directory: ./smart-contracts # Adjust path if Rust code is in a subdirectory
+        env:
+          RUST_BACKTRACE: 1 # Enable detailed backtraces for debugging
+
+      - name: Build Rust project
+        run: |
+          cargo build --release
+        working-directory: ./smart-contracts
+
+      - name: Upload Rust test artifacts
+        if: always() # Upload even on failure for debugging
+        uses: actions/upload-artifact@v3
+        with:
+          name: rust-test-logs
+          path: ./smart-contracts/target/debug/*.log
+          retention-days: 7
+
+      - name: Notify on failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'ci-notifications'
+          text: 'Rust tests failed in ${{ github.repository }} on branch ${{ github.ref_name }}. Check workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true # Prevent workflow from failing if Slack notification fails
+
+  # Job for testing and building Python code (used for AI/ML components)
+  test-python:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11'] # Test across multiple Python versions
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-options: '--depth=1'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-python-${{ matrix.python-version }}-${{ env.CACHE_VERSION }}-${{ hashFiles('**/requirements.txt', '**/pyproject.toml') }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest pytest-cov flake8 black isort
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        working-directory: ./ai-models # Adjust path if Python code is in a subdirectory
+
+      - name: Run Python tests with coverage
+        run: |
+          pytest -v --cov=./ --cov-report=xml
+        working-directory: ./ai-models
+
+      - name: Upload Python coverage report
+        if: always()
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./ai-models/coverage.xml
+          fail_ci_if_error: false # Don't fail CI if upload fails
+        continue-on-error: true
+
+      - name: Notify on failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'ci-notifications'
+          text: 'Python tests failed in ${{ github.repository }} on branch ${{ github.ref_name }} for Python ${{ matrix.python-version }}. Check workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true
+
+  # Job for testing and building Go code (used for backend services)
+  test-go:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-options: '--depth=1'
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+
+      - name: Cache Go dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/go/pkg/mod
+            ~/.cache/go-build
+          key: ${{ runner.os }}-go-${{ env.GO_VERSION }}-${{ env.CACHE_VERSION }}-${{ hashFiles('**/go.sum') }}
+
+      - name: Run Go tests with coverage
+        run: |
+          go test -v -coverprofile=coverage.out ./...
+        working-directory: ./backend # Adjust path if Go code is in a subdirectory
+
+      - name: Upload Go coverage report
+        if: always()
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./backend/coverage.out
+          fail_ci_if_error: false
+        continue-on-error: true
+
+      - name: Build Go project
+        run: |
+          go build -o app ./...
+        working-directory: ./backend
+
+      - name: Upload Go build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: go-app
+          path: ./backend/app
+          retention-days: 7
+
+      - name: Notify on failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'ci-notifications'
+          text: 'Go tests failed in ${{ github.repository }} on branch ${{ github.ref_name }}. Check workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true
+
+  # Job for testing and building TypeScript code (used for frontend applications)
+  test-typescript:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-options: '--depth=1'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Cache Node.js dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ env.NODE_VERSION }}-${{ env.CACHE_VERSION }}-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: |
+          npm ci || yarn install --frozen-lockfile
+        working-directory: ./frontend # Adjust path if TypeScript code is in a subdirectory
+
+      - name: Run TypeScript tests
+        run: |
+          npm test || yarn test
+        working-directory: ./frontend
+
+      - name: Build TypeScript project
+        run: |
+          npm run build || yarn build
+        working-directory: ./frontend
+
+      - name: Upload frontend build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: frontend-build
+          path: ./frontend/dist # Adjust path based on your build output
+          retention-days: 7
+
+      - name: Notify on failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'ci-notifications'
+          text: 'TypeScript tests failed in ${{ github.repository }} on branch ${{ github.ref_name }}. Check workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true
+
+  # Summary job to ensure all test jobs pass before proceeding
+  ci-summary:
+    runs-on: ubuntu-latest
+    needs: [test-rust, test-python, test-go, test-typescript]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-options: '--depth=1'
+
+      - name: Check test results
+        run: |
+          echo "All test jobs completed successfully."
+      - name: Notify on overall failure
+        if: failure()
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          slack-bot-token: ${{ secrets.SLACK_BOT_TOKEN }}
+          channel-id: 'ci-notifications'
+          text: 'One or more test jobs failed in ${{ github.repository }} on branch ${{ github.ref_name }}. Check workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+        continue-on-error: true
