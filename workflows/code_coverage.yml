@@ -1,0 +1,240 @@
+name: Code Coverage Analysis and Upload
+
+# Define when the workflow should run
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - feature/**
+  pull_request:
+    branches:
+      - main
+      - develop
+  workflow_dispatch: # Allow manual triggering for testing or debugging
+
+# Define permissions for the workflow
+permissions:
+  contents: read
+  pull-requests: write # Needed for commenting coverage results on PRs
+
+# Environment variables for consistency across jobs
+env:
+  RUST_VERSION: '1.70.0' # Specify Rust version for stability
+  PYTHON_VERSION: '3.10' # Specify Python version for AI components
+  GO_VERSION: '1.21' # Specify Go version for backend
+  NODE_VERSION: '18' # Specify Node.js version for frontend
+  CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }} # Token for Codecov upload (store in GitHub Secrets)
+
+# Define jobs for code coverage analysis
+jobs:
+  # Job for Rust (Solana smart contracts) coverage
+  rust-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: ${{ env.RUST_VERSION }}
+          target: x86_64-unknown-linux-gnu
+          components: llvm-tools-preview
+
+      - name: Install cargo-llvm-cov
+        run: cargo install cargo-llvm-cov
+
+      - name: Cache Rust dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Run Rust tests with coverage
+        run: |
+          cd smart-contracts # Adjust path to Rust project directory
+          cargo llvm-cov --all-features --workspace --lcov --output-path lcov.info
+        continue-on-error: true # Continue even if some tests fail to ensure partial coverage is reported
+
+      - name: Upload Rust coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: rust-coverage
+          path: smart-contracts/lcov.info
+
+  # Job for Python (AI models) coverage
+  python-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+
+      - name: Install Python dependencies
+        run: |
+          cd ai-models # Adjust path to Python project directory
+          pip install -r requirements.txt
+          pip install pytest pytest-cov
+
+      - name: Run Python tests with coverage
+        run: |
+          cd ai-models
+          pytest --cov=./ --cov-report=lcov:coverage.lcov
+        continue-on-error: true
+
+      - name: Upload Python coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: python-coverage
+          path: ai-models/coverage.lcov
+
+  # Job for Go (backend) coverage
+  go-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: ${{ env.GO_VERSION }}
+
+      - name: Cache Go dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/go/pkg/mod
+            ~/.cache/go-build
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+
+      - name: Run Go tests with coverage
+        run: |
+          cd backend # Adjust path to Go project directory
+          go test ./... -coverprofile=coverage.out -covermode=atomic
+        continue-on-error: true
+
+      - name: Convert Go coverage to LCOV format
+        run: |
+          cd backend
+          go install github.com/jandelgado/gcov2lcov@latest
+          gcov2lcov -infile=coverage.out -outfile=coverage.lcov
+        continue-on-error: true
+
+      - name: Upload Go coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: go-coverage
+          path: backend/coverage.lcov
+
+  # Job for TypeScript (frontend) coverage
+  typescript-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json # Adjust path to frontend directory
+
+      - name: Install dependencies
+        run: |
+          cd frontend # Adjust path to TypeScript project directory
+          npm install
+
+      - name: Run TypeScript tests with coverage
+        run: |
+          cd frontend
+          npm run test -- --coverage --coverageReporters=lcov --coverageDirectory=coverage
+        continue-on-error: true
+
+      - name: Upload TypeScript coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: typescript-coverage
+          path: frontend/coverage/lcov.info
+
+  # Job to aggregate coverage reports and upload to Codecov
+  aggregate-and-upload:
+    runs-on: ubuntu-latest
+    needs:
+      - rust-coverage
+      - python-coverage
+      - go-coverage
+      - typescript-coverage
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download coverage artifacts
+        uses: actions/download-artifact@v3
+        with:
+          path: coverage-artifacts
+
+      - name: List downloaded artifacts for debugging
+        run: find coverage-artifacts -type f
+
+      - name: Install Codecov uploader
+        run: |
+          curl -s https://uploader.codecov.io/latest/linux/codecov -o codecov
+          chmod +x codecov
+
+      - name: Upload coverage reports to Codecov
+        run: |
+          for artifact in coverage-artifacts/*/lcov.info coverage-artifacts/*/coverage.lcov; do
+            if [ -f "$artifact" ]; then
+              echo "Uploading $artifact to Codecov"
+              ./codecov -f "$artifact" -t "${{ env.CODECOV_TOKEN }}" || echo "Failed to upload $artifact"
+            else
+              echo "No coverage file found in $artifact directory"
+            fi
+          done
+        continue-on-error: true # Continue even if upload fails to avoid blocking CI
+
+      - name: Comment coverage summary on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            let summary = '### Code Coverage Summary\n\n';
+            const artifactsDir = 'coverage-artifacts';
+            const dirs = fs.readdirSync(artifactsDir);
+            for (const dir of dirs) {
+              const filePath = path.join(artifactsDir, dir, 'lcov.info') || path.join(artifactsDir, dir, 'coverage.lcov');
+              if (fs.existsSync(filePath)) {
+                summary += `- **${dir}**: Coverage report generated\n`;
+              } else {
+                summary += `- **${dir}**: Coverage report missing\n`;
+              }
+            }
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: summary
+            });
+        continue-on-error: true # Avoid failing if comment creation fails
