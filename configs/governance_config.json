@@ -1,0 +1,255 @@
+{
+  "general": {
+    "protocolName": "Ontora AI Governance",
+    "version": "1.0.0",
+    "description": "Governance configuration for Ontora AI on Solana network",
+    "environment": "development", // Options: development, testing, production
+    "enabled": true, // Enable governance module
+    "network": "devnet" // Options: mainnet, testnet, devnet
+  },
+  "token": {
+    "governanceToken": {
+      "symbol": "ONT",
+      "name": "Ontora Token",
+      "address": "${GOVERNANCE_TOKEN_ADDRESS}", // Placeholder for token contract address on Solana
+      "decimals": 9, // Decimal places for token precision
+      "totalSupply": 1000000000, // Total supply of governance tokens
+      "minHoldingForParticipation": 100, // Minimum tokens required to participate in governance
+      "lockup": {
+        "enabled": true, // Enable token lockup for voting
+        "minLockupPeriod": 604800, // Minimum lockup period in seconds (7 days)
+        "maxLockupPeriod": 31536000, // Maximum lockup period in seconds (1 year)
+        "bonusMultiplier": {
+          "7days": 1.0, // Voting power multiplier for 7-day lockup
+          "30days": 1.5, // Voting power multiplier for 30-day lockup
+          "90days": 2.0, // Voting power multiplier for 90-day lockup
+          "365days": 3.0 // Voting power multiplier for 365-day lockup
+        }
+      }
+    },
+    "treasury": {
+      "address": "${TREASURY_WALLET_ADDRESS}", // Placeholder for treasury wallet address
+      "proposalFundingToken": {
+        "symbol": "SOL",
+        "address": "${SOL_TOKEN_ADDRESS}", // Placeholder for funding token address (e.g., SOL)
+        "decimals": 9 // Decimal places for funding token
+      }
+    }
+  },
+  "proposals": {
+    "creation": {
+      "enabled": true, // Enable proposal creation
+      "cost": {
+        "amount": 10, // Cost in governance tokens to create a proposal
+        "token": "ONT", // Token used for proposal creation cost
+        "burn": true, // Burn the cost tokens (true) or send to treasury (false)
+        "refundOnFailure": false // Refund cost if proposal fails to meet quorum
+      },
+      "requirements": {
+        "minTokens": 1000, // Minimum tokens required to create a proposal
+        "minLockupPeriod": 604800, // Minimum lockup period in seconds for proposer (7 days)
+        "cooldown": 86400 // Cooldown period in seconds before a user can create another proposal (1 day)
+      },
+      "content": {
+        "maxTitleLength": 100, // Maximum characters for proposal title
+        "maxDescriptionLength": 5000, // Maximum characters for proposal description
+        "allowedTypes": [ // Types of proposals allowed
+          "protocolUpgrade",
+          "parameterChange",
+          "treasuryAllocation",
+          "communityInitiative",
+          "aiModelUpdate"
+        ]
+      }
+    },
+    "voting": {
+      "enabled": true, // Enable voting on proposals
+      "duration": {
+        "min": 259200, // Minimum voting duration in seconds (3 days)
+        "default": 604800, // Default voting duration in seconds (7 days)
+        "max": 1209600 // Maximum voting duration in seconds (14 days)
+      },
+      "thresholds": {
+        "approval": {
+          "percentage": 60, // Percentage of yes votes required for approval (60%)
+          "absolute": false // Use percentage (false) or absolute token count (true)
+        },
+        "quorum": {
+          "percentage": 10, // Percentage of total voting power required for quorum (10%)
+          "absolute": false // Use percentage (false) or absolute token count (true)
+        },
+        "veto": {
+          "enabled": true, // Enable veto mechanism
+          "percentage": 33.3, // Percentage of no votes required for veto (33.3%)
+          "absolute": false // Use percentage (false) or absolute token count (true)
+        }
+      },
+      "options": {
+        "voteTypes": [ // Supported vote types
+          "yes",
+          "no",
+          "abstain"
+        ],
+        "multipleChoice": false, // Allow multiple choice voting (true) or single choice (false)
+        "weightedVoting": true, // Enable weighted voting based on token lockup multipliers
+        "delegation": {
+          "enabled": true, // Allow vote delegation to other users
+          "maxDelegations": 5, // Maximum number of delegations per user
+          "revocation": true // Allow revocation of delegated votes
+        }
+      }
+    },
+    "execution": {
+      "enabled": true, // Enable automatic execution of approved proposals
+      "delay": {
+        "enabled": true, // Enable delay before execution
+        "duration": 86400 // Delay duration in seconds after approval before execution (1 day)
+      },
+      "timelock": {
+        "enabled": true, // Enable timelock for critical changes
+        "duration": 172800, // Timelock duration in seconds for critical proposals (2 days)
+        "criticalTypes": [ // Proposal types subject to timelock
+          "protocolUpgrade",
+          "parameterChange"
+        ]
+      },
+      "failureHandling": {
+        "retry": false, // Retry execution on failure
+        "maxRetries": 3, // Maximum retry attempts for failed execution
+        "retryDelay": 3600 // Delay between retries in seconds (1 hour)
+      }
+    },
+    "lifecycle": {
+      "states": [ // Proposal lifecycle states
+        "draft",
+        "active",
+        "passed",
+        "rejected",
+        "vetoed",
+        "executed",
+        "expired"
+      ],
+      "expiration": {
+        "enabled": true, // Enable proposal expiration
+        "duration": 2592000 // Duration in seconds before a proposal expires if not acted upon (30 days)
+      }
+    }
+  },
+  "council": {
+    "enabled": true, // Enable governance council for emergency or special decisions
+    "members": {
+      "max": 7, // Maximum number of council members
+      "min": 3, // Minimum number of council members
+      "election": {
+        "enabled": true, // Enable council elections
+        "frequency": 31536000, // Election frequency in seconds (1 year)
+        "votingDuration": 604800 // Voting duration for council elections in seconds (7 days)
+      },
+      "requirements": {
+        "minTokens": 100000, // Minimum tokens required to run for council
+        "lockupPeriod": 31536000 // Required lockup period in seconds for council candidates (1 year)
+      }
+    },
+    "powers": {
+      "emergencyStop": true, // Allow council to stop protocol operations in emergencies
+      "vetoProposals": true, // Allow council to veto community proposals
+      "fastTrackProposals": true, // Allow council to fast-track critical proposals
+      "treasuryAccess": {
+        "enabled": true, // Allow council to access treasury funds
+        "maxAllocationPerProposal": 5, // Maximum percentage of treasury per proposal (5%)
+        "approvalThreshold": 75 // Percentage of council votes required for treasury allocation (75%)
+      }
+    },
+    "term": {
+      "duration": 31536000, // Council term duration in seconds (1 year)
+      "renewal": true, // Allow council members to run for re-election
+      "maxTerms": 2 // Maximum consecutive terms a member can serve
+    }
+  },
+  "treasury": {
+    "enabled": true, // Enable treasury management through governance
+    "allocation": {
+      "proposalFunding": {
+        "enabled": true, // Allow funding for approved proposals
+        "maxPercentagePerProposal": 10, // Maximum percentage of treasury per proposal (10%)
+        "minApprovalThreshold": 66.6 // Minimum approval percentage for funding proposals (66.6%)
+      },
+      "communityGrants": {
+        "enabled": true, // Enable community grant programs
+        "maxGrantPerRecipient": 5000, // Maximum tokens per grant recipient
+        "reviewPeriod": 604800 // Review period for grant applications in seconds (7 days)
+      }
+    },
+    "reserve": {
+      "minReservePercentage": 20, // Minimum percentage of treasury to keep as reserve (20%)
+      "warningThreshold": 30 // Warning threshold percentage for low treasury balance (30%)
+    }
+  },
+  "parameters": {
+    "adjustable": {
+      "enabled": true, // Allow governance to adjust protocol parameters
+      "parameters": [
+        {
+          "name": "proposalCost",
+          "minValue": 5, // Minimum value for proposal cost in tokens
+          "maxValue": 50, // Maximum value for proposal cost in tokens
+          "defaultValue": 10, // Default value for proposal cost
+          "adjustmentThreshold": 60 // Approval percentage required to adjust (60%)
+        },
+        {
+          "name": "votingDuration",
+          "minValue": 259200, // Minimum voting duration in seconds (3 days)
+          "maxValue": 1209600, // Maximum voting duration in seconds (14 days)
+          "defaultValue": 604800, // Default voting duration (7 days)
+          "adjustmentThreshold": 60 // Approval percentage required to adjust (60%)
+        },
+        {
+          "name": "quorumPercentage",
+          "minValue": 5, // Minimum quorum percentage
+          "maxValue": 20, // Maximum quorum percentage
+          "defaultValue": 10, // Default quorum percentage
+          "adjustmentThreshold": 66.6 // Approval percentage required to adjust (66.6%)
+        }
+      ]
+    }
+  },
+  "security": {
+    "multisig": {
+      "enabled": true, // Enable multisig for critical governance actions
+      "signers": 5, // Number of signers in multisig
+      "threshold": 3, // Number of signatures required for action
+      "criticalActions": [ // Actions requiring multisig approval
+        "protocolUpgrade",
+        "emergencyStop",
+        "treasuryWithdrawal"
+      ]
+    },
+    "audit": {
+      "enabled": true, // Enable audit logging for governance actions
+      "logLevel": "detailed", // Options: minimal, standard, detailed
+      "retentionPeriod": 31536000 // Retention period for audit logs in seconds (1 year)
+    },
+    "rateLimiting": {
+      "enabled": true, // Enable rate limiting for governance actions
+      "maxProposalsPerUserPerDay": 1, // Maximum proposals per user per day
+      "maxVotesPerUserPerHour": 10 // Maximum votes per user per hour
+    }
+  },
+  "rewards": {
+    "enabled": true, // Enable rewards for governance participation
+    "votingReward": {
+      "amount": 0.1, // Reward per vote in governance tokens
+      "token": "ONT", // Token used for rewards
+      "maxPerUserPerDay": 1.0 // Maximum reward per user per day
+    },
+    "proposalReward": {
+      "enabled": true, // Reward users for creating successful proposals
+      "amount": 5, // Reward for successful proposal in governance tokens
+      "token": "ONT" // Token used for rewards
+    },
+    "distribution": {
+      "frequency": 604800, // Reward distribution frequency in seconds (7 days)
+      "poolPercentage": 2 // Percentage of token pool allocated for rewards (2%)
+    }
+  }
+}
