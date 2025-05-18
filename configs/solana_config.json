@@ -1,0 +1,200 @@
+{
+  "networks": {
+    "mainnet": {
+      "name": "Solana Mainnet",
+      "chainId": "mainnet-beta",
+      "rpcEndpoints": {
+        "primary": "${SOLANA_MAINNET_RPC_ENDPOINT}", // Use environment variable for sensitive data
+        "fallback": [
+          "${SOLANA_MAINNET_FALLBACK_RPC_1}",
+          "${SOLANA_MAINNET_FALLBACK_RPC_2}"
+        ]
+      },
+      "wsEndpoints": {
+        "primary": "${SOLANA_MAINNET_WS_ENDPOINT}", // WebSocket endpoint for real-time updates
+        "fallback": [
+          "${SOLANA_MAINNET_FALLBACK_WS_1}",
+          "${SOLANA_MAINNET_FALLBACK_WS_2}"
+        ]
+      },
+      "explorer": "https://explorer.solana.com",
+      "commitment": "confirmed", // Commitment level for transactions
+      "confirmations": 32, // Number of confirmations for finalized transactions
+      "timeout": 60000, // Timeout for RPC requests in milliseconds
+      "retryCount": 5, // Number of retries for failed requests
+      "retryDelay": 2000, // Delay between retries in milliseconds
+      "enabled": false, // Disabled by default for safety; enable only when needed
+      "connectionPool": {
+        "maxConnections": 50,
+        "minConnections": 5,
+        "connectionTimeout": 10000 // Timeout for establishing connections
+      }
+    },
+    "testnet": {
+      "name": "Solana Testnet",
+      "chainId": "testnet",
+      "rpcEndpoints": {
+        "primary": "${SOLANA_TESTNET_RPC_ENDPOINT}", // Use environment variable for sensitive data
+        "fallback": [
+          "${SOLANA_TESTNET_FALLBACK_RPC_1}",
+          "${SOLANA_TESTNET_FALLBACK_RPC_2}"
+        ]
+      },
+      "wsEndpoints": {
+        "primary": "${SOLANA_TESTNET_WS_ENDPOINT}", // WebSocket endpoint for real-time updates
+        "fallback": [
+          "${SOLANA_TESTNET_FALLBACK_WS_1}",
+          "${SOLANA_TESTNET_FALLBACK_WS_2}"
+        ]
+      },
+      "explorer": "https://explorer.solana.com/?cluster=testnet",
+      "commitment": "confirmed", // Commitment level for transactions
+      "confirmations": 1, // Lower confirmations for faster testing
+      "timeout": 45000, // Timeout for RPC requests in milliseconds
+      "retryCount": 3, // Number of retries for failed requests
+      "retryDelay": 1500, // Delay between retries in milliseconds
+      "enabled": false, // Disabled by default; enable for testing
+      "connectionPool": {
+        "maxConnections": 20,
+        "minConnections": 2,
+        "connectionTimeout": 8000 // Timeout for establishing connections
+      }
+    },
+    "devnet": {
+      "name": "Solana Devnet",
+      "chainId": "devnet",
+      "rpcEndpoints": {
+        "primary": "${SOLANA_DEVNET_RPC_ENDPOINT}", // Use environment variable for sensitive data
+        "fallback": [
+          "${SOLANA_DEVNET_FALLBACK_RPC_1}",
+          "${SOLANA_DEVNET_FALLBACK_RPC_2}"
+        ]
+      },
+      "wsEndpoints": {
+        "primary": "${SOLANA_DEVNET_WS_ENDPOINT}", // WebSocket endpoint for real-time updates
+        "fallback": [
+          "${SOLANA_DEVNET_FALLBACK_WS_1}",
+          "${SOLANA_DEVNET_FALLBACK_WS_2}"
+        ]
+      },
+      "explorer": "https://explorer.solana.com/?cluster=devnet",
+      "commitment": "processed", // Lower commitment for faster feedback in dev
+      "confirmations": 1, // Minimal confirmations for development
+      "timeout": 30000, // Timeout for RPC requests in milliseconds
+      "retryCount": 2, // Number of retries for failed requests
+      "retryDelay": 1000, // Delay between retries in milliseconds
+      "enabled": true, // Enabled by default for development
+      "connectionPool": {
+        "maxConnections": 10,
+        "minConnections": 1,
+        "connectionTimeout": 5000 // Timeout for establishing connections
+      }
+    }
+  },
+  "wallet": {
+    "default": {
+      "privateKey": "${SOLANA_WALLET_PRIVATE_KEY}", // Use environment variable for sensitive data
+      "publicKey": "${SOLANA_WALLET_PUBLIC_KEY}", // Use environment variable for sensitive data
+      "keypairPath": "${SOLANA_KEYPAIR_PATH}", // Path to keypair file if used
+      "encryption": {
+        "enabled": true,
+        "method": "aes-256-gcm",
+        "key": "${SOLANA_WALLET_ENCRYPTION_KEY}" // Use environment variable for sensitive data
+      }
+    },
+    "backup": {
+      "enabled": false, // Enable if backup wallet is needed
+      "privateKey": "${SOLANA_BACKUP_WALLET_PRIVATE_KEY}", // Use environment variable
+      "publicKey": "${SOLANA_BACKUP_WALLET_PUBLIC_KEY}" // Use environment variable
+    }
+  },
+  "smartContracts": {
+    "ontoraAi": {
+      "programId": "${SOLANA_ONTORA_AI_PROGRAM_ID}", // Use environment variable for sensitive data
+      "abiPath": "./contracts/ontora_ai_abi.json", // Path to ABI or IDL file
+      "deployedNetwork": "devnet", // Default network for deployment
+      "debugMode": true, // Enable debug logs for contract interactions
+      "mock": {
+        "enabled": true, // Enable mock contract responses for testing
+        "mockResponsesPath": "./test_data/mock_contract_responses.json"
+      }
+    }
+  },
+  "transactions": {
+    "defaultFeePayer": "${SOLANA_DEFAULT_FEE_PAYER}", // Use environment variable for sensitive data
+    "gasSettings": {
+      "computeUnits": 200000, // Default compute units for transactions
+      "priorityFee": {
+        "enabled": true,
+        "microLamports": 1000 // Priority fee for faster processing
+      }
+    },
+    "retryPolicy": {
+      "maxRetries": 5,
+      "retryDelay": 2000, // Delay between retries in milliseconds
+      "exponentialBackoff": true
+    },
+    "logging": {
+      "enabled": true,
+      "level": "info", // Log level for transaction details
+      "logPath": "./logs/solana_transactions.log"
+    }
+  },
+  "monitoring": {
+    "enabled": true,
+    "rpcHealthCheck": {
+      "interval": 30000, // Check RPC health every 30 seconds
+      "timeout": 5000, // Timeout for health check requests
+      "minSuccessRate": 0.8 // Minimum success rate before switching to fallback
+    },
+    "metrics": {
+      "enabled": true,
+      "endpoint": "/solana-metrics",
+      "collectLatency": true,
+      "collectErrors": true,
+      "collectTransactionStats": true
+    }
+  },
+  "security": {
+    "rpc": {
+      "useHttps": true, // Enforce HTTPS for RPC endpoints
+      "verifySsl": true // Verify SSL certificates for endpoints
+    },
+    "rateLimit": {
+      "enabled": true,
+      "requestsPerMinute": 100, // Limit requests to prevent abuse
+      "burstSize": 10 // Allow short bursts of requests
+    },
+    "timeout": {
+      "connection": 10000, // Connection timeout in milliseconds
+      "request": 30000 // Request timeout in milliseconds
+    }
+  },
+  "debug": {
+    "enabled": true, // Enable debug mode for detailed logging
+    "logRpcRequests": true, // Log all RPC requests and responses
+    "logWebSocketEvents": true, // Log WebSocket events
+    "logTransactionDetails": true, // Log detailed transaction information
+    "mock": {
+      "enabled": true, // Enable mock responses for debugging
+      "mockRpcResponses": true,
+      "mockTransactionResponses": true,
+      "mockWebSocketEvents": true,
+      "responseDelay": 500 // Simulate network delay in milliseconds
+    }
+  },
+  "custom": {
+    "ontoraAi": {
+      "agentInteraction": {
+        "enabled": true,
+        "maxConcurrentTransactions": 5, // Limit concurrent transactions per agent
+        "transactionBatchSize": 10 // Batch size for agent-driven transactions
+      },
+      "evolutionTracking": {
+        "enabled": true,
+        "logPath": "./logs/solana_evolution.log", // Log evolution events on Solana
+        "storeOnChain": false // Disable on-chain storage by default for cost efficiency
+      }
+    }
+  }
+}
