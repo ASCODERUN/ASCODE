@@ -10,7 +10,7 @@
 
 ## Links
 [![Website](https://img.shields.io/badge/Website-Ontora-blue?logo=google-chrome&style=for-the-badge)](https://ontora.org/)
-[![Twitter](https://img.shields.io/badge/Twitter-@Ontoraonx-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/Ontoraonx)
+[![Twitter](https://img.shields.io/badge/Twitter-@OntoraLabs-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/OntoraLabs)
 
 ## Table of Contents
 
