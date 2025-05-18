@@ -1,0 +1,252 @@
+{
+  "environment": {
+    "name": "production",
+    "mode": "prod",
+    "debug": false,
+    "verbose": false,
+    "strictMode": true
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 3000,
+    "apiBasePath": "/api/v1",
+    "cors": {
+      "enabled": true,
+      "allowedOrigins": ["https://ontora-ai.com", "https://www.ontora-ai.com"],
+      "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+      "allowedHeaders": ["Content-Type", "Authorization", "X-Requested-With"],
+      "maxAge": 86400
+    },
+    "rateLimit": {
+      "enabled": true,
+      "windowMs": 60000,
+      "maxRequests": 100
+    }
+  },
+  "logging": {
+    "level": "info",
+    "output": {
+      "console": {
+        "enabled": false,
+        "colorize": false,
+        "timestamp": true
+      },
+      "file": {
+        "enabled": true,
+        "path": "./logs/prod.log",
+        "maxSize": "20m",
+        "maxFiles": 10,
+        "rotate": true,
+        "compress": true
+      }
+    },
+    "categories": {
+      "http": {
+        "level": "info",
+        "enabled": true
+      },
+      "database": {
+        "level": "warn",
+        "enabled": true
+      },
+      "web3": {
+        "level": "info",
+        "enabled": true
+      },
+      "ai": {
+        "level": "info",
+        "enabled": true
+      }
+    }
+  },
+  "database": {
+    "type": "postgres",
+    "host": "${DB_HOST}", // Use environment variable for sensitive data
+    "port": 5432,
+    "database": "ontora_ai_prod",
+    "username": "${DB_USERNAME}", // Use environment variable for sensitive data
+    "password": "${DB_PASSWORD}", // Use environment variable for sensitive data
+    "synchronize": false, // Disabled in production for safety
+    "logging": false,
+    "connectionPool": {
+      "max": 50,
+      "min": 5,
+      "idleTimeoutMillis": 30000
+    },
+    "ssl": {
+      "enabled": true,
+      "ca": "${DB_SSL_CA_PATH}", // Path to SSL certificate authority, set via env
+      "cert": "${DB_SSL_CERT_PATH}", // Path to SSL certificate, set via env
+      "key": "${DB_SSL_KEY_PATH}" // Path to SSL key, set via env
+    }
+  },
+  "web3": {
+    "network": "solana-mainnet",
+    "rpcEndpoint": "${SOLANA_RPC_ENDPOINT}", // Use environment variable for sensitive data
+    "wallet": {
+      "privateKey": "${WALLET_PRIVATE_KEY}", // Use environment variable for sensitive data
+      "address": "${WALLET_ADDRESS}" // Use environment variable for sensitive data
+    },
+    "smartContract": {
+      "programId": "${SOLANA_PROGRAM_ID}", // Use environment variable for sensitive data
+      "abiPath": "./contracts/abi.json",
+      "debugMode": false
+    },
+    "transaction": {
+      "confirmations": 5,
+      "timeout": 60000,
+      "retryCount": 5
+    }
+  },
+  "ai": {
+    "model": {
+      "type": "local",
+      "path": "./models/ontora_ai_model_prod",
+      "debug": false,
+      "verboseOutput": false
+    },
+    "training": {
+      "enabled": false, // Disabled in production; training done offline
+      "dataPath": "./data/training/prod",
+      "batchSize": 64,
+      "epochs": 20,
+      "logFrequency": 500
+    },
+    "evolution": {
+      "enabled": true,
+      "randomMutationRate": 0.02,
+      "userFeedbackWeight": 0.5,
+      "debugLogs": false
+    }
+  },
+  "frontend": {
+    "devServer": {
+      "host": "localhost",
+      "port": 8080,
+      "hotReload": false, // Disabled in production
+      "proxy": {
+        "enabled": false
+      }
+    },
+    "build": {
+      "sourceMap": false, // Disabled for performance and security
+      "minify": true,
+      "debug": false
+    }
+  },
+  "security": {
+    "auth": {
+      "enabled": true,
+      "jwt": {
+        "secret": "${JWT_SECRET}", // Use environment variable for sensitive data
+        "expiresIn": "12h",
+        "issuer": "ontora-ai-prod",
+        "audience": "ontora-ai-users"
+      }
+    },
+    "encryption": {
+      "enabled": true,
+      "key": "${ENCRYPTION_KEY}", // Use environment variable for sensitive data
+      "algorithm": "aes-256-gcm"
+    },
+    "cors": {
+      "enabled": true
+    },
+    "helmet": {
+      "enabled": true, // Enable security headers
+      "contentSecurityPolicy": {
+        "enabled": true,
+        "directives": {
+          "defaultSrc": ["'self'"],
+          "scriptSrc": ["'self'", "https://trusted-cdn.com"],
+          "styleSrc": ["'self'", "https://trusted-cdn.com"],
+          "imgSrc": ["'self'", "data:", "https://trusted-cdn.com"],
+          "connectSrc": ["'self'", "https://api.ontora-ai.com"],
+          "fontSrc": ["'self'", "https://trusted-cdn.com"],
+          "objectSrc": ["'none'"],
+          "upgradeInsecureRequests": []
+        }
+      }
+    }
+  },
+  "monitoring": {
+    "enabled": true,
+    "metrics": {
+      "endpoint": "/metrics",
+      "collectDefault": true,
+      "collectCustom": true
+    },
+    "healthCheck": {
+      "endpoint": "/health",
+      "interval": 60000,
+      "timeout": 10000
+    }
+  },
+  "debugTools": {
+    "profiler": {
+      "enabled": false, // Disabled in production
+      "outputPath": "./profiles/prod"
+    },
+    "trace": {
+      "enabled": false,
+      "level": "none"
+    },
+    "mock": {
+      "enabled": false,
+      "mockWeb3Responses": false,
+      "mockAiResponses": false
+    }
+  },
+  "cache": {
+    "enabled": true,
+    "type": "redis",
+    "host": "${REDIS_HOST}", // Use environment variable for sensitive data
+    "port": 6379,
+    "password": "${REDIS_PASSWORD}", // Use environment variable for sensitive data
+    "ttl": 3600,
+    "maxItems": 5000
+  },
+  "queues": {
+    "enabled": true,
+    "type": "redis",
+    "host": "${REDIS_HOST}", // Use environment variable for sensitive data
+    "port": 6379,
+    "password": "${REDIS_PASSWORD}", // Use environment variable for sensitive data
+    "prefix": "ontora-ai-prod-queue",
+    "retryAttempts": 5,
+    "retryDelay": 10000
+  },
+  "email": {
+    "enabled": true,
+    "provider": "smtp",
+    "host": "${EMAIL_HOST}", // Use environment variable for sensitive data
+    "port": 587,
+    "username": "${EMAIL_USERNAME}", // Use environment variable for sensitive data
+    "password": "${EMAIL_PASSWORD}", // Use environment variable for sensitive data
+    "from": "no-reply@ontora-ai.com",
+    "debug": false
+  },
+  "fileStorage": {
+    "type": "s3", // Use cloud storage in production
+    "endpoint": "${S3_ENDPOINT}", // Use environment variable for sensitive data
+    "bucket": "ontora-ai-prod",
+    "accessKey": "${S3_ACCESS_KEY}", // Use environment variable for sensitive data
+    "secretKey": "${S3_SECRET_KEY}", // Use environment variable for sensitive data
+    "maxFileSize": 10485760, // 10MB
+    "allowedTypes": ["image/jpeg", "image/png", "application/pdf", "text/plain"]
+  },
+  "custom": {
+    "ontoraAi": {
+      "storyChapters": {
+        "enabled": true,
+        "debugMode": false,
+        "logUserInteractions": false
+      },
+      "userAgents": {
+        "localDeployment": true,
+        "maxAgentsPerUser": 10,
+        "debugEvolution": false
+      }
+    }
+  }
+}
