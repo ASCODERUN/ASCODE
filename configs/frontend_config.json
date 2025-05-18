@@ -1,0 +1,239 @@
+{
+  "general": {
+    "appName": "Ontora AI",
+    "version": "1.0.0",
+    "description": "Frontend configuration for Web3 AI platform on Solana network",
+    "environment": "development", // Options: development, testing, production
+    "debugMode": true, // Enable detailed console logging for debugging
+    "logLevel": "debug" // Options: debug, info, warning, error
+  },
+  "api": {
+    "backend": {
+      "baseUrl": "http://localhost:8080/api/v1", // Backend API base URL for development
+      "timeout": 10000, // Request timeout in milliseconds
+      "retry": {
+        "enabled": true, // Enable retry on API request failure
+        "maxAttempts": 3, // Maximum retry attempts
+        "delay": 2000 // Delay between retries in milliseconds
+      },
+      "auth": {
+        "enabled": true, // Enable authentication for API requests
+        "tokenKey": "auth_token", // Key for storing auth token in local storage
+        "refreshTokenKey": "refresh_token", // Key for storing refresh token
+        "header": "Authorization", // Header name for auth token
+        "prefix": "Bearer " // Prefix for token in header
+      }
+    },
+    "thirdParty": {
+      "enabled": false, // Enable third-party API integrations
+      "services": {
+        "analytics": {
+          "baseUrl": "${ANALYTICS_API_URL}", // Placeholder for analytics API URL
+          "apiKey": "${ANALYTICS_API_KEY}", // Placeholder for API key
+          "timeout": 5000 // Request timeout in milliseconds
+        }
+      }
+    }
+  },
+  "web3": {
+    "solana": {
+      "enabled": true, // Enable Solana blockchain integration
+      "network": "devnet", // Options: mainnet, testnet, devnet
+      "rpcEndpoints": {
+        "primary": "${SOLANA_RPC_PRIMARY}", // Placeholder for primary RPC endpoint
+        "fallback": "${SOLANA_RPC_FALLBACK}" // Placeholder for fallback RPC endpoint
+      },
+      "commitment": "confirmed", // Commitment level for transactions (processed, confirmed, finalized)
+      "pollingInterval": 2000, // Polling interval for blockchain updates in milliseconds
+      "timeout": 30000, // Timeout for blockchain requests in milliseconds
+      "retry": {
+        "enabled": true, // Enable retry on RPC request failure
+        "maxAttempts": 3, // Maximum retry attempts
+        "delay": 2000 // Delay between retries in milliseconds
+      }
+    },
+    "walletProviders": {
+      "enabled": true, // Enable wallet provider integrations
+      "defaultProvider": "phantom", // Default wallet provider
+      "supportedProviders": [
+        {
+          "name": "phantom",
+          "enabled": true,
+          "displayName": "Phantom",
+          "iconUrl": "/assets/wallets/phantom.svg"
+        },
+        {
+          "name": "solflare",
+          "enabled": true,
+          "displayName": "Solflare",
+          "iconUrl": "/assets/wallets/solflare.svg"
+        },
+        {
+          "name": "ledger",
+          "enabled": true,
+          "displayName": "Ledger",
+          "iconUrl": "/assets/wallets/ledger.svg"
+        }
+      ],
+      "connectionTimeout": 10000 // Timeout for wallet connection in milliseconds
+    }
+  },
+  "ui": {
+    "themes": {
+      "enabled": true, // Enable theme support
+      "defaultTheme": "dark", // Default theme for the application
+      "availableThemes": [
+        {
+          "id": "light",
+          "name": "Light Mode",
+          "primaryColor": "#007BFF",
+          "secondaryColor": "#6C757D",
+          "backgroundColor": "#FFFFFF",
+          "textColor": "#212529",
+          "borderColor": "#E9ECEF",
+          "iconSet": "default"
+        },
+        {
+          "id": "dark",
+          "name": "Dark Mode",
+          "primaryColor": "#00B7FF",
+          "secondaryColor": "#ADB5BD",
+          "backgroundColor": "#121212",
+          "textColor": "#F8F9FA",
+          "borderColor": "#343A40",
+          "iconSet": "default"
+        }
+      ],
+      "themeStorageKey": "ontora_theme" // Key for storing theme preference in local storage
+    },
+    "layout": {
+      "responsive": true, // Enable responsive design
+      "breakpoints": {
+        "mobile": 480, // Mobile breakpoint in pixels
+        "tablet": 768, // Tablet breakpoint in pixels
+        "desktop": 1024 // Desktop breakpoint in pixels
+      },
+      "defaultLayout": "standard", // Default layout style
+      "sidebar": {
+        "enabled": true, // Enable sidebar navigation
+        "collapsedByDefault": false, // Sidebar collapsed state on load
+        "width": 250, // Sidebar width in pixels when expanded
+        "collapsedWidth": 60 // Sidebar width in pixels when collapsed
+      }
+    },
+    "animations": {
+      "enabled": true, // Enable UI animations
+      "transitionSpeed": "normal", // Options: slow, normal, fast
+      "pageTransitions": true // Enable page transition animations
+    }
+  },
+  "localization": {
+    "enabled": true, // Enable multi-language support
+    "defaultLanguage": "en", // Default language code
+    "supportedLanguages": [
+      {
+        "code": "en",
+        "name": "English",
+        "flag": "/assets/flags/en.svg",
+        "direction": "ltr" // Text direction: ltr (left-to-right) or rtl (right-to-left)
+      },
+      {
+        "code": "es",
+        "name": "Spanish",
+        "flag": "/assets/flags/es.svg",
+        "direction": "ltr"
+      },
+      {
+        "code": "fr",
+        "name": "French",
+        "flag": "/assets/flags/fr.svg",
+        "direction": "ltr"
+      }
+    ],
+    "languageStorageKey": "ontora_language", // Key for storing language preference
+    "fallbackLanguage": "en" // Fallback language if translation is missing
+  },
+  "analytics": {
+    "enabled": false, // Enable frontend analytics
+    "provider": "google", // Options: google, mixpanel, custom
+    "trackingId": "${ANALYTICS_TRACKING_ID}", // Placeholder for tracking ID
+    "anonymizeIp": true, // Anonymize IP addresses for privacy
+    "pageViewTracking": true, // Track page views
+    "eventTracking": {
+      "enabled": true, // Track user events (clicks, interactions)
+      "categories": {
+        "walletConnection": "Wallet",
+        "aiInteraction": "AI",
+        "navigation": "Navigation"
+      }
+    }
+  },
+  "notifications": {
+    "enabled": true, // Enable frontend notifications
+    "position": "top-right", // Options: top-left, top-right, bottom-left, bottom-right
+    "duration": 5000, // Default duration for notifications in milliseconds
+    "types": {
+      "success": {
+        "backgroundColor": "#28A745",
+        "textColor": "#FFFFFF",
+        "icon": "check"
+      },
+      "error": {
+        "backgroundColor": "#DC3545",
+        "textColor": "#FFFFFF",
+        "icon": "error"
+      },
+      "info": {
+        "backgroundColor": "#17A2B8",
+        "textColor": "#FFFFFF",
+        "icon": "info"
+      },
+      "warning": {
+        "backgroundColor": "#FFC107",
+        "textColor": "#212529",
+        "icon": "warning"
+      }
+    }
+  },
+  "assets": {
+    "basePath": "/assets", // Base path for static assets (images, icons, etc.)
+    "cdn": {
+      "enabled": false, // Enable CDN for asset delivery
+      "url": "${CDN_BASE_URL}" // Placeholder for CDN base URL
+    },
+    "lazyLoading": {
+      "enabled": true, // Enable lazy loading for images and assets
+      "threshold": 200 // Threshold in pixels for lazy loading trigger
+    }
+  },
+  "pwa": {
+    "enabled": false, // Enable Progressive Web App features
+    "manifest": {
+      "name": "Ontora AI",
+      "shortName": "Ontora",
+      "description": "Web3 AI Platform on Solana",
+      "themeColor": "#00B7FF",
+      "backgroundColor": "#121212",
+      "display": "standalone", // Options: standalone, fullscreen, minimal-ui
+      "startUrl": "/",
+      "icons": [
+        {
+          "src": "/assets/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "/assets/icons/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any maskable"
+        }
+      ]
+    },
+    "offlineSupport": {
+      "enabled": false, // Enable offline mode with service worker
+      "cacheAssets": true // Cache assets for offline use
+    }
+  }
+}
