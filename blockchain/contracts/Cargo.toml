@@ -1,0 +1,80 @@
+[package]
+name = "ontora-ai"
+version = "0.1.0"
+description = "Ontora AI - A Web3 AI Agent Platform on Solana"
+edition = "2021"
+authors = ["Your Name <your-email@example.com>"]
+repository = "https://github.com/yourusername/ontora-ai"
+license = "MIT OR Apache-2.0"
+keywords = ["solana", "web3", "ai", "smart-contract", "anchor"]
+categories = ["cryptocurrency", "smart-contracts"]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["cpi"]
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+
+[dependencies]
+anchor-lang = { version = "0.29.0", features = ["init-if-needed"] }
+anchor-spl = { version = "0.29.0", features = ["token", "associated-token"] }
+solana-program = "1.18.0"
+borsh = { version = "0.10.3", features = ["rc"] }
+serde = { version = "1.0.195", features = ["derive"] }
+serde_json = "1.0.111"
+bytemuck = { version = "1.14.0", features = ["derive"] }
+num-traits = "0.2.17"
+num-derive = "0.4.1"
+thiserror = "1.0.56"
+rand = "0.8.5"
+arrayref = "0.3.7"
+base64 = "0.21.5"
+bincode = "1.3.3"
+spl-associated-token-account = { version = "2.3.0", features = ["no-entrypoint"] }
+spl-token = { version = "4.0.0", features = ["no-entrypoint"] }
+mpl-token-metadata = { version = "4.1.2", features = ["no-entrypoint"] }
+
+[dev-dependencies]
+anchor-client = "0.29.0"
+solana-program-test = "1.18.0"
+solana-sdk = "1.18.0"
+tokio = { version = "1.35.1", features = ["full", "test-util"] }
+assert_matches = "1.5.0"
+pretty_assertions = "1.4.0"
+async-trait = "0.1.77"
+futures = "0.3.30"
+rstest = "0.18.2"
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+opt-level = 3
+debug = false
+strip = true
+incremental = false
+
+[profile.dev]
+overflow-checks = true
+opt-level = 1
+debug = true
+incremental = true
+
+[workspace]
+members = [
+    "programs/*",
+    "tests/*",
+]
+
+[workspace.dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+solana-program = "1.18.0"
+solana-sdk = "1.18.0"
+solana-program-test = "1.18.0"
+tokio = { version = "1.35.1", features = ["full"] }
