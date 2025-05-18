@@ -7,6 +7,11 @@
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
 **Ontora AI** is a Web3 open-source AI framework built on Solana. It is designed to empower users to create, customize, and evolve autonomous AI agent swarms for various Web3 applications. Through local deployment and user-driven fine-tuning, each AI agent can develop unique behavioral patterns and narrative chapters, reflecting personalized growth. Ontora AI aims to redefine decentralized AI by integrating user behavior with blockchain technology, delivering secure, scalable, and innovative solutions for the Web3 ecosystem.
+
+## Links
+[![Website](https://img.shields.io/badge/Website-Ontora-blue?logo=google-chrome&style=for-the-badge)](https://ontora.org/)
+[![Twitter](https://img.shields.io/badge/Twitter-@Ontoraonx-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/Ontoraonx)
+
 ## Table of Contents
 
 - [Overview](#overview)
