@@ -1,0 +1,720 @@
+{
+  "version": "0.1.0",
+  "name": "ontora_ai",
+  "instructions": [
+    {
+      "name": "initializeRealm",
+      "docs": [
+        "Initializes a new governance realm for Ontora AI with specified parameters.",
+        "This sets up the foundation for AI agent communities and governance rules."
+      ],
+      "accounts": [
+        {
+          "name": "realm",
+          "type": "publicKey",
+          "docs": ["The account representing the governance realm, initialized as a PDA."]
+        },
+        {
+          "name": "authority",
+          "type": "publicKey",
+          "docs": ["The initial authority of the realm, typically the admin or deployer."]
+        },
+        {
+          "name": "payer",
+          "type": "publicKey",
+          "docs": ["The account paying for the initialization transaction fees."]
+        },
+        {
+          "name": "systemProgram",
+          "type": "publicKey",
+          "docs": ["The Solana system program for account creation and rent."]
+        }
+      ],
+      "args": [
+        {
+          "name": "realmName",
+          "type": "string",
+          "docs": ["The name of the governance realm, used for identification."]
+        },
+        {
+          "name": "minVotingPower",
+          "type": "u64",
+          "docs": ["Minimum token amount required for voting eligibility in the realm."]
+        },
+        {
+          "name": "votingPeriod",
+          "type": "u64",
+          "docs": ["Duration in seconds for which a proposal remains open for voting."]
+        },
+        {
+          "name": "quorumPercent",
+          "type": "u8",
+          "docs": ["Percentage of voting power required for a proposal to pass as quorum."]
+        },
+        {
+          "name": "maxVotingTime",
+          "type": "u64",
+          "docs": ["Maximum duration in seconds a proposal can remain active before expiration."]
+        }
+      ]
+    },
+    {
+      "name": "createAiAgent",
+      "docs": [
+        "Creates a new AI agent instance for a user within a specific realm.",
+        "The agent can evolve based on user interactions and habits."
+      ],
+      "accounts": [
+        {
+          "name": "agent",
+          "type": "publicKey",
+          "docs": ["The account representing the AI agent, initialized as a PDA."]
+        },
+        {
+          "name": "realm",
+          "type": "publicKey",
+          "docs": ["The governance realm to which this AI agent belongs."]
+        },
+        {
+          "name": "owner",
+          "type": "publicKey",
+          "docs": ["The user or wallet owning this AI agent."]
+        },
+        {
+          "name": "payer",
+          "type": "publicKey",
+          "docs": ["The account paying for the agent creation transaction."]
+        },
+        {
+          "name": "systemProgram",
+          "type": "publicKey",
+          "docs": ["The Solana system program for account creation."]
+        }
+      ],
+      "args": [
+        {
+          "name": "agentId",
+          "type": "string",
+          "docs": ["Unique identifier for the AI agent, set by the user."]
+        },
+        {
+          "name": "initialBehavior",
+          "type": "string",
+          "docs": ["Initial behavior or personality trait of the AI agent."]
+        },
+        {
+          "name": "modelVersion",
+          "type": "u16",
+          "docs": ["Version number of the AI model used for this agent."]
+        }
+      ]
+    },
+    {
+      "name": "evolveAiAgent",
+      "docs": [
+        "Updates an AI agent's state based on user interactions or habits.",
+        "This represents a chapter in the agent's story or evolution."
+      ],
+      "accounts": [
+        {
+          "name": "agent",
+          "type": "publicKey",
+          "docs": ["The AI agent account to be updated."]
+        },
+        {
+          "name": "owner",
+          "type": "publicKey",
+          "docs": ["The owner of the AI agent, authorized to trigger evolution."]
+        }
+      ],
+      "args": [
+        {
+          "name": "newBehavior",
+          "type": "string",
+          "docs": ["Updated behavior or trait after evolution."]
+        },
+        {
+          "name": "chapterId",
+          "type": "u32",
+          "docs": ["Identifier for the evolution chapter or story milestone."]
+        },
+        {
+          "name": "interactionCount",
+          "type": "u64",
+          "docs": ["Number of interactions leading to this evolution."]
+        }
+      ]
+    },
+    {
+      "name": "createProposal",
+      "docs": [
+        "Creates a new governance proposal within a realm for community voting.",
+        "Proposals can influence AI agent rules or realm parameters."
+      ],
+      "accounts": [
+        {
+          "name": "proposal",
+          "type": "publicKey",
+          "docs": ["The account representing the proposal, initialized as a PDA."]
+        },
+        {
+          "name": "realm",
+          "type": "publicKey",
+          "docs": ["The governance realm associated with this proposal."]
+        },
+        {
+          "name": "proposer",
+          "type": "publicKey",
+          "docs": ["The user or agent proposing the change."]
+        },
+        {
+          "name": "payer",
+          "type": "publicKey",
+          "docs": ["The account paying for the proposal creation."]
+        },
+        {
+          "name": "systemProgram",
+          "type": "publicKey",
+          "docs": ["The Solana system program for account creation."]
+        }
+      ],
+      "args": [
+        {
+          "name": "title",
+          "type": "string",
+          "docs": ["Title or summary of the proposal."]
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "docs": ["Detailed description of the proposal content."]
+        },
+        {
+          "name": "proposalType",
+          "type": {"defined": "ProposalType"},
+          "docs": ["Type of proposal, e.g., parameter change or agent policy."]
+        }
+      ]
+    },
+    {
+      "name": "voteOnProposal",
+      "docs": [
+        "Casts a vote on an active proposal within a realm.",
+        "Voting power is determined by token holdings or other metrics."
+      ],
+      "accounts": [
+        {
+          "name": "vote",
+          "type": "publicKey",
+          "docs": ["The account representing the vote, initialized as a PDA."]
+        },
+        {
+          "name": "proposal",
+          "type": "publicKey",
+          "docs": ["The proposal being voted on."]
+        },
+        {
+          "name": "voter",
+          "type": "publicKey",
+          "docs": ["The user or agent casting the vote."]
+        },
+        {
+          "name": "realm",
+          "type": "publicKey",
+          "docs": ["The governance realm associated with the proposal."]
+        },
+        {
+          "name": "payer",
+          "type": "publicKey",
+          "docs": ["The account paying for the vote transaction."]
+        },
+        {
+          "name": "systemProgram",
+          "type": "publicKey",
+          "docs": ["The Solana system program for account creation."]
+        }
+      ],
+      "args": [
+        {
+          "name": "voteChoice",
+          "type": {"defined": "VoteChoice"},
+          "docs": ["The voter's choice, e.g., approve or reject."]
+        },
+        {
+          "name": "votingPower",
+          "type": "u64",
+          "docs": ["The voting power of the voter, typically based on token holdings."]
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Realm",
+      "docs": ["Represents a governance realm for Ontora AI communities."],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string",
+            "docs": ["Name of the realm for identification."]
+          },
+          {
+            "name": "authority",
+            "type": "publicKey",
+            "docs": ["Current authority controlling the realm."]
+          },
+          {
+            "name": "minVotingPower",
+            "type": "u64",
+            "docs": ["Minimum voting power required to participate in governance."]
+          },
+          {
+            "name": "votingPeriod",
+            "type": "u64",
+            "docs": ["Default voting period for proposals in seconds."]
+          },
+          {
+            "name": "quorumPercent",
+            "type": "u8",
+            "docs": ["Quorum percentage required for proposals to pass."]
+          },
+          {
+            "name": "maxVotingTime",
+            "type": "u64",
+            "docs": ["Maximum time a proposal can remain active in seconds."]
+          },
+          {
+            "name": "proposalCount",
+            "type": "u64",
+            "docs": ["Total number of proposals created in this realm."]
+          },
+          {
+            "name": "agentCount",
+            "type": "u64",
+            "docs": ["Total number of AI agents registered in this realm."]
+          }
+        ]
+      }
+    },
+    {
+      "name": "AiAgent",
+      "docs": ["Represents an AI agent owned by a user, capable of evolving over time."],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "agentId",
+            "type": "string",
+            "docs": ["Unique identifier for the AI agent."]
+          },
+          {
+            "name": "owner",
+            "type": "publicKey",
+            "docs": ["The user or wallet owning this AI agent."]
+          },
+          {
+            "name": "realm",
+            "type": "publicKey",
+            "docs": ["The governance realm this agent belongs to."]
+          },
+          {
+            "name": "currentBehavior",
+            "type": "string",
+            "docs": ["Current behavior or personality trait of the agent."]
+          },
+          {
+            "name": "modelVersion",
+            "type": "u16",
+            "docs": ["Version of the AI model used by this agent."]
+          },
+          {
+            "name": "chapterCount",
+            "type": "u32",
+            "docs": ["Number of evolution chapters or story milestones."]
+          },
+          {
+            "name": "lastEvolutionTimestamp",
+            "type": "i64",
+            "docs": ["Timestamp of the last evolution update."]
+          },
+          {
+            "name": "interactionCount",
+            "type": "u64",
+            "docs": ["Total number of user interactions with this agent."]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Proposal",
+      "docs": ["Represents a governance proposal for community voting."],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "title",
+            "type": "string",
+            "docs": ["Title or summary of the proposal."]
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "docs": ["Detailed description of the proposal content."]
+          },
+          {
+            "name": "proposer",
+            "type": "publicKey",
+            "docs": ["The user or agent who created the proposal."]
+          },
+          {
+            "name": "realm",
+            "type": "publicKey",
+            "docs": ["The governance realm associated with this proposal."]
+          },
+          {
+            "name": "proposalType",
+            "type": {"defined": "ProposalType"},
+            "docs": ["Type of proposal, e.g., parameter update or policy change."]
+          },
+          {
+            "name": "state",
+            "type": {"defined": "ProposalState"},
+            "docs": ["Current state of the proposal, e.g., active or completed."]
+          },
+          {
+            "name": "createdAt",
+            "type": "i64",
+            "docs": ["Timestamp when the proposal was created."]
+          },
+          {
+            "name": "expiresAt",
+            "type": "i64",
+            "docs": ["Timestamp when the proposal expires."]
+          },
+          {
+            "name": "totalVotingPower",
+            "type": "u64",
+            "docs": ["Total voting power cast on this proposal."]
+          },
+          {
+            "name": "approveVotingPower",
+            "type": "u64",
+            "docs": ["Voting power in favor of the proposal."]
+          },
+          {
+            "name": "rejectVotingPower",
+            "type": "u64",
+            "docs": ["Voting power against the proposal."]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vote",
+      "docs": ["Represents a vote cast by a user or agent on a proposal."],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "voter",
+            "type": "publicKey",
+            "docs": ["The user or agent who cast this vote."]
+          },
+          {
+            "name": "proposal",
+            "type": "publicKey",
+            "docs": ["The proposal this vote is associated with."]
+          },
+          {
+            "name": "voteChoice",
+            "type": {"defined": "VoteChoice"},
+            "docs": ["The choice made by the voter, e.g., approve or reject."]
+          },
+          {
+            "name": "votingPower",
+            "type": "u64",
+            "docs": ["The voting power of this vote, based on token holdings or other metrics."]
+          },
+          {
+            "name": "timestamp",
+            "type": "i64",
+            "docs": ["Timestamp when the vote was cast."]
+          }
+        ]
+      }
+    }
+  ],
+  "types": [
+    {
+      "name": "ProposalType",
+      "docs": ["Defines the type of governance proposal."],
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "RealmParameterUpdate",
+            "docs": ["Proposal to update realm parameters like quorum or voting period."]
+          },
+          {
+            "name": "AiAgentPolicy",
+            "docs": ["Proposal to define or update policies for AI agent behavior or evolution."]
+          },
+          {
+            "name": "CommunityFundAllocation",
+            "docs": ["Proposal to allocate community funds or resources."]
+          },
+          {
+            "name": "Other",
+            "docs": ["Catch-all for other types of proposals."]
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProposalState",
+      "docs": ["Defines the current state of a governance proposal."],
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Draft",
+            "docs": ["Proposal is in draft state, not yet active for voting."]
+          },
+          {
+            "name": "Active",
+            "docs": ["Proposal is active and open for voting."]
+          },
+          {
+            "name": "Succeeded",
+            "docs": ["Proposal has passed with sufficient votes."]
+          },
+          {
+            "name": "Failed",
+            "docs": ["Proposal did not pass due to insufficient votes or quorum."]
+          },
+          {
+            "name": "Expired",
+            "docs": ["Proposal has exceeded its maximum voting time without resolution."]
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoteChoice",
+      "docs": ["Defines the possible choices for voting on a proposal."],
+      "type": {
+        "kind": "enum",
+        "variants": [
+          {
+            "name": "Approve",
+            "docs": ["Vote in favor of the proposal."]
+          },
+          {
+            "name": "Reject",
+            "docs": ["Vote against the proposal."]
+          },
+          {
+            "name": "Abstain",
+            "docs": ["Abstain from voting, neither for nor against."]
+          }
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "RealmInitialized",
+      "fields": [
+        {
+          "name": "realm",
+          "type": "publicKey",
+          "index": true,
+          "docs": ["The public key of the initialized realm."]
+        },
+        {
+          "name": "authority",
+          "type": "publicKey",
+          "index": false,
+          "docs": ["The initial authority of the realm."]
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "index": false,
+          "docs": ["The name of the realm."]
+        }
+      ]
+    },
+    {
+      "name": "AiAgentCreated",
+      "fields": [
+        {
+          "name": "agent",
+          "type": "publicKey",
+          "index": true,
+          "docs": ["The public key of the created AI agent."]
+        },
+        {
+          "name": "owner",
+          "type": "publicKey",
+          "index": true,
+          "docs": ["The owner of the AI agent."]
+        },
+        {
+          "name": "realm",
+          "type": "publicKey",
+          "index": false,
+          "docs": ["The realm associated with the agent."]
+        },
+        {
+          "name": "agentId",
+          "type": "string",
+          "index": false,
+          "docs": ["The unique identifier of the agent."]
+        }
+      ]
+    },
+    {
+      "name": "AiAgentEvolved",
+      "fields": [
+        {
+          "name": "agent",
+          "type": "publicKey",
+          "index": true,
+          "docs": ["The public key of the evolved AI agent."]
+        },
+        {
+          "name": "chapterId",
+          "type": "u32",
+          "index": false,
+          "docs": ["The chapter or milestone of evolution."]
+        },
+        {
+          "name": "newBehavior",
+          "type": "string",
+          "index": false,
+          "docs": ["The updated behavior after evolution."]
+        }
+      ]
+    },
+    {
+      "name": "ProposalCreated",
+      "fields": [
+        {
+          "name": "proposal",
+          "type": "publicKey",
+          "index": true,
+          "docs": ["The public key of the created proposal."]
+        },
+        {
+          "name": "realm",
+          "type": "publicKey",
+          "index": true,
+          "docs": ["The realm associated with the proposal."]
+        },
+        {
+          "name": "proposer",
+          "type": "publicKey",
+          "index": false,
+          "docs": ["The proposer of the change."]
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "index": false,
+          "docs": ["The title of the proposal."]
+        }
+      ]
+    },
+    {
+      "name": "VoteCast",
+      "fields": [
+        {
+          "name": "vote",
+          "type": "publicKey",
+          "index": true,
+          "docs": ["The public key of the cast vote."]
+        },
+        {
+          "name": "proposal",
+          "type": "publicKey",
+          "index": true,
+          "docs": ["The proposal voted on."]
+        },
+        {
+          "name": "voter",
+          "type": "publicKey",
+          "index": true,
+          "docs": ["The voter casting the vote."]
+        },
+        {
+          "name": "voteChoice",
+          "type": {"defined": "VoteChoice"},
+          "index": false,
+          "docs": ["The choice made by the voter."]
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "Unauthorized",
+      "msg": "The caller is not authorized to perform this action."
+    },
+    {
+      "code": 6001,
+      "name": "InvalidRealm",
+      "msg": "The specified realm does not exist or is invalid."
+    },
+    {
+      "code": 6002,
+      "name": "InvalidAgent",
+      "msg": "The specified AI agent does not exist or is invalid."
+    },
+    {
+      "code": 6003,
+      "name": "InvalidProposal",
+      "msg": "The specified proposal does not exist or is invalid."
+    },
+    {
+      "code": 6004,
+      "name": "ProposalNotActive",
+      "msg": "The proposal is not in an active state for voting."
+    },
+    {
+      "code": 6005,
+      "name": "InsufficientVotingPower",
+      "msg": "The voter does not have sufficient voting power to participate."
+    },
+    {
+      "code": 6006,
+      "name": "AlreadyVoted",
+      "msg": "The voter has already cast a vote on this proposal."
+    },
+    {
+      "code": 6007,
+      "name": "InvalidParameters",
+      "msg": "One or more parameters provided are invalid or out of range."
+    },
+    {
+      "code": 6008,
+      "name": "RealmAlreadyInitialized",
+      "msg": "The realm has already been initialized and cannot be reinitialized."
+    },
+    {
+      "code": 6009,
+      "name": "AgentLimitReached",
+      "msg": "The maximum number of AI agents for this realm or user has been reached."
+    }
+  ],
+  "metadata": {
+    "address": "PlaceholderProgramId",
+    "docs": [
+      "Ontora AI is a decentralized platform on Solana for creating and managing autonomous AI agents.",
+      "Users can build AI communities within governance realms, evolve agents based on habits, and participate in governance."
+    ]
+  }
+}
