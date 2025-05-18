@@ -1,0 +1,363 @@
+{
+  "general": {
+    "platformName": "Ontora AI Marketplace",
+    "version": "1.0.0",
+    "description": "Marketplace configuration for Ontora AI on Solana network",
+    "environment": "development", // Options: development, testing, production
+    "enabled": true, // Enable marketplace module
+    "network": "devnet" // Options: mainnet, testnet, devnet
+  },
+  "fees": {
+    "enabled": true, // Enable marketplace fees
+    "transaction": {
+      "seller": {
+        "percentage": 2.5, // Percentage fee charged to seller per transaction (2.5%)
+        "fixed": 0.01, // Fixed fee in base token per transaction
+        "token": "SOL", // Token used for fixed fee
+        "min": 0.005, // Minimum fee per transaction
+        "max": 5.0 // Maximum fee per transaction
+      },
+      "buyer": {
+        "percentage": 1.0, // Percentage fee charged to buyer per transaction (1.0%)
+        "fixed": 0.005, // Fixed fee in base token per transaction
+        "token": "SOL", // Token used for fixed fee
+        "min": 0.002, // Minimum fee per transaction
+        "max": 2.0 // Maximum fee per transaction
+      }
+    },
+    "listing": {
+      "enabled": true, // Enable listing fees
+      "cost": {
+        "amount": 0.1, // Cost to list an item in base token
+        "token": "ONT", // Token used for listing fee (Ontora Token)
+        "burn": false, // Burn the listing fee (true) or send to treasury (false)
+        "refundOnDelisting": false // Refund listing fee if item is delisted without sale
+      },
+      "durationBased": {
+        "enabled": true, // Enable duration-based listing fees
+        "rates": {
+          "7days": 0.05, // Fee for 7-day listing
+          "30days": 0.15, // Fee for 30-day listing
+          "90days": 0.3 // Fee for 90-day listing
+        }
+      }
+    },
+    "royalty": {
+      "enabled": true, // Enable royalty fees for creators
+      "defaultPercentage": 5.0, // Default royalty percentage on secondary sales (5%)
+      "maxPercentage": 10.0, // Maximum royalty percentage allowed
+      "distribution": {
+        "creator": 80, // Percentage of royalty going to original creator (80%)
+        "platform": 20 // Percentage of royalty going to platform (20%)
+      }
+    },
+    "treasury": {
+      "address": "${TREASURY_WALLET_ADDRESS}", // Placeholder for treasury wallet address
+      "feeDistribution": {
+        "operations": 50, // Percentage of fees allocated to platform operations (50%)
+        "development": 30, // Percentage of fees allocated to development (30%)
+        "community": 20 // Percentage of fees allocated to community rewards (20%)
+      }
+    }
+  },
+  "listingRules": {
+    "enabled": true, // Enable listing rules enforcement
+    "requirements": {
+      "account": {
+        "verified": true, // Require verified accounts to list items
+        "minAgeDays": 7, // Minimum account age in days to list items
+        "minTokenHolding": {
+          "enabled": true, // Require minimum token holding for listing
+          "amount": 10, // Minimum amount of tokens required
+          "token": "ONT" // Token required for holding (Ontora Token)
+        }
+      },
+      "item": {
+        "maxListingsPerUser": 50, // Maximum active listings per user
+        "maxPrice": 10000, // Maximum price per item in base token (SOL)
+        "minPrice": 0.01, // Minimum price per item in base token (SOL)
+        "maxDurationDays": 90, // Maximum listing duration in days
+        "minDurationDays": 1 // Minimum listing duration in days
+      }
+    },
+    "content": {
+      "maxTitleLength": 100, // Maximum characters for listing title
+      "maxDescriptionLength": 1000, // Maximum characters for listing description
+      "maxImages": 5, // Maximum number of images per listing
+      "minImages": 1, // Minimum number of images per listing
+      "allowedImageFormats": [ // Allowed image formats for listings
+        "jpg",
+        "jpeg",
+        "png",
+        "webp"
+      ],
+      "maxImageSizeBytes": 5242880, // Maximum image size in bytes (5MB)
+      "prohibitedKeywords": [ // Keywords not allowed in listings
+        "illegal",
+        "prohibited",
+        "restricted"
+      ]
+    },
+    "moderation": {
+      "enabled": true, // Enable moderation for listings
+      "autoReview": {
+        "enabled": true, // Enable automatic review of listings
+        "flaggingThreshold": 3, // Number of user reports before auto-flagging for review
+        "aiModeration": true // Use AI for content moderation
+      },
+      "manualReview": {
+        "enabled": true, // Enable manual review by moderators
+        "reviewTimeHours": 48, // Maximum time in hours for manual review
+        "appeal": {
+          "enabled": true, // Allow users to appeal moderation decisions
+          "appealWindowDays": 7, // Time window in days to file an appeal
+          "appealFee": {
+            "amount": 1, // Fee to file an appeal in base token
+            "token": "ONT", // Token used for appeal fee
+            "refundOnSuccess": true // Refund appeal fee if appeal is successful
+          }
+        }
+      },
+      "penalties": {
+        "enabled": true, // Enable penalties for rule violations
+        "warningCountBeforeBan": 3, // Number of warnings before temporary ban
+        "tempBanDurationDays": 7, // Duration of temporary ban in days
+        "permanentBanThreshold": 5 // Number of violations before permanent ban
+      }
+    }
+  },
+  "categories": {
+    "enabled": true, // Enable categorization of listings
+    "list": [
+      {
+        "id": "ai-models",
+        "name": "AI Models",
+        "description": "Custom AI models for Web3 applications",
+        "enabled": true,
+        "subcategories": [
+          {
+            "id": "autonomous-agents",
+            "name": "Autonomous Agents",
+            "enabled": true
+          },
+          {
+            "id": "predictive-models",
+            "name": "Predictive Models",
+            "enabled": true
+          }
+        ],
+        "restrictions": {
+          "maxPrice": 5000, // Maximum price for items in this category
+          "minPrice": 0.1, // Minimum price for items in this category
+          "requiresVerification": true // Require additional verification for listings
+        }
+      },
+      {
+        "id": "digital-assets",
+        "name": "Digital Assets",
+        "description": "NFTs and other digital collectibles",
+        "enabled": true,
+        "subcategories": [
+          {
+            "id": "nfts",
+            "name": "NFTs",
+            "enabled": true
+          },
+          {
+            "id": "game-assets",
+            "name": "Game Assets",
+            "enabled": true
+          }
+        ],
+        "restrictions": {
+          "maxPrice": 10000, // Maximum price for items in this category
+          "minPrice": 0.05, // Minimum price for items in this category
+          "requiresVerification": false // No additional verification required
+        }
+      },
+      {
+        "id": "services",
+        "name": "Services",
+        "description": "Web3 and AI-related services",
+        "enabled": true,
+        "subcategories": [
+          {
+            "id": "consulting",
+            "name": "Consulting",
+            "enabled": true
+          },
+          {
+            "id": "development",
+            "name": "Development",
+            "enabled": true
+          }
+        ],
+        "restrictions": {
+          "maxPrice": 2000, // Maximum price for services
+          "minPrice": 1, // Minimum price for services
+          "requiresVerification": true // Require additional verification for listings
+        }
+      }
+    ],
+    "settings": {
+      "maxCategoriesPerListing": 2, // Maximum categories a listing can be tagged with
+      "allowCustomCategories": false, // Allow users to suggest custom categories
+      "categoryChangeFee": {
+        "enabled": false, // Enable fee for changing listing category
+        "amount": 0.05, // Fee amount for category change
+        "token": "ONT" // Token used for category change fee
+      }
+    }
+  },
+  "payments": {
+    "enabled": true, // Enable payment processing
+    "acceptedTokens": [
+      {
+        "symbol": "SOL",
+        "name": "Solana",
+        "address": "${SOL_TOKEN_ADDRESS}", // Placeholder for SOL token address
+        "decimals": 9, // Decimal places for token precision
+        "enabled": true // Enable this token for payments
+      },
+      {
+        "symbol": "ONT",
+        "name": "Ontora Token",
+        "address": "${ONT_TOKEN_ADDRESS}", // Placeholder for Ontora Token address
+        "decimals": 9, // Decimal places for token precision
+        "enabled": true // Enable this token for payments
+      },
+      {
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "address": "${USDC_TOKEN_ADDRESS}", // Placeholder for USDC token address on Solana
+        "decimals": 6, // Decimal places for token precision
+        "enabled": true // Enable this token for payments
+      }
+    ],
+    "escrow": {
+      "enabled": true, // Enable escrow for transactions
+      "releaseConditions": {
+        "buyerConfirmation": true, // Require buyer confirmation for release
+        "timeout": {
+          "enabled": true, // Enable timeout for escrow release
+          "duration": 604800 // Timeout duration in seconds (7 days)
+        },
+        "dispute": {
+          "enabled": true, // Enable dispute resolution for escrow
+          "resolutionTimeDays": 14, // Time in days for dispute resolution
+          "arbitrationFee": {
+            "amount": 1, // Fee for arbitration in base token
+            "token": "SOL", // Token used for arbitration fee
+            "split": {
+              "buyer": 50, // Percentage paid by buyer if dispute is filed
+              "seller": 50 // Percentage paid by seller if dispute is filed
+            }
+          }
+        }
+      },
+      "escrowWallet": "${ESCROW_WALLET_ADDRESS}" // Placeholder for escrow wallet address
+    },
+    "refunds": {
+      "enabled": true, // Enable refund policies
+      "windowDays": 7, // Refund window in days after purchase
+      "conditions": {
+        "itemNotAsDescribed": true, // Allow refund if item not as described
+        "itemNotReceived": true, // Allow refund if item not received
+        "buyerRemorse": false // Allow refund for buyer's remorse
+      },
+      "fee": {
+        "enabled": true, // Charge fee for processing refunds
+        "percentage": 2.0, // Percentage fee for refunds (2%)
+        "min": 0.01, // Minimum refund fee in base token
+        "token": "SOL" // Token used for refund fee
+      }
+    }
+  },
+  "ratings": {
+    "enabled": true, // Enable user and item ratings
+    "user": {
+      "minTransactionsForRating": 3, // Minimum transactions before a user can be rated
+      "ratingScale": {
+        "min": 1, // Minimum rating value
+        "max": 5 // Maximum rating value
+      },
+      "review": {
+        "maxLength": 500, // Maximum characters for user review
+        "moderation": true // Enable moderation for user reviews
+      }
+    },
+    "item": {
+      "ratingScale": {
+        "min": 1, // Minimum rating value
+        "max": 5 // Maximum rating value
+      },
+      "review": {
+        "maxLength": 1000, // Maximum characters for item review
+        "moderation": true, // Enable moderation for item reviews
+        "images": {
+          "enabled": true, // Allow images in item reviews
+          "maxImages": 3, // Maximum images per review
+          "maxImageSizeBytes": 3145728 // Maximum image size in bytes (3MB)
+        }
+      }
+    }
+  },
+  "security": {
+    "authentication": {
+      "walletConnect": true, // Require wallet connection for marketplace access
+      "twoFactor": {
+        "enabled": false, // Enable two-factor authentication
+        "methods": [ // Supported 2FA methods
+          "email",
+          "authenticatorApp"
+        ]
+      }
+    },
+    "rateLimiting": {
+      "enabled": true, // Enable rate limiting for marketplace actions
+      "maxListingsPerHour": 5, // Maximum listings per user per hour
+      "maxPurchasesPerHour": 10, // Maximum purchases per user per hour
+      "maxApiCallsPerMinute": 60 // Maximum API calls per user per minute
+    },
+    "audit": {
+      "enabled": true, // Enable audit logging for marketplace actions
+      "logLevel": "standard", // Options: minimal, standard, detailed
+      "retentionPeriod": 31536000 // Retention period for audit logs in seconds (1 year)
+    }
+  },
+  "rewards": {
+    "enabled": true, // Enable rewards for marketplace participation
+    "seller": {
+      "milestone": {
+        "enabled": true, // Enable milestone rewards for sellers
+        "levels": [
+          {
+            "sales": 10, // Number of sales to reach milestone
+            "reward": 5, // Reward amount in tokens
+            "token": "ONT" // Token used for reward
+          },
+          {
+            "sales": 50, // Number of sales to reach milestone
+            "reward": 20, // Reward amount in tokens
+            "token": "ONT" // Token used for reward
+          }
+        ]
+      }
+    },
+    "buyer": {
+      "loyalty": {
+        "enabled": true, // Enable loyalty rewards for buyers
+        "pointsPerPurchase": 1, // Points earned per purchase
+        "redemption": {
+          "enabled": true, // Enable point redemption
+          "rate": 10, // Points required for 1 token reward
+          "token": "ONT" // Token used for redemption reward
+        }
+      }
+    },
+    "distribution": {
+      "frequency": 604800, // Reward distribution frequency in seconds (7 days)
+      "poolPercentage": 1.5 // Percentage of token pool allocated for rewards (1.5%)
+    }
+  }
+}
