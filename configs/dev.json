@@ -1,0 +1,227 @@
+{
+  "environment": {
+    "name": "development",
+    "mode": "dev",
+    "debug": true,
+    "verbose": true,
+    "strictMode": false
+  },
+  "server": {
+    "host": "localhost",
+    "port": 3000,
+    "apiBasePath": "/api/v1",
+    "cors": {
+      "enabled": true,
+      "allowedOrigins": ["*"],
+      "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+      "allowedHeaders": ["Content-Type", "Authorization", "X-Requested-With"],
+      "maxAge": 86400
+    },
+    "rateLimit": {
+      "enabled": false,
+      "windowMs": 60000,
+      "maxRequests": 100
+    }
+  },
+  "logging": {
+    "level": "debug",
+    "output": {
+      "console": {
+        "enabled": true,
+        "colorize": true,
+        "timestamp": true
+      },
+      "file": {
+        "enabled": true,
+        "path": "./logs/dev.log",
+        "maxSize": "10m",
+        "maxFiles": 5,
+        "rotate": true
+      }
+    },
+    "categories": {
+      "http": {
+        "level": "debug",
+        "enabled": true
+      },
+      "database": {
+        "level": "debug",
+        "enabled": true
+      },
+      "web3": {
+        "level": "debug",
+        "enabled": true
+      },
+      "ai": {
+        "level": "debug",
+        "enabled": true
+      }
+    }
+  },
+  "database": {
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "database": "ontora_ai_dev",
+    "username": "dev_user",
+    "password": "${DB_PASSWORD}", // Use environment variable for sensitive data
+    "synchronize": true, // Set to false in production
+    "logging": true,
+    "connectionPool": {
+      "max": 20,
+      "min": 2,
+      "idleTimeoutMillis": 30000
+    }
+  },
+  "web3": {
+    "network": "solana-devnet",
+    "rpcEndpoint": "https://api.devnet.solana.com",
+    "wallet": {
+      "privateKey": "${WALLET_PRIVATE_KEY}", // Use environment variable for sensitive data
+      "address": "placeholder_address" // Replace dynamically or via env
+    },
+    "smartContract": {
+      "programId": "placeholder_program_id", // Replace with actual Solana program ID
+      "abiPath": "./contracts/abi.json",
+      "debugMode": true
+    },
+    "transaction": {
+      "confirmations": 1,
+      "timeout": 30000,
+      "retryCount": 3
+    }
+  },
+  "ai": {
+    "model": {
+      "type": "local",
+      "path": "./models/ontora_ai_model",
+      "debug": true,
+      "verboseOutput": true
+    },
+    "training": {
+      "enabled": true,
+      "dataPath": "./data/training/dev",
+      "batchSize": 32,
+      "epochs": 10,
+      "logFrequency": 100
+    },
+    "evolution": {
+      "enabled": true,
+      "randomMutationRate": 0.05,
+      "userFeedbackWeight": 0.3,
+      "debugLogs": true
+    }
+  },
+  "frontend": {
+    "devServer": {
+      "host": "localhost",
+      "port": 8080,
+      "hotReload": true,
+      "proxy": {
+        "enabled": true,
+        "target": "http://localhost:3000",
+        "pathRewrite": {
+          "^/api": ""
+        }
+      }
+    },
+    "build": {
+      "sourceMap": true,
+      "minify": false,
+      "debug": true
+    }
+  },
+  "security": {
+    "auth": {
+      "enabled": true,
+      "jwt": {
+        "secret": "${JWT_SECRET}", // Use environment variable for sensitive data
+        "expiresIn": "24h",
+        "issuer": "ontora-ai-dev",
+        "audience": "ontora-ai-users"
+      }
+    },
+    "encryption": {
+      "enabled": true,
+      "key": "${ENCRYPTION_KEY}", // Use environment variable for sensitive data
+      "algorithm": "aes-256-gcm"
+    },
+    "cors": {
+      "enabled": true
+    }
+  },
+  "monitoring": {
+    "enabled": true,
+    "metrics": {
+      "endpoint": "/metrics",
+      "collectDefault": true,
+      "collectCustom": true
+    },
+    "healthCheck": {
+      "endpoint": "/health",
+      "interval": 30000,
+      "timeout": 5000
+    }
+  },
+  "debugTools": {
+    "profiler": {
+      "enabled": true,
+      "outputPath": "./profiles/dev"
+    },
+    "trace": {
+      "enabled": true,
+      "level": "detailed"
+    },
+    "mock": {
+      "enabled": true,
+      "mockWeb3Responses": true,
+      "mockAiResponses": true
+    }
+  },
+  "cache": {
+    "enabled": true,
+    "type": "memory",
+    "ttl": 300,
+    "maxItems": 1000
+  },
+  "queues": {
+    "enabled": true,
+    "type": "redis",
+    "host": "localhost",
+    "port": 6379,
+    "password": "${REDIS_PASSWORD}", // Use environment variable for sensitive data
+    "prefix": "ontora-ai-dev-queue",
+    "retryAttempts": 3,
+    "retryDelay": 5000
+  },
+  "email": {
+    "enabled": false,
+    "provider": "smtp",
+    "host": "smtp.example.com",
+    "port": 587,
+    "username": "${EMAIL_USERNAME}", // Use environment variable for sensitive data
+    "password": "${EMAIL_PASSWORD}", // Use environment variable for sensitive data
+    "from": "dev@ontora-ai.com",
+    "debug": true
+  },
+  "fileStorage": {
+    "type": "local",
+    "basePath": "./storage/dev",
+    "maxFileSize": 10485760, // 10MB
+    "allowedTypes": ["image/jpeg", "image/png", "application/pdf", "text/plain"]
+  },
+  "custom": {
+    "ontoraAi": {
+      "storyChapters": {
+        "enabled": true,
+        "debugMode": true,
+        "logUserInteractions": true
+      },
+      "userAgents": {
+        "localDeployment": true,
+        "maxAgentsPerUser": 5,
+        "debugEvolution": true
+      }
+    }
+  }
+}
