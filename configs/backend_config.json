@@ -1,0 +1,182 @@
+{
+  "general": {
+    "projectName": "Ontora Backend API",
+    "version": "1.0.0",
+    "description": "Configuration for backend API supporting Web3 and AI services on Solana network",
+    "environment": "development", // Options: development, testing, production
+    "debugMode": true, // Enable detailed logging for debugging
+    "logLevel": "debug", // Options: debug, info, warning, error
+    "logPath": "./logs/backend.log", // Path for backend logs
+    "timestampFormat": "YYYY-MM-DD HH:mm:ss" // Format for log timestamps
+  },
+  "server": {
+    "host": "0.0.0.0", // Bind to all network interfaces
+    "port": 8080, // Default API port
+    "baseUrl": "http://localhost:8080", // Base URL for API in development
+    "apiPrefix": "/api/v1", // API endpoint prefix
+    "timeout": 30000, // Request timeout in milliseconds
+    "maxConnections": 1000, // Maximum concurrent connections
+    "cors": {
+      "enabled": true, // Enable Cross-Origin Resource Sharing
+      "allowedOrigins": ["*"], // Allowed origins for CORS (restrict in production)
+      "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allowed HTTP methods
+      "allowedHeaders": ["Content-Type", "Authorization", "X-Requested-With"], // Allowed headers
+      "maxAge": 86400 // CORS preflight cache duration in seconds
+    },
+    "rateLimit": {
+      "enabled": true, // Enable rate limiting to prevent abuse
+      "windowMs": 60000, // Time window in milliseconds (1 minute)
+      "maxRequests": 100 // Max requests per window per IP
+    }
+  },
+  "database": {
+    "primary": {
+      "type": "postgresql", // Options: postgresql, mysql, mongodb, sqlite, etc.
+      "host": "localhost", // Database host
+      "port": 5432, // Database port
+      "database": "ontora_db", // Database name
+      "username": "${DB_USERNAME}", // Placeholder for username (set via env variable)
+      "password": "${DB_PASSWORD}", // Placeholder for password (set via env variable)
+      "ssl": {
+        "enabled": false, // Enable SSL for database connection
+        "ca": "${DB_SSL_CA_PATH}", // Path to SSL CA certificate (if enabled)
+        "cert": "${DB_SSL_CERT_PATH}", // Path to SSL certificate (if enabled)
+        "key": "${DB_SSL_KEY_PATH}" // Path to SSL key (if enabled)
+      },
+      "connectionPool": {
+        "min": 2, // Minimum number of connections in pool
+        "max": 20, // Maximum number of connections in pool
+        "acquireTimeout": 30000, // Timeout for acquiring connection in milliseconds
+        "idleTimeout": 10000 // Timeout for idle connections in milliseconds
+      },
+      "retry": {
+        "enabled": true, // Enable retry on connection failure
+        "maxAttempts": 3, // Maximum retry attempts
+        "delay": 5000 // Delay between retries in milliseconds
+      }
+    },
+    "secondary": {
+      "enabled": false, // Enable secondary database (e.g., for read replicas)
+      "type": "postgresql",
+      "host": "localhost",
+      "port": 5432,
+      "database": "ontora_db_read",
+      "username": "${DB_SECONDARY_USERNAME}",
+      "password": "${DB_SECONDARY_PASSWORD}"
+    }
+  },
+  "cache": {
+    "redis": {
+      "enabled": true, // Enable Redis for caching
+      "host": "localhost", // Redis host
+      "port": 6379, // Redis port
+      "password": "${REDIS_PASSWORD}", // Placeholder for password (set via env variable)
+      "db": 0, // Redis database number
+      "ttl": 3600, // Default Time-To-Live for cached items in seconds
+      "prefix": "ontora:cache:", // Prefix for cache keys
+      "retry": {
+        "enabled": true, // Enable retry on connection failure
+        "maxAttempts": 3, // Maximum retry attempts
+        "delay": 5000 // Delay between retries in milliseconds
+      }
+    },
+    "inMemory": {
+      "enabled": true, // Enable in-memory caching as fallback
+      "maxItems": 1000, // Maximum items to store in memory
+      "ttl": 1800 // Default TTL for in-memory cache in seconds
+    }
+  },
+  "authentication": {
+    "jwt": {
+      "enabled": true, // Enable JSON Web Token authentication
+      "secret": "${JWT_SECRET}", // Placeholder for JWT secret (set via env variable)
+      "expiresIn": "24h", // Token expiration time (e.g., 24h, 1d, 30m)
+      "issuer": "ontora.ai", // Token issuer
+      "audience": "ontora-users", // Token audience
+      "refreshToken": {
+        "enabled": true, // Enable refresh tokens
+        "expiresIn": "7d" // Refresh token expiration time
+      }
+    },
+    "apiKey": {
+      "enabled": false, // Enable API key authentication
+      "header": "X-API-Key", // Header name for API key
+      "keys": ["${API_KEY_1}"] // Placeholder for API keys (set via env variable)
+    }
+  },
+  "security": {
+    "helmet": {
+      "enabled": true // Enable Helmet for HTTP headers security
+    },
+    "csrf": {
+      "enabled": false // Enable Cross-Site Request Forgery protection (if needed)
+    },
+    "contentSecurityPolicy": {
+      "enabled": true, // Enable CSP to prevent XSS attacks
+      "directives": {
+        "defaultSrc": ["'self'"],
+        "scriptSrc": ["'self'"],
+        "styleSrc": ["'self'"],
+        "imgSrc": ["'self'", "data:"],
+        "connectSrc": ["'self'"]
+      }
+    }
+  },
+  "externalServices": {
+    "solanaRpc": {
+      "enabled": true, // Enable Solana RPC connection for Web3 integration
+      "endpoint": "${SOLANA_RPC_ENDPOINT}", // Placeholder for RPC endpoint (set via env variable)
+      "timeout": 10000, // Timeout for RPC requests in milliseconds
+      "retry": {
+        "enabled": true,
+        "maxAttempts": 3,
+        "delay": 2000
+      }
+    },
+    "thirdPartyApi": {
+      "enabled": false, // Enable third-party API integration
+      "baseUrl": "${THIRD_PARTY_API_URL}", // Placeholder for API URL
+      "apiKey": "${THIRD_PARTY_API_KEY}", // Placeholder for API key
+      "timeout": 5000 // Timeout for requests in milliseconds
+    }
+  },
+  "monitoring": {
+    "enabled": true, // Enable monitoring and metrics
+    "metricsEndpoint": "/metrics", // Endpoint for exposing metrics (e.g., for Prometheus)
+    "healthCheck": {
+      "enabled": true, // Enable health check endpoint
+      "endpoint": "/health", // Health check endpoint
+      "checkDatabase": true, // Include database status in health check
+      "checkCache": true // Include cache status in health check
+    }
+  },
+  "fileStorage": {
+    "local": {
+      "enabled": true, // Enable local file storage
+      "basePath": "./uploads", // Base path for storing files
+      "maxFileSize": 5242880 // Max file size in bytes (5MB)
+    },
+    "cloud": {
+      "enabled": false, // Enable cloud storage (e.g., AWS S3, Google Cloud Storage)
+      "provider": "s3", // Options: s3, gcs, azure
+      "bucket": "${CLOUD_STORAGE_BUCKET}", // Placeholder for bucket name
+      "accessKey": "${CLOUD_STORAGE_ACCESS_KEY}", // Placeholder for access key
+      "secretKey": "${CLOUD_STORAGE_SECRET_KEY}", // Placeholder for secret key
+      "region": "${CLOUD_STORAGE_REGION}" // Placeholder for region
+    }
+  },
+  "email": {
+    "enabled": false, // Enable email notifications
+    "provider": "smtp", // Options: smtp, sendgrid, mailgun, etc.
+    "host": "smtp.example.com", // SMTP host
+    "port": 587, // SMTP port
+    "username": "${EMAIL_USERNAME}", // Placeholder for username
+    "password": "${EMAIL_PASSWORD}", // Placeholder for password
+    "from": "no-reply@ontora.ai", // Default sender email
+    "retry": {
+      "enabled": true,
+      "maxAttempts": 3,
+      "delay": 5000
+    }
+  }
+}
