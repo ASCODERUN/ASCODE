@@ -1,0 +1,144 @@
+:root {
+  --primary: #4f46e5;
+  --primary-dark: #4338ca;
+  --secondary: #7c3aed;
+  --background: #0a0a0a;
+  --surface: #1a1a1a;
+  --border: #2d2d2d;
+  --text: #f0f0f0;
+  --text-secondary: #a0a0a0;
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #f59e0b;
+  --transition-speed: 0.3s;
+}
+
+[data-theme="light"] {
+  --background: #f8f9fa;
+  --surface: #ffffff;
+  --border: #e5e7eb;
+  --text: #1f2937;
+  --text-secondary: #6b7280;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+button {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+button:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+button:disabled {
+  background-color: var(--border);
+  cursor: not-allowed;
+}
+
+input, textarea {
+  background-color: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+input:focus, textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+.card {
+  background-color: var(--surface);
+  border-color: var(--border);
+  transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-error {
+  color: var(--error);
+}
+
+.text-warning {
+  color: var(--warning);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-surface {
+  background-color: var(--surface);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body, a, button, input, textarea, .card {
+    transition: none;
+  }
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    --primary: #3b00ff;
+    --primary-dark: #2d00cc;
+    --background: #000000;
+    --surface: #111111;
+    --border: #444444;
+    --text: #ffffff;
+    --text-secondary: #cccccc;
+  }
+
+  [data-theme="light"] {
+    --background: #ffffff;
+    --surface: #eeeeee;
+    --border: #aaaaaa;
+    --text: #000000;
+    --text-secondary: #333333;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
