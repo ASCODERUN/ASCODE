@@ -1,0 +1,254 @@
+{
+  "environment": {
+    "name": "testing",
+    "mode": "test",
+    "debug": true,
+    "verbose": true,
+    "strictMode": false
+  },
+  "server": {
+    "host": "localhost",
+    "port": 3001,
+    "apiBasePath": "/api/v1/test",
+    "cors": {
+      "enabled": true,
+      "allowedOrigins": ["*"],
+      "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+      "allowedHeaders": ["Content-Type", "Authorization", "X-Requested-With"],
+      "maxAge": 86400
+    },
+    "rateLimit": {
+      "enabled": false
+    }
+  },
+  "logging": {
+    "level": "debug",
+    "output": {
+      "console": {
+        "enabled": true,
+        "colorize": true,
+        "timestamp": true
+      },
+      "file": {
+        "enabled": true,
+        "path": "./logs/test.log",
+        "maxSize": "10m",
+        "maxFiles": 5,
+        "rotate": true,
+        "compress": false
+      }
+    },
+    "categories": {
+      "http": {
+        "level": "debug",
+        "enabled": true
+      },
+      "database": {
+        "level": "debug",
+        "enabled": true
+      },
+      "web3": {
+        "level": "debug",
+        "enabled": true
+      },
+      "ai": {
+        "level": "debug",
+        "enabled": true
+      }
+    }
+  },
+  "database": {
+    "type": "sqlite", // Use lightweight in-memory or file-based DB for testing
+    "host": "localhost",
+    "port": 0, // Not applicable for SQLite
+    "database": "./test_data/ontora_ai_test.db", // Isolated test database
+    "username": "", // Not applicable for SQLite
+    "password": "", // Not applicable for SQLite
+    "synchronize": true, // Enabled for testing to auto-create schema
+    "logging": true, // Log database queries for debugging
+    "connectionPool": {
+      "max": 10,
+      "min": 1,
+      "idleTimeoutMillis": 10000
+    },
+    "ssl": {
+      "enabled": false
+    }
+  },
+  "web3": {
+    "network": "solana-testnet", // Use testnet for testing
+    "rpcEndpoint": "${SOLANA_TESTNET_RPC_ENDPOINT}", // Use environment variable for sensitive data
+    "wallet": {
+      "privateKey": "${TEST_WALLET_PRIVATE_KEY}", // Use environment variable for sensitive data
+      "address": "${TEST_WALLET_ADDRESS}" // Use environment variable for sensitive data
+    },
+    "smartContract": {
+      "programId": "${TEST_SOLANA_PROGRAM_ID}", // Use environment variable for sensitive data
+      "abiPath": "./contracts/test_abi.json",
+      "debugMode": true
+    },
+    "transaction": {
+      "confirmations": 1, // Minimal confirmations for faster testing
+      "timeout": 30000,
+      "retryCount": 3
+    },
+    "mock": {
+      "enabled": true, // Enable mock Web3 services for testing
+      "mockRpcResponses": true,
+      "mockTransactionResponses": true,
+      "mockWalletBalance": 1000000, // Mock balance in lamports
+      "responseDelay": 500 // Simulate network delay in milliseconds
+    }
+  },
+  "ai": {
+    "model": {
+      "type": "mock", // Use mock AI model for testing
+      "path": "./test_data/mock_models/ontora_ai_test_model",
+      "debug": true,
+      "verboseOutput": true
+    },
+    "training": {
+      "enabled": true, // Enabled for testing purposes
+      "dataPath": "./test_data/training/test",
+      "batchSize": 16,
+      "epochs": 2, // Minimal epochs for quick tests
+      "logFrequency": 10
+    },
+    "evolution": {
+      "enabled": true,
+      "randomMutationRate": 0.1, // Higher rate for testing scenarios
+      "userFeedbackWeight": 0.8,
+      "debugLogs": true
+    },
+    "mock": {
+      "enabled": true, // Enable mock AI responses
+      "mockPredictionResponses": true,
+      "mockEvolutionResponses": true,
+      "responseDelay": 200 // Simulate processing delay in milliseconds
+    }
+  },
+  "frontend": {
+    "devServer": {
+      "host": "localhost",
+      "port": 8081,
+      "hotReload": true,
+      "proxy": {
+        "enabled": true,
+        "target": "http://localhost:3001"
+      }
+    },
+    "build": {
+      "sourceMap": true, // Enabled for debugging in testing
+      "minify": false,
+      "debug": true
+    }
+  },
+  "security": {
+    "auth": {
+      "enabled": true,
+      "jwt": {
+        "secret": "${TEST_JWT_SECRET}", // Use environment variable for sensitive data
+        "expiresIn": "1h",
+        "issuer": "ontora-ai-test",
+        "audience": "ontora-ai-test-users"
+      }
+    },
+    "encryption": {
+      "enabled": true,
+      "key": "${TEST_ENCRYPTION_KEY}", // Use environment variable for sensitive data
+      "algorithm": "aes-256-gcm"
+    },
+    "cors": {
+      "enabled": true
+    },
+    "helmet": {
+      "enabled": false // Disabled in testing for simplicity
+    }
+  },
+  "monitoring": {
+    "enabled": true,
+    "metrics": {
+      "endpoint": "/test-metrics",
+      "collectDefault": true,
+      "collectCustom": true
+    },
+    "healthCheck": {
+      "endpoint": "/test-health",
+      "interval": 30000,
+      "timeout": 5000
+    }
+  },
+  "debugTools": {
+    "profiler": {
+      "enabled": true, // Enabled for testing performance issues
+      "outputPath": "./profiles/test"
+    },
+    "trace": {
+      "enabled": true,
+      "level": "detailed"
+    },
+    "mock": {
+      "enabled": true,
+      "mockWeb3Responses": true,
+      "mockAiResponses": true
+    }
+  },
+  "cache": {
+    "enabled": true,
+    "type": "memory", // Use in-memory cache for testing
+    "host": "", // Not applicable for in-memory
+    "port": 0, // Not applicable for in-memory
+    "password": "", // Not applicable for in-memory
+    "ttl": 300,
+    "maxItems": 1000
+  },
+  "queues": {
+    "enabled": true,
+    "type": "memory", // Use in-memory queue for testing
+    "host": "", // Not applicable for in-memory
+    "port": 0, // Not applicable for in-memory
+    "password": "", // Not applicable for in-memory
+    "prefix": "ontora-ai-test-queue",
+    "retryAttempts": 2,
+    "retryDelay": 5000
+  },
+  "email": {
+    "enabled": false, // Disable real email sending in testing
+    "provider": "mock",
+    "host": "",
+    "port": 0,
+    "username": "",
+    "password": "",
+    "from": "test-no-reply@ontora-ai.com",
+    "debug": true
+  },
+  "fileStorage": {
+    "type": "local", // Use local storage for testing
+    "endpoint": "",
+    "bucket": "",
+    "accessKey": "",
+    "secretKey": "",
+    "localPath": "./test_data/uploads", // Isolated directory for test files
+    "maxFileSize": 5242880, // 5MB
+    "allowedTypes": ["image/jpeg", "image/png", "application/pdf", "text/plain"]
+  },
+  "custom": {
+    "ontoraAi": {
+      "storyChapters": {
+        "enabled": true,
+        "debugMode": true,
+        "logUserInteractions": true
+      },
+      "userAgents": {
+        "localDeployment": true,
+        "maxAgentsPerUser": 5, // Reduced for testing
+        "debugEvolution": true
+      },
+      "testData": {
+        "useIsolatedData": true,
+        "mockUserInteractions": true,
+        "predefinedStoryPaths": ["test_path_1", "test_path_2", "test_path_3"]
+      }
+    }
+  }
+}
