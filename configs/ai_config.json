@@ -1,0 +1,319 @@
+{
+  "general": {
+    "projectName": "Ontora AI",
+    "version": "1.0.0",
+    "description": "Configuration for AI agents on Solana Web3 network with autonomous evolution capabilities",
+    "environment": "development", // Options: development, testing, production
+    "debugMode": true, // Enable detailed logging for debugging
+    "logLevel": "debug", // Options: debug, info, warning, error
+    "logPath": "./logs/ai_model.log", // Path for AI-related logs
+    "timestampFormat": "YYYY-MM-DD HH:mm:ss" // Format for log timestamps
+  },
+  "model": {
+    "name": "OntoraBaseModel",
+    "type": "transformer", // Options: transformer, rnn, cnn, hybrid, custom
+    "version": "v1.0.0",
+    "architecture": {
+      "layers": 12, // Number of layers in the model
+      "hiddenSize": 768, // Size of hidden states
+      "attentionHeads": 12, // Number of attention heads
+      "dropoutRate": 0.1, // Dropout rate for regularization
+      "activationFunction": "gelu", // Options: relu, gelu, sigmoid, tanh
+      "feedForwardSize": 3072 // Size of feed-forward network
+    },
+    "pretrained": {
+      "enabled": true, // Use pretrained weights if available
+      "modelPath": "${PRETRAINED_MODEL_PATH}", // Use environment variable for path
+      "checkpoint": "${PRETRAINED_CHECKPOINT}", // Use environment variable for checkpoint
+      "loadOnStartup": true // Load pretrained model on initialization
+    },
+    "customization": {
+      "enabled": true, // Allow user-specific customizations
+      "userConfigPath": "./user_configs/model_overrides.json", // Path for user overrides
+      "allowDynamicUpdates": true // Allow runtime updates to model parameters
+    }
+  },
+  "hyperparameters": {
+    "learningRate": 0.00002, // Initial learning rate for training
+    "optimizer": "adamw", // Options: adam, adamw, sgd, rmsprop
+    "optimizerParams": {
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "weightDecay": 0.01,
+      "epsilon": 0.00000001
+    },
+    "batchSize": 32, // Batch size for training
+    "evalBatchSize": 64, // Batch size for evaluation
+    "epochs": 10, // Number of training epochs
+    "gradientClip": {
+      "enabled": true, // Enable gradient clipping to prevent exploding gradients
+      "maxNorm": 1.0 // Maximum norm for gradient clipping
+    },
+    "learningRateScheduler": {
+      "enabled": true, // Use a learning rate scheduler
+      "type": "cosine_annealing", // Options: linear, cosine_annealing, step, plateau
+      "warmupSteps": 1000, // Warmup steps for learning rate
+      "minLearningRate": 0.000001 // Minimum learning rate after decay
+    },
+    "regularization": {
+      "l2Lambda": 0.01, // L2 regularization strength
+      "dropout": 0.1 // Dropout rate applied across layers
+    }
+  },
+  "training": {
+    "enabled": true, // Enable training mode
+    "data": {
+      "datasetPath": "${TRAINING_DATASET_PATH}", // Use environment variable for path
+      "validationSplit": 0.2, // Percentage of data for validation
+      "testSplit": 0.1, // Percentage of data for testing
+      "shuffle": true, // Shuffle dataset before splitting
+      "preprocessing": {
+        "tokenization": {
+          "enabled": true,
+          "tokenizerType": "bert", // Options: bert, gpt, custom
+          "maxLength": 512, // Maximum sequence length
+          "padding": "max_length", // Padding strategy
+          "truncation": true // Truncate sequences longer than max length
+        },
+        "normalization": {
+          "enabled": true,
+          "method": "standardScaler" // Options: standardScaler, minMaxScaler, none
+        },
+        "augmentation": {
+          "enabled": true, // Enable data augmentation
+          "techniques": ["synonym_replacement", "random_deletion", "random_swap"],
+          "augmentationRate": 0.3 // Percentage of data to augment
+        }
+      }
+    },
+    "distributed": {
+      "enabled": false, // Enable distributed training
+      "backend": "nccl", // Options: nccl, gloo, mpi
+      "worldSize": 4, // Number of processes for distributed training
+      "rank": 0, // Rank of the current process
+      "masterAddr": "${MASTER_ADDR}", // Use environment variable for master address
+      "masterPort": "${MASTER_PORT}" // Use environment variable for master port
+    },
+    "checkpointing": {
+      "enabled": true, // Save model checkpoints during training
+      "savePath": "./checkpoints/ontora_ai", // Path to save checkpoints
+      "saveInterval": 1, // Save checkpoint every N epochs
+      "maxCheckpoints": 5, // Maximum number of checkpoints to keep
+      "saveBestOnly": true, // Save only the best model based on validation loss
+      "metricToMonitor": "validation_loss" // Metric to monitor for best model
+    },
+    "earlyStopping": {
+      "enabled": true, // Enable early stopping
+      "patience": 3, // Number of epochs with no improvement before stopping
+      "minDelta": 0.001, // Minimum change to qualify as improvement
+      "monitor": "validation_loss" // Metric to monitor for early stopping
+    },
+    "logging": {
+      "enabled": true, // Enable training logs
+      "logInterval": 100, // Log every N steps
+      "logMetrics": ["loss", "accuracy", "validation_loss", "validation_accuracy"],
+      "tensorboard": {
+        "enabled": true, // Enable TensorBoard logging
+        "logDir": "./logs/tensorboard" // Directory for TensorBoard logs
+      }
+    },
+    "hardware": {
+      "device": "cuda", // Options: cpu, cuda, mps
+      "multiGpu": false, // Enable multi-GPU training
+      "precision": "fp16", // Options: fp32, fp16, bf16 (bfloat16)
+      "maxMemoryAllocation": "80%" // Limit GPU memory usage
+    }
+  },
+  "inference": {
+    "enabled": true, // Enable inference mode
+    "modelPath": "${INFERENCE_MODEL_PATH}", // Use environment variable for model path
+    "batchSize": 16, // Batch size for inference
+    "device": "cuda", // Options: cpu, cuda, mps
+    "precision": "fp16", // Options: fp32, fp16, bf16
+    "maxSequenceLength": 512, // Maximum sequence length for input
+    "output": {
+      "format": "json", // Options: json, text, binary
+      "savePath": "./inference_outputs", // Path to save inference results
+      "logPredictions": true // Log predictions for debugging
+    },
+    "optimization": {
+      "enabled": true, // Enable inference optimizations
+      "useTorchScript": true, // Convert model to TorchScript for faster inference
+      "useOnnx": false, // Export model to ONNX format
+      "quantization": {
+        "enabled": true, // Enable quantization for reduced model size
+        "type": "dynamic" // Options: dynamic, static
+      }
+    }
+  },
+  "evolution": {
+    "enabled": true, // Enable AI agent evolution based on user habits
+    "mechanism": {
+      "type": "genetic", // Options: genetic, reinforcement, hybrid
+      "populationSize": 10, // Number of agent variants per generation
+      "mutationRate": 0.05, // Rate of random mutations in hyperparameters
+      "crossoverRate": 0.7, // Rate of crossover between agent variants
+      "selectionMethod": "tournament", // Options: tournament, roulette, random
+      "tournamentSize": 3 // Size of tournament for selection
+    },
+    "fitness": {
+      "metrics": ["userEngagement", "taskCompletionRate", "responseTime"],
+      "weights": [0.5, 0.3, 0.2], // Weights for each fitness metric
+      "logFitness": true, // Log fitness scores for analysis
+      "fitnessLogPath": "./logs/evolution_fitness.log"
+    },
+    "storyChapters": {
+      "enabled": true, // Enable story-based evolution chapters
+      "chapterTriggers": {
+        "userInteractionThreshold": 100, // Interactions needed to unlock new chapter
+        "performanceThreshold": 0.8 // Minimum fitness score for chapter progression
+      },
+      "chapterLogPath": "./logs/story_chapters.log", // Log story progression
+      "maxChapters": 5 // Maximum number of story chapters per agent
+    },
+    "localDeployment": {
+      "enabled": true, // Enable local deployment for user-specific evolution
+      "userDataPath": "${USER_DATA_PATH}", // Use environment variable for path
+      "syncInterval": 86400, // Sync evolved models with central server every 24 hours (in seconds)
+      "backup": {
+        "enabled": true, // Enable backups of evolved models
+        "backupPath": "./backups/evolved_models", // Path for backups
+        "backupInterval": 604800 // Backup every 7 days (in seconds)
+      }
+    }
+  },
+  "data": {
+    "storage": {
+      "type": "local", // Options: local, s3, ipfs, solana
+      "localPath": "${LOCAL_DATA_PATH}", // Use environment variable for path
+      "ipfs": {
+        "enabled": false, // Enable IPFS for decentralized storage
+        "gateway": "${IPFS_GATEWAY}", // Use environment variable for gateway
+        "pinningService": "${IPFS_PINNING_SERVICE}" // Use environment variable
+      },
+      "solana": {
+        "enabled": false, // Enable Solana for on-chain data storage
+        "programId": "${SOLANA_DATA_PROGRAM_ID}", // Use environment variable
+        "storageAccount": "${SOLANA_STORAGE_ACCOUNT}" // Use environment variable
+      }
+    },
+    "privacy": {
+      "enabled": true, // Enable data privacy measures
+      "anonymization": {
+        "enabled": true, // Anonymize user data
+        "method": "hashing" // Options: hashing, encryption, masking
+      },
+      "encryption": {
+        "enabled": true, // Encrypt sensitive data
+        "algorithm": "aes-256-gcm", // Encryption algorithm
+        "key": "${DATA_ENCRYPTION_KEY}" // Use environment variable for key
+      }
+    },
+    "retention": {
+      "enabled": true, // Enable data retention policy
+      "maxAgeDays": 90, // Retain data for 90 days
+      "autoPurge": true // Automatically purge old data
+    }
+  },
+  "deployment": {
+    "type": "local", // Options: local, cloud, edge, hybrid
+    "local": {
+      "enabled": true, // Enable local deployment for user-specific agents
+      "port": 8080, // Port for local API server
+      "host": "localhost", // Host for local deployment
+      "maxConcurrentRequests": 100 // Limit concurrent requests to prevent overload
+    },
+    "cloud": {
+      "enabled": false, // Enable cloud deployment
+      "provider": "aws", // Options: aws, gcp, azure, custom
+      "endpoint": "${CLOUD_ENDPOINT}", // Use environment variable for endpoint
+      "credentials": {
+        "accessKey": "${CLOUD_ACCESS_KEY}", // Use environment variable
+        "secretKey": "${CLOUD_SECRET_KEY}" // Use environment variable
+      }
+    },
+    "edge": {
+      "enabled": false, // Enable edge deployment for low-latency inference
+      "edgeNodes": "${EDGE_NODES_LIST}", // Use environment variable for node list
+      "syncInterval": 3600 // Sync with edge nodes every hour (in seconds)
+    },
+    "scaling": {
+      "enabled": true, // Enable auto-scaling for deployment
+      "minInstances": 1, // Minimum number of instances
+      "maxInstances": 10, // Maximum number of instances
+      "targetCpuUsage": 70, // Target CPU usage percentage for scaling
+      "cooldownPeriod": 300 // Cooldown period between scaling actions (in seconds)
+    }
+  },
+  "monitoring": {
+    "enabled": true, // Enable monitoring of AI model performance
+    "metrics": {
+      "enabled": true,
+      "collect": ["inferenceLatency", "errorRate", "memoryUsage", "cpuUsage"],
+      "logInterval": 300, // Log metrics every 5 minutes (in seconds)
+      "logPath": "./logs/metrics.log"
+    },
+    "alerts": {
+      "enabled": true, // Enable alerts for critical issues
+      "thresholds": {
+        "errorRate": 0.05, // Alert if error rate exceeds 5%
+        "latency": 1000, // Alert if latency exceeds 1000ms
+        "memoryUsage": 90 // Alert if memory usage exceeds 90%
+      },
+      "notification": {
+        "type": "email", // Options: email, slack, webhook
+        "endpoint": "${ALERT_NOTIFICATION_ENDPOINT}" // Use environment variable
+      }
+    },
+    "visualization": {
+      "enabled": true, // Enable visualization of metrics
+      "tool": "grafana", // Options: grafana, tensorboard, custom
+      "dashboardPath": "${DASHBOARD_PATH}" // Use environment variable for path
+    }
+  },
+  "security": {
+    "api": {
+      "enabled": true, // Enable API security
+      "authentication": {
+        "type": "jwt", // Options: jwt, apiKey, oauth
+        "secret": "${API_JWT_SECRET}", // Use environment variable for secret
+        "tokenExpiry": "24h" // Token expiry duration
+      },
+      "rateLimit": {
+        "enabled": true, // Enable rate limiting for API calls
+        "requestsPerMinute": 60, // Limit requests per minute
+        "burstSize": 10 // Allow short bursts of requests
+      }
+    },
+    "model": {
+      "enabled": true, // Enable model security
+      "accessControl": {
+        "enabled": true, // Restrict access to model files
+        "allowedUsers": "${ALLOWED_USERS_LIST}" // Use environment variable for list
+      },
+      "encryption": {
+        "enabled": true, // Encrypt model weights
+        "algorithm": "aes-256-gcm",
+        "key": "${MODEL_ENCRYPTION_KEY}" // Use environment variable for key
+      }
+    }
+  },
+  "custom": {
+    "ontoraAi": {
+      "agentGroup": {
+        "enabled": true, // Enable multi-agent group functionality
+        "maxAgentsPerUser": 5, // Maximum number of agents per user
+        "interactionMode": "collaborative", // Options: collaborative, competitive, independent
+        "communicationProtocol": "p2p", // Options: p2p, central, hybrid
+        "logInteractions": true, // Log agent interactions
+        "interactionLogPath": "./logs/agent_interactions.log"
+      },
+      "web3Integration": {
+        "enabled": true, // Enable Web3 and Solana integration
+        "solanaConfigPath": "./solana_config.json", // Path to Solana configuration
+        "transactionLogging": true, // Log AI-driven transactions on Solana
+        "transactionLogPath": "./logs/web3_transactions.log"
+      }
+    }
+  }
+}
