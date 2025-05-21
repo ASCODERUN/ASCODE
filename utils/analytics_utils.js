@@ -1,5 +1,5 @@
 import logger from './logging.js';
-import { handleError } from './error_handling.js';
+import { handleError } from './error_handling.js'; 
 
 class AnalyticsError extends Error {
   constructor(message, details = {}) {
