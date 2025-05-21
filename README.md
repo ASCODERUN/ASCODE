@@ -1,4 +1,4 @@
-# Ontora AI
+# Brenso AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,11 +6,12 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Ontora AI** is a Web3 open-source AI framework built on Solana. It is designed to empower users to create, customize, and evolve autonomous AI agent swarms for various Web3 applications. Through local deployment and user-driven fine-tuning, each AI agent can develop unique behavioral patterns and narrative chapters, reflecting personalized growth. Ontora AI aims to redefine decentralized AI by integrating user behavior with blockchain technology, delivering secure, scalable, and innovative solutions for the Web3 ecosystem.
+**Brenso AI** is a cutting-edge multi-agent cluster framework dedicated to achieving efficient collaboration and optimization among intelligent agents through innovative technologies like dynamic communication, adaptive collaboration, and distributed conflict resolution. Whether in smart transportation, industrial automation, or distributed computing, Brenso AI offers flexible, secure, and efficient solutions for complex scenarios, empowering users to tackle challenges in dynamic environments and driving the future of AI collaboration technology.
 
-## Links
-[![Website](https://img.shields.io/badge/Website-Ontora-blue?logo=google-chrome&style=for-the-badge)](https://ontora.org/)
-[![Twitter](https://img.shields.io/badge/Twitter-@OntoraLabs-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/OntoraLabs)
+[![Website](https://img.shields.io/badge/Website-BRENSO-blue?logo=google-chrome&style=for-the-badge)](https://brensoai.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-@BRENSOAGENT-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/BRENSOAGENT)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-maxgoodberg-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/maxgoodberg/)
+
 
 ## Table of Contents
 
@@ -40,12 +41,13 @@
 
 ## Overview
 
-Ontora AI leverages the power of Solana's high-speed, low-cost blockchain to deliver a decentralized AI ecosystem. Users can deploy AI agent swarms locally, customize them based on personal habits, and witness their evolution into unique entities with distinct behavioral "story chapters." The platform integrates seamlessly with Web3 applications, enabling use cases in decentralized finance (DeFi), NFT marketplaces, governance systems, and more.
+Brenso AI is a groundbreaking multi-agent cluster framework designed to revolutionize the way intelligent agents operate in complex environments by building an efficient, intelligent, and adaptive collaboration platform through a series of innovative technologies and protocols. The project integrates four foundational architectures—Distributed Communication Architecture, Adaptive Collaboration Engine, Trust and Security Framework, and Distributed Conflict Resolution Module—ensuring seamless communication, autonomous decision-making, and optimized resource allocation among agents. Brenso AI’s core functionalities include Dynamic Task Allocation, Autonomous Learning and Optimization, Distributed Conflict Management, and Secure Trust Management, making it widely applicable in fields such as smart transportation, industrial automation, distributed computing, and smart cities, while addressing challenges like low collaboration efficiency, frequent conflicts, and security risks in traditional multi-agent systems. With its three core advantages—high adaptability and flexibility, robust security and trust assurance, and efficient distributed collaboration capabilities—Brenso AI not only adapts to dynamically changing environments but also provides tailored intelligent solutions for users. Our vision is to establish Brenso AI as the world’s leading multi-agent collaboration platform, driving cross-disciplinary technological integration and innovation, and supporting global digital transformation and the advancement of AI technologies. Whether you are a developer, enterprise, or research institution, Brenso AI is your ideal partner to achieve intelligent collaboration goals and co-create a future powered by artificial intelligence.
 
 ## Vision and Mission
 
-**Vision**: To create a decentralized AI ecosystem where every user can craft and evolve personalized AI agents, driving innovation in the Web3 space.  
-**Mission**: To provide accessible tools and infrastructure on Solana for building autonomous AI swarms, ensuring privacy, scalability, and community-driven development.
+**Vision**: BRENSO AI aspires to be the world’s leading multi-agent cluster framework, creating a universal platform for intelligent collaboration, driving cross-domain innovation, and empowering humans and AI to solve complex challenges together for a smarter, more efficient future.
+
+**Mission**: BRENSO AI’s mission is to build efficient and robust multi-agent systems through innovative collaboration protocols and adaptive technologies, delivering intelligent solutions across industries, enabling seamless interaction between AI agents and environments, and supporting global digital transformation.
 
 ## Key Features
 
@@ -59,7 +61,7 @@ Ontora AI leverages the power of Solana's high-speed, low-cost blockchain to del
 
 ## Architecture
 
-Ontora AI follows a modular architecture to ensure scalability and maintainability:
+Brenso AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -69,7 +71,7 @@ Ontora AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Ontora AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Brenso AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -88,10 +90,10 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the Ontora AI repository to your local machine and navigate to the project directory.
+- Clone the Brenso AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/ontora-ai.git
-cd ontora-ai
+git clone https://github.com/yourusername/brenso-ai.git
+cd brenso-ai
 ```
 
 2. Install Dependencies:
@@ -112,7 +114,7 @@ npm --version
 
 ## Configuration
 
-### Ontora AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Brenso AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -126,7 +128,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/ontora_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/brenso_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -248,7 +250,7 @@ Automate log rotation and cleanup of temporary files to maintain system performa
 ## Project Structure
 The repository is organized into modular directories for clarity and maintainability. Below is the detailed structure:
 ```
-ontora-ai/
+brenso-ai/
 │
 ├── .github/                          # GitHub-specific configurations for CI/CD, issues, and PR templates
 │   ├── workflows/                    # CI/CD pipeline configurations for automation
@@ -699,7 +701,7 @@ Encountering issues? Check the following common problems and solutions. For unre
 #### Logs Location: All logs are stored in /logs with timestamps for debugging. Use tail -f /logs/*.log for real-time monitoring.
 
 ## Contributing
-We warmly welcome contributions from the global community to make Ontora AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
+We warmly welcome contributions from the global community to make Brenso AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
 
 ### How to Contribute
 1. Fork the Repository:
@@ -754,18 +756,18 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: ai@ontora.org (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @Ontoraonx
+- Email: info@brensoai.com (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @@BRENSOAGENT
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit www.ontora.org
+- Website: Visit https://brensoai.com/
 
 ## Acknowledgments
-The Ontora AI team extends heartfelt thanks to the following:
+The Brenso AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Ontora AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Brenso AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
-### Together, we’re building the future of decentralized AI on Web3!
+
