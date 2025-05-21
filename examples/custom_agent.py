@@ -1,4 +1,4 @@
-# custom_agent.py
+# custom_agent.py 
 # Example of creating a custom AI agent with specific behaviors for Web3 applications
 
 import numpy as np
