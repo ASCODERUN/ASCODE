@@ -1,7 +1,7 @@
 import logger from './logging.js';
 import { handleError } from './error_handling.js'; 
 
-class AnalyticsError extends Error {
+class AnalyticsError extends Error { 
   constructor(message, details = {}) {
     super(message);
     this.name = 'AnalyticsError';
