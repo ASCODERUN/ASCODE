@@ -1,4 +1,4 @@
-# Brenso AI
+# Vulloo AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,11 +6,12 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Brenso AI** is a cutting-edge multi-agent cluster framework dedicated to achieving efficient collaboration and optimization among intelligent agents through innovative technologies like dynamic communication, adaptive collaboration, and distributed conflict resolution. Whether in smart transportation, industrial automation, or distributed computing, Brenso AI offers flexible, secure, and efficient solutions for complex scenarios, empowering users to tackle challenges in dynamic environments and driving the future of AI collaboration technology.
+**Vulloo AI** is a revolutionary enterprise-grade lightweight multi-agent collaboration framework designed to tackle complex business process optimization and cross-system coordination challenges. Through its innovative modular architecture and dynamic task orchestration engine, Vulloo AI achieves dual breakthroughs in low-code integration and ultra-low latency response.
 
-[![Website](https://img.shields.io/badge/Website-BRENSO-blue?logo=google-chrome&style=for-the-badge)](https://brensoai.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-@BRENSOAGENT-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/BRENSOAGENT)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-maxgoodberg-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/maxgoodberg/)
+[![Website](https://img.shields.io/badge/Website-Vulloo-blue?logo=google-chrome&style=for-the-badge)](https://vullooai.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-@VullooAI-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/VullooAI)
+[![Twitter](https://img.shields.io/badge/Twitter-@DerekEgangg-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/DerekEgangg)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-DerekEgan-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/derek-h-egan/)
 
 
 ## Table of Contents
@@ -41,13 +42,13 @@
 
 ## Overview
 
-Brenso AI is a groundbreaking multi-agent cluster framework designed to revolutionize the way intelligent agents operate in complex environments by building an efficient, intelligent, and adaptive collaboration platform through a series of innovative technologies and protocols. The project integrates four foundational architectures—Distributed Communication Architecture, Adaptive Collaboration Engine, Trust and Security Framework, and Distributed Conflict Resolution Module—ensuring seamless communication, autonomous decision-making, and optimized resource allocation among agents. Brenso AI’s core functionalities include Dynamic Task Allocation, Autonomous Learning and Optimization, Distributed Conflict Management, and Secure Trust Management, making it widely applicable in fields such as smart transportation, industrial automation, distributed computing, and smart cities, while addressing challenges like low collaboration efficiency, frequent conflicts, and security risks in traditional multi-agent systems. With its three core advantages—high adaptability and flexibility, robust security and trust assurance, and efficient distributed collaboration capabilities—Brenso AI not only adapts to dynamically changing environments but also provides tailored intelligent solutions for users. Our vision is to establish Brenso AI as the world’s leading multi-agent collaboration platform, driving cross-disciplinary technological integration and innovation, and supporting global digital transformation and the advancement of AI technologies. Whether you are a developer, enterprise, or research institution, Brenso AI is your ideal partner to achieve intelligent collaboration goals and co-create a future powered by artificial intelligence.
+Vulloo AI is a revolutionary enterprise-grade lightweight multi-agent collaboration framework designed to tackle complex business process optimization and cross-system coordination challenges. Through its innovative modular architecture and dynamic task orchestration engine, Vulloo AI achieves dual breakthroughs in low-code integration and ultra-low latency response.
 
 ## Vision and Mission
 
-**Vision**: BRENSO AI aspires to be the world’s leading multi-agent cluster framework, creating a universal platform for intelligent collaboration, driving cross-domain innovation, and empowering humans and AI to solve complex challenges together for a smarter, more efficient future.
+**Vision**: Vulloo AI aspires to be the world’s leading multi-agent cluster framework, creating a universal platform for intelligent collaboration, driving cross-domain innovation, and empowering humans and AI to solve complex challenges together for a smarter, more efficient future.
 
-**Mission**: BRENSO AI’s mission is to build efficient and robust multi-agent systems through innovative collaboration protocols and adaptive technologies, delivering intelligent solutions across industries, enabling seamless interaction between AI agents and environments, and supporting global digital transformation.
+**Mission**: Vulloo AI’s mission is to build efficient and robust multi-agent systems through innovative collaboration protocols and adaptive technologies, delivering intelligent solutions across industries, enabling seamless interaction between AI agents and environments, and supporting global digital transformation.
 
 ## Key Features
 
@@ -61,7 +62,7 @@ Brenso AI is a groundbreaking multi-agent cluster framework designed to revoluti
 
 ## Architecture
 
-Brenso AI follows a modular architecture to ensure scalability and maintainability:
+Vulloo AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -71,7 +72,7 @@ Brenso AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Brenso AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Vulloo AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -90,10 +91,10 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the Brenso AI repository to your local machine and navigate to the project directory.
+- Clone the Vulloo AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/brenso-ai.git
-cd brenso-ai
+git clone https://github.com/yourusername/Vulloo-ai.git
+cd Vulloo-ai
 ```
 
 2. Install Dependencies:
@@ -114,7 +115,7 @@ npm --version
 
 ## Configuration
 
-### Brenso AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Vulloo AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -128,7 +129,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/brenso_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Vulloo_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -250,7 +251,7 @@ Automate log rotation and cleanup of temporary files to maintain system performa
 ## Project Structure
 The repository is organized into modular directories for clarity and maintainability. Below is the detailed structure:
 ```
-brenso-ai/
+vulloo-ai/
 │
 ├── .github/                          # GitHub-specific configurations for CI/CD, issues, and PR templates
 │   ├── workflows/                    # CI/CD pipeline configurations for automation
@@ -701,7 +702,7 @@ Encountering issues? Check the following common problems and solutions. For unre
 #### Logs Location: All logs are stored in /logs with timestamps for debugging. Use tail -f /logs/*.log for real-time monitoring.
 
 ## Contributing
-We warmly welcome contributions from the global community to make Brenso AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
+We warmly welcome contributions from the global community to make Vulloo AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
 
 ### How to Contribute
 1. Fork the Repository:
@@ -756,17 +757,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: info@brensoai.com (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @@BRENSOAGENT
+- Email: info@vullooai.com (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @VullooAI
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://brensoai.com/
+- Website: Visit https://vullooai.com/
 
 ## Acknowledgments
-The Brenso AI team extends heartfelt thanks to the following:
+The Vulloo AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Brenso AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Vulloo AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
