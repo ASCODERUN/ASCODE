@@ -9,8 +9,8 @@ dotenv.config();
 // Configuration
 const CLUSTER = process.env.CLUSTER || 'devnet'; // Options: 'mainnet-beta', 'testnet', 'devnet'
 const PROGRAM_ID = process.env.PROGRAM_ID || ''; // Program ID of the deployed program to verify
-const PROGRAM_SO_PATH = process.env.PROGRAM_SO_PATH || join(__dirname, 'target', 'deploy', 'ontora_ai.so');
-const PROGRAM_IDL_PATH = process.env.PROGRAM_IDL_PATH || join(__dirname, 'target', 'idl', 'ontora_ai.json');
+const PROGRAM_SO_PATH = process.env.PROGRAM_SO_PATH || join(__dirname, 'target', 'deploy', 'Nivaro_ai.so');
+const PROGRAM_IDL_PATH = process.env.PROGRAM_IDL_PATH || join(__dirname, 'target', 'idl', 'Nivaro_ai.json');
 
 // Utility to get cluster URL
 function getClusterUrl(cluster) {
