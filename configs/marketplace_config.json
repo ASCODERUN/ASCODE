@@ -1,8 +1,8 @@
 {
   "general": {
-    "platformName": "Ontora AI Marketplace",
+    "platformName": "Nivaro AI Marketplace",
     "version": "1.0.0",
-    "description": "Marketplace configuration for Ontora AI on Solana network",
+    "description": "Marketplace configuration for Nivaro AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable marketplace module
     "network": "devnet" // Options: mainnet, testnet, devnet
