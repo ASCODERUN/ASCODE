@@ -10,7 +10,7 @@ mod tests {
     use solana_sdk::transport::TransportError;
 
     // Import the program to test (adjust based on your program name).
-    use ontora_ai::program::NivaroAi;
+    use ontora_ai::program::NivaroAi; 
     use ontora_ai::state::{PlatformConfig, Proposal, UserStake};
     use ontora_ai::instructions::{initialize_platform, stake_tokens, create_proposal, cast_vote, finalize_proposal};
 
