@@ -12,7 +12,7 @@
     "apiBasePath": "/api/v1",
     "cors": {
       "enabled": true,
-      "allowedOrigins": ["https://ontora-ai.com", "https://www.ontora-ai.com"],
+      "allowedOrigins": ["https://Nivaro-ai.com", "https://www.Nivaro-ai.com"],
       "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       "allowedHeaders": ["Content-Type", "Authorization", "X-Requested-With"],
       "maxAge": 86400
