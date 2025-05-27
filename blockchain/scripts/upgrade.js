@@ -10,8 +10,8 @@ dotenv.config();
 // Configuration
 const CLUSTER = process.env.CLUSTER || 'devnet'; // Options: 'mainnet-beta', 'testnet', 'devnet'
 const WALLET_PATH = process.env.WALLET_PATH || join(process.env.HOME, '.config', 'solana', 'id.json');
-const PROGRAM_SO_PATH = process.env.PROGRAM_SO_PATH || join(__dirname, 'target', 'deploy', 'ontora_ai.so');
-const PROGRAM_IDL_PATH = process.env.PROGRAM_IDL_PATH || join(__dirname, 'target', 'idl', 'ontora_ai.json');
+const PROGRAM_SO_PATH = process.env.PROGRAM_SO_PATH || join(__dirname, 'target', 'deploy', 'Nivaro_ai.so');
+const PROGRAM_IDL_PATH = process.env.PROGRAM_IDL_PATH || join(__dirname, 'target', 'idl', 'Nivaro_ai.json');
 const PROGRAM_ID = process.env.PROGRAM_ID || ''; // Program ID of the existing deployed program to upgrade
 const BUFFER_ACCOUNT = process.env.BUFFER_ACCOUNT || ''; // Optional: Buffer account for upgrade if required
 
