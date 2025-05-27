@@ -1,4 +1,4 @@
-# Vulloo AI
+# Nivaro AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,12 +6,12 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Vulloo AI** is a revolutionary enterprise-grade lightweight multi-agent collaboration framework designed to tackle complex business process optimization and cross-system coordination challenges. Through its innovative modular architecture and dynamic task orchestration engine, Vulloo AI achieves dual breakthroughs in low-code integration and ultra-low latency response.
+**Nivaro AI** is an innovative open-source AI agent project designed to provide individual users with powerful task automation and Real-World Asset (RWA) management solutions. Built on a multi-agent framework, Nivaro AI breaks down complex tasks into subtasks handled collaboratively by different agents, ensuring efficiency and precision. The project integrates advanced natural language processing technology, allowing users to interact with the system through simple commands, while leveraging blockchain technology for the digitalization and secure management of RWAs. Whether it’s scheduling, data analysis, or asset tokenization, Nivaro AI offers tailored support. As an open-source initiative, users can download the code from GitHub and self-deploy, guaranteeing data privacy and system control. Additionally, Nivaro AI supports continuous learning and optimization, constantly improving agent performance and system intelligence through user feedback to deliver a more personalized experience.
 
-[![Website](https://img.shields.io/badge/Website-Vulloo-blue?logo=google-chrome&style=for-the-badge)](https://vullooai.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-@VullooAI-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/VullooAI)
-[![Twitter](https://img.shields.io/badge/Twitter-@DerekEgangg-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/DerekEgangg)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-DerekEgan-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/derek-h-egan/)
+[![Website](https://img.shields.io/badge/Website-Nivaro-blue?logo=google-chrome&style=for-the-badge)](https://nivaroai.org/)
+[![Twitter](https://img.shields.io/badge/Twitter-@NivaroCloud-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/NivaroCloud)
+[![Twitter](https://img.shields.io/badge/Twitter-@AWVerma-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/AWVerma)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-awaneesh-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/awaneesh/)
 
 
 ## Table of Contents
@@ -42,13 +42,13 @@
 
 ## Overview
 
-Vulloo AI is a revolutionary enterprise-grade lightweight multi-agent collaboration framework designed to tackle complex business process optimization and cross-system coordination challenges. Through its innovative modular architecture and dynamic task orchestration engine, Vulloo AI achieves dual breakthroughs in low-code integration and ultra-low latency response.
+Zailor AI is an open-source AI agent project based on a multi-agent framework, integrating Real-World Asset (RWA) management, and supporting self-deployment via GitHub.
 
 ## Vision and Mission
 
-**Vision**: Vulloo AI aspires to be the world’s leading multi-agent cluster framework, creating a universal platform for intelligent collaboration, driving cross-domain innovation, and empowering humans and AI to solve complex challenges together for a smarter, more efficient future.
+**Vision**: The vision of Nivaro AI is to become a globally leading open-source AI agent ecosystem, creating a smart, transparent, and user-driven future where task management and asset digitalization seamlessly integrate into daily life, while continuously advancing technology through community collaboration to empower users to build a better life.
 
-**Mission**: Vulloo AI’s mission is to build efficient and robust multi-agent systems through innovative collaboration protocols and adaptive technologies, delivering intelligent solutions across industries, enabling seamless interaction between AI agents and environments, and supporting global digital transformation.
+**Mission**: The mission of Nivaro AI is to provide individuals with efficient task automation and Real-World Asset (RWA) management solutions through innovative AI technology and a multi-agent collaboration framework, lowering the technical barrier so everyone can benefit from the convenience of intelligent technology while ensuring data privacy and user control.
 
 ## Key Features
 
@@ -62,7 +62,7 @@ Vulloo AI is a revolutionary enterprise-grade lightweight multi-agent collaborat
 
 ## Architecture
 
-Vulloo AI follows a modular architecture to ensure scalability and maintainability:
+Nivaro AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -72,7 +72,7 @@ Vulloo AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Vulloo AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Nivaro AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -91,10 +91,10 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the Vulloo AI repository to your local machine and navigate to the project directory.
+- Clone the Nivaro AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Vulloo-ai.git
-cd Vulloo-ai
+git clone https://github.com/yourusername/Nivaro-ai.git
+cd Nivaro-ai
 ```
 
 2. Install Dependencies:
@@ -115,7 +115,7 @@ npm --version
 
 ## Configuration
 
-### Vulloo AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Nivaro AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -129,7 +129,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Vulloo_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Nivaro_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -251,7 +251,7 @@ Automate log rotation and cleanup of temporary files to maintain system performa
 ## Project Structure
 The repository is organized into modular directories for clarity and maintainability. Below is the detailed structure:
 ```
-vulloo-ai/
+Nivaro-ai/
 │
 ├── .github/                          # GitHub-specific configurations for CI/CD, issues, and PR templates
 │   ├── workflows/                    # CI/CD pipeline configurations for automation
@@ -757,17 +757,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: info@vullooai.com (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @VullooAI
+- Email: info@nivaroai.org (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @NivaroCloud
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://vullooai.com/
+- Website: Visit https://nivaroai.org/
 
 ## Acknowledgments
-The Vulloo AI team extends heartfelt thanks to the following:
+The Nivaro AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Vulloo AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Nivaro AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
