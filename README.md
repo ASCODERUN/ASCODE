@@ -1,4 +1,4 @@
-# Nivaro AI
+# Eronix AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,12 +6,10 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Nivaro AI** is an innovative open-source AI agent project designed to provide individual users with powerful task automation and Real-World Asset (RWA) management solutions. Built on a multi-agent framework, Nivaro AI breaks down complex tasks into subtasks handled collaboratively by different agents, ensuring efficiency and precision. The project integrates advanced natural language processing technology, allowing users to interact with the system through simple commands, while leveraging blockchain technology for the digitalization and secure management of RWAs. Whether it’s scheduling, data analysis, or asset tokenization, Nivaro AI offers tailored support. As an open-source initiative, users can download the code from GitHub and self-deploy, guaranteeing data privacy and system control. Additionally, Nivaro AI supports continuous learning and optimization, constantly improving agent performance and system intelligence through user feedback to deliver a more personalized experience.
+**Eronix AI** is a cutting-edge Web3 platform built on the Solana blockchain, empowering users to create, customize, and evolve autonomous AI agent swarms tailored for Web3 applications. Through local deployment and user-driven tuning, each AI agent develops unique behavioral patterns and story chapters, reflecting personalized evolution. Ontora AI aims to revolutionize decentralized AI by integrating user habits with blockchain technology for secure, scalable, and innovative solutions.
 
-[![Website](https://img.shields.io/badge/Website-Nivaro-blue?logo=google-chrome&style=for-the-badge)](https://nivaroai.org/)
-[![Twitter](https://img.shields.io/badge/Twitter-@NivaroCloud-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/NivaroCloud)
-[![Twitter](https://img.shields.io/badge/Twitter-@AWVerma-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/AWVerma)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-awaneesh-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/awaneesh/)
+[![Website](https://img.shields.io/badge/Website-Eronix-blue?logo=google-chrome&style=for-the-badge)](https://eronixai.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-@EronixLLM-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/EronixLLM)
 
 
 ## Table of Contents
@@ -42,13 +40,12 @@
 
 ## Overview
 
-Zailor AI is an open-source AI agent project based on a multi-agent framework, integrating Real-World Asset (RWA) management, and supporting self-deployment via GitHub.
+Eronix AI is a Web3 open-source AI framework on Bolckchain, deployable by users to build enterprise-grade agent groups with story-driven evolution.
 
 ## Vision and Mission
 
-**Vision**: The vision of Nivaro AI is to become a globally leading open-source AI agent ecosystem, creating a smart, transparent, and user-driven future where task management and asset digitalization seamlessly integrate into daily life, while continuously advancing technology through community collaboration to empower users to build a better life.
+**Vision**: The vision of Eronix AI is to become a globally leading open-source AI agent ecosystem, creating a smart, transparent, and user-driven future where task management and asset digitalization seamlessly integrate into daily life, while continuously advancing technology through community collaboration to empower users to build a better life.
 
-**Mission**: The mission of Nivaro AI is to provide individuals with efficient task automation and Real-World Asset (RWA) management solutions through innovative AI technology and a multi-agent collaboration framework, lowering the technical barrier so everyone can benefit from the convenience of intelligent technology while ensuring data privacy and user control.
 
 ## Key Features
 
@@ -62,7 +59,7 @@ Zailor AI is an open-source AI agent project based on a multi-agent framework, i
 
 ## Architecture
 
-Nivaro AI follows a modular architecture to ensure scalability and maintainability:
+Eronix AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -72,7 +69,7 @@ Nivaro AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Nivaro AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Eronix AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -91,10 +88,10 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the Nivaro AI repository to your local machine and navigate to the project directory.
+- Clone the Eronix AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Nivaro-ai.git
-cd Nivaro-ai
+git clone https://github.com/yourusername/Eronix-ai.git
+cd Eronix-ai
 ```
 
 2. Install Dependencies:
@@ -115,7 +112,7 @@ npm --version
 
 ## Configuration
 
-### Nivaro AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Eronix AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -129,7 +126,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Nivaro_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Eronix_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -251,7 +248,7 @@ Automate log rotation and cleanup of temporary files to maintain system performa
 ## Project Structure
 The repository is organized into modular directories for clarity and maintainability. Below is the detailed structure:
 ```
-Nivaro-ai/
+Eronix-ai/
 │
 ├── .github/                          # GitHub-specific configurations for CI/CD, issues, and PR templates
 │   ├── workflows/                    # CI/CD pipeline configurations for automation
@@ -757,17 +754,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: info@nivaroai.org (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @NivaroCloud
+- Email: info@Eronixai.org (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @EronixLLM
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://nivaroai.org/
+- Website: Visit https://eronixai.com/
 
 ## Acknowledgments
-The Nivaro AI team extends heartfelt thanks to the following:
+The Eronix AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Nivaro AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Eronix AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
