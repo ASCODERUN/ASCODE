@@ -1,6 +1,6 @@
 {
   "general": {
-    "platformName": "Nivaro AI Marketplace",
+    "platformName": "Hexuma AI Marketplace",
     "version": "1.0.0",
     "description": "Marketplace configuration for Nivaro AI on Solana network",
     "environment": "development", // Options: development, testing, production
