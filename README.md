@@ -1,4 +1,4 @@
-# Eronix AI
+# HEXUMA AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,16 +6,59 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Eronix AI** is a cutting-edge Web3 platform built on the Solana blockchain, empowering users to create, customize, and evolve autonomous AI agent swarms tailored for Web3 applications. Through local deployment and user-driven tuning, each AI agent develops unique behavioral patterns and story chapters, reflecting personalized evolution. Ontora AI aims to revolutionize decentralized AI by integrating user habits with blockchain technology for secure, scalable, and innovative solutions.
+**HEXUMA AI** is an innovative AI model project focused on the intelligent management and analysis of Real World Assets (RWA). Unlike traditional chat assistants or platform services, HEXUMA AI is a multi-agent framework designed to provide data analysis, prediction, and decision-making support for RWA through the collaboration of multiple AI agents. Users can access the source code on GitHub and deploy it locally or in the cloud, making it suitable for individual developers, researchers, or small teams.
 
-[![Website](https://img.shields.io/badge/Website-Eronix-blue?logo=google-chrome&style=for-the-badge)](https://eronixai.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-@EronixLLM-1DA1F2?logo=twitter&style=for-the-badge)](https://x.com/EronixLLM)
+## 🌐 Follow Us
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://twitter.com/HEXUMAOS" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" width="24" alt="Twitter"/>
+        <br/>@HEXUMAOS
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://hexuma.org/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlechrome.svg" width="24" alt="Website"/>
+        <br/>hexuma.org
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/trevorhowarth95" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" width="24" alt="LinkedIn"/>
+        <br/>@trevorhowarth95
+      </a>
+    </td>
+  </tr>
+</table>
+
+```
+
+                                                                                                                                                       
+                                                                                                                                                       
+HHHHHHHHH     HHHHHHHHHEEEEEEEEEEEEEEEEEEEEEEXXXXXXX       XXXXXXXUUUUUUUU     UUUUUUUUMMMMMMMM               MMMMMMMM               AAA               
+H:::::::H     H:::::::HE::::::::::::::::::::EX:::::X       X:::::XU::::::U     U::::::UM:::::::M             M:::::::M              A:::A              
+H:::::::H     H:::::::HE::::::::::::::::::::EX:::::X       X:::::XU::::::U     U::::::UM::::::::M           M::::::::M             A:::::A             
+HH::::::H     H::::::HHEE::::::EEEEEEEEE::::EX::::::X     X::::::XUU:::::U     U:::::UUM:::::::::M         M:::::::::M            A:::::::A            
+  H:::::H     H:::::H    E:::::E       EEEEEEXXX:::::X   X:::::XXX U:::::U     U:::::U M::::::::::M       M::::::::::M           A:::::::::A           
+  H:::::H     H:::::H    E:::::E                X:::::X X:::::X    U:::::D     D:::::U M:::::::::::M     M:::::::::::M          A:::::A:::::A          
+  H::::::HHHHH::::::H    E::::::EEEEEEEEEE       X:::::X:::::X     U:::::D     D:::::U M:::::::M::::M   M::::M:::::::M         A:::::A A:::::A         
+  H:::::::::::::::::H    E:::::::::::::::E        X:::::::::X      U:::::D     D:::::U M::::::M M::::M M::::M M::::::M        A:::::A   A:::::A        
+  H:::::::::::::::::H    E:::::::::::::::E        X:::::::::X      U:::::D     D:::::U M::::::M  M::::M::::M  M::::::M       A:::::A     A:::::A       
+  H::::::HHHHH::::::H    E::::::EEEEEEEEEE       X:::::X:::::X     U:::::D     D:::::U M::::::M   M:::::::M   M::::::M      A:::::AAAAAAAAA:::::A      
+  H:::::H     H:::::H    E:::::E                X:::::X X:::::X    U:::::D     D:::::U M::::::M    M:::::M    M::::::M     A:::::::::::::::::::::A     
+  H:::::H     H:::::H    E:::::E       EEEEEEXXX:::::X   X:::::XXX U::::::U   U::::::U M::::::M     MMMMM     M::::::M    A:::::AAAAAAAAAAAAA:::::A    
+HH::::::H     H::::::HHEE::::::EEEEEEEE:::::EX::::::X     X::::::X U:::::::UUU:::::::U M::::::M               M::::::M   A:::::A             A:::::A   
+H:::::::H     H:::::::HE::::::::::::::::::::EX:::::X       X:::::X  UU:::::::::::::UU  M::::::M               M::::::M  A:::::A               A:::::A  
+H:::::::H     H:::::::HE::::::::::::::::::::EX:::::X       X:::::X    UU:::::::::UU    M::::::M               M::::::M A:::::A                 A:::::A 
+HHHHHHHHH     HHHHHHHHHEEEEEEEEEEEEEEEEEEEEEEXXXXXXX       XXXXXXX      UUUUUUUUU      MMMMMMMM               MMMMMMMMAAAAAAA                   AAAAAAA
+                                                                                                                                                       
+```
 
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Vision and Mission](#vision-and-mission)
 - [Key Features](#key-features)
 - [Architecture](#architecture)
 - [Getting Started](#getting-started)
@@ -38,15 +81,6 @@
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
 
-## Overview
-
-Eronix AI is a Web3 open-source AI framework on Bolckchain, deployable by users to build enterprise-grade agent groups with story-driven evolution.
-
-## Vision and Mission
-
-**Vision**: The vision of Eronix AI is to become a globally leading open-source AI agent ecosystem, creating a smart, transparent, and user-driven future where task management and asset digitalization seamlessly integrate into daily life, while continuously advancing technology through community collaboration to empower users to build a better life.
-
-
 ## Key Features
 
 - **Autonomous AI Swarms**: Deploy and manage AI agents locally with user-specific tuning.
@@ -59,7 +93,7 @@ Eronix AI is a Web3 open-source AI framework on Bolckchain, deployable by users 
 
 ## Architecture
 
-Eronix AI follows a modular architecture to ensure scalability and maintainability:
+Hexuma AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -69,7 +103,7 @@ Eronix AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Eronix AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Hexuma AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -88,10 +122,10 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the Eronix AI repository to your local machine and navigate to the project directory.
+- Clone the Hexuma AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Eronix-ai.git
-cd Eronix-ai
+git clone https://github.com/yourusername/Hexuma-ai.git
+cd Hexuma-ai
 ```
 
 2. Install Dependencies:
@@ -112,7 +146,7 @@ npm --version
 
 ## Configuration
 
-### Eronix AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Hexuma AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -126,7 +160,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Eronix_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Hexuma_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -248,7 +282,7 @@ Automate log rotation and cleanup of temporary files to maintain system performa
 ## Project Structure
 The repository is organized into modular directories for clarity and maintainability. Below is the detailed structure:
 ```
-Eronix-ai/
+Hexuma-ai/
 │
 ├── .github/                          # GitHub-specific configurations for CI/CD, issues, and PR templates
 │   ├── workflows/                    # CI/CD pipeline configurations for automation
@@ -699,7 +733,7 @@ Encountering issues? Check the following common problems and solutions. For unre
 #### Logs Location: All logs are stored in /logs with timestamps for debugging. Use tail -f /logs/*.log for real-time monitoring.
 
 ## Contributing
-We warmly welcome contributions from the global community to make Vulloo AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
+We warmly welcome contributions from the global community to make Hexuma AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
 
 ### How to Contribute
 1. Fork the Repository:
@@ -754,17 +788,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: info@Eronixai.org (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @EronixLLM
+- Email: Hello@Hexuma.org (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @HexumaOS
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://eronixai.com/
+- Website: Visit https://hexuma.org/
 
 ## Acknowledgments
-The Eronix AI team extends heartfelt thanks to the following:
+The Hexuma AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Eronix AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Hexuma AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
