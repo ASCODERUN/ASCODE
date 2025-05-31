@@ -7,7 +7,7 @@ import sys
 import os
 from datetime import datetime
 
-# Assuming a basic AI model class for Ontora AI exists in the project
+# Assuming a basic AI model class for Hexuma AI exists in the project
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 try:
     from ontora_ai.models.agent_model import AgentModel
