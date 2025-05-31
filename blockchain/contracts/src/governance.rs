@@ -10,7 +10,7 @@ pub struct CreateProposal<'info> {
     #[account(mut)]
     pub creator: Signer<'info>,
     /// The platform configuration account to ensure governance is enabled.
-    #[account(has_one = authority @ NivaroError::UnauthorizedAccess)]
+    #[account(has_one = authority @ HexumaError::UnauthorizedAccess)]
     pub platform_config: Account<'info, PlatformConfig>,
     /// The proposal account to be initialized.
     #[account(
@@ -30,7 +30,7 @@ impl<'info> CreateProposal<'info> {
     pub fn validate(&self) -> Result<()> {
         // Check if governance is enabled in platform config.
         if !self.platform_config.governance_enabled {
-            return err!(OntoraError::GovernanceDisabled);
+            return err!(HexumaError::GovernanceDisabled);
         }
         // Placeholder for stake check (assumes a separate stake account or logic).
         // In a real implementation, check if creator has staked tokens.
@@ -51,10 +51,10 @@ pub fn create_proposal(
 
     // Ensure the title and description are within size limits.
     if title.len() > 100 || description.len() > 1000 {
-        return err!(OntoraError::InvalidInput);
+        return err!(HexumaError::InvalidInput);
     }
     if options.len() < 2 || options.len() > 10 {
-        return err!(OntoraError::InvalidVoteOptions);
+        return err!(HexumaError::InvalidVoteOptions);
     }
 
     let clock = Clock::get()?;
@@ -109,7 +109,7 @@ pub struct CastVote<'info> {
 
 impl<'info> CastVote<'info> {
     /// Validates that the voter can cast a vote.
-    pub fn validate(&self) -> Result<()> {
+    pub fn validate(&self) -> Result<()> { 
         // Check if governance is enabled.
         if !self.platform_config.governance_enabled {
             return err!(OntoraError::GovernanceDisabled);
