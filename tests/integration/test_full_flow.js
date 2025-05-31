@@ -1,4 +1,4 @@
-describe('Full System Flow Tests for Ontora AI', () => {
+describe('Full System Flow Tests for Hexuma AI', () => {
   beforeEach(() => {
     // Reset mocks and intercept external calls before each test
     cy.intercept('POST', '/api/auth/login', { statusCode: 200, body: { token: 'mock-jwt-token', userId: 'user123' } }).as('loginRequest');
