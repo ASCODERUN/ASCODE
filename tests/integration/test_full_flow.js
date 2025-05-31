@@ -19,7 +19,7 @@ describe('Full System Flow Tests for Hexuma AI', () => {
 
     // Verify login API call
     cy.wait('@loginRequest').its('request.body').should('include', {
-      email: 'testuser@ontora.ai',
+      email: 'testuser@Hexuma.ai',
       password: 'password123'
     });
     cy.get('[data-testid="user-welcome"]').should('contain.text', 'Welcome, testuser');
