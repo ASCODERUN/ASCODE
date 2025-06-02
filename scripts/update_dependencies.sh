@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 # update_dependencies.sh
 # Script to update dependencies across languages and lock versions
