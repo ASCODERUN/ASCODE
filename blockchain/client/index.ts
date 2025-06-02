@@ -3,7 +3,7 @@ import { Program, AnchorProvider, web3, utils, BN } from '@project-serum/anchor'
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { getWallets, WalletAdapter } from '@solana/wallet-adapter-base';
-import * as IDL from './idl/hexuma_ai.json'; // Adjust path to your generated IDL file
+import * as IDL from './idl/rexoul_ai.json'; // Adjust path to your generated IDL file
 
 // Define the program ID (replace with your deployed program ID)
 const PROGRAM_ID = new PublicKey('YourProgramIdHere'); // Replace with actual program ID after deployment
@@ -13,7 +13,7 @@ const NETWORK = WalletAdapterNetwork.Devnet;
 const RPC_ENDPOINT = clusterApiUrl(NETWORK);
 
 // Interface for Ontora AI client
-interface OntoraAIClient {
+interface RexoulAIClient {
   provider: AnchorProvider;
   program: Program;
   wallet: WalletAdapter | null;
@@ -21,8 +21,8 @@ interface OntoraAIClient {
 }
 
 // Class to handle Ontora AI contract interactions
-class HexumaAI {
-  private client: HexumaAIClient;
+class RexoulAI {
+  private client: RexoulAIClient;
 
   constructor() {
     this.client = {
@@ -67,7 +67,7 @@ class HexumaAI {
       console.log('Connected wallet:', wallet.publicKey?.toString());
     } catch (error) {
       console.error('Initialization failed:', error);
-      throw new Error('Failed to initialize Ontora AI client');
+      throw new Error('Failed to initialize Rexoul AI client');
     }
   }
 
