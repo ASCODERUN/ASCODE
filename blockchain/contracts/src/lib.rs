@@ -12,7 +12,7 @@ const EPOCH_DURATION: i64 = 604800; // 7 days in seconds for reward epoch
 
 // Custom error codes for the program
 #[error_code]
-pub enum OntoraError {
+pub enum RexoulError {
     #[msg("Insufficient stake amount")]
     InsufficientStake,
     #[msg("Staking cooldown not completed")]
@@ -61,7 +61,7 @@ pub struct RewardPool {
 
 // Program entrypoint and instructions
 #[program]
-pub mod ontora_ai {
+pub mod Rexoul_ai {
     use super::*;
 
     // Initialize the reward pool
@@ -81,7 +81,7 @@ pub mod ontora_ai {
         let staking_vault = &ctx.accounts.staking_vault;
 
         // Ensure stake amount is greater than zero
-        require!(stake_amount > 0, OntoraError::InsufficientStake);
+        require!(stake_amount > 0, RexoulError::InsufficientStake);
 
         // Transfer tokens from user to staking vault
         let cpi_accounts = Transfer {
