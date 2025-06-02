@@ -10,7 +10,7 @@ pub struct CreateProposal<'info> {
     #[account(mut)]
     pub creator: Signer<'info>,
     /// The platform configuration account to ensure governance is enabled.
-    #[account(has_one = authority @ HexumaError::UnauthorizedAccess)]
+    #[account(has_one = authority @ RexoulError::UnauthorizedAccess)]
     pub platform_config: Account<'info, PlatformConfig>,
     /// The proposal account to be initialized.
     #[account(
@@ -51,10 +51,10 @@ pub fn create_proposal(
 
     // Ensure the title and description are within size limits.
     if title.len() > 100 || description.len() > 1000 {
-        return err!(HexumaError::InvalidInput);
+        return err!(RexoulError::InvalidInput);
     }
     if options.len() < 2 || options.len() > 10 {
-        return err!(HexumaError::InvalidVoteOptions);
+        return err!(RexoulError::InvalidVoteOptions);
     }
 
     let clock = Clock::get()?;
@@ -95,7 +95,7 @@ pub struct CastVote<'info> {
     #[account(mut)]
     pub voter: Signer<'info>,
     /// The platform configuration account to ensure governance is enabled.
-    #[account(has_one = authority @ OntoraError::UnauthorizedAccess)]
+    #[account(has_one = authority @ RexoulError::UnauthorizedAccess)]
     pub platform_config: Account<'info, PlatformConfig>,
     /// The proposal account to vote on.
     #[account(mut, seeds = [b"proposal", proposal.id.to_le_bytes().as_ref()], bump = proposal.bump)]
@@ -112,12 +112,12 @@ impl<'info> CastVote<'info> {
     pub fn validate(&self) -> Result<()> { 
         // Check if governance is enabled.
         if !self.platform_config.governance_enabled {
-            return err!(OntoraError::GovernanceDisabled);
+            return err!(RexoulError::GovernanceDisabled);
         }
         // Check if the proposal is active.
         let clock = Clock::get()?;
         if self.proposal.status != 0 || clock.unix_timestamp < self.proposal.start_time || clock.unix_timestamp > self.proposal.end_time {
-            return err!(OntoraError::ProposalNotActive);
+            return err!(RexoulError::ProposalNotActive);
         }
         // Placeholder for checking if the voter has already voted.
         // In a real implementation, track votes per user to prevent double voting.
@@ -137,11 +137,11 @@ pub fn cast_vote(
     let proposal = &mut ctx.accounts.proposal;
     // Ensure the proposal ID matches (redundant but for clarity).
     if proposal.id != proposal_id {
-        return err!(OntoraError::InvalidProposal);
+        return err!(RexoulError::InvalidProposal);
     }
     // Ensure the vote option is valid.
     if vote_option as usize >= proposal.options.len() {
-        return err!(OntoraError::InvalidVoteOption);
+        return err!(RexoulError::InvalidVoteOption);
     }
 
     let clock = Clock::get()?;
@@ -171,7 +171,7 @@ pub struct FinalizeProposal<'info> {
     #[account(mut)]
     pub caller: Signer<'info>,
     /// The platform configuration account to ensure governance is enabled.
-    #[account(has_one = authority @ OntoraError::UnauthorizedAccess)]
+    #[account(has_one = authority @ RexoulError::UnauthorizedAccess)]
     pub platform_config: Account<'info, PlatformConfig>,
     /// The proposal account to finalize.
     #[account(mut, seeds = [b"proposal", proposal.id.to_le_bytes().as_ref()], bump = proposal.bump)]
@@ -185,15 +185,15 @@ impl<'info> FinalizeProposal<'info> {
     pub fn validate(&self) -> Result<()> {
         // Check if governance is enabled.
         if !self.platform_config.governance_enabled {
-            return err!(OntoraError::GovernanceDisabled);
+            return err!(RexoulError::GovernanceDisabled);
         }
         // Check if the proposal is still active and voting period has ended.
         let clock = Clock::get()?;
         if self.proposal.status != 0 {
-            return err!(OntoraError::ProposalAlreadyFinalized);
+            return err!(RexoulError::ProposalAlreadyFinalized);
         }
         if clock.unix_timestamp <= self.proposal.end_time {
-            return err!(OntoraError::VotingPeriodNotEnded);
+            return err!(RexoulError::VotingPeriodNotEnded);
         }
         Ok(())
     }
@@ -210,7 +210,7 @@ pub fn finalize_proposal(
     let proposal = &mut ctx.accounts.proposal;
     // Ensure the proposal ID matches.
     if proposal.id != proposal_id {
-        return err!(OntoraError::InvalidProposal);
+        return err!(RexoulError::InvalidProposal);
     }
 
     let clock = Clock::get()?;
