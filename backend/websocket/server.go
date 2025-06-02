@@ -18,7 +18,7 @@ const (
     AgentStatusUpdate  MessageType = "agent_status"
     TransactionUpdate  MessageType = "transaction_update"
     HeartbeatPing      MessageType = "ping"
-    HeartbeatPong      MessageType = "pong"
+    HeartbeatPong      MessageType = "pong" 
 )
 
 // Message represents the structure of a WebSocket message.
