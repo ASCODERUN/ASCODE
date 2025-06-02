@@ -61,7 +61,7 @@
     "type": "sqlite", // Use lightweight in-memory or file-based DB for testing
     "host": "localhost",
     "port": 0, // Not applicable for SQLite
-    "database": "./test_data/ontora_ai_test.db", // Isolated test database
+    "database": "./test_data/Rexoul_ai_test.db", // Isolated test database
     "username": "", // Not applicable for SQLite
     "password": "", // Not applicable for SQLite
     "synchronize": true, // Enabled for testing to auto-create schema
