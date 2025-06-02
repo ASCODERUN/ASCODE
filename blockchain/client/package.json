@@ -1,7 +1,7 @@
 { 
-  "name": "Hexuma-ai-client",
+  "name": "Rexoul-ai-client",
   "version": "1.0.0",
-  "description": "Client-side application for Hexuma AI on Solana network",
+  "description": "Client-side application for Rexoul AI on Solana network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -54,16 +54,16 @@
     "ontora-ai",
     "decentralized"
   ],
-  "author": "Hexuma AI Team",
+  "author": "Rexoul AI Team",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/hexuma-ai-client.git"
+    "url": "git+https://github.com/yourusername/Rexoul-ai-client.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/hexuma-ai-client/issues"
+    "url": "https://github.com/yourusername/Rexoul-ai-client/issues"
   },
-  "homepage": "https://github.com/yourusername/hexuma-ai-client#readme",
+  "homepage": "https://github.com/yourusername/Rexoul-ai-client#readme",
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
