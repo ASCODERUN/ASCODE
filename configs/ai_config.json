@@ -1,6 +1,6 @@
 {
   "general": {
-    "projectName": "Hexuma AI",
+    "projectName": "Rexoul AI",
     "version": "1.0.0",
     "description": "Configuration for AI agents on Solana Web3 network with autonomous evolution capabilities",
     "environment": "development", // Options: development, testing, production
@@ -10,7 +10,7 @@
     "timestampFormat": "YYYY-MM-DD HH:mm:ss" // Format for log timestamps
   },
   "model": {
-    "name": "HexumaBaseModel",
+    "name": "RexoulBaseModel",
     "type": "transformer", // Options: transformer, rnn, cnn, hybrid, custom
     "version": "v1.0.0",
     "architecture": {
@@ -96,7 +96,7 @@
     },
     "checkpointing": {
       "enabled": true, // Save model checkpoints during training
-      "savePath": "./checkpoints/ontora_ai", // Path to save checkpoints
+      "savePath": "./checkpoints/Rexoul_ai", // Path to save checkpoints
       "saveInterval": 1, // Save checkpoint every N epochs
       "maxCheckpoints": 5, // Maximum number of checkpoints to keep
       "saveBestOnly": true, // Save only the best model based on validation loss
