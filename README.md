@@ -1,4 +1,4 @@
-# Rexoul AI
+# Omelix AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,12 +6,12 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Rexoul AI** is a pioneering AI Oracle protocol on the Solana network, seamlessly integrating the profound analytical power of artificial intelligence with blockchain smart contracts to empower decentralized applications with unprecedented complex data insights.
+**Rexoul AI** An open-source AI agent project based on a multi-agent framework, integrating RWA management, and supporting self-deployment via GitHub.
 
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://rexoul.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/RexoulAI)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/naserpvn)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/naserpvn/)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://omelixai.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/OmelixRWA)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/LT2DIK)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/samjjc/)
 
 
 ## Table of Contents
@@ -49,7 +49,7 @@
 
 ## Architecture
 
-Rexoul AI follows a modular architecture to ensure scalability and maintainability:
+Omelix AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -59,7 +59,7 @@ Rexoul AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Rexoul AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Omelix AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -78,10 +78,10 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the Rexoul AI repository to your local machine and navigate to the project directory.
+- Clone the Omelix AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Rexoul-ai.git
-cd Rexoul-ai
+git clone https://github.com/yourusername/Omelix-ai.git
+cd Omelix-ai
 ```
 
 2. Install Dependencies:
@@ -102,7 +102,7 @@ npm --version
 
 ## Configuration
 
-### Rexoul AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Omelix AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -116,7 +116,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Rexoul_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Omelix_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -270,7 +270,7 @@ Encountering issues? Check the following common problems and solutions. For unre
 #### Logs Location: All logs are stored in /logs with timestamps for debugging. Use tail -f /logs/*.log for real-time monitoring.
 
 ## Contributing
-We warmly welcome contributions from the global community to make Rexoul AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
+We warmly welcome contributions from the global community to make Omelix AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
 
 ### How to Contribute
 1. Fork the Repository:
@@ -325,17 +325,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Hello@Rexoul.fun (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @RexoulAI
+- Email: Hello@Omelixai.com (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @OmelixRWA
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://rexoul.fun/
+- Website: Visit https://Omelixai.com/
 
 ## Acknowledgments
-The Rexoul AI team extends heartfelt thanks to the following:
+The Omelix AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Rexoul AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Omelix AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
