@@ -1,16 +1,16 @@
 {
   "general": {
-    "protocolName": "Rexoul AI Governance",
+    "protocolName": "Omelix AI Governance",
     "version": "1.0.0",
-    "description": "Governance configuration for Rexoul AI on Solana network",
+    "description": "Governance configuration for Omelix AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable governance module
     "network": "devnet" // Options: mainnet, testnet, devnet
   },
   "token": {
     "governanceToken": {
-      "symbol": "Rexoul",
-      "name": "Rexoul Token",
+      "symbol": "Omelix",
+      "name": "Omelix Token",
       "address": "${GOVERNANCE_TOKEN_ADDRESS}", // Placeholder for token contract address on Solana
       "decimals": 9, // Decimal places for token precision
       "totalSupply": 1000000000, // Total supply of governance tokens
@@ -41,7 +41,7 @@
       "enabled": true, // Enable proposal creation
       "cost": {
         "amount": 10, // Cost in governance tokens to create a proposal
-        "token": "ONT", // Token used for proposal creation cost
+        "token": "Omelix", // Token used for proposal creation cost
         "burn": true, // Burn the cost tokens (true) or send to treasury (false)
         "refundOnFailure": false // Refund cost if proposal fails to meet quorum
       },
