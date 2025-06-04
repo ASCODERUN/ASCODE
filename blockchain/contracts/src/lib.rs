@@ -12,7 +12,7 @@ const EPOCH_DURATION: i64 = 604800; // 7 days in seconds for reward epoch
 
 // Custom error codes for the program
 #[error_code]
-pub enum RexoulError {
+pub enum OmelixError {
     #[msg("Insufficient stake amount")]
     InsufficientStake,
     #[msg("Staking cooldown not completed")]
@@ -61,7 +61,7 @@ pub struct RewardPool {
 
 // Program entrypoint and instructions
 #[program]
-pub mod Rexoul_ai {
+pub mod Omelix_ai {
     use super::*;
 
     // Initialize the reward pool
