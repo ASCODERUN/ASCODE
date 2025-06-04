@@ -1,7 +1,7 @@
 { 
-  "name": "Rexoul-ai-client",
+  "name": "Omelix-ai-client",
   "version": "1.0.0",
-  "description": "Client-side application for Rexoul AI on Solana network",
+  "description": "Client-side application for Omelix AI on Solana network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -50,20 +50,20 @@
     "solana",
     "web3",
     "blockchain",
-    "smart-contract",
+    "smart-contract", 
     "ontora-ai",
     "decentralized"
   ],
-  "author": "Rexoul AI Team",
+  "author": "Omelix AI Team",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/Rexoul-ai-client.git"
+    "url": "git+https://github.com/yourusername/Omelix-ai-client.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/Rexoul-ai-client/issues"
+    "url": "https://github.com/yourusername/Omelix-ai-client/issues"
   },
-  "homepage": "https://github.com/yourusername/Rexoul-ai-client#readme",
+  "homepage": "https://github.com/yourusername/Omelix-ai-client#readme",
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
