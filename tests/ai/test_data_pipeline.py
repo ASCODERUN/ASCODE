@@ -10,7 +10,7 @@ from datetime import datetime
 # Assuming a basic data pipeline class for Hexuma AI exists in the project
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 try:
-    from ontora_ai.data.pipeline import DataPipeline
+    from Omelix_ai.data.pipeline import DataPipeline
 except ImportError:
     # Mock the data pipeline class if not implemented yet
     class DataPipeline:
