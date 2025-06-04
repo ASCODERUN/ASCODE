@@ -12,7 +12,7 @@ const PROGRAM_ID = new PublicKey('YourProgramIdHere'); // Replace with actual pr
 const NETWORK = WalletAdapterNetwork.Devnet;
 const RPC_ENDPOINT = clusterApiUrl(NETWORK);
 
-// Interface for Ontora AI client
+// Interface for Omelix AI client
 interface RexoulAIClient {
   provider: AnchorProvider;
   program: Program;
@@ -20,7 +20,7 @@ interface RexoulAIClient {
   userAccount: PublicKey | null;
 }
 
-// Class to handle Ontora AI contract interactions
+// Class to handle Omelix AI contract interactions
 class RexoulAI {
   private client: RexoulAIClient;
 
