@@ -10,7 +10,7 @@ from datetime import datetime
 # Assuming a basic federated learning class for Hexuma AI exists in the project
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 try:
-    from ontora_ai.learning.federated_learning import FederatedLearningAgent
+    from Omelix_ai.learning.federated_learning import FederatedLearningAgent
 except ImportError:
     # Mock the federated learning agent if not implemented yet
     class FederatedLearningAgent:
