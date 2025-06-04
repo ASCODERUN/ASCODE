@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 class CustomAgent:
     """
-    A custom AI agent designed for Web3 applications like Ontora AI.
+    A custom AI agent designed for Web3 applications like Omelix AI.
     The agent learns and adapts based on user interactions and predefined behaviors.
     It can evolve over time through simulated reinforcement learning.
     """
