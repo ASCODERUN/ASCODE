@@ -1,6 +1,6 @@
 {
   "general": {
-    "projectName": "Rexoul Backend API",
+    "projectName": "Omelix Backend API",
     "version": "1.0.0",
     "description": "Configuration for backend API supporting Web3 and AI services on Solana network",
     "environment": "development", // Options: development, testing, production
