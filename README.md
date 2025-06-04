@@ -10,8 +10,7 @@
 
 [![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://omelixai.com/)
 [![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/OmelixRWA)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/LT2DIK)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/samjjc/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/amin-jadidi/)
 
 
 ## Table of Contents
