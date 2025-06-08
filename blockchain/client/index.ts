@@ -3,7 +3,7 @@ import { Program, AnchorProvider, web3, utils, BN } from '@project-serum/anchor'
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { getWallets, WalletAdapter } from '@solana/wallet-adapter-base';
-import * as IDL from './idl/rexoul_ai.json'; // Adjust path to your generated IDL file
+import * as IDL from './idl/Sorein_ai.json'; // Adjust path to your generated IDL file
 
 // Define the program ID (replace with your deployed program ID)
 const PROGRAM_ID = new PublicKey('YourProgramIdHere'); // Replace with actual program ID after deployment
@@ -21,8 +21,8 @@ interface RexoulAIClient {
 }
 
 // Class to handle Omelix AI contract interactions
-class RexoulAI {
-  private client: RexoulAIClient;
+class SoreinAI {
+  private client: SoreinAIClient;
 
   constructor() {
     this.client = {
