@@ -12,7 +12,7 @@ const EPOCH_DURATION: i64 = 604800; // 7 days in seconds for reward epoch
 
 // Custom error codes for the program
 #[error_code]
-pub enum OmelixError {
+pub enum SoreinError {
     #[msg("Insufficient stake amount")]
     InsufficientStake,
     #[msg("Staking cooldown not completed")]
