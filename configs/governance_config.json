@@ -1,6 +1,6 @@
 {
   "general": {
-    "protocolName": "Omelix AI Governance",
+    "protocolName": "Sorein AI Governance",
     "version": "1.0.0",
     "description": "Governance configuration for Omelix AI on Solana network",
     "environment": "development", // Options: development, testing, production
@@ -9,8 +9,8 @@
   },
   "token": {
     "governanceToken": {
-      "symbol": "Omelix",
-      "name": "Omelix Token",
+      "symbol": "Sorein",
+      "name": "Sorein Token",
       "address": "${GOVERNANCE_TOKEN_ADDRESS}", // Placeholder for token contract address on Solana
       "decimals": 9, // Decimal places for token precision
       "totalSupply": 1000000000, // Total supply of governance tokens
