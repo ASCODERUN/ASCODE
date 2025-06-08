@@ -1,6 +1,6 @@
 {
   "general": {
-    "projectName": "Omelix Backend API",
+    "projectName": "Sorein Backend API",
     "version": "1.0.0",
     "description": "Configuration for backend API supporting Web3 and AI services on Solana network",
     "environment": "development", // Options: development, testing, production
