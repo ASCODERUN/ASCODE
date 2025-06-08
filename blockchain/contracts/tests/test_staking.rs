@@ -32,13 +32,13 @@ async fn test_stake_success() {
     let stake_amount = TEST_STAKE_AMOUNT;
     let result = program
         .request()
-        .accounts(ontora_ai::accounts::Stake {
+        .accounts(Sorein_ai::accounts::Stake {
             user: user.pubkey,
             agent: agent_pda,
             stake_account: derive_stake_account_pda(&user.pubkey, &agent_pda, &program.id()),
             system_program: anchor_lang::solana_program::system_program::ID,
         })
-        .args(ontora_ai::instruction::Stake {
+        .args(Sorein_ai::instruction::Stake {
             amount: stake_amount,
         })
         .signer(&user.keypair)
