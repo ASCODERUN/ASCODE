@@ -13,7 +13,7 @@ const NETWORK = WalletAdapterNetwork.Devnet;
 const RPC_ENDPOINT = clusterApiUrl(NETWORK);
 
 // Interface for Omelix AI client
-interface RexoulAIClient {
+interface UminexAIClient {
   provider: AnchorProvider;
   program: Program;
   wallet: WalletAdapter | null;
