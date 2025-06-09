@@ -1,7 +1,7 @@
 { 
-  "name": "Sorein-ai-client",
+  "name": "Uminex-ai-client",
   "version": "1.0.0",
-  "description": "Client-side application for Sorein AI on Solana network",
+  "description": "Client-side application for Uminex AI on Solana network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
