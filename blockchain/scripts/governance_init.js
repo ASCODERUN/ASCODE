@@ -11,7 +11,7 @@ dotenv.config();
 const CLUSTER = process.env.CLUSTER || 'devnet'; // Options: 'mainnet-beta', 'testnet', 'devnet'
 const WALLET_PATH = process.env.WALLET_PATH || join(__dirname, 'wallet.json'); // Path to admin wallet keypair
 const PROGRAM_ID = process.env.PROGRAM_ID || 'YourProgramIdHere'; // Replace with actual program ID after deployment
-const REALM_NAME = process.env.REALM_NAME || 'OntoraGovernance'; // Name of the governance realm
+const REALM_NAME = process.env.REALM_NAME || 'UminexGovernance'; // Name of the governance realm
 const MIN_VOTING_POWER = process.env.MIN_VOTING_POWER || 1; // Minimum tokens required to vote
 const VOTING_PERIOD_SECONDS = process.env.VOTING_PERIOD_SECONDS || 604800; // Voting period in seconds (default: 7 days)
 const QUORUM_PERCENT = process.env.QUORUM_PERCENT || 60; // Quorum percentage for proposals to pass
