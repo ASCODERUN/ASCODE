@@ -1,16 +1,16 @@
 {
   "general": {
-    "protocolName": "Sorein AI Governance",
+    "protocolName": "Uminex AI Governance",
     "version": "1.0.0",
-    "description": "Governance configuration for Omelix AI on Solana network",
+    "description": "Governance configuration for Uminex AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable governance module
     "network": "devnet" // Options: mainnet, testnet, devnet
   },
   "token": {
     "governanceToken": {
-      "symbol": "Sorein",
-      "name": "Sorein Token",
+      "symbol": "Uminex",
+      "name": "Uminex Token",
       "address": "${GOVERNANCE_TOKEN_ADDRESS}", // Placeholder for token contract address on Solana
       "decimals": 9, // Decimal places for token precision
       "totalSupply": 1000000000, // Total supply of governance tokens
