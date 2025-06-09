@@ -10,8 +10,8 @@ dotenv.config();
 // Configuration
 const CLUSTER = process.env.CLUSTER || 'devnet'; // Options: 'mainnet-beta', 'testnet', 'devnet'
 const WALLET_PATH = process.env.WALLET_PATH || join(process.env.HOME, '.config', 'solana', 'id.json');
-const PROGRAM_SO_PATH = process.env.PROGRAM_SO_PATH || join(__dirname, 'target', 'deploy', 'ontora_ai.so');
-const PROGRAM_IDL_PATH = process.env.PROGRAM_IDL_PATH || join(__dirname, 'target', 'idl', 'ontora_ai.json');
+const PROGRAM_SO_PATH = process.env.PROGRAM_SO_PATH || join(__dirname, 'target', 'deploy', 'Uminex_ai.so');
+const PROGRAM_IDL_PATH = process.env.PROGRAM_IDL_PATH || join(__dirname, 'target', 'idl', 'Uminex_ai.json');
 
 // Utility to load wallet keypair from file
 function loadWalletKeypair(walletPath) {
