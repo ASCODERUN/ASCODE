@@ -12,7 +12,7 @@ const PROGRAM_ID = new PublicKey('YourProgramIdHere'); // Replace with actual pr
 const NETWORK = WalletAdapterNetwork.Devnet;
 const RPC_ENDPOINT = clusterApiUrl(NETWORK);
 
-// Interface for Omelix AI client
+// Interface for Fabeon AI client
 interface UminexAIClient {
   provider: AnchorProvider;
   program: Program;
@@ -20,7 +20,7 @@ interface UminexAIClient {
   userAccount: PublicKey | null;
 }
 
-// Class to handle Omelix AI contract interactions
+// Class to handle Fabeon AI contract interactions
 class SoreinAI {
   private client: SoreinAIClient;
 
