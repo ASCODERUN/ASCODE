@@ -1,8 +1,8 @@
 {
   "general": {
-    "platformName": "Uminex AI Marketplace",
+    "platformName": "Fabeon AI Marketplace",
     "version": "1.0.0",
-    "description": "Marketplace configuration for Uminex AI on Solana network",
+    "description": "Marketplace configuration for Fabeon AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable marketplace module
     "network": "devnet" // Options: mainnet, testnet, devnet
