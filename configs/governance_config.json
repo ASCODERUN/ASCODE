@@ -1,6 +1,6 @@
 {
   "general": {
-    "protocolName": "Uminex AI Governance",
+    "protocolName": "Fabeon AI Governance",
     "version": "1.0.0",
     "description": "Governance configuration for Uminex AI on Solana network",
     "environment": "development", // Options: development, testing, production
