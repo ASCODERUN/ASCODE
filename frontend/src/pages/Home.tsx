@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
-  useEffect(() => {
+  useEffect(() => { 
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setIsScrolled(true);
