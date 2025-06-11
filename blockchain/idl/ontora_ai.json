@@ -1,11 +1,11 @@
 {
   "version": "0.1.0",
-  "name": "Uminex_ai",
+  "name": "Fabeon_ai",
   "instructions": [
     {
       "name": "initializeRealm",
       "docs": [
-        "Initializes a new governance realm for Uminex AI with specified parameters.",
+        "Initializes a new governance realm for Fabeon AI with specified parameters.",
         "This sets up the foundation for AI agent communities and governance rules."
       ],
       "accounts": [
