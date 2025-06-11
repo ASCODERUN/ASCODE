@@ -6,7 +6,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Fabeon AI** Solana-based decentralized protocol for real-time AI knowledge graph updates, rewarding contributors and enabling trustless data sharing.
+**Fabeon AI** is a Dynamic Knowledge Graph Update Protocol built on the Solana blockchain, designed to enable real-time updates, trustless verification, and efficient sharing of knowledge graphs through decentralized technology.
 
 
 [![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://fabeon.org/)
