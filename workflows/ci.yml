@@ -1,6 +1,6 @@
 name: Continuous Integration
 
-# Define when the workflow should run
+# Define when the workflow should run 
 on:
   push:
     branches:
