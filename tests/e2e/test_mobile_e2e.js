@@ -41,7 +41,7 @@ describe('Mobile End-to-End Tests for DApp', () => {
   // Test Case 1: Verify mobile homepage loads correctly
   it('should load homepage and display content correctly on mobile', () => {
     // Check if the page title or header is visible
-    cy.contains('h1', 'Ontora AI').should('be.visible');
+    cy.contains('h1', 'Fabeon AI').should('be.visible');
 
     // Verify that mobile navigation menu or hamburger icon is visible
     cy.get('.mobile-menu-toggle').should('be.visible');
