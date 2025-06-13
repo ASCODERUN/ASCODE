@@ -1,6 +1,6 @@
 import { Connection, PublicKey, Transaction, TransactionInstruction, Keypair } from '@solana/web3.js';
 import { Program, AnchorProvider, BN } from '@project-serum/anchor'; 
-import { SystemProgram, SYSVAR_RENT_PUBKEY } from '@solana/web3.js';
+import { SystemProgram, SYSVAR_RENT_PUBKEY } from '@solana/web3.js'; 
 
 // Import types and utilities (assuming they are in the same directory or adjust path accordingly)
 import { ProposalAccount, CreateProposalArgs, ProgramState } from './types';
