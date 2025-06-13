@@ -1,4 +1,4 @@
-# Fabeon AI
+# Fureon AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,13 +6,13 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Fabeon AI** is a Dynamic Knowledge Graph Update Protocol built on the Solana blockchain, designed to enable real-time updates, trustless verification, and efficient sharing of knowledge graphs through decentralized technology.
+**Fureon AI** is an open-source AI Agent project designed to provide intelligent on-chain management tools for Web3 users. Leveraging AI technology, it assists users in managing cryptocurrency wallets, making on-chain decisions, executing transfers, and running automated scripts. Fureon AI is not just a single AI model but also includes an Agent Cluster capable of collaborative work to handle complex on-chain tasks. The core philosophy of the project is decentralization, transparency, and user empowerment, aiming to lower the entry barrier for Web3 users and enhance decision-making efficiency.
 
 
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://fabeon.org/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/FabeonDKGP)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/NikhilKhani10)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/nikhil-khani/)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://fureonai.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Fureonnet)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/ahantebi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/sachinkodha/)
 
 
 ## Table of Contents
@@ -50,7 +50,7 @@
 
 ## Architecture
 
-Fabeon AI follows a modular architecture to ensure scalability and maintainability:
+Fureon AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -60,7 +60,7 @@ Fabeon AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Fabeon AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Fureon AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -79,9 +79,9 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the Fabeon AI repository to your local machine and navigate to the project directory.
+- Clone the Fureon AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Fabeon-ai.git
+git clone https://github.com/yourusername/Fureon-ai.git
 cd Fabeon-ai
 ```
 
@@ -327,16 +327,16 @@ In the interest of fostering an open and welcoming environment, we expect all co
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
 - Email: Tech@Fabeon.org (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @FabeonDKGP
+- Twitter: Follow us for updates and announcements at @FureonNET
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://Fabeon.org/
+- Website: Visit https://Fureonai.com/
 
 ## Acknowledgments
-The Fabeon AI team extends heartfelt thanks to the following:
+The Fureon AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Fabeon AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Fureon AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
