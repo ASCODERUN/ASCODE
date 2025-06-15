@@ -1,4 +1,4 @@
-# Fureon AI
+# Rubexa AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,13 +6,12 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Fureon AI** is an open-source AI Agent project designed to provide intelligent on-chain management tools for Web3 users. Leveraging AI technology, it assists users in managing cryptocurrency wallets, making on-chain decisions, executing transfers, and running automated scripts. Fureon AI is not just a single AI model but also includes an Agent Cluster capable of collaborative work to handle complex on-chain tasks. The core philosophy of the project is decentralization, transparency, and user empowerment, aiming to lower the entry barrier for Web3 users and enhance decision-making efficiency.
+**Rubexa AI** is an innovative decentralized AI fine-tuning network built on the Solana blockchain, designed to revolutionize AI development through distributed computing and community collaboration. Leveraging Solana’s high throughput and low transaction costs, the project integrates global idle computing resources to provide efficient, cost-effective solutions for AI model fine-tuning, while ensuring user data privacy through local processing and encryption technology. Rubexa AI significantly lowers the barriers to AI development—initial estimates suggest a cost reduction of about 60%—and encourages users to contribute resources and data via a token-based incentive mechanism, fostering a sustainable collaborative ecosystem. Whether for AI developers, researchers, or small-to-medium enterprises, users can easily join the network, collectively driving AI innovation while benefiting from secure, transparent, and efficient services. Rubexa AI’s vision is to become the world’s leading decentralized AI platform, empowering everyone to participate in shaping an intelligent future.
 
-
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://fureonai.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Fureonnet)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/ahantebi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/sachinkodha/)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://rubexaai.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Rubexaweb3)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/JohanneshEDU)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/johannesheidecke/)
 
 
 ## Table of Contents
@@ -50,7 +49,7 @@
 
 ## Architecture
 
-Fureon AI follows a modular architecture to ensure scalability and maintainability:
+Rubexa AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -60,7 +59,7 @@ Fureon AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Fureon AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Rubexa AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -79,10 +78,10 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the Fureon AI repository to your local machine and navigate to the project directory.
+- Clone the Rubexa AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Fureon-ai.git
-cd Fabeon-ai
+git clone https://github.com/yourusername/Rubexa-ai.git
+cd Rubexa-ai
 ```
 
 2. Install Dependencies:
@@ -103,7 +102,7 @@ npm --version
 
 ## Configuration
 
-### Fabeon AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Rubexa AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -326,17 +325,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Tech@Fabeon.org (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @FureonNET
+- Email: Tech@Rubexaai.com (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @Rubexaweb3
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://Fureonai.com/
+- Website: Visit https://Rubexaai.com/
 
 ## Acknowledgments
-The Fureon AI team extends heartfelt thanks to the following:
+The Rubexa AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Fureon AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Rubexa AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
