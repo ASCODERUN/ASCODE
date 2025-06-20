@@ -10,7 +10,7 @@ pub struct CreateProposal<'info> {
     #[account(mut)]
     pub creator: Signer<'info>,
     /// The platform configuration account to ensure governance is enabled.
-    #[account(has_one = authority @ FabeonError::UnauthorizedAccess)]
+    #[account(has_one = authority @ VazuraError::UnauthorizedAccess)]
     pub platform_config: Account<'info, PlatformConfig>,
     /// The proposal account to be initialized.
     #[account(
