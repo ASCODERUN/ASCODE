@@ -1,4 +1,4 @@
-# Rubexa AI
+# Vazura AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,12 +6,26 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Rubexa AI** is an innovative decentralized AI fine-tuning network built on the Solana blockchain, designed to revolutionize AI development through distributed computing and community collaboration. Leveraging Solana’s high throughput and low transaction costs, the project integrates global idle computing resources to provide efficient, cost-effective solutions for AI model fine-tuning, while ensuring user data privacy through local processing and encryption technology. Rubexa AI significantly lowers the barriers to AI development—initial estimates suggest a cost reduction of about 60%—and encourages users to contribute resources and data via a token-based incentive mechanism, fostering a sustainable collaborative ecosystem. Whether for AI developers, researchers, or small-to-medium enterprises, users can easily join the network, collectively driving AI innovation while benefiting from secure, transparent, and efficient services. Rubexa AI’s vision is to become the world’s leading decentralized AI platform, empowering everyone to participate in shaping an intelligent future.
+**Vazura AI** is an innovative project combining a multi-agent AI framework, the Solana blockchain, and the Roblox ecosystem. It provides powerful content generation and NPC design tools for Roblox developers while delivering personalized gaming experiences for players. Leveraging Solana’s efficiency and decentralization, Vazura AI offers significant advantages in transparency, economic incentives, and large-scale interactions. In the future, the project aims to become a core AI service platform within the Roblox ecosystem through community building and technical optimization.
 
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://rubexaai.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Rubexaweb3)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/JohanneshEDU)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/johannesheidecke/)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://vazura.org/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Vazuraweb)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/shailimonchik/)
+
+```
+
+      ___           ___           ___           ___           ___           ___     
+     /\__\         /\  \         /\  \         /\__\         /\  \         /\  \    
+    /:/  /        /::\  \        \:\  \       /:/  /        /::\  \       /::\  \   
+   /:/  /        /:/\:\  \        \:\  \     /:/  /        /:/\:\  \     /:/\:\  \  
+  /:/__/  ___   /::\~\:\  \        \:\  \   /:/  /  ___   /::\~\:\  \   /::\~\:\  \ 
+  |:|  | /\__\ /:/\:\ \:\__\ _______\:\__\ /:/__/  /\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+  |:|  |/:/  / \/__\:\/:/  / \::::::::/__/ \:\  \ /:/  / \/_|::\/:/  / \/__\:\/:/  /
+  |:|__/:/  /       \::/  /   \:\~~\~~      \:\  /:/  /     |:|::/  /       \::/  / 
+   \::::/__/        /:/  /     \:\  \        \:\/:/  /      |:|\/__/        /:/  /  
+    ~~~~           /:/  /       \:\__\        \::/  /       |:|  |         /:/  /   
+                   \/__/         \/__/         \/__/         \|__|         \/__/    
+```
 
 
 ## Table of Contents
@@ -49,7 +63,7 @@
 
 ## Architecture
 
-Rubexa AI follows a modular architecture to ensure scalability and maintainability:
+Vazura AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -59,7 +73,7 @@ Rubexa AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Rubexa AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Vazura AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -78,10 +92,10 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the Rubexa AI repository to your local machine and navigate to the project directory.
+- Clone the Vazura AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Rubexa-ai.git
-cd Rubexa-ai
+git clone https://github.com/yourusername/Vazura-ai.git
+cd Vazura-ai
 ```
 
 2. Install Dependencies:
@@ -102,7 +116,7 @@ npm --version
 
 ## Configuration
 
-### Rubexa AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Vazura AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -116,7 +130,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Fabeon_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Vazura_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -270,7 +284,7 @@ Encountering issues? Check the following common problems and solutions. For unre
 #### Logs Location: All logs are stored in /logs with timestamps for debugging. Use tail -f /logs/*.log for real-time monitoring.
 
 ## Contributing
-We warmly welcome contributions from the global community to make Uminex AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
+We warmly welcome contributions from the global community to make Vazura AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
 
 ### How to Contribute
 1. Fork the Repository:
@@ -325,17 +339,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Tech@Rubexaai.com (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @Rubexaweb3
+- Email: Hello@Vazura.org (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @Vazuraweb
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://Rubexaai.com/
+- Website: Visit https://Vazura.org/
 
 ## Acknowledgments
-The Rubexa AI team extends heartfelt thanks to the following:
+The Vazura AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Rubexa AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Vazura AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
