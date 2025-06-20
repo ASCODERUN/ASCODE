@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash  
 
 # update_dependencies.sh
 # Script to update dependencies across languages and lock versions
@@ -22,14 +22,14 @@ GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 # Function to display usage information
-usage() {
+usage() {    
     echo "Usage: \$0 [-d] [-f] [-h]"
     echo "  -d  Dry run mode (simulate updates without applying changes)"
     echo "  -f  Force update even if dependencies are up-to-date"
     echo "  -h  Display this help message"
     exit 1
 }
-
+ 
 # Function to parse command-line arguments
 parse_args() {
     while getopts "dfh" opt; do
