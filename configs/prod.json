@@ -12,7 +12,7 @@
     "apiBasePath": "/api/v1",
     "cors": {
       "enabled": true,
-      "allowedOrigins": ["https://Fabeon.com", "https://www.Fabeonai.org"],
+      "allowedOrigins": ["https://Vazura.org", "https://www.Vazura.org"],
       "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       "allowedHeaders": ["Content-Type", "Authorization", "X-Requested-With"],
       "maxAge": 86400
