@@ -1,7 +1,7 @@
 { 
-  "name": "Fabeon-ai-client",
+  "name": "Vazura-ai-client",
   "version": "1.0.0",
-  "description": "Client-side application for Fabeon AI on Solana network",
+  "description": "Client-side application for Vazura AI on Solana network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
