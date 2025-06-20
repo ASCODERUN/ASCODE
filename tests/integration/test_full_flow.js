@@ -10,7 +10,7 @@ describe('Full System Flow Tests for Vazura AI', () => {
     cy.visit('http://localhost:3000');
   });
 
-  it('should complete full flow from login to staking and AI agent interaction', () => {
+  it('should complete full flow from login to staking and AI agent interaction', () => { 
     // Step 1: User logs in through the frontend
     cy.get('[data-testid="login-button"]').click();
     cy.get('[data-testid="email-input"]').type('testuser@ontora.ai');
@@ -19,7 +19,7 @@ describe('Full System Flow Tests for Vazura AI', () => {
 
     // Verify login API call
     cy.wait('@loginRequest').its('request.body').should('include', {
-      email: 'testuser@Hexuma.ai',
+      email: 'testuser@Vazura.ai',
       password: 'password123'
     });
     cy.get('[data-testid="user-welcome"]').should('contain.text', 'Welcome, testuser');
