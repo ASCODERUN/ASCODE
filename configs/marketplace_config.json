@@ -1,13 +1,13 @@
 {
   "general": {
-    "platformName": "Fabeon AI Marketplace",
+    "platformName": "Vazura AI Marketplace",
     "version": "1.0.0",
-    "description": "Marketplace configuration for Fabeon AI on Solana network",
+    "description": "Marketplace configuration for Vazura AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable marketplace module
     "network": "devnet" // Options: mainnet, testnet, devnet
   },
-  "fees": {
+  "fees": { 
     "enabled": true, // Enable marketplace fees
     "transaction": {
       "seller": {
