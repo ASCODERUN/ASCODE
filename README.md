@@ -1,4 +1,4 @@
-# Vazura AI
+# Nuvico AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,26 +6,11 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Vazura AI** is an innovative project combining a multi-agent AI framework, the Solana blockchain, and the Roblox ecosystem. It provides powerful content generation and NPC design tools for Roblox developers while delivering personalized gaming experiences for players. Leveraging Solana’s efficiency and decentralization, Vazura AI offers significant advantages in transparency, economic incentives, and large-scale interactions. In the future, the project aims to become a core AI service platform within the Roblox ecosystem through community building and technical optimization.
+**Nuvico AI** is a lightweight enterprise multi-agent framework for secure, borderless data collaboration using zero-trust and federated learning.
 
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://vazura.org/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Vazuraweb)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/shailimonchik/)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://nuvicoai.pro/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Nuviconx)
 
-```
-
-      ___           ___           ___           ___           ___           ___     
-     /\__\         /\  \         /\  \         /\__\         /\  \         /\  \    
-    /:/  /        /::\  \        \:\  \       /:/  /        /::\  \       /::\  \   
-   /:/  /        /:/\:\  \        \:\  \     /:/  /        /:/\:\  \     /:/\:\  \  
-  /:/__/  ___   /::\~\:\  \        \:\  \   /:/  /  ___   /::\~\:\  \   /::\~\:\  \ 
-  |:|  | /\__\ /:/\:\ \:\__\ _______\:\__\ /:/__/  /\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
-  |:|  |/:/  / \/__\:\/:/  / \::::::::/__/ \:\  \ /:/  / \/_|::\/:/  / \/__\:\/:/  /
-  |:|__/:/  /       \::/  /   \:\~~\~~      \:\  /:/  /     |:|::/  /       \::/  / 
-   \::::/__/        /:/  /     \:\  \        \:\/:/  /      |:|\/__/        /:/  /  
-    ~~~~           /:/  /       \:\__\        \::/  /       |:|  |         /:/  /   
-                   \/__/         \/__/         \/__/         \|__|         \/__/    
-```
 
 
 ## Table of Contents
@@ -63,7 +48,7 @@
 
 ## Architecture
 
-Vazura AI follows a modular architecture to ensure scalability and maintainability:
+Nuvico AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -73,7 +58,7 @@ Vazura AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Vazura AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Nuvico AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -92,10 +77,10 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the Vazura AI repository to your local machine and navigate to the project directory.
+- Clone the Nuvico AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Vazura-ai.git
-cd Vazura-ai
+git clone https://github.com/yourusername/Nuvico-ai.git
+cd Nuvico-ai
 ```
 
 2. Install Dependencies:
@@ -116,7 +101,7 @@ npm --version
 
 ## Configuration
 
-### Vazura AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Nuvico AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -339,17 +324,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Hello@Vazura.org (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @Vazuraweb
+- Email: Hello@Nuvicoai.pro (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @Nuviconx
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://Vazura.org/
+- Website: Visit https://Nuvicoai.pro/
 
 ## Acknowledgments
-The Vazura AI team extends heartfelt thanks to the following:
+The Nuvico AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Vazura AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Nuvico AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
