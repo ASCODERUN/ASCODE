@@ -5,7 +5,7 @@
 
 # Exit on any error to prevent partial setups
 set -e
-
+ 
 # Utility function to log messages with timestamp
 log_message() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] \$1"
