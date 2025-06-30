@@ -1,4 +1,4 @@
-# Nuvico AI
+# Oxenor AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,10 +6,11 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Nuvico AI** is a lightweight enterprise multi-agent framework for secure, borderless data collaboration using zero-trust and federated learning.
+**Oxenor AI** is an innovative project built on the Solana blockchain network, aiming to create an efficient on-chain real-time AI data engine. By packaging Solana’s on-chain transaction, event, and state data into structured data streams, Oxenor AI provides developers, researchers, and AI projects with real-time, easy-to-consume interfaces, facilitating deep integration between AI models and blockchain data.
 
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://nuvicoai.pro/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Nuviconx)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://oxenorai.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)]([https://x.com/OxenorAI/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)]([https://x.com/gsohumich/)
 
 
 
@@ -48,7 +49,7 @@
 
 ## Architecture
 
-Nuvico AI follows a modular architecture to ensure scalability and maintainability:
+Oxenor AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -58,7 +59,7 @@ Nuvico AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Nuvico AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Oxenor AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -79,8 +80,8 @@ Ensure you have the following tools and dependencies installed before proceeding
 1. Clone the repository:
 - Clone the Nuvico AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Nuvico-ai.git
-cd Nuvico-ai
+git clone https://github.com/yourusername/Oxenor-ai.git
+cd Oxenor-ai
 ```
 
 2. Install Dependencies:
@@ -101,7 +102,7 @@ npm --version
 
 ## Configuration
 
-### Nuvico AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Oxenor AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -115,7 +116,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Vazura_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Oxenor_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -269,7 +270,7 @@ Encountering issues? Check the following common problems and solutions. For unre
 #### Logs Location: All logs are stored in /logs with timestamps for debugging. Use tail -f /logs/*.log for real-time monitoring.
 
 ## Contributing
-We warmly welcome contributions from the global community to make Vazura AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
+We warmly welcome contributions from the global community to make Oxenor AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
 
 ### How to Contribute
 1. Fork the Repository:
@@ -324,17 +325,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Hello@Nuvicoai.pro (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @Nuviconx
+- Email: Hello@Oxenorai.com (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @OxenorAI
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://Nuvicoai.pro/
+- Website: Visit https://oxenorai.com/
 
 ## Acknowledgments
-The Nuvico AI team extends heartfelt thanks to the following:
+The Oxenor AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Nuvico AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Oxenor AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
