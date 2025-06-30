@@ -1,6 +1,6 @@
 {
   "general": {
-    "projectName": "Nuvico AI",
+    "projectName": "Oxenor AI",
     "version": "1.0.0",
     "description": "Configuration for AI agents on Solana Web3 network with autonomous evolution capabilities",
     "environment": "development", // Options: development, testing, production
@@ -10,7 +10,7 @@
     "timestampFormat": "YYYY-MM-DD HH:mm:ss" // Format for log timestamps
   },
   "model": {
-    "name": "VazuraBaseModel",
+    "name": "OxenorBaseModel",
     "type": "transformer", // Options: transformer, rnn, cnn, hybrid, custom
     "version": "v1.0.0",
     "architecture": {
