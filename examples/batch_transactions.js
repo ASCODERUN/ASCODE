@@ -6,7 +6,7 @@ const bs58 = require('bs58');
 const fs = require('fs').promises;
 const path = require('path');
 
-// Configure logging for debugging and tracking
+// Configure logging for debugging and tracking 
 const log = (message, level = 'info') => {
     const timestamp = new Date().toISOString();
     console.log(`[${timestamp}] [${level.toUpperCase()}] ${message}`);
