@@ -4,7 +4,7 @@
 # Script to backup database for disaster recovery with encryption
 
 # Exit on any error to prevent partial execution
-set -e
+set -e 
 
 # Default environment and configuration settings
 DEFAULT_ENV="development"
