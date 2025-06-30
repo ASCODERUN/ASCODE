@@ -25,7 +25,7 @@ class AIUtils:
             return data 
         except Exception as e:
             self.logger.error(f"Error loading data: {str(e)}")
-            raise
+            raise 
 
     def clean_data(self, df: pd.DataFrame, drop_na: bool = True, fill_na: Optional[Union[str, float]] = None) -> pd.DataFrame:
         try:
