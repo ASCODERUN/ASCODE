@@ -25,7 +25,7 @@ async function logMessage(message) {
             path.join(__dirname, 'marketplace_listing.log'),
             `[${new Date().toISOString()}] ${message}\n`
         );
-    } catch (error) {
+    } catch (error) { 
         console.error('Error writing to log file:', error.message);
     }
 }
