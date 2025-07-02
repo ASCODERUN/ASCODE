@@ -1,6 +1,6 @@
 {
   "general": {
-    "projectName": "Oxenor AI",
+    "projectName": "Marnex AI",
     "version": "1.0.0",
     "description": "Configuration for AI agents on Solana Web3 network with autonomous evolution capabilities",
     "environment": "development", // Options: development, testing, production
@@ -10,14 +10,14 @@
     "timestampFormat": "YYYY-MM-DD HH:mm:ss" // Format for log timestamps
   },
   "model": {
-    "name": "OxenorBaseModel",
+    "name": "MarnexBaseModel",
     "type": "transformer", // Options: transformer, rnn, cnn, hybrid, custom
     "version": "v1.0.0",
     "architecture": {
       "layers": 12, // Number of layers in the model
       "hiddenSize": 768, // Size of hidden states
       "attentionHeads": 12, // Number of attention heads
-      "dropoutRate": 0.1, // Dropout rate for regularization
+      "dropoutRate": 0.1, // Dropout rate for regularization 
       "activationFunction": "gelu", // Options: relu, gelu, sigmoid, tanh
       "feedForwardSize": 3072 // Size of feed-forward network
     },
