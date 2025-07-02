@@ -31,7 +31,7 @@ router = APIRouter(
 # OAuth2 scheme for token authentication (assumes server.py or similar setup)
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
-# Pydantic Models for Request and Response
+# Pydantic Models for Request and Response 
 class PredictionRequest(BaseModel):
     input_data: List[float]  # Input data for prediction
     model_version: Optional[str] = "default"
