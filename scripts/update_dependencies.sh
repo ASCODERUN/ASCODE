@@ -25,7 +25,7 @@ NC='\033[0m' # No Color
 usage() {    
     echo "Usage: \$0 [-d] [-f] [-h]"
     echo "  -d  Dry run mode (simulate updates without applying changes)"
-    echo "  -f  Force update even if dependencies are up-to-date"
+    echo "  -f  Force update even if dependencies are up-to-date" 
     echo "  -h  Display this help message"
     exit 1
 }
