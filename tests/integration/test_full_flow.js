@@ -1,4 +1,4 @@
-describe('Full System Flow Tests for Oxenor AI', () => {
+describe('Full System Flow Tests for Marnex AI', () => {
   beforeEach(() => {
     // Reset mocks and intercept external calls before each test
     cy.intercept('POST', '/api/auth/login', { statusCode: 200, body: { token: 'mock-jwt-token', userId: 'user123' } }).as('loginRequest');
