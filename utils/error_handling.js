@@ -25,7 +25,7 @@ class NotFoundError extends AppError {
 
 class UnauthorizedError extends AppError {
   constructor(message, details = {}) {
-    super(message, 401, 'UNAUTHORIZED', details);
+    super(message, 401, 'UNAUTHORIZED', details); 
   }
 }
 
