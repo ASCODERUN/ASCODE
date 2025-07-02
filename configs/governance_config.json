@@ -1,20 +1,20 @@
 {
   "general": {
-    "protocolName": "Oxenor AI Governance",
+    "protocolName": "Marnex AI Governance",
     "version": "1.0.0",
-    "description": "Governance configuration for Oxenor AI on Solana network",
+    "description": "Governance configuration for Marnex AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable governance module
     "network": "devnet" // Options: mainnet, testnet, devnet
   },
   "token": {
     "governanceToken": {
-      "symbol": "Oxenor",
-      "name": "Oxenor Token",
+      "symbol": "Marnex",
+      "name": "Marnex Token",
       "address": "${GOVERNANCE_TOKEN_ADDRESS}", // Placeholder for token contract address on Solana
       "decimals": 9, // Decimal places for token precision
       "totalSupply": 1000000000, // Total supply of governance tokens
-      "minHoldingForParticipation": 100, // Minimum tokens required to participate in governance
+      "minHoldingForParticipation": 100, // Minimum tokens required to participate in governance 
       "lockup": {
         "enabled": true, // Enable token lockup for voting
         "minLockupPeriod": 604800, // Minimum lockup period in seconds (7 days)
