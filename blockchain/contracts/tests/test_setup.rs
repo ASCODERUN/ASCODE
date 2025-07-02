@@ -15,7 +15,7 @@ use solana_program_test::*;
 use solana_sdk::commitment_config::CommitmentLevel;
 use std::rc::Rc;
 
-// Assuming the program ID for Fabeon AI (replace with actual program ID if needed)
+// Assuming the program ID for Marnex AI (replace with actual program ID if needed)
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 
 // Constants for test setup
