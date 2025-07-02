@@ -1,4 +1,4 @@
-# Oxenor AI
+# Marnex AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,11 +6,13 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Oxenor AI** is an innovative project built on the Solana blockchain network, aiming to create an efficient on-chain real-time AI data engine. By packaging Solana’s on-chain transaction, event, and state data into structured data streams, Oxenor AI provides developers, researchers, and AI projects with real-time, easy-to-consume interfaces, facilitating deep integration between AI models and blockchain data.
+**Marnex AI** is an innovative project built on the Solana network, aiming to revolutionize the Web3 space by introducing AI-Powered Autonomous Micro-DAOs (Decentralized Autonomous Organizations). At its core, Marnex AI provides a cutting-edge platform that enables individuals, small teams, and communities to effortlessly create, deploy, and manage decentralized projects without requiring technical expertise or coding skills. By leveraging advanced AI agents, the system autonomously handles governance, resource allocation, and operational optimization, ensuring efficiency and adaptability while minimizing human intervention. Additionally, Marnex AI fosters community engagement by dynamically adjusting DAO structures based on real-time feedback and supports cross-chain compatibility for scalability and integration with broader blockchain ecosystems. With the high performance and low transaction costs of Solana, Marnex AI lowers the barriers to entry for Web3 innovation, empowering users worldwide to build and sustain autonomous, inclusive, and efficient decentralized organizations tailored to their unique goals and visions.
 
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://oxenorai.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)]([https://x.com/OxenorAI/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)]([https://x.com/gsohumich/)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://marnexai.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Marnexweb3)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/harshp8l)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow-blue?logo=linkedin)](https://www.linkedin.com/company/harshp8l)
+
 
 
 
@@ -49,7 +51,7 @@
 
 ## Architecture
 
-Oxenor AI follows a modular architecture to ensure scalability and maintainability:
+Marnex AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -59,7 +61,7 @@ Oxenor AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Oxenor AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Marnex AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -80,8 +82,8 @@ Ensure you have the following tools and dependencies installed before proceeding
 1. Clone the repository:
 - Clone the Nuvico AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Oxenor-ai.git
-cd Oxenor-ai
+git clone https://github.com/yourusername/Marnex-ai.git
+cd Marnex-ai
 ```
 
 2. Install Dependencies:
@@ -102,7 +104,7 @@ npm --version
 
 ## Configuration
 
-### Oxenor AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Marnex AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -116,7 +118,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Oxenor_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Marnex_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -325,17 +327,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Hello@Oxenorai.com (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @OxenorAI
+- Email: Support@Marnexai.com (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @MarnexWeb3
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://oxenorai.com/
+- Website: Visit https://Marnexai.com/
 
 ## Acknowledgments
-The Oxenor AI team extends heartfelt thanks to the following:
+The Marnex AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Oxenor AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Marnex AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
