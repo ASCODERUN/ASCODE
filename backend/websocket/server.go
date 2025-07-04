@@ -25,7 +25,7 @@ const (
 type Message struct {
     Type    MessageType `json:"type"`
     Payload interface{} `json:"payload"`
-}
+} 
 
 // AgentStatusPayload defines the payload for agent status updates.
 type AgentStatusPayload struct {
