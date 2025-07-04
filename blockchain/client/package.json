@@ -1,7 +1,7 @@
 { 
-  "name": "Marnex-ai-client",
+  "name": "Juvion-ai-client",
   "version": "1.0.0",
-  "description": "Client-side application for Marnex AI on Solana network",
+  "description": "Client-side application for Juvion AI on Solana network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
