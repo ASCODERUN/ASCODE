@@ -1,6 +1,6 @@
 // batch_transactions.js 
 // Example of batching Solana transactions for efficiency and cost savings using @solana/web3.js 
-
+ 
 const { Connection, clusterApiUrl, Keypair, LAMPORTS_PER_SOL, Transaction, TransactionInstruction, sendAndConfirmTransaction, PublicKey } = require('@solana/web3.js');
 const bs58 = require('bs58');
 const fs = require('fs').promises;
