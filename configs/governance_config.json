@@ -1,16 +1,16 @@
 {
   "general": {
-    "protocolName": "Marnex AI Governance",
+    "protocolName": "Juvion AI Governance",
     "version": "1.0.0",
-    "description": "Governance configuration for Marnex AI on Solana network",
+    "description": "Governance configuration for Juvion AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable governance module
     "network": "devnet" // Options: mainnet, testnet, devnet
   },
   "token": {
     "governanceToken": {
-      "symbol": "Marnex",
-      "name": "Marnex Token",
+      "symbol": "Juvion",
+      "name": "Juvion Token",
       "address": "${GOVERNANCE_TOKEN_ADDRESS}", // Placeholder for token contract address on Solana
       "decimals": 9, // Decimal places for token precision
       "totalSupply": 1000000000, // Total supply of governance tokens
