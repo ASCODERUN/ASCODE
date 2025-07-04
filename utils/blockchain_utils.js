@@ -9,7 +9,7 @@ class SolanaUtils {
   }
 
   async connectWallet(privateKeyString) {
-    try {
+    try { 
       const decodedKey = bs58.decode(privateKeyString);
       this.wallet = Keypair.fromSecretKey(decodedKey);
       const balance = await this.getBalance(this.wallet.publicKey);
