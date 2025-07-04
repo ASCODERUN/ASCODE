@@ -9,7 +9,7 @@ set -e
 # Default configuration settings
 CONFIG_DIR="./config"
 LOG_DIR="./logs"
-LOG_FILE="${LOG_DIR}/dependency_update.log"
+LOG_FILE="${LOG_DIR}/dependency_update.log" 
 TEMP_DIR="./temp"
 BACKUP_DIR="./backup"
 DRY_RUN=false  # Toggle dry run mode (no actual updates)
