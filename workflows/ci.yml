@@ -23,7 +23,7 @@ permissions:
 
 # Define environment variables accessible across all jobs
 env:
-  RUST_VERSION: '1.74.0' # Specify Rust version for consistency
+  RUST_VERSION: '1.74.0' # Specify Rust version for consistency 
   PYTHON_VERSION: '3.11' # Specify Python version for AI/ML components
   GO_VERSION: '1.21' # Specify Go version for backend services
   NODE_VERSION: '20' # Specify Node.js version for TypeScript frontend
