@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS users (
     email VARCHAR(255) UNIQUE NOT NULL,
     wallet_address VARCHAR(100) UNIQUE NOT NULL, -- Solana wallet address
     hashed_password VARCHAR(255), -- Optional for additional auth if needed
-    preferences JSONB DEFAULT '{}'::jsonb, -- User-specific settings or habits
+    preferences JSONB DEFAULT '{}'::jsonb, -- User-specific settings or habits 
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP NOT NULL,
     is_active BOOLEAN DEFAULT TRUE NOT NULL,
