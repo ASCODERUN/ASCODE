@@ -22,7 +22,7 @@ except ImportError:
         def initialize(self):
             self.is_initialized = True
             return True
-        
+         
         def preprocess(self, raw_data):
             if not self.is_initialized:
                 raise ValueError("Pipeline not initialized")
