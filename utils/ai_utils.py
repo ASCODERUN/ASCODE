@@ -22,7 +22,7 @@ class AIUtils:
             else:
                 raise ValueError(f"Unsupported file type: {file_type}")
             self.logger.info(f"Data loaded successfully from {file_path}")
-            return data 
+            return data  
         except Exception as e:
             self.logger.error(f"Error loading data: {str(e)}")
             raise 
