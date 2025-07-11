@@ -1,6 +1,6 @@
 {
   "general": {
-    "protocolName": "Juvion AI Governance",
+    "protocolName": "Nimbio AI Governance",
     "version": "1.0.0",
     "description": "Governance configuration for Juvion AI on Solana network",
     "environment": "development", // Options: development, testing, production
