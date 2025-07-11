@@ -1,5 +1,5 @@
 // test_setup.rs
-// This module provides setup utilities and helper functions for testing the Fabeon AI Solana program.
+// This module provides setup utilities and helper functions for testing the Nimbio AI Solana program.
 // It includes functions to initialize test environments, create mock accounts, and simulate user interactions.
 
 use anchor_lang::prelude::*;
