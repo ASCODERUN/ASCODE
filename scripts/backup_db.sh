@@ -22,7 +22,7 @@ COMPRESSION_ENABLED=true
 
 # Utility function to log messages with timestamp
 log_message() {
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] \$1"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] \$1" 
 }
 
 # Utility function to check if a command exists
