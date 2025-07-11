@@ -12,7 +12,7 @@ interface FormData {
   type: string;
   aggression: number;
   riskTolerance: number;
-  autoDeploy: boolean;
+   autoDeploy: boolean;
 }
 
 const AgentSetup: React.FC = () => {
