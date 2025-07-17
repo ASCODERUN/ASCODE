@@ -1,4 +1,4 @@
-# Nimbio AI
+# Hexium AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,11 +6,10 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Nimbio AI** is a quantum-inspired, neuro-symbolic AI agent framework designed for mission-critical enterprise operations. Its core architecture integrates distributed swarm orchestration with military-grade security protocols, enabling million-scale autonomous agents to collaborate in real-time across hybrid cloud environments. By fusing symbolic rule engines (for compliance-driven logic) with large language models (for unstructured reasoning), Nimbio achieves 99.2% decision accuracy in complex scenarios like financial fraud detection and supply chain optimization. The platform’s hardware-enforced zero-trust execution sandbox (powered by Intel SGX/AMD SEV) ensures GDPR/HIPAA-compliant operations, while its quantum scheduling algorithms slash task latency to 5ms and reduce computing resource waste by 70%. Enterprises deploying Nimbio report 40% higher inventory turnover rates and 3x faster response in dynamic decision-making, validated through global deployments with AWS/GCP/Azure.
+**Hexium AI** is a quantum-inspired, neuro-symbolic AI agent framework designed for mission-critical enterprise operations. Its core architecture integrates distributed swarm orchestration with military-grade security protocols, enabling million-scale autonomous agents to collaborate in real-time across hybrid cloud environments. By fusing symbolic rule engines (for compliance-driven logic) with large language models (for unstructured reasoning), Nimbio achieves 99.2% decision accuracy in complex scenarios like financial fraud detection and supply chain optimization. The platform’s hardware-enforced zero-trust execution sandbox (powered by Intel SGX/AMD SEV) ensures GDPR/HIPAA-compliant operations, while its quantum scheduling algorithms slash task latency to 5ms and reduce computing resource waste by 70%. Enterprises deploying Nimbio report 40% higher inventory turnover rates and 3x faster response in dynamic decision-making, validated through global deployments with AWS/GCP/Azure.
 
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://nimbioai.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/NimbioAIWEB3)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/PranaviCmellon)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://hexiumai.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/i/communities/1945815771994829050)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow-blue?logo=linkedin)](https://www.linkedin.com/in/srividya-pranavi-potharaju/)
 
 
@@ -51,7 +50,7 @@
 
 ## Architecture
 
-Nimbio AI follows a modular architecture to ensure scalability and maintainability:
+Hexium AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -61,7 +60,7 @@ Nimbio AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Nimbio AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Hexium AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -80,10 +79,10 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the Nimbio AI repository to your local machine and navigate to the project directory.
+- Clone the Hexium AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Nimbio-ai.git
-cd Nimbio-ai
+git clone https://github.com/yourusername/Hexium-ai.git
+cd Hexium-ai
 ```
 
 2. Install Dependencies:
@@ -104,7 +103,7 @@ npm --version
 
 ## Configuration
 
-### Nimbio AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Hexium AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -118,7 +117,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Nimbio_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Hexium_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -327,17 +326,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Support@Nimbioai.com (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @NimbioAIWeb3
+- Email: Support@Hexiumai.com (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @HexiumAIWeb3
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://Nimbioai.com/
+- Website: Visit https://Hexiumai.com/
 
 ## Acknowledgments
-The Nimbio AI team extends heartfelt thanks to the following:
+The Hexium AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Nimbio AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Hexium AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
