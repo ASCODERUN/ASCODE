@@ -1,11 +1,11 @@
 {
   "version": "0.1.0",
-  "name": "Nimbio_ai",
+  "name": "Hexium_ai",
   "instructions": [
     {
       "name": "initializeRealm",
       "docs": [
-        "Initializes a new governance realm for Nimbio AI with specified parameters.",
+        "Initializes a new governance realm for Hexium AI with specified parameters.",
         "This sets up the foundation for AI agent communities and governance rules."
       ],
       "accounts": [
