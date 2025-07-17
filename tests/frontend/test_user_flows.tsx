@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from '../App';
-import { ThemeProvider } from '../context/ThemeContext';
+import { ThemeProvider } from '../context/ThemeContext'; 
 import { WalletProvider } from '../context/WalletContext';
 
 // Mock dependencies for Web3 and Solana interactions
