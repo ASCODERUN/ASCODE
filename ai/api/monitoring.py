@@ -6,7 +6,7 @@ from prometheus_client import start_http_server, Counter, Histogram, Gauge
 from typing import Dict, Optional
 from datetime import datetime
 
-# Configure logging
+# Configure logging 
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
