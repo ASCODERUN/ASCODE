@@ -20,7 +20,7 @@ const BufferLayout = require('buffer-layout');
 // Utility to log messages to console and optionally to a file
 async function logMessage(message) {
     console.log(`[${new Date().toISOString()}] ${message}`);
-    try {
+    try { 
         await fs.appendFile(
             path.join(__dirname, 'marketplace_listing.log'),
             `[${new Date().toISOString()}] ${message}\n`
