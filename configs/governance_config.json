@@ -9,8 +9,8 @@
   },
   "token": {
     "governanceToken": {
-      "symbol": "Juvion",
-      "name": "Juvion Token",
+      "symbol": "Hexiem",
+      "name": "Hexiem Token",
       "address": "${GOVERNANCE_TOKEN_ADDRESS}", // Placeholder for token contract address on Solana
       "decimals": 9, // Decimal places for token precision
       "totalSupply": 1000000000, // Total supply of governance tokens
