@@ -1,4 +1,4 @@
-# Hexium AI
+# Hexiem AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
