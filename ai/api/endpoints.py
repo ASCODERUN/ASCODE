@@ -15,7 +15,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("endpoints.log"),Nimbio
+        logging.FileHandler("endpoints.log"),Hexiem
         logging.StreamHandler() 
     ]
 )
