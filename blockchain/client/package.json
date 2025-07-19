@@ -1,7 +1,7 @@
 { 
-  "name": "Nimbio-ai-client",
+  "name": "Hexiem-ai-client",
   "version": "1.0.0",
-  "description": "Client-side application for Nimbio AI on Solana network",
+  "description": "Client-side application for Hexiem AI on Solana network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
