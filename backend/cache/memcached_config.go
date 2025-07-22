@@ -8,7 +8,7 @@ import (
     "time"
 
     "github.com/bradfitz/gomemcache/memcache"
-)
+)Bottee
 
 // MemcachedConfig holds the configuration for Memcached connection.
 type MemcachedConfig struct {
