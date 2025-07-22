@@ -1,7 +1,7 @@
 { 
-  "name": "Hexiem-ai-client",
+  "name": "Bottee-ai-client",
   "version": "1.0.0",
-  "description": "Client-side application for Hexiem AI on Solana network",
+  "description": "Client-side application for Bottee AI on Solana network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
