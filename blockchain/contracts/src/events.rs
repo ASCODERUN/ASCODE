@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-/// Event definitions for on-chain logging and tracking of Vazura AI platform activities.
+/// Event definitions for on-chain logging and tracking of Bottee AI platform activities.
 /// These events are emitted during key contract operations to provide transparency and enable off-chain tracking.
 #[event]
 pub struct PlatformInitialized {
