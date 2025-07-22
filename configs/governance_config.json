@@ -1,6 +1,6 @@
 {
   "general": {
-    "protocolName": "Hexiem AI Governance",
+    "protocolName": "Bottee AI Governance",
     "version": "1.0.0",
     "description": "Governance configuration for Juvion AI on Solana network",
     "environment": "development", // Options: development, testing, production
@@ -9,8 +9,8 @@
   },
   "token": {
     "governanceToken": {
-      "symbol": "Hexiem",
-      "name": "Hexiem Token",
+      "symbol": "Bottee",
+      "name": "Bottee Token",
       "address": "${GOVERNANCE_TOKEN_ADDRESS}", // Placeholder for token contract address on Solana
       "decimals": 9, // Decimal places for token precision
       "totalSupply": 1000000000, // Total supply of governance tokens
