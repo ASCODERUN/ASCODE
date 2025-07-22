@@ -1,4 +1,4 @@
-# Hexiem AI
+# Bottee AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,30 +6,26 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Hexiem AI** is an innovative open-source multi-agent AI framework designed specifically for the intelligent management and analysis of Real World Assets (RWA), aiming to provide powerful data processing and decision-making support tools for developers, researchers, and small teams. By leveraging the collaboration of multiple AI agents, it breaks down complex data analysis tasks into manageable modules, including data collection, trend analysis, value prediction, and decision recommendations. Hexiem AI supports a variety of RWA data sources, such as real estate prices, blockchain assets, and art valuations, allowing users to customize data inputs and agent configurations based on their needs. The project employs a distributed computing architecture to ensure efficiency and scalability in handling large-scale data, while being built on an open-source technology stack, making it compatible with mainstream AI libraries and tools for easy extension and optimization by developers. As an AI model that is neither a platform nor a chatbot, Hexiem AI focuses on local deployment and user control to guarantee data privacy and security, while encouraging the community to contribute code and ideas via GitHub, collectively driving the future of intelligent RWA management.
+**Bottee AI** offers out-of-the-box deployment solutions, including Docker containers, Kubernetes orchestration, and lightweight edge device installations. BOTTEE AI integrates zero-trust security and federated learning for data privacy, deploys lightweight engines (<8MB) on edge devices, and enables enterprise-grade multi-agent collaboration via event-driven communication (gRPC-Web/RabbitMQ) and elastic resource orchestration (Kubernetes/serverless).
 
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://hexiemai.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/HexiemCloud)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/DWhittleWA)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow-blue?logo=linkedin)](https://www.linkedin.com/in/devin-whittle/)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://botteeai.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/BotteeAI)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/BrazealClemson)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow-blue?logo=linkedin)](https://www.linkedin.com/in/jacobbrazeal/)
 
 ```                                                                                                                                                      
-HHHHHHHHH     HHHHHHHHH                                        iiii                                                                  AAA               IIIIIIIIII
-H:::::::H     H:::::::H                                       i::::i                                                                A:::A              I::::::::I
-H:::::::H     H:::::::H                                        iiii                                                                A:::::A             I::::::::I
-HH::::::H     H::::::HH                                                                                                           A:::::::A            II::::::II
-  H:::::H     H:::::H      eeeeeeeeeeee  xxxxxxx      xxxxxxxiiiiiii     eeeeeeeeeeee       mmmmmmm    mmmmmmm                   A:::::::::A             I::::I  
-  H:::::H     H:::::H    ee::::::::::::ee x:::::x    x:::::x i:::::i   ee::::::::::::ee   mm:::::::m  m:::::::mm                A:::::A:::::A            I::::I  
-  H::::::HHHHH::::::H   e::::::eeeee:::::eex:::::x  x:::::x   i::::i  e::::::eeeee:::::eem::::::::::mm::::::::::m              A:::::A A:::::A           I::::I  
-  H:::::::::::::::::H  e::::::e     e:::::e x:::::xx:::::x    i::::i e::::::e     e:::::em::::::::::::::::::::::m             A:::::A   A:::::A          I::::I  
-  H:::::::::::::::::H  e:::::::eeeee::::::e  x::::::::::x     i::::i e:::::::eeeee::::::em:::::mmm::::::mmm:::::m            A:::::A     A:::::A         I::::I  
-  H::::::HHHHH::::::H  e:::::::::::::::::e    x::::::::x      i::::i e:::::::::::::::::e m::::m   m::::m   m::::m           A:::::AAAAAAAAA:::::A        I::::I  
-  H:::::H     H:::::H  e::::::eeeeeeeeeee     x::::::::x      i::::i e::::::eeeeeeeeeee  m::::m   m::::m   m::::m          A:::::::::::::::::::::A       I::::I  
-  H:::::H     H:::::H  e:::::::e             x::::::::::x     i::::i e:::::::e           m::::m   m::::m   m::::m         A:::::AAAAAAAAAAAAA:::::A      I::::I  
-HH::::::H     H::::::HHe::::::::e           x:::::xx:::::x   i::::::ie::::::::e          m::::m   m::::m   m::::m        A:::::A             A:::::A   II::::::II
-H:::::::H     H:::::::H e::::::::eeeeeeee  x:::::x  x:::::x  i::::::i e::::::::eeeeeeee  m::::m   m::::m   m::::m       A:::::A               A:::::A  I::::::::I
-H:::::::H     H:::::::H  ee:::::::::::::e x:::::x    x:::::x i::::::i  ee:::::::::::::e  m::::m   m::::m   m::::m      A:::::A                 A:::::A I::::::::I
-HHHHHHHHH     HHHHHHHHH    eeeeeeeeeeeeeexxxxxxx      xxxxxxxiiiiiiii    eeeeeeeeeeeeee  mmmmmm   mmmmmm   mmmmmm     AAAAAAA                   AAAAAAAIIIIIIIIII
+                                                                                   
+8 888888888o       ,o888888o. 8888888 8888888888 8888888 8888888888 8 8888888888   8 8888888888   
+8 8888    `88.  . 8888     `88.     8 8888             8 8888       8 8888         8 8888         
+8 8888     `88 ,8 8888       `8b    8 8888             8 8888       8 8888         8 8888         
+8 8888     ,88 88 8888        `8b   8 8888             8 8888       8 8888         8 8888         
+8 8888.   ,88' 88 8888         88   8 8888             8 8888       8 888888888888 8 888888888888 
+8 8888888888   88 8888         88   8 8888             8 8888       8 8888         8 8888         
+8 8888    `88. 88 8888        ,8P   8 8888             8 8888       8 8888         8 8888         
+8 8888      88 `8 8888       ,8P    8 8888             8 8888       8 8888         8 8888         
+8 8888    ,88'  ` 8888     ,88'     8 8888             8 8888       8 8888         8 8888         
+8 888888888P       `8888888P'       8 8888             8 8888       8 888888888888 8 888888888888 
+
 ```
 
 
@@ -68,7 +64,7 @@ HHHHHHHHH     HHHHHHHHH    eeeeeeeeeeeeeexxxxxxx      xxxxxxxiiiiiiii    eeeeeee
 
 ## Architecture
 
-Hexiem AI follows a modular architecture to ensure scalability and maintainability:
+Bottee AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -78,7 +74,7 @@ Hexiem AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Hexiem AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Bottee AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -99,8 +95,8 @@ Ensure you have the following tools and dependencies installed before proceeding
 1. Clone the repository:
 - Clone the Hexiem AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Hexiem-ai.git
-cd Hexiem-ai
+git clone https://github.com/yourusername/Bottee-ai.git
+cd Bottee-ai
 ```
 
 2. Install Dependencies:
@@ -121,7 +117,7 @@ npm --version
 
 ## Configuration
 
-### Hexiem AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Bottee AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -135,7 +131,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Hexiem_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Bottee_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -344,17 +340,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Hello@Hexiemai.com (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @HexiemCloud
+- Email: Hello@Botteeai.tech (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @BotteeAI
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://Hexiemai.com/
+- Website: Visit https://Botteeai.tech/
 
 ## Acknowledgments
-The Hexiem AI team extends heartfelt thanks to the following:
+The Bottee AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Hexiem AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Bottee AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
