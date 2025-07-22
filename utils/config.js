@@ -17,7 +17,7 @@ const parseBoolean = (value) => {
     return value.toLowerCase() === 'true' || value === '1';
   }
   return false;
-};
+}; 
 
 const parseNumber = (value, defaultValue = 0) => {
   if (typeof value === 'number') return value;
