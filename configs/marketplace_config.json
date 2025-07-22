@@ -1,6 +1,6 @@
 {
   "general": {
-    "platformName": "Hexiem AI Marketplace",
+    "platformName": "Bottee AI Marketplace",
     "version": "1.0.0",
     "description": "Marketplace configuration for Hexiem AI on Solana network",
     "environment": "development", // Options: development, testing, production
