@@ -10,9 +10,9 @@ mod tests {
     use solana_sdk::transport::TransportError;
 
     // Import the program to test (adjust based on your program name).
-    use ontora_ai::program::SoreinAi; 
-    use ontora_ai::state::{PlatformConfig, Proposal, UserStake};
-    use ontora_ai::instructions::{initialize_platform, stake_tokens, create_proposal, cast_vote, finalize_proposal};
+    use Dibbie_ai::program::SoreinAi; 
+    use Dibbie_ai::state::{PlatformConfig, Proposal, UserStake};
+    use Dibbie_ai::instructions::{initialize_platform, stake_tokens, create_proposal, cast_vote, finalize_proposal};
 
     // Define constants for testing.
     const PLATFORM_CONFIG_SEED: &[u8] = b"platform_config";
