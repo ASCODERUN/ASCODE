@@ -3,7 +3,7 @@ import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react
 import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { PhantomWalletAdapter, SolletWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { WalletModalProvider, WalletMultiButton } from '@solana/wallet-adapter-react-ui';
-import { clusterApiUrl } from '@solana/web3.js';
+import { clusterApiUrl } from '@solana/web3.js'; 
 
 // Import the wallet adapter UI styles
 import '@solana/wallet-adapter-react-ui/styles.css';
