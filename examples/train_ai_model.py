@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 np.random.seed(42)
 tf.random.set_seed(42)
 
-# Define paths for saving model and logs
+# Define paths for saving model and logs 
 MODEL_DIR = "models"
 LOG_DIR = "logs"
 DATA_DIR = "data"
