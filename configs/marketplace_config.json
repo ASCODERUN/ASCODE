@@ -2,7 +2,7 @@
   "general": {
     "platformName": "Dibbie AI Marketplace",
     "version": "1.0.0",
-    "description": "Marketplace configuration for Hexiem AI on Solana network",
+    "description": "Marketplace configuration for Dibbie AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable marketplace module
     "network": "devnet" // Options: mainnet, testnet, devnet
