@@ -1,6 +1,6 @@
 #!/bin/bash  
 
-# update_dependencies.sh
+# update_dependencies.sh 
 # Script to update dependencies across languages and lock versions
 
 # Exit on any error to prevent partial execution
