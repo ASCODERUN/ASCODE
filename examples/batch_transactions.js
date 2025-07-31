@@ -4,7 +4,7 @@
 const { Connection, clusterApiUrl, Keypair, LAMPORTS_PER_SOL, Transaction, TransactionInstruction, sendAndConfirmTransaction, PublicKey } = require('@solana/web3.js');
 const bs58 = require('bs58');
 const fs = require('fs').promises;
-const path = require('path'); 
+const path = require('path');  
 // Configure logging for debugging and tracking 
 const log = (message, level = 'info') => {
     const timestamp = new Date().toISOString();
