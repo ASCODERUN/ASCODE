@@ -1,7 +1,7 @@
 { 
-  "name": "Dibbie-ai-client",
+  "name": "Mubbit-ai-client",
   "version": "1.0.0",
-  "description": "Client-side application for Dibbie AI on Solana network",
+  "description": "Client-side application for Mubbit AI on Solana network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
