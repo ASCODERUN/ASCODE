@@ -12,7 +12,7 @@ LOG_DIR="./logs"
 LOG_FILE="${LOG_DIR}/dependency_update.log" 
 TEMP_DIR="./temp"
 BACKUP_DIR="./backup"
-DRY_RUN=false  # Toggle dry run mode (no actual updates)
+DRY_RUN=false  # Toggle dry run mode (no actual updates) 
 FORCE_UPDATE=false  # Toggle force update even if up-to-date
 
 # Color codes for output formatting
