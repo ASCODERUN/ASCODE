@@ -1,4 +1,4 @@
-# Dibbie AI
+# Mubbit AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,26 +6,25 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Dibbie AI** is an innovative open-source multi-agent AI framework designed specifically for the intelligent management and analysis of Real World Assets (RWA), aiming to provide powerful data processing and decision-making support tools for developers, researchers, and small teams. By leveraging the collaboration of multiple AI agents, it breaks down complex data analysis tasks into manageable modules, including data collection, trend analysis, value prediction, and decision recommendations. Dibbie AI supports a variety of RWA data sources, such as real estate prices, blockchain assets, and art valuations, allowing users to customize data inputs and agent configurations based on their needs. The project employs a distributed computing architecture to ensure efficiency and scalability in handling large-scale data, while being built on an open-source technology stack, making it compatible with mainstream AI libraries and tools for easy extension and optimization by developers. As an AI model that is neither a platform nor a chatbot, Dibbie AI focuses on local deployment and user control to guarantee data privacy and security, while encouraging the community to contribute code and ideas via GitHub, collectively driving the future of intelligent RWA management.
+**Mubbit AI** Swarm Agents is an innovative Web3-native decentralized AI swarm network designed to provide efficient and autonomous intelligent decision-making support for users in DeFi, NFT, and DAO sectors through smart contract-driven AI agent collaboration. The platform leverages blockchain technology to ensure data transparency and privacy security, with multiple AI agents working together in a swarm intelligence model to rapidly adapt to complex market environments and handle diverse tasks, from trading optimization to investment analysis. Users can submit task requests via a simple interface, and the system automatically assigns them to the most suitable AI swarm, with results verified on a decentralized network to guarantee accuracy and immutability. Additionally, the platform incentivizes community nodes to contribute computing power through the MUB Token reward mechanism while continuously optimizing AI algorithms to enhance task efficiency. Mubbit AI Swarm Agents not only eliminates trust issues associated with traditional centralized AI but also creates a secure, open, and efficient intelligent service platform for users and developers within the Web3 ecosystem.
 
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://dibbleai.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/DibbieAILAB)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Nystromusedu)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow-blue?logo=linkedin)](https://www.linkedin.com/in/andrewnystrom/)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://mubbitai.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/MubbitHub)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/BrennanUMNCT)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow-blue?logo=linkedin)](https://www.linkedin.com/in/rileybrennan/)
 
 ```                                                                                                                                                      
-                                                                                   
- .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------. 
-| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
-| |  ________    | || |     _____    | || |   ______     | || |   ______     | || |     _____    | || |  _________   | |
-| | |_   ___ `.  | || |    |_   _|   | || |  |_   _ \    | || |  |_   _ \    | || |    |_   _|   | || | |_   ___  |  | |
-| |   | |   `. \ | || |      | |     | || |    | |_) |   | || |    | |_) |   | || |      | |     | || |   | |_  \_|  | |
-| |   | |    | | | || |      | |     | || |    |  __'.   | || |    |  __'.   | || |      | |     | || |   |  _|  _   | |
-| |  _| |___.' / | || |     _| |_    | || |   _| |__) |  | || |   _| |__) |  | || |     _| |_    | || |  _| |___/ |  | |
-| | |________.'  | || |    |_____|   | || |  |_______/   | || |  |_______/   | || |    |_____|   | || | |_________|  | |
-| |              | || |              | || |              | || |              | || |              | || |              | |
-| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
- '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
+      ___           ___           ___           ___                       ___                    ___           ___           ___     
+     /\__\         /\__\         /\  \         /\  \          ___        /\  \                  /\__\         /\__\         /\  \    
+    /::|  |       /:/  /        /::\  \       /::\  \        /\  \       \:\  \                /:/  /        /:/  /        /::\  \   
+   /:|:|  |      /:/  /        /:/\:\  \     /:/\:\  \       \:\  \       \:\  \              /:/__/        /:/  /        /:/\:\  \  
+  /:/|:|__|__   /:/  /  ___   /::\~\:\__\   /::\~\:\__\      /::\__\      /::\  \            /::\  \ ___   /:/  /  ___   /::\~\:\__\ 
+ /:/ |::::\__\ /:/__/  /\__\ /:/\:\ \:|__| /:/\:\ \:|__|  __/:/\/__/     /:/\:\__\          /:/\:\  /\__\ /:/__/  /\__\ /:/\:\ \:|__|
+ \/__/~~/:/  / \:\  \ /:/  / \:\~\:\/:/  / \:\~\:\/:/  / /\/:/  /       /:/  \/__/          \/__\:\/:/  / \:\  \ /:/  / \:\~\:\/:/  /
+       /:/  /   \:\  /:/  /   \:\ \::/  /   \:\ \::/  /  \::/__/       /:/  /                    \::/  /   \:\  /:/  /   \:\ \::/  / 
+      /:/  /     \:\/:/  /     \:\/:/  /     \:\/:/  /    \:\__\       \/__/                     /:/  /     \:\/:/  /     \:\/:/  /  
+     /:/  /       \::/  /       \::/__/       \::/__/      \/__/                                /:/  /       \::/  /       \::/__/   
+     \/__/         \/__/         ~~            ~~                                               \/__/         \/__/         ~~       
 
 ```
 
@@ -65,7 +64,7 @@
 
 ## Architecture
 
-Dibbie AI follows a modular architecture to ensure scalability and maintainability:
+Mubbit AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -75,7 +74,7 @@ Dibbie AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Dibbie AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Mubbit AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -96,8 +95,8 @@ Ensure you have the following tools and dependencies installed before proceeding
 1. Clone the repository:
 - Clone the Hexiem AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Dibbie-ai.git
-cd Dibbie-ai
+git clone https://github.com/yourusername/Mubbit-ai.git
+cd Mubbit-ai
 ```
 
 2. Install Dependencies:
@@ -118,7 +117,7 @@ npm --version
 
 ## Configuration
 
-### Dibbie AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Mubbit AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -132,7 +131,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Dibbie_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Mubbit_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -286,7 +285,7 @@ Encountering issues? Check the following common problems and solutions. For unre
 #### Logs Location: All logs are stored in /logs with timestamps for debugging. Use tail -f /logs/*.log for real-time monitoring.
 
 ## Contributing
-We warmly welcome contributions from the global community to make Dibbie AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
+We warmly welcome contributions from the global community to make Mubbit AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
 
 ### How to Contribute
 1. Fork the Repository:
@@ -341,17 +340,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Hello@Dibbieai.tech (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @DibbieAILAB
+- Email: Hi@Mubbitai.com (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @MubbitHub
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://Dibbieai.tech/
+- Website: Visit https://Mubbitai.com/
 
 ## Acknowledgments
-The Dibbie AI team extends heartfelt thanks to the following:
+The Mubbit AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Dibbie AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Mubbit AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
