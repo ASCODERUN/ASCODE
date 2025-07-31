@@ -22,7 +22,7 @@ const (
 )
 
 // Message represents the structure of a WebSocket message.
-type Message struct {
+type Message struct { 
     Type    MessageType `json:"type"`
     Payload interface{} `json:"payload"`
 } 
