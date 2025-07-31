@@ -12,7 +12,7 @@
     "apiBasePath": "/api/v1",
     "cors": {
       "enabled": true,
-      "allowedOrigins": ["https://Bottee.org", "https://www.Botteeai.com"],
+      "allowedOrigins": ["https://Mubbit.org", "https://www.Mubbitai.com"],
       "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       "allowedHeaders": ["Content-Type", "Authorization", "X-Requested-With"],
       "maxAge": 86400
