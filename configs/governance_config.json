@@ -1,8 +1,8 @@
 {
   "general": {
-    "protocolName": "Dibbie AI Governance",
+    "protocolName": "Mubbit AI Governance",
     "version": "1.0.0",
-    "description": "Governance configuration for Dibbie AI on Solana network",
+    "description": "Governance configuration for Mubbit AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable governance module
     "network": "devnet" // Options: mainnet, testnet, devnet
