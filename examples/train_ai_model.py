@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import datetime
 import logging
-
+ 
 # Set up logging for debugging and tracking
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
