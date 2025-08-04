@@ -1,7 +1,7 @@
 use anchor_lang::prelude::*;
 use crate::state::{PlatformConfig, Proposal, UserStake};
 use crate::events::{ProposalCreated, VoteCast, ProposalFinalized};
-use crate::error::OntoraError;
+use crate::error::HalnetError;
 
 /// Context for creating a new governance proposal.
 #[derive(Accounts)]
@@ -10,7 +10,7 @@ pub struct CreateProposal<'info> {
     #[account(mut)]
     pub creator: Signer<'info>,
     /// The platform configuration account to ensure governance is enabled.
-    #[account(has_one = authority @ VazuraError::UnauthorizedAccess)]
+    #[account(has_one = authority @ HalnetError::UnauthorizedAccess)]
     pub platform_config: Account<'info, PlatformConfig>,
     /// The proposal account to be initialized.
     #[account(
