@@ -2,7 +2,7 @@
 // Note: Cypress doesn't require explicit imports for its commands, but custom commands or plugins can be added here if needed
 // For Web3 wallet interactions, we assume a mock or test wallet extension like Phantom is installed in the test browser
 
-describe('Hexiem AI DApp End-to-End Tests', () => {
+describe('Halnet AI DApp End-to-End Tests', () => {
   // Define base URL for the DApp (adjust based on your environment)
   const BASE_URL = 'http://localhost:3000'; // Assuming local dev server
   const WALLET_ADDRESS = 'mockWalletAddress123'; // Mock wallet address for testing
