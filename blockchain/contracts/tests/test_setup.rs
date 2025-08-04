@@ -1,5 +1,5 @@
 // test_setup.rs
-// This module provides setup utilities and helper functions for testing the Nimbio AI Solana program.
+// This module provides setup utilities and helper functions for testing the Halnet AI Solana program.
 // It includes functions to initialize test environments, create mock accounts, and simulate user interactions.
 
 use anchor_lang::prelude::*;
@@ -15,7 +15,7 @@ use solana_program_test::*;
 use solana_sdk::commitment_config::CommitmentLevel;
 use std::rc::Rc;
 
-// Assuming the program ID for Marnex AI (replace with actual program ID if needed)
+// Assuming the program ID for Halnet AI (replace with actual program ID if needed)
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 
 // Constants for test setup
