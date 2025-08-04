@@ -7,7 +7,7 @@ import sys
 import os
 from datetime import datetime
 
-# Assuming a basic federated learning class for Fabeon AI exists in the project
+# Assuming a basic federated learning class for Halnet AI exists in the project
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 try:
     from Sorein_ai.learning.federated_learning import FederatedLearningAgent
