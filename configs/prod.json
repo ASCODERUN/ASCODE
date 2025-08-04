@@ -12,7 +12,7 @@
     "apiBasePath": "/api/v1",
     "cors": {
       "enabled": true,
-      "allowedOrigins": ["https://Mubbit.org", "https://www.Mubbitai.com"],
+      "allowedOrigins": ["https://Mubbit.org", "https://www.Halnetai.com"],
       "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       "allowedHeaders": ["Content-Type", "Authorization", "X-Requested-With"],
       "maxAge": 86400
