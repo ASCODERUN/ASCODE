@@ -4,7 +4,7 @@
 # Script to update dependencies across languages and lock versions
 
 # Exit on any error to prevent partial execution
-set -e
+set -e 
 
 # Default configuration settings
 CONFIG_DIR="./config"
