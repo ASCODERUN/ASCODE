@@ -1,7 +1,7 @@
 { 
-  "name": "Mubbit-ai-client",
+  "name": "Halnet-ai-client",
   "version": "1.0.0",
-  "description": "Client-side application for Mubbit AI on Solana network",
+  "description": "Client-side application for Halnet AI on Solana network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
