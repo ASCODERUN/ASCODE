@@ -1,5 +1,5 @@
 // test_staking.rs
-// This module contains test cases for staking functionality and edge cases in the Nimbio AI Solana program.
+// This module contains test cases for staking functionality and edge cases in the Halnet AI Solana program.
 // It tests successful staking, unstaking, reward claiming, and various failure scenarios.
 
 use anchor_lang::prelude::*;
@@ -13,7 +13,7 @@ use std::rc::Rc;
 mod test_setup;
 use test_setup::*;
 
-// Assuming the program ID for Marnex AI (replace with actual program ID if needed)
+// Assuming the program ID for Halnet AI (replace with actual program ID if needed)
 declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 
 // Test successful staking by a user
