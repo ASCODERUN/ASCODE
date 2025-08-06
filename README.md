@@ -1,4 +1,4 @@
-# Halnet AI
+# Hisumi AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,30 +6,11 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Halnet Protocol** is a groundbreaking decentralized AI-native infrastructure built on the Solana blockchain, designed to empower the next generation of Web3 applications with intelligent, autonomous systems. At its core, Halnet enables developers, researchers, and communities to build, learn, and automate directly on-chain, eliminating the need for centralized servers and fostering true decentralization. By leveraging Solana’s high-throughput, low-cost transactions, Halnet offers scalable tools for on-chain AI model deployment, collaborative learning hubs, secure data sharing, and community-driven innovation. Key advantages include enhanced security through censorship-resistant operations, cost efficiency for real-time AI tasks, and seamless integration that unlocks new possibilities in decentralized finance, NFTs, gaming, and beyond. Founded by a team of visionaries like Eric Stoltz (CEO), Eli Arzhevskiy (CTO), Aaron White (Chief Architect), and Anushka Prasad (Head of Community), Halnet combines decades of expertise in blockchain, AI, and ecosystem building to drive a more intelligent Web3 future. Whether you’re a developer deploying AI models or a researcher contributing to open-source projects, Halnet provides the robust, efficient platform to innovate without boundaries, all while promoting sustainability with Solana’s energy-efficient consensus. Join the Halnet revolution today and be part of building smarter, more autonomous systems on the blockchain.
+**Hisumi Protocol** is an innovative open-source multi-agent AI framework designed specifically for the intelligent management and analysis of Real World Assets (RWA), aiming to provide powerful data processing and decision-making support tools for developers, researchers, and small teams. By leveraging the collaboration of multiple AI agents, it breaks down complex data analysis tasks into manageable modules, including data collection, trend analysis, value prediction, and decision recommendations. Hisumi AI supports a variety of RWA data sources, such as real estate prices, blockchain assets, and art valuations, allowing users to customize data inputs and agent configurations based on their needs. The project employs a distributed computing architecture to ensure efficiency and scalability in handling large-scale data, while being built on an open-source technology stack, making it compatible with mainstream AI libraries and tools for easy extension and optimization by developers. As an AI model that is neither a platform nor a chatbot, Hisumi AI focuses on local deployment and user control to guarantee data privacy and security, while encouraging the community to contribute code and ideas via GitHub, collectively driving the future of intelligent RWA management.
 
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://halnetai.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Haladjian_inc)
-
-
-```                                                                                                                                                      
-
-                                                                                       
- ____   ____        ____    ____      _____   ______        ______   _________________ 
-|    | |    |  ____|\   \  |    |    |\    \ |\     \   ___|\     \ /                 \
-|    | |    | /    /\    \ |    |     \\    \| \     \ |     \     \\______     ______/
-|    |_|    ||    |  |    ||    |      \|    \  \     ||     ,_____/|  \( /    /  )/   
-|    .-.    ||    |__|    ||    |  ____ |     \  |    ||     \--'\_|/   ' |   |   '    
-|    | |    ||    .--.    ||    | |    ||      \ |    ||     /___/|       |   |        
-|    | |    ||    |  |    ||    | |    ||    |\ \|    ||     \____|\     /   //        
-|____| |____||____|  |____||____|/____/||____||\_____/||____ '     /|   /___//         
-|    | |    ||    |  |    ||    |     |||    |/ \|   |||    /_____/ |  |`   |          
-|____| |____||____|  |____||____|_____|/|____|   |___|/|____|     | /  |____|          
-  \(     )/    \(      )/    \(    )/     \(       )/    \( |_____|/     \(            
-   '     '      '      '      '    '       '       '      '    )/         '            
-                                                               '                       
-
-```
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://hisumiai.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/HisumiAI)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/JasonSandersGG)
 
 
 ## Table of Contents
@@ -67,7 +48,7 @@
 
 ## Architecture
 
-Halnet AI follows a modular architecture to ensure scalability and maintainability:
+Hisumi AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -77,7 +58,7 @@ Halnet AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Halnet AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Hisumi AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -98,8 +79,8 @@ Ensure you have the following tools and dependencies installed before proceeding
 1. Clone the repository:
 - Clone the Hexiem AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Halnet-ai.git
-cd Halnet-ai
+git clone https://github.com/yourusername/Hisumi-ai.git
+cd Hisumi-ai
 ```
 
 2. Install Dependencies:
@@ -120,7 +101,7 @@ npm --version
 
 ## Configuration
 
-### Halnet AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Hisumi AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -134,7 +115,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Halnet_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/Hisumi_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -343,17 +324,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Contact@Halnetai.com (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @Haladjian_inc
+- Email: Contact@Hisumiai.tech (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @HisumiAI
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://Halnetai.com/
+- Website: Visit https://Hisumiai.tech/
 
 ## Acknowledgments
-The Halnet AI team extends heartfelt thanks to the following:
+The Hisumi AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Halnet AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Hisumi AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
