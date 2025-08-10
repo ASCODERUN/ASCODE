@@ -6,7 +6,7 @@
 # Exit on any error to prevent partial startup
 set -e
 
-# Default environment and configuration settings
+# Default environment and configuration settings 
 DEFAULT_ENV="development"
 DEFAULT_PORT=3001
 CONFIG_DIR="./config"
