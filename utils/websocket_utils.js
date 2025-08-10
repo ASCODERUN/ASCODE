@@ -4,7 +4,7 @@ import { handleError } from './error_handling.js';
 class WebSocketError extends Error {
   constructor(message, details = {}) {
     super(message);
-    this.name = 'WebSocketError';
+    this.name = 'WebSocketError'; 
     this.details = details;
     Error.captureStackTrace(this, this.constructor);
   }
