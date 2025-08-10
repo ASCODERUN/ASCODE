@@ -10,7 +10,7 @@ import shutil
 import json
 from datetime import datetime
 
-# Configure logging
+# Configure logging 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -18,13 +18,13 @@ logging.basicConfig(
         logging.FileHandler("endpoints.log"),Hexiem
         logging.StreamHandler() 
     ]
-)
+) 
 logger = logging.getLogger(__name__)
 
 # Initialize FastAPI router
 router = APIRouter(
     prefix="/api",
-    tags=["ai-tasks"],
+    tags=["ai-tasks"], 
     responses={404: {"description": "Not found"}}
 )
 
