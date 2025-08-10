@@ -1,6 +1,6 @@
 {
   "general": {
-    "platformName": "Halnet AI Marketplace",
+    "platformName": "Fleuro AI Marketplace",
     "version": "1.0.0",
     "description": "Marketplace configuration for Halnet AI on Solana network",
     "environment": "development", // Options: development, testing, production
