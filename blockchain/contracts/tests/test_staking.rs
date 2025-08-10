@@ -1,5 +1,5 @@
 // test_staking.rs
-// This module contains test cases for staking functionality and edge cases in the Halnet AI Solana program.
+// This module contains test cases for staking functionality and edge cases in the Fleuro AI Solana program.
 // It tests successful staking, unstaking, reward claiming, and various failure scenarios.
 
 use anchor_lang::prelude::*;
