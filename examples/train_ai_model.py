@@ -2,7 +2,7 @@
 # Example of training an AI model with sample data and configurations using TensorFlow/Keras
 
 import os
-import numpy as np
+import numpy as np 
 import pandas as pd 
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
