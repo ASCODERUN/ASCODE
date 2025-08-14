@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/SureCon";
 import { Home, Settings, BarChart, Store, Gavel } from 'lucide-react';
 
 interface AppContextType {
