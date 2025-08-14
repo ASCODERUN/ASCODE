@@ -1,4 +1,4 @@
-# Fleuro AI
+# SURECON AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,36 +6,26 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**Fleuro AI** is a next-generation enterprise multi-agent collaboration and decision-making platform, built on a secure, open, and scalable architecture to power end-to-end intelligence from data perception to business decision execution. 
+**SURECON AI** is an AI-powered on-chain relationship network built on Solana, designed to help users discover the most valuable wallets, partners, and opportunities with precision. By deeply analyzing on-chain data such as wallet activity, NFT holdings, and DAO participation, SURECON AI generates intelligent profiles for each address and predicts high-value potential connections. Whether you are an investor, project team, or community builder, SURECON AI enables you to quickly identify the right people or organizations to connect with, boosting collaboration efficiency and investment returns. Our opportunity recommendation engine continuously delivers investment and partnership prospects that match your profile, keeping you ahead in the on-chain landscape. SURECON AI is not just a tool—it’s your gateway to a new era of on-chain social and business ecosystems.
 
-Leveraging adaptive communication protocols and a hybrid orchestration engine that combines reinforcement learning with graph neural networks, it enables natural language processing, computer vision, and decision-making agents to work seamlessly together, handling complex, cross-system workflows such as supply chain forecasting, inventory optimization, and logistics scheduling. 
-
-With a highly modular and scalable design, Fleuro AI supports rapid integration of third-party AI models and industry-specific agents through standardized APIs and low-code development tools, serving domains including financial risk control, industrial inspection, and healthcare. 
-
-The platform is built on a zero-trust architecture with full-chain encryption, providing data isolation, granular access control, and automated compliance auditing to ensure reliable operations even under stringent security and regulatory requirements. 
-
-Equipped with real-time monitoring and self-healing capabilities, it can automatically recover from anomalies such as model drift or timeouts, maintaining 99.9% system uptime, and supports one-click containerized deployment across cloud, on-premise, and hybrid environments. 
-
-Powered by Kubernetes and distributed computing frameworks, it delivers elastic scaling and heterogeneous resource scheduling, empowering global enterprises to accelerate their transformation toward an intelligent and automated future.
-
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://fleuroai.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/FleuroAI)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/MarcoCamQM)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/marco-campana/)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://sureconai.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/SureConnectAI)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Real_Ellwood)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/pellwood/)
 
 
 ```
 
-     _,---.                ,----.                             _,.---._              ,---.       .=-.-. 
-  .-`.' ,  \   _.-.     ,-.--` , \ .--.-. .-.-. .-.,.---.   ,-.' , -  `.          .--.'  \     /==/_ / 
- /==/_  _.-' .-,.'|    |==|-  _.-`/==/ -|/=/  |/==/  `   \ /==/_,  ,  - \         \==\-/\ \   |==|, |  
-/==/-  '..-.|==|, |    |==|   `.-.|==| ,||=| -|==|-, .=., |==|   .=.     |        /==/-|_\ |  |==|  |  
-|==|_ ,    /|==|- |   /==/_ ,    /|==|- | =/  |==|   '='  /==|_ : ;=:  - |        \==\,   - \ |==|- |  
-|==|   .--' |==|, |   |==|    .-' |==|,  \/ - |==|- ,   .'|==| , '='     |        /==/ -   ,| |==| ,|  
-|==|-  |    |==|- `-._|==|_  ,`-._|==|-   ,   /==|_  . ,'. \==\ -    ,_ /        /==/-  /\ - \|==|- |  
-/==/   \    /==/ - , ,/==/ ,     //==/ , _  .'/==/  /\ ,  ) '.='. -   .'         \==\ _.\=\.-'/==/. /  
-`--`---'    `--`-----'`--`-----`` `--`..---'  `--`-`--`--'    `--`--''            `--`        `--`-`   
-
+ $$$$$$\  $$\   $$\ $$$$$$$\  $$$$$$$$\  $$$$$$\   $$$$$$\  $$\   $$\        $$$$$$\  $$$$$$\ 
+$$  __$$\ $$ |  $$ |$$  __$$\ $$  _____|$$  __$$\ $$  __$$\ $$$\  $$ |      $$  __$$\ \_$$  _|
+$$ /  \__|$$ |  $$ |$$ |  $$ |$$ |      $$ /  \__|$$ /  $$ |$$$$\ $$ |      $$ /  $$ |  $$ |  
+\$$$$$$\  $$ |  $$ |$$$$$$$  |$$$$$\    $$ |      $$ |  $$ |$$ $$\$$ |      $$$$$$$$ |  $$ |  
+ \____$$\ $$ |  $$ |$$  __$$< $$  __|   $$ |      $$ |  $$ |$$ \$$$$ |      $$  __$$ |  $$ |  
+$$\   $$ |$$ |  $$ |$$ |  $$ |$$ |      $$ |  $$\ $$ |  $$ |$$ |\$$$ |      $$ |  $$ |  $$ |  
+\$$$$$$  |\$$$$$$  |$$ |  $$ |$$$$$$$$\ \$$$$$$  | $$$$$$  |$$ | \$$ |      $$ |  $$ |$$$$$$\ 
+ \______/  \______/ \__|  \__|\________| \______/  \______/ \__|  \__|      \__|  \__|\______|
+                                                                                              
+                                                                                              
 ```
 
 ## Table of Contents
@@ -73,7 +63,7 @@ Powered by Kubernetes and distributed computing frameworks, it delivers elastic 
 
 ## Architecture
 
-Fleuro AI follows a modular architecture to ensure scalability and maintainability:
+SURECON AI follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -83,7 +73,7 @@ Fleuro AI follows a modular architecture to ensure scalability and maintainabili
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run Fleuro AI on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run SURECON AI on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -104,8 +94,8 @@ Ensure you have the following tools and dependencies installed before proceeding
 1. Clone the repository:
 - Clone the Hexiem AI repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/Fleuro-ai.git
-cd Fleuro-ai
+git clone https://github.com/yourusername/SURECON-ai.git
+cd SURECON-ai
 ```
 
 2. Install Dependencies:
@@ -126,7 +116,7 @@ npm --version
 
 ## Configuration
 
-### Fleuro AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### SURECON AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -140,7 +130,7 @@ npm --version
 
 **Important Security Note**: Do not hardcode sensitive information (e.g., API keys, private keys, database credentials) in configuration files. Use environment variables or a .env file for such data. Example:
 ```
-export DATABASE_URL="postgresql://user:password@localhost:5432/Fleuro_db"
+export DATABASE_URL="postgresql://user:password@localhost:5432/SURECON_db"
 export SOLANA_PRIVATE_KEY="your_private_key_here"
 ```
 
@@ -294,7 +284,7 @@ Encountering issues? Check the following common problems and solutions. For unre
 #### Logs Location: All logs are stored in /logs with timestamps for debugging. Use tail -f /logs/*.log for real-time monitoring.
 
 ## Contributing
-We warmly welcome contributions from the global community to make Fleuro AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
+We warmly welcome contributions from the global community to make SURECON AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
 
 ### How to Contribute
 1. Fork the Repository:
@@ -349,17 +339,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Info@Fleuroai.com (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @FleuroAI
+- Email: Info@SureConai.com (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @SureConnectAI
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://Fleuroai.com/
+- Website: Visit https://SureConai.com/
 
 ## Acknowledgments
-The Fleuro AI team extends heartfelt thanks to the following:
+The SureCon AI team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Fleuro AI.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve SureCon AI.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
