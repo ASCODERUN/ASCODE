@@ -12,7 +12,7 @@
     "apiBasePath": "/api/v1",
     "cors": {
       "enabled": true,
-      "allowedOrigins": ["https://Fleuro.org", "https://www.Fleuroai.com"],
+      "allowedOrigins": ["https://SureCon.org", "https://www.SureConai.com"],
       "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       "allowedHeaders": ["Content-Type", "Authorization", "X-Requested-With"],
       "maxAge": 86400
