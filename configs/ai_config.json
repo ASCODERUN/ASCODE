@@ -1,6 +1,6 @@
 {
   "general": {
-    "projectName": "Fleuro AI",
+    "projectName": "SureCon AI",
     "version": "1.0.0",
     "description": "Configuration for AI agents on Solana Web3 network with autonomous evolution capabilities",
     "environment": "development", // Options: development, testing, production
