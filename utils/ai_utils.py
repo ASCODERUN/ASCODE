@@ -12,7 +12,7 @@ class AIUtils:
     def __init__(self, scaler_type: str = 'standard'):
         self.scaler = StandardScaler() if scaler_type == 'standard' else MinMaxScaler()
         self.logger = logging.getLogger(__name__)
-
+ 
     def load_data(self, file_path: str, file_type: str = 'csv') -> pd.DataFrame:
         try:
             if file_type == 'csv':
