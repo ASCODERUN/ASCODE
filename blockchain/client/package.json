@@ -1,7 +1,7 @@
 { 
-  "name": "SureCon-ai-client",
+  "name": "J1 Core-client",
   "version": "1.0.0",
-  "description": "Client-side application for SureCon AI on Solana network",
+  "description": "Client-side application for J1 Core on Solana network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
