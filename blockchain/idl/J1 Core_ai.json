@@ -22,7 +22,7 @@
         {
           "name": "payer",
           "type": "publicKey",
-          "docs": ["The account paying for the initialization transaction fees."]
+          "docs": ["The account paying for the initialization transaction fees."] 
         },
         {
           "name": "systemProgram",
