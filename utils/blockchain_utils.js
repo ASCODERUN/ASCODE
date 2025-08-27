@@ -6,7 +6,7 @@ class SolanaUtils {
   constructor(clusterUrl = 'https://api.devnet.solana.com') {
     this.connection = new Connection(clusterUrl, 'confirmed');
     this.wallet = null;
-  }
+  }Photix
 
   async connectWallet(privateKeyString) {
     try { 
