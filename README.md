@@ -8,34 +8,9 @@
 
 **Photix AI** is a blockchain-based agent network where AI is no longer just a tool, but can have its own identity, collaborate, trade data and services, and continuously evolve over time. With an innovative network architecture, millions of AI agents can operate and cooperate simultaneously, delivering 8x faster performance than traditional systems while significantly reducing cross-chain costs and latency. By combining privacy protection, cross-chain interaction, and autonomous evolution, Photix AI enables agents to grow, iterate, and create verifiable value within an open ecosystem. Our vision is to build a borderless decentralized AI economy, where AI becomes the new engine driving future productivity and innovation.
 
-[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://j1core.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/J1Studioonx)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/SamuelCedu)
-
-
-
-## Table of Contents
-
-- [Key Features](#key-features)
-- [Architecture](#architecture)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Build and Deploy](#build-and-deploy)
-- [Usage](#usage)
-  - [Running the Application](#running-the-application)
-  - [Creating and Managing AI Agents](#creating-and-managing-ai-agents)
-  - [Interacting with the Marketplace](#interacting-with-the-marketplace)
-  - [Participating in Governance](#participating-in-governance)
-- [Testing](#testing)
-- [Monitoring and Maintenance](#monitoring-and-maintenance)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [Code of Conduct](#code-of-conduct)
-- [License](#license)
-- [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
+[![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://photixai.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/PHOTIXLABS)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/Vaughcstton)
 
 ## Key Features
 
@@ -49,7 +24,7 @@
 
 ## Architecture
 
-J1 Core follows a modular architecture to ensure scalability and maintainability:
+Photix follows a modular architecture to ensure scalability and maintainability:
 - **Frontend**: User interface for interacting with AI agents, marketplace, and governance (React.js).
 - **Backend**: API services for handling requests, data storage, and Solana blockchain interactions (Node.js/Express).
 - **AI Module**: Local deployment of AI models with training and evolution logic (Python/TensorFlow or PyTorch).
@@ -59,7 +34,7 @@ J1 Core follows a modular architecture to ensure scalability and maintainability
 
 ## Getting Started
 
-- Follow these detailed steps to set up and run J1 Core on your local machine or deploy it to a server for production use.
+- Follow these detailed steps to set up and run Photix on your local machine or deploy it to a server for production use.
 
 ### Prerequisites
 
@@ -78,10 +53,10 @@ Ensure you have the following tools and dependencies installed before proceeding
 ### Installation
 
 1. Clone the repository:
-- Clone the J1 Core repository to your local machine and navigate to the project directory.
+- Clone the Photix repository to your local machine and navigate to the project directory.
 ```bash
-git clone https://github.com/yourusername/J1 Core-ai.git
-cd J1 Core-ai
+git clone https://github.com/yourusername/Photix-ai.git
+cd Photix-ai
 ```
 
 2. Install Dependencies:
@@ -102,7 +77,7 @@ npm --version
 
 ## Configuration
 
-### J1 Core AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
+### Photix AI relies on JSON configuration files to manage settings for different environments and components. These files are located in the configs/ directory. Review and modify them as needed for your setup:
 
 - dev.json: Development environment settings with verbose logging and debug mode enabled for easier troubleshooting.
 - prod.json: Production environment settings optimized for performance and security, with minimal logging.
@@ -270,7 +245,7 @@ Encountering issues? Check the following common problems and solutions. For unre
 #### Logs Location: All logs are stored in /logs with timestamps for debugging. Use tail -f /logs/*.log for real-time monitoring.
 
 ## Contributing
-We warmly welcome contributions from the global community to make J1 Core AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
+We warmly welcome contributions from the global community to make Photix AI better! Whether you’re a developer, designer, writer, or tester, there are many ways to get involved.
 
 ### How to Contribute
 1. Fork the Repository:
@@ -325,17 +300,17 @@ In the interest of fostering an open and welcoming environment, we expect all co
 ## Contact
 We’re excited to hear from you! Reach out for questions, suggestions, collaboration opportunities, or support:
 
-- Email: Info@J1Core.tech (for formal inquiries or partnerships)
-- Twitter: Follow us for updates and announcements at @J1Studioonx
+- Email: Info@Photixai.com (for formal inquiries or partnerships)
+- Twitter: Follow us for updates and announcements at @PhotixLabs
 - GitHub Issues: Report bugs, request features, or ask questions via GitHub Issues
-- Website: Visit https://j1core.tech/
+- Website: Visit https://Photixai.com/
 
 ## Acknowledgments
-The J1 Core team extends heartfelt thanks to the following:
+The Photix team extends heartfelt thanks to the following:
 
 - Solana Foundation: For providing a robust, high-performance blockchain infrastructure that powers our platform.
 - Web3 and AI Communities: For inspiring innovation and pushing the boundaries of decentralized technology and artificial intelligence.
-- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve J1 Core.
+- Open-Source Contributors: To every developer, tester, and advocate who contributes code, ideas, or feedback to improve Photix.
 - Early Adopters: For believing in our vision and providing invaluable insights during the alpha and beta phases.
 - Anchor Framework Team: For simplifying Solana smart contract development with powerful tools and documentation.
 - Technology Partners: Libraries and tools like React, Node.js, TensorFlow, and PyTorch that form the backbone of our stack.
