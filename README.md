@@ -1,4 +1,4 @@
-# J1 Core
+# Photix AI
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
@@ -6,11 +6,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/stargazers)
 
-**J1 Core** is an enterprise-grade multi-agent framework designed to revolutionize complex business operations through autonomous collaboration.
-
-By integrating modular AI agents with low-code orchestration tools, the system enables seamless automation of cross-departmental workflows while ensuring secure data governance via federated learning.
-
-From dynamic resource allocation in manufacturing to real-time risk management in finance, Wovex AGENT empowers organizations to achieve agile decision-making and operational excellence at scale.
+**Photix AI** is a blockchain-based agent network where AI is no longer just a tool, but can have its own identity, collaborate, trade data and services, and continuously evolve over time. With an innovative network architecture, millions of AI agents can operate and cooperate simultaneously, delivering 8x faster performance than traditional systems while significantly reducing cross-chain costs and latency. By combining privacy protection, cross-chain interaction, and autonomous evolution, Photix AI enables agents to grow, iterate, and create verifiable value within an open ecosystem. Our vision is to build a borderless decentralized AI economy, where AI becomes the new engine driving future productivity and innovation.
 
 [![Website](https://img.shields.io/badge/Website-Visit-blue?logo=google-chrome)](https://j1core.tech/)
 [![Twitter](https://img.shields.io/badge/Twitter-Follow-blue?logo=twitter)](https://x.com/J1Studioonx)
