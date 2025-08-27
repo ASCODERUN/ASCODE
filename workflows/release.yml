@@ -3,7 +3,7 @@ name: Automated Release Management and Versioning
 # Define when the workflow should run
 on:
   push:
-    branches:
+    branches: 
       - main
       - release/** 
     tags:
