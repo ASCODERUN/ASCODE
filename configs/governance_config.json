@@ -1,8 +1,8 @@
 {
   "general": {
-    "protocolName": "SureCon AI Governance",
+    "protocolName": "firoxy AI Governance",
     "version": "1.0.0",
-    "description": "Governance configuration for SureCon AI on Solana network",
+    "description": "Governance configuration for firoxy AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable governance module
     "network": "devnet" // Options: mainnet, testnet, devnet
