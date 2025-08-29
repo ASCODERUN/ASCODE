@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-/// Custom error types for the SureCon AI platform.
+/// Custom error types for the firoxy AI platform.
 /// Each error has a unique code and a descriptive message for debugging and user feedback.
 #[error_code]
 pub enum SoreinError {
