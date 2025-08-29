@@ -1,5 +1,5 @@
 // test_staking.rs
-// This module contains test cases for staking functionality and edge cases in the SureCon AI Solana program.
+// This module contains test cases for staking functionality and edge cases in the firoxy AI Solana program.
 // It tests successful staking, unstaking, reward claiming, and various failure scenarios.
 
 use anchor_lang::prelude::*;
