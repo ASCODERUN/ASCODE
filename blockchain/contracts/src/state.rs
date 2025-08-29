@@ -5,7 +5,7 @@ pub const MAX_NAME_LENGTH: usize = 32;
 pub const MAX_DESCRIPTION_LENGTH: usize = 256;
 pub const MAX_AGENTS_PER_USER: usize = 10;
 
-// Global configuration account for the SureCon AI platform
+// Global configuration account for the firoxy AI platform
 #[account]
 #[derive(Default)]
 pub struct PlatformConfig {
