@@ -1,7 +1,7 @@
 { 
-  "name": "J1 Core-client",
+  "name": "firoxy-client",
   "version": "1.0.0",
-  "description": "Client-side application for J1 Core on Solana network",
+  "description": "Client-side application for firoxy on Solana network",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
