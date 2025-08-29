@@ -18,7 +18,7 @@ firoxy/
 │   ├── FUNDING.yml                   # Funding information for open-source contributors and sponsors
 │   ├── stale.yml                     # Configuration for marking and closing stale issues and PRs (YAML)
 │
-├── src/                              # Source code for all components of Ontora AI
+├── src/                              # Source code for all components of firoxy AI
 │   ├── blockchain/                   # Solana blockchain-related code for decentralized operations
 │   │   ├── contracts/                # Smart contracts for Solana (written in Rust using Anchor framework)
 │   │   │   ├── src/                  # Rust source files for smart contracts
@@ -117,7 +117,7 @@ firoxy/
 │   │   │   ├── server.go             # WebSocket server for real-time agent status and transaction updates (Go)
 │   │   │   ├── handlers.go           # WebSocket event handlers for client messages (Go)
 │   │
-│   ├── frontend/                     # Frontend DApp for user interaction with Ontora AI
+│   ├── frontend/                     # Frontend DApp for user interaction with firoxy AI
 │   │   ├── src/                      # React/Vue frontend source code for user interface
 │   │   │   ├── components/           # Reusable UI components for modular design and maintainability
 │   │   │   │   ├── AgentCard.tsx     # Component for displaying AI agents with stats and actions (TypeScript/React)
