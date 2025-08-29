@@ -7,7 +7,7 @@ import sys
 import os
 from datetime import datetime 
  
-# Assuming a basic data pipeline class for SureCon AI exists in the project
+# Assuming a basic data pipeline class for firoxy AI exists in the project
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 try:
     from Sorein_ai.data.pipeline import DataPipeline
