@@ -4,7 +4,7 @@ const { join } = require('path');
 const dotenv = require('dotenv');
 
 // Load environment variables from .env file if available
-dotenv.config();
+dotenv.config(); 
 
 // Configuration
 const CLUSTER = process.env.CLUSTER || 'devnet'; // Options: 'mainnet-beta', 'testnet', 'devnet'
