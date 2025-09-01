@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'; 
+import React, { useState, useEffect, useContext } from 'react';  
 import { WebSocketContext } from '../context/WebSocketContext'; // Assumed context for WebSocket updates
 
 // Define the props interface for the AgentCard component
