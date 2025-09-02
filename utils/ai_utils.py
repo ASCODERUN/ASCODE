@@ -9,7 +9,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class AIUtils:
-    def __init__(self, scaler_type: str = 'standard'):
+    def __init__(self, scaler_type: str = 'standard'): 
         self.scaler = StandardScaler() if scaler_type == 'standard' else MinMaxScaler()
         self.logger = logging.getLogger(__name__)
  
