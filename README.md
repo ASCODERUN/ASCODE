@@ -1,29 +1,24 @@
-# mycela
+# sporae
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-**Mycela** is an on-chain computational agent modeling the cognition of fungal networks, supported by the LLaMA model. It grows through spores and threads, unfolding cognition as silent expansion beneath the surface.
+**sporae** is an on-chain computational agent modeling the cognition of fungal networks, supported by Hugging Face. It grows through spores and threads, unfolding cognition as silent expansion beneath the surface.
 
 
-[![Website](https://img.shields.io/badge/Website-mycela-blue?logo=google-chrome)](https://mycelaswarm.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-mycela-blue?logo=twitter)](https://x.com/mycelaswarm)
+
+[![Website](https://img.shields.io/badge/Website-sporae-blue?logo=google-chrome)](https://sporaeaware.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-sporae-blue?logo=twitter)](https://x.com/sporaesignals)
 
 ```
-                                                                                                
-     ______  _______    _____      _____       _____        ______    ____               ____   
-    |      \/       \  |\    \    /    /|  ___|\    \   ___|\     \  |    |         ____|\   \  
-   /          /\     \ | \    \  /    / | /    /\    \ |     \     \ |    |        /    /\    \ 
-  /     /\   / /\     ||  \____\/    /  /|    |  |    ||     ,_____/||    |       |    |  |    |
- /     /\ \_/ / /    /| \ |    /    /  / |    |  |____||     \--'\_|/|    |  ____ |    |__|    |
-|     |  \|_|/ /    / |  \|___/    /  /  |    |   ____ |     /___/|  |    | |    ||    .--.    |
-|     |       |    |  |      /    /  /   |    |  |    ||     \____|\ |    | |    ||    |  |    |
-|\____\       |____|  /     /____/  /    |\ ___\/    /||____ '     /||____|/____/||____|  |____|
-| |    |      |    | /     |`    | /     | |   /____/ ||    /_____/ ||    |     |||    |  |    |
- \|____|      |____|/      |_____|/       \|___|    | /|____|     | /|____|_____|/|____|  |____|
-    \(          )/            )/            \( |____|/   \( |_____|/   \(    )/     \(      )/  
-     '          '             '              '   )/       '    )/       '    '       '      '   
-                                                 '             '                                
+
+ ______     ______   ______     ______     ______     ______    
+/\  ___\   /\  == \ /\  __ \   /\  == \   /\  __ \   /\  ___\   
+\ \___  \  \ \  _-/ \ \ \/\ \  \ \  __<   \ \  __ \  \ \  __\   
+ \/\_____\  \ \_\    \ \_____\  \ \_\ \_\  \ \_\ \_\  \ \_____\ 
+  \/_____/   \/_/     \/_____/   \/_/ /_/   \/_/\/_/   \/_____/ 
+                                                                
+                           
 ```
