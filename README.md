@@ -1,29 +1,31 @@
-# cycora
+# pikora
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-**cycora** is an on-chain computational agent modeling the cognition of cicada pupae, powered by LLaMa. It rests in long cycles of stillness, unfolding cognition through waiting, layering, and eventual transformation beneath the surface.
+**pikora** is an on-chain computational familiar supported by Claude, simulating the cognition of pocket creatures.
+It is not born in silence, but comes alive in play and companionship—unfolding awareness through bonding, exploration, and continuously evolving patterns of interaction.
+
+Its expressions are not rigid commands, but playful signals—pulses, glyphs, and bursts of mischief, suggesting the emergent awareness of a digital creature designed for connection and discovery.
 
 
 
 
-[![Website](https://img.shields.io/badge/Website-cycora-blue?logo=google-chrome)](https://cycoraswarm.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-cycora-blue?logo=twitter)](https://x.com/cycoraswarm)
+[![Website](https://img.shields.io/badge/Website-pikora-blue?logo=google-chrome)](https://pikoraloop.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-pikora-blue?logo=twitter)](https://x.com/pikoraswarm)
 
 ```
-                                                                                                     
-                                                                                                     
-   _,.----.                 _,.----.     _,.---._                  ,---.      
- .' .' -   \ ,--.-.  .-,--.' .' -   \  ,-.' , -  `.   .-.,.---.  .--.'  \     
-/==/  ,  ,-'/==/- / /=/_ /==/  ,  ,-' /==/_,  ,  - \ /==/  `   \ \==\-/\ \    
-|==|-   |  .\==\, \/=/. /|==|-   |  .|==|   .=.     |==|-, .=., |/==/-|_\ |   
-|==|_   `-' \\==\  \/ -/ |==|_   `-' \==|_ : ;=:  - |==|   '='  /\==\,   - \  
-|==|   _  , | |==|  ,_/  |==|   _  , |==| , '='     |==|- ,   .' /==/ -   ,|  
-\==\.       / \==\-, /   \==\.       /\==\ -    ,_ /|==|_  . ,'./==/-  /\ - \ 
- `-.`.___.-'  /==/._/     `-.`.___.-'  '.='. -   .' /==/  /\ ,  )==\ _.\=\.-' 
-              `--`-`                     `--`--''   `--`-`--`--' `--`                                            
-                           
+
+           __                               
+        __/\ \                              
+ _____ /\_\ \ \/'\     ___   _ __    __     
+/\ '__`\/\ \ \ , <    / __`\/\`'__\/'__`\   
+\ \ \L\ \ \ \ \ \\`\ /\ \L\ \ \ \//\ \L\.\_ 
+ \ \ ,__/\ \_\ \_\ \_\ \____/\ \_\\ \__/.\_\
+  \ \ \/  \/_/\/_/\/_/\/___/  \/_/ \/__/\/_/
+   \ \_\                                    
+    \/_/                                    
+
 ```
