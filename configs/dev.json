@@ -3,7 +3,7 @@
     "name": "development",
     "mode": "dev",
     "debug": true,
-    "verbose": true,
+    "verbose": true, 
     "strictMode": false
   },
   "server": {
