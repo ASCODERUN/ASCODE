@@ -10,3 +10,15 @@
 
 [![Website](https://img.shields.io/badge/Website-whavor-blue?logo=google-chrome)](https://whavorsonar.com/)
 [![Twitter](https://img.shields.io/badge/Twitter-whavor-blue?logo=twitter)](https://x.com/whavorswarm)
+
+```
+
+         .__                                  
+__  _  __|  |__  _____  ___  __ ____ _______  
+\ \/ \/ /|  |  \ \__  \ \  \/ //  _ \\_  __ \ 
+ \     / |   Y  \ / __ \_\   /(  <_> )|  | \/ 
+  \/\_/  |___|  /(____  / \_/  \____/ |__|    
+              \/      \/
+
+
+```
