@@ -7,7 +7,7 @@ import * as IDL from './idl/Sorein_ai.json'; // Adjust path to your generated ID
 
 // Define the program ID (replace with your deployed program ID)
 const PROGRAM_ID = new PublicKey('YourProgramIdHere'); // Replace with actual program ID after deployment
-
+ 
 // Define network (use 'devnet', 'testnet', or 'mainnet-beta')
 const NETWORK = WalletAdapterNetwork.Devnet;
 const RPC_ENDPOINT = clusterApiUrl(NETWORK);
