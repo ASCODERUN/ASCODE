@@ -1,6 +1,6 @@
 import { Connection, PublicKey, Keypair, clusterApiUrl } from '@solana/web3.js';
 import { Program, AnchorProvider, web3, utils, BN } from '@project-serum/anchor';
-import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
+import { WalletAdapterNetwork } from '@solana/wallet-adapter-base'; 
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { getWallets, WalletAdapter } from '@solana/wallet-adapter-base';
 import * as IDL from './idl/Sorein_ai.json'; // Adjust path to your generated IDL file
