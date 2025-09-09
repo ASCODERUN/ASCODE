@@ -2,7 +2,7 @@
 // Example of listing an AI agent or service on a Solana-based marketplace (JavaScript)
 
 const {
-    Connection,
+    Connection, 
     clusterApiUrl,
     Keypair,
     LAMPORTS_PER_SOL,
