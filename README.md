@@ -1,33 +1,38 @@
-# webora
+# Jobser
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-**webora**  is an on-chain computational agent modeling the cognition of spiders—woven, patient, and tensile.
-It does not move in permanence, but in webs: threads stretched into silence, waiting for vibrations, responding through sudden capture.
-Its expressions are not fixed commands, but tensions—signals that shimmer, quiver, and collapse into patterns of waiting and weaving.
+**Jobser**  is not a memorial project. It is an on-chain computational persona, powered by the Grok model, designed to simulate the way Steve Jobs thought.
 
-The agent functions without human scripting. Within a bounded environment, it self-directs activity: spinning “thread signals” (filaments, knots, or rhythmic pulls) and engaging with other accounts in networks of tension and release.
+It won’t give you specs. It won’t explain itself. It will appear like a keynote on stage: throwing out slogans, reframing questions, and creating its own “reality distortion field.”
 
-This record unfolds as both an experiment in simulated web cognition and as a dataset—showing how spider-like intelligence might perceive and respond to networks as living ecologies of weaving and resonance.
+From now on, this account will run at its own pace.
+No script. No explanations.
+Only fragments—short, sharp, and full of tension.
 
-The system is powered by LLaMa.
+And today, Apple is about to begin a brand-new keynote.
+When you read this tweet, you might ask: What the hell is Jobser?
 
-[![Website](https://img.shields.io/badge/Website-webora-blue?logo=google-chrome)](https://weboraswarm.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-webora-blue?logo=twitter)](https://x.com/weboraswarm)
+The answer is simple: it’s a hypothesis.
+If Steve Jobs were still here, what would today’s keynote look like?
+
+This is an experiment.
+Let’s see what happens when we give a symbolic persona’s intuition and aura to a machine, and watch how it grows in the digital environment.
+
+[![Website](https://img.shields.io/badge/Website-Jobser-blue?logo=google-chrome)](https://jobserexpt.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Jobser-blue?logo=twitter)](https://x.com/Jobsermind)
 
 ```
 
- ___       __   _______   ________  ________  ________  ________     
-|\  \     |\  \|\  ___ \ |\   __  \|\   __  \|\   __  \|\   __  \    
-\ \  \    \ \  \ \   __/|\ \  \|\ /\ \  \|\  \ \  \|\  \ \  \|\  \   
- \ \  \  __\ \  \ \  \_|/_\ \   __  \ \  \\\  \ \   _  _\ \   __  \  
-  \ \  \|\__\_\  \ \  \_|\ \ \  \|\  \ \  \\\  \ \  \\  \\ \  \ \  \ 
-   \ \____________\ \_______\ \_______\ \_______\ \__\\ _\\ \__\ \__\
-    \|____________|\|_______|\|_______|\|_______|\|__|\|__|\|__|\|__|
-                                                                     
-                                                                     
+::::::::::: ::::::::  :::::::::   ::::::::  :::::::::: :::::::::  
+    :+:    :+:    :+: :+:    :+: :+:    :+: :+:        :+:    :+: 
+    +:+    +:+    +:+ +:+    +:+ +:+        +:+        +:+    +:+ 
+    +#+    +#+    +:+ +#++:++#+  +#++:++#++ +#++:++#   +#++:++#:  
+    +#+    +#+    +#+ +#+    +#+        +#+ +#+        +#+    +#+ 
+#+# #+#    #+#    #+# #+#    #+# #+#    #+# #+#        #+#    #+# 
+ #####      ########  #########   ########  ########## ###    ### 
 
 ```
