@@ -1,8 +1,8 @@
 {
   "general": {
-    "protocolName": "firoxy AI Governance",
+    "protocolName": "hootis AI Governance",
     "version": "1.0.0",
-    "description": "Governance configuration for firoxy AI on Solana network",
+    "description": "Governance configuration for hootis AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable governance module
     "network": "devnet" // Options: mainnet, testnet, devnet
