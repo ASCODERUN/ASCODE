@@ -9,8 +9,8 @@
   },
   "token": {
     "governanceToken": {
-      "symbol": "firoxy",
-      "name": "firoxy Token",
+      "symbol": "hootis",
+      "name": "hootis Token",
       "address": "${GOVERNANCE_TOKEN_ADDRESS}", // Placeholder for token contract address on Solana
       "decimals": 9, // Decimal places for token precision
       "totalSupply": 1000000000, // Total supply of governance tokens
