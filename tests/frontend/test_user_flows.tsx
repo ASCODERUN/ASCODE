@@ -3,11 +3,11 @@ import '@testing-library/jest-dom';
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from '../App';
-import { ThemeProvider } from '../context/ThemeContext'; 
+import { ThemeProvider } from '../context/ThemeContext';  
 import { WalletProvider } from '../context/WalletContext';
 
 // Mock dependencies for Web3 and Solana interactions
-const mockConnectWallet = vi.fn().mockResolvedValue({ success: true, address: 'SolanaWalletAddress123' });
+const mockConnectWallet = vi.fn().mockResolvedValue({ success: true, address: 'SolanaWalletAddre ss123' });
 const mockDisconnectWallet = vi.fn().mockResolvedValue({ success: true });
 const mockStakeTokens = vi.fn().mockResolvedValue({ success: true, txId: 'StakeTx123' });
 const mockCreateAgent = vi.fn().mockResolvedValue({ success: true, agentId: 'Agent123' });
