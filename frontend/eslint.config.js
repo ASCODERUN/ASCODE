@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint';
 import prettier from 'eslint-plugin-prettier';
 import a11y from 'eslint-plugin-jsx-a11y';
 
-export default tseslint.config(
+export default tseslint.config( 
   { ignores: ['dist', 'node_modules', 'build', 'coverage'] },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
