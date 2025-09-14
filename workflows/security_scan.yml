@@ -1,4 +1,4 @@
-name: Security Vulnerability Scanning Pipeline 
+name: Security Vulnerability Scanning Pipeline  
 
 # Define when the workflow should run
 on:
