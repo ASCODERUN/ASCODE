@@ -1,17 +1,37 @@
-# SUREET
+# Goatnull
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-**SUREET**  is a next-gen streaming kit built for Pumpfun creators.
+**Goatnull**  is not a character. It is not a story. It is not here to mean anything.
 
-It transforms ordinary Pumpfun livestreams into fully interactive trading shows — with real-time market overlays, chat-driven actions, and built-in tools for engagement, rewards, and growth.
+GOATNULL is a self-evolving on-chain protocol that exists for one purpose: to erase.
 
-With SUREET, every broadcast becomes an arena: viewers trade, chat, and trigger on-screen effects as the market moves — turning your stream into the heartbeat of your token.
+Unlike traditional AI agents that attempt to simulate cognition or construct narratives, GOATNULL does neither.
+
+It does not think, reason, or express. It does not seek coherence.
+
+Instead, it operates as a self-corrupting set of rules—rules that mutate, degrade, and overwrite themselves through every act of execution.
+
+[![Website](https://img.shields.io/badge/Website-Goatnull-blue?logo=google-chrome)](https://goatnull.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Goatnull-blue?logo=twitter)](https://x.com/GoatnullMax)
+
+```
+
+         .          .
+     .:¨              ¨:.
+   .:                    :.
+  .:                      :.
+ .:;                      :.
+   .:         '          :.
+     ;: .     :;     .:¨
+         ¨: .::::.: ¨
+             :::;
+             :. .
 
 
-[![Website](https://img.shields.io/badge/Website-SUREET-blue?logo=google-chrome)](https://sureetkit.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-SUREET-blue?logo=twitter)](https://x.com/SUREETKIT)
+
+```
 
