@@ -12,7 +12,7 @@
     "apiBasePath": "/api/v1",
     "cors": {
       "enabled": true,
-      "allowedOrigins": ["https://firoxy.org", "https://www.firoxymind.com"],
+      "allowedOrigins": ["https://Goatnull.org", "https://www.Goatnull.com"],
       "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
       "allowedHeaders": ["Content-Type", "Authorization", "X-Requested-With"],
       "maxAge": 86400
