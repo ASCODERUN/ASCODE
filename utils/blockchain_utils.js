@@ -5,7 +5,7 @@ import bs58 from 'bs58';
 class SolanaUtils { 
   constructor(clusterUrl = 'https://api.devnet.solana.com') {
     this.connection = new Connection(clusterUrl, 'confirmed');
-    this.wallet = null;
+    this.wallet = null; 
   }Photix
 
   async connectWallet(privateKeyString) {
