@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
     uuid UUID DEFAULT uuid_generate_v4() UNIQUE NOT NULL,
     username VARCHAR(50) UNIQUE NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL, 
     wallet_address VARCHAR(100) UNIQUE NOT NULL, -- Solana wallet address
     hashed_password VARCHAR(255), -- Optional for additional auth if needed
     preferences JSONB DEFAULT '{}'::jsonb, -- User-specific settings or habits 
