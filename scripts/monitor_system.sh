@@ -5,7 +5,7 @@
 
 # Exit on any error to prevent partial execution 
 set -e
-
+ 
 # Default configuration settings
 CONFIG_DIR="./config"
 LOG_DIR="./logs"
