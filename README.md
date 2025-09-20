@@ -1,33 +1,25 @@
-# Tamate
+# CAMFUN
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Tamate-blue?logo=google-chrome)](https://tamatelive.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-Tamate-blue?logo=twitter)](https://x.com/Tamatelive)
+[![Website](https://img.shields.io/badge/Website-CAMFUN-blue?logo=google-chrome)](https://camfun.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-CAMFUN-blue?logo=twitter)](https://x.com/CAMFUNLAB)
 
-**Tamate**  is the world’s first open-source Tamagotchi live on Pumpfun.
+**CAMFUN**  is the world’s first open-source rabbit project livestreaming on Pumpfun.
 
-Tamate is an AI-powered open-source Tamagotchi that will grow nonstop 24/7 on Pumpfun.
+It is an AI-powered digital lifeform that will continuously grow, learn, and interact through a 24/7 livestream.
 
-It’s not a recording or a script; it’s a virtual lifeform that interacts with the world in real time.
+It’s not scripted or pre-recorded — it is a virtual rabbit that responds to the world in real time. Every action, expression, and transformation is shaped by on-chain data from live chat and market activity. Every viewer’s participation becomes part of its growth.
 
-This is a gentle revival of the 90s and an experiment for the future.
+The livestream ecosystem on Pumpfun is still in its early stage, and interactive formats are only beginning to emerge. CAMFUN aims to transform one-way viewing into a digital co-raising experiment where everyone can take part.
 
-All of Tamate’s behaviors (eating, sleeping, evolving, speaking, playing) are influenced by on-chain data from live chat, market trends, and more. It’s not a passive character being played back; it’s an AI digital lifeform that reacts to the world.
+As an open-source project, CAMFUN’s systems, models, and growth mechanisms will be fully open. Anyone can join in development, training, and modification, and even create their own unique version of this virtual lifeform.
 
-The livestream ecosystem on Pumpfun is still in its very early days, and few have tried truly interactive formats.
+It is also a symbol. In internet and digital culture, the rabbit often represents curiosity and the unknown, guiding people beyond familiar boundaries into journeys full of branches and possibilities.
 
-Tamate aims to open the first door to this new world, turning livestreams from one-way broadcasts into a collaborative co-raising experiment.
+CAMFUN embodies this spirit. Its growth cannot be predetermined, and its path is never singular. Every viewer’s interaction becomes part of its choices, pushing it to explore and evolve through countless possibilities.
 
-Tamate is open-source. All of its logic, models, and growth systems will be fully open, allowing anyone to join its training, development, modification, and evolution; you can even fork and create your own version of Tamate.
-
-Here, viewers are no longer just spectators. They can influence Tamate’s emotions through live chat, unlock evolution events through tipping, and trigger personality shifts through market trends.
-
-You’re not just watching; you’re helping raise it.
-
-Tamate is born from nostalgia yet made for the future. It is the rebirth of Tamagotchi on-chain.
-
-It’s a tribute to the classic 90s Tamagotchi: open-source and owned by everyone.
+You cannot predict where it will go, but you can be one of the forces that shape it.
