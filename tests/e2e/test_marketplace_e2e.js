@@ -2,7 +2,7 @@
 // End-to-End tests for marketplace transactions and interactions using Cypress
 
 describe('Marketplace End-to-End Tests', () => {
-  // Define base URL for the marketplace DApp (adjust based on your environment)
+  // Define base URL for the marketplace DApp (adjust based on your environment) 
   const BASE_URL = 'http://localhost:3000/marketplace';
 
   // Define test user credentials or wallet details (mocked for testing)
