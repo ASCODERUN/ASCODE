@@ -1,7 +1,7 @@
 name: Automated Release Management and Versioning 
 
 # Define when the workflow should run
-on:
+on: 
   push:
     branches: 
       - main
