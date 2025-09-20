@@ -1,25 +1,27 @@
-# CAMFUN
+# Hooton
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-CAMFUN-blue?logo=google-chrome)](https://camfun.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-CAMFUN-blue?logo=twitter)](https://x.com/CAMFUNLAB)
+[![Website](https://img.shields.io/badge/Website-Hooton-blue?logo=google-chrome)](https://hooton.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-Hooton-blue?logo=twitter)](https://x.com/Hootonfunx)
 
-**CAMFUN**  is the world’s first open-source rabbit project livestreaming on Pumpfun.
+**Hooton**  
 
-It is an AI-powered digital lifeform that will continuously grow, learn, and interact through a 24/7 livestream.
+We are building something new.
 
-It’s not scripted or pre-recorded — it is a virtual rabbit that responds to the world in real time. Every action, expression, and transformation is shaped by on-chain data from live chat and market activity. Every viewer’s participation becomes part of its growth.
+Hooton — an on-chain protocol plugin for Pumpfun livestreams and SPL tokens.
 
-The livestream ecosystem on Pumpfun is still in its early stage, and interactive formats are only beginning to emerge. CAMFUN aims to transform one-way viewing into a digital co-raising experiment where everyone can take part.
+On Pumpfun, livestreams have become the core scene for creators and communities, but interactions are still surface-level: sending chats, watching prices, making trades. Hooton’s goal is to standardize and protocolize these interactions so they are no longer just performance, but recorded and settled as on-chain value.
 
-As an open-source project, CAMFUN’s systems, models, and growth mechanisms will be fully open. Anyone can join in development, training, and modification, and even create their own unique version of this virtual lifeform.
+With Hooton, every chat, every trade, and even sudden market movements can be written on-chain as verifiable events, further triggering dynamic SPL token mechanisms.
 
-It is also a symbol. In internet and digital culture, the rabbit often represents curiosity and the unknown, guiding people beyond familiar boundaries into journeys full of branches and possibilities.
+For example, once a livestream reaches a certain level of interaction, Hooton can automatically unlock creator rewards and distribute them among viewers, the streamer, and a community fund. If an SPL token (like $BONK) makes a sharp move, Hooton can trigger bonus rewards or visual effects to heighten engagement.
 
-CAMFUN embodies this spirit. Its growth cannot be predetermined, and its path is never singular. Every viewer’s interaction becomes part of its choices, pushing it to explore and evolve through countless possibilities.
+This means livestreams are no longer just a stage for the streamer, but a space built by the entire community. Every chat and every trade becomes part of collective consensus, driving token flows and shaping new forms of interaction. Viewers are not just watching — they are truly integrated, co-creating value through participation.
 
-You cannot predict where it will go, but you can be one of the forces that shape it.
+Hooton is open-source. Anyone can integrate, modify, and extend it. Our vision is to make Hooton the foundational bridge between livestreams and SPL tokens, transforming fragmented interactions into a unified protocol standard.
+
+Hooton — discover the new possibilities where livestreams and tokens meet.
