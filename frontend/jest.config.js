@@ -3,7 +3,7 @@ const config = {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/', '/build/'],
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'], 
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/\$1',
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
