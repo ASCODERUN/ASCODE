@@ -1,25 +1,27 @@
-# Octine
+# MeetFun
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Octine-blue?logo=google-chrome)](https://octine.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-Octine-blue?logo=twitter)](https://x.com/OctineLive)
+[![Website](https://img.shields.io/badge/Website-MeetFun-blue?logo=google-chrome)](https://meetfun.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-MeetFun-blue?logo=twitter)](https://x.com/MeetFunonx)
 
-**Octine**  is the first open-source octopus experiment livestreaming on Pumpfun.
+**MeetFun**  
 
-Powered by AI, it appears in a 24/7 livestream, constantly showing growth, transformation, and response.
+We are building something new.
 
-Octine is not a replay, nor is it a scripted performance — it is a virtual octopus capable of reacting to the world in real time. Every movement, gesture, and shift in form is influenced by on-chain data, including live chat, trading activity, and market signals. The audience’s participation directly shapes its existence.
+MeetFun — an on-chain protocol plugin for Pumpfun livestreams and SPL tokens.
 
-The livestream ecosystem on Pumpfun is still in its early stage, with interactive depth and formats yet to be fully explored. Octine’s goal is to turn livestreams from one-way viewing into a digital life experiment driven by the community.
+On Pumpfun, livestreams have become the core scene for creators and communities, but interactions are still surface-level: sending chats, watching prices, making trades. MeetFun’s goal is to standardize and protocolize these interactions so they are no longer just performance, but recorded and settled as on-chain value.
 
-As an open-source project, Octine’s models, logic, and mechanisms of evolution will be fully transparent. Anyone can join in development, training, and modification, or even fork their own unique version of this “octopus lifeform.”
+With MeetFun, every chat, every trade, and even sudden market movements can be written on-chain as verifiable events, further triggering dynamic SPL token mechanisms.
 
-At the same time, Octine carries symbolic meaning. In digital culture, the octopus is often seen as a symbol of intelligence, multidimensional connection, and exploration of the unknown. Its tentacles stretch in many directions, representing infinite possibilities.
+For example, once a livestream reaches a certain level of interaction, MeetFun can automatically unlock creator rewards and distribute them among viewers, the streamer, and a community fund. If an SPL token (like $WOULD) makes a sharp move, MeetFun can trigger bonus rewards or visual effects to heighten engagement.
 
-Octine embodies this spirit. Its growth has no predetermined end point, and every change is driven by community interaction. It will continue to explore and evolve along branching paths, while viewers are no longer just observers but active forces in its journey.
+This means livestreams are no longer just a stage for the streamer, but a space built by the entire community. Every chat and every trade becomes part of collective consensus, driving token flows and shaping new forms of interaction. Viewers are not just watching — they are truly integrated, co-creating value through participation.
 
-You cannot predict its future, but you can be one of the forces that shape its path.
+MeetFun is open-source. Anyone can integrate, modify, and extend it. Our vision is to make MeetFun the foundational bridge between livestreams and SPL tokens, transforming fragmented interactions into a unified protocol standard.
+
+MeetFun — discover the new possibilities where livestreams and tokens meet.
