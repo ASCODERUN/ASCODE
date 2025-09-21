@@ -1,27 +1,21 @@
-# MeetFun
+# Remonk
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-MeetFun-blue?logo=google-chrome)](https://meetfun.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-MeetFun-blue?logo=twitter)](https://x.com/MeetFunonx)
+[![Website](https://img.shields.io/badge/Website-Remonk-blue?logo=google-chrome)](https://remonk.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-Remonk-blue?logo=twitter)](https://x.com/Remonkfin)
 
-**MeetFun**  
+**Remonk**  is a new experimental project born in the Solana ecosystem. Its core vision is:
 
-We are building something new.
+Extending the cultural value of NFTs into new narrative spaces.
 
-MeetFun — an on-chain protocol plugin for Pumpfun livestreams and SPL tokens.
+Transforming the classic SMB Gen2 monkeys into virtual characters, becoming the first NFT-based virtual streamers on the Pumpfun platform.
 
-On Pumpfun, livestreams have become the core scene for creators and communities, but interactions are still surface-level: sending chats, watching prices, making trades. MeetFun’s goal is to standardize and protocolize these interactions so they are no longer just performance, but recorded and settled as on-chain value.
+Turning community entertainment into on-chain value flows through livestreaming, interaction, and creator rewards.
 
-With MeetFun, every chat, every trade, and even sudden market movements can be written on-chain as verifiable events, further triggering dynamic SPL token mechanisms.
+In the world of Remonk, SMB monkeys are no longer just collectibles. They are given identities, personalities, and a stage. They step out of JPEGs and into real-time interactive livestreams, becoming a new medium for crypto communities and meme culture.
 
-For example, once a livestream reaches a certain level of interaction, MeetFun can automatically unlock creator rewards and distribute them among viewers, the streamer, and a community fund. If an SPL token (like $WOULD) makes a sharp move, MeetFun can trigger bonus rewards or visual effects to heighten engagement.
-
-This means livestreams are no longer just a stage for the streamer, but a space built by the entire community. Every chat and every trade becomes part of collective consensus, driving token flows and shaping new forms of interaction. Viewers are not just watching — they are truly integrated, co-creating value through participation.
-
-MeetFun is open-source. Anyone can integrate, modify, and extend it. Our vision is to make MeetFun the foundational bridge between livestreams and SPL tokens, transforming fragmented interactions into a unified protocol standard.
-
-MeetFun — discover the new possibilities where livestreams and tokens meet.
+Remonk is both the fusion of NFTs and livestreaming, and an experiment in “digitally personified assets” — exploring how NFTs can carry life and narrative beyond the blockchain itself.
