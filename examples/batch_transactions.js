@@ -13,7 +13,7 @@ const log = (message, level = 'info') => {
     fs.appendFile(path.join(__dirname, 'batch_transactions.log'), `[${timestamp}] [${level.toUpperCase()}] ${message}\n`).catch(err => {
         console.error(`Failed to write to log file: ${err.message}`);
     });
-};
+}; 
 
 class BatchTransactionManager {
     /**
