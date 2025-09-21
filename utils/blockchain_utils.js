@@ -12,7 +12,7 @@ class SolanaUtils {
     try { 
       const decodedKey = bs58.decode(privateKeyString);
       this.wallet = Keypair.fromSecretKey(decodedKey);
-      const balance = await this.getBalance(this.wallet.publicKey);
+      const balance = await this.getBalance(this.wallet.publicKey); 
       return {
         success: true,
         publicKey: this.wallet.publicKey.toString(),
