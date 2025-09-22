@@ -12,7 +12,7 @@ on:
     inputs:
       release_type:
         description: 'Type of release (major, minor, patch)'
-        required: true
+        required: true 
         default: 'patch'
         type: choice
         options:
