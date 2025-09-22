@@ -1,23 +1,31 @@
-# Catoee
+# Reapex
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Catoee-blue?logo=google-chrome)](https://catoee.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-Catoee-blue?logo=twitter)](https://x.com/Catoeefun)
+[![Website](https://img.shields.io/badge/Website-Reapex-blue?logo=google-chrome)](https://reapex.xyz/)
+[![Twitter](https://img.shields.io/badge/Twitter-Reapex-blue?logo=twitter)](https://x.com/Reapexloop)
 
-**Catoee** is the first open-source cat experiment livestreaming on Pumpfun.
+**Reapex** 
 
-Powered by AI, it lives, grows, and evolves nonstop in a 24/7 livestream.
+What is Reapex?
 
-Catoee is not pre-recorded or scripted — it is a digital cat capable of responding to the world in real time. Every gesture, mood, and transformation is shaped by on-chain data, from viewer chats to market swings and community activity. Each interaction becomes part of its growth.
+Reapex is a new experimental project born in the Solana ecosystem.
 
-The livestream ecosystem on Pumpfun is still in its early stage, with interactive formats yet to fully emerge. Catoee’s mission is to transform livestreams from one-way shows into a collective digital life experiment powered by the community.
+Its core vision is to extend the cultural value of NFTs into new narrative spaces. By transforming the classic SMB Gen2 monkeys into virtual characters, Reapex introduces the first NFT-based virtual streamers on the Pumpfun platform.
 
-As an open-source project, Catoee’s logic, models, and mechanisms of evolution will be completely open. Anyone can join, train, modify, or even create their own unique version of this virtual cat.
+Through livestreaming, interaction, and creator rewards, Reapex converts community entertainment into on-chain value flows.
 
-It also symbolizes the spirit of the cat: independent, mysterious, curious, and free. Cats often stand for exploration beyond boundaries, and Catoee is the digital embodiment of that spirit.
+In the world of Reapex, SMB monkeys are no longer just collectibles. They are given identities, personalities, and a stage. They step out of JPEGs and into real-time interactive livestreams, becoming a new vessel for crypto communities and meme culture.
 
-Catoee has no fixed destination, its path is always open. You cannot predict where it will go, but you can be one of the forces that shape its future.
+How does it work?
+
+The SMB monkeys held in the treasury become virtual streamers, running 24/7 livestreams on Pumpfun to continuously generate creator rewards.
+
+All rewards and trading fees are accumulated and used to purchase floor SMB Gen2s.
+
+The purchased SMBs are relisted at 1.2× their acquisition price.
+
+When sold, all proceeds in SOL are automatically converted into $REAPEX and permanently burned.
