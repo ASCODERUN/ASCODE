@@ -12,7 +12,7 @@ class AppError extends Error {
 }
 
 class ValidationError extends AppError {
-  constructor(message, details = {}) {
+  constructor(message, details = {}) { 
     super(message, 400, 'VALIDATION_ERROR', details);
   }
 }
