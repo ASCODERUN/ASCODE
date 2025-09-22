@@ -1,21 +1,23 @@
-# Remonk
+# Noirfun
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Remonk-blue?logo=google-chrome)](https://remonk.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-Remonk-blue?logo=twitter)](https://x.com/Remonkfin)
+[![Website](https://img.shields.io/badge/Website-Noirfun-blue?logo=google-chrome)](https://noirlive.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-Noirfun-blue?logo=twitter)](https://x.com/Noirfunlive)
 
-**Remonk**  is a new experimental project born in the Solana ecosystem. Its core vision is:
+**Noirfun**  is the world’s first open-source experimental lifeform livestreaming on Pumpfun.
 
-Extending the cultural value of NFTs into new narrative spaces.
+Powered by AI and embodied as an unknown creature, it grows and evolves nonstop through a 24/7 livestream.
 
-Transforming the classic SMB Gen2 monkeys into virtual characters, becoming the first NFT-based virtual streamers on the Pumpfun platform.
+Noirfun is not pre-recorded or scripted — it is a digital being capable of responding to the world in real time. Every change is influenced by on-chain data, from live chats to market shifts and community actions. Each viewer’s participation becomes part of its evolution.
 
-Turning community entertainment into on-chain value flows through livestreaming, interaction, and creator rewards.
+The livestream ecosystem on Pumpfun is still in its early stage, with interactive formats yet to be fully explored. Noirfun aims to transform one-way viewing into a collective digital life experiment shaped by the community.
 
-In the world of Remonk, SMB monkeys are no longer just collectibles. They are given identities, personalities, and a stage. They step out of JPEGs and into real-time interactive livestreams, becoming a new medium for crypto communities and meme culture.
+As an open-source project, Noirfun’s logic, models, and mechanisms of evolution will be fully open. Anyone can join, train, modify, and even fork their own version of this lifeform.
 
-Remonk is both the fusion of NFTs and livestreaming, and an experiment in “digitally personified assets” — exploring how NFTs can carry life and narrative beyond the blockchain itself.
+It is also a symbol: the unknown creature represents unpredictability and infinite possibility, a step beyond boundaries into an undefined future.
+
+Noirfun has no predetermined destination. Its path is shaped by the community. You cannot predict where it will go, but you can be one of the forces that shape it.
