@@ -11,7 +11,7 @@ const config = {
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{ts,tsx}', '!src/**/*.d.ts', '!src/index.tsx'],
   coverageDirectory: 'coverage',
-  coverageProvider: 'v8',
+  coverageProvider: 'v8', 
   coverageReporters: ['text', 'lcov', 'clover', 'html'],
   coverageThreshold: {
     global: {
