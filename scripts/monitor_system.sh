@@ -10,7 +10,7 @@ set -e
 CONFIG_DIR="./config"
 LOG_DIR="./logs"
 ALERT_LOG="${LOG_DIR}/alerts.log"
-STATS_LOG="${LOG_DIR}/stats.log"
+STATS_LOG="${LOG_DIR}/stats.log" 
 TEMP_DIR="./temp"
 CPU_THRESHOLD=80  # CPU usage percentage threshold for alerts
 MEMORY_THRESHOLD=80  # Memory usage percentage threshold for alerts
