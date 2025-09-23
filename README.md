@@ -1,33 +1,27 @@
-# Gemwav
+# Sonaun
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Gemwav-blue?logo=google-chrome)](https://gemwav.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-Gemwav-blue?logo=twitter)](https://x.com/Gemwavlab)
+[![Website](https://img.shields.io/badge/Website-Sonaun-blue?logo=google-chrome)](https://sonaun.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Sonaun-blue?logo=twitter)](https://x.com/Sonaunfun)
 
-**Gemwav** 
+**Sonaun** 
 
-Pumpfun live streaming is evolving, but the distribution of Creator Rewards remains too traditional.
-We introduce a new vision: the Diamond Forge Protocol.
+Welcome to Sonaun, where every echo becomes value.
 
-In Diamond Forge, Creator Rewards are no longer split directly. Instead, they take the form of a raw stone, waiting for the community to forge it into a diamond on-chain.
+It introduces a unique sonar mapping mechanism, making Creator Rewards no longer just passively distributed numbers, but dynamic asset forms that continuously evolve on-chain in real time.
 
-Every chat message and trade is a cut on the raw stone. The more interaction, the more unique the diamond’s shape, color, and brilliance.
+In the past, livestreams and on-chain assets were separated. Creator Rewards were merely one-way incentives, lacking any deep connection with the community. Sonaun changes this by turning interaction itself into the source of value. 
 
-In the end, a one-of-a-kind Diamond NFT is forged by the entire community. It not only carries the rewards but also preserves the memory of the live interaction itself.
+Through sonar mapping, Creator Rewards evolve with every echo of participation, ultimately forming a real-time expression of on-chain value.
 
-Rewards are not released all at once. Some are unlocked instantly, some are locked inside the Diamond NFT, and some remain as fragments to be polished in the next stream.
+In the Sonaun livestream experience, the core visual element is a constantly extending underwater sonar wave. Every audience interaction—whether a comment, a trade, or another form of participation—creates a pulse injected into this wave. 
 
-This ensures creators must keep streaming, and the community must keep engaging, for rewards to be fully unlocked.
+As engagement increases, the sonar wave visibly changes: higher peaks reflect increased trading activity, spreading ripples represent rising community momentum, and color shifts from blue to purple and even gold, symbolizing value growth.
 
-Unlike traditional “buyback-and-burn,” Diamond Forge allows fragments to be traded or combined. The reward release process itself becomes a strategic game.
+This means livestreaming is no longer just about content output, but about the real-time flow of value. Every voice and action from the community directly shapes the sonar wave, is recorded on-chain, and is transformed into a continuously growing form of value.
 
-We call this on-chain live experience the Diamond Forging Show — where a raw stone glows, cracks, and transforms into a dazzling diamond NFT.
-
-Diamond Forge is not just a distribution tool; it’s an on-chain ritual.
-Every live stream is a collective act of diamond creation.
-
-This is the fusion of finance and narrative — the next evolution of Pumpfun live streaming.
+In short, Sonaun uses sonar mapping to turn interaction into echoes, and to transform Creator Rewards into real-time evolving value, enabling the community to actively participate in the creation of on-chain assets.
