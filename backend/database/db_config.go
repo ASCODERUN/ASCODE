@@ -18,7 +18,7 @@ type DBConfig struct {
     Port            string
     User            string
     Password        string
-    DBName          string
+    DBName          string 
     SSLMode         string
     MaxOpenConns    int
     MaxIdleConns    int
