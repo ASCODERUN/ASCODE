@@ -13,7 +13,7 @@ LOG_DIR="./logs"
 COVERAGE_DIR="./coverage"
 TEST_RESULTS_DIR="./test-results"
 MAX_CONNECTION_ATTEMPTS=3
-CONNECTION_CHECK_INTERVAL=2
+CONNECTION_CHECK_INTERVAL=2 
 
 # Utility function to log messages with timestamp
 log_message() {
