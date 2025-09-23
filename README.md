@@ -1,31 +1,33 @@
-# Reapex
+# Gemwav
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Reapex-blue?logo=google-chrome)](https://reapex.xyz/)
-[![Twitter](https://img.shields.io/badge/Twitter-Reapex-blue?logo=twitter)](https://x.com/Reapexloop)
+[![Website](https://img.shields.io/badge/Website-Gemwav-blue?logo=google-chrome)](https://gemwav.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Gemwav-blue?logo=twitter)](https://x.com/Gemwavlab)
 
-**Reapex** 
+**Gemwav** 
 
-What is Reapex?
+Pumpfun live streaming is evolving, but the distribution of Creator Rewards remains too traditional.
+We introduce a new vision: the Diamond Forge Protocol.
 
-Reapex is a new experimental project born in the Solana ecosystem.
+In Diamond Forge, Creator Rewards are no longer split directly. Instead, they take the form of a raw stone, waiting for the community to forge it into a diamond on-chain.
 
-Its core vision is to extend the cultural value of NFTs into new narrative spaces. By transforming the classic SMB Gen2 monkeys into virtual characters, Reapex introduces the first NFT-based virtual streamers on the Pumpfun platform.
+Every chat message and trade is a cut on the raw stone. The more interaction, the more unique the diamond’s shape, color, and brilliance.
 
-Through livestreaming, interaction, and creator rewards, Reapex converts community entertainment into on-chain value flows.
+In the end, a one-of-a-kind Diamond NFT is forged by the entire community. It not only carries the rewards but also preserves the memory of the live interaction itself.
 
-In the world of Reapex, SMB monkeys are no longer just collectibles. They are given identities, personalities, and a stage. They step out of JPEGs and into real-time interactive livestreams, becoming a new vessel for crypto communities and meme culture.
+Rewards are not released all at once. Some are unlocked instantly, some are locked inside the Diamond NFT, and some remain as fragments to be polished in the next stream.
 
-How does it work?
+This ensures creators must keep streaming, and the community must keep engaging, for rewards to be fully unlocked.
 
-The SMB monkeys held in the treasury become virtual streamers, running 24/7 livestreams on Pumpfun to continuously generate creator rewards.
+Unlike traditional “buyback-and-burn,” Diamond Forge allows fragments to be traded or combined. The reward release process itself becomes a strategic game.
 
-All rewards and trading fees are accumulated and used to purchase floor SMB Gen2s.
+We call this on-chain live experience the Diamond Forging Show — where a raw stone glows, cracks, and transforms into a dazzling diamond NFT.
 
-The purchased SMBs are relisted at 1.2× their acquisition price.
+Diamond Forge is not just a distribution tool; it’s an on-chain ritual.
+Every live stream is a collective act of diamond creation.
 
-When sold, all proceeds in SOL are automatically converted into $REAPEX and permanently burned.
+This is the fusion of finance and narrative — the next evolution of Pumpfun live streaming.
