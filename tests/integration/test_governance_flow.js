@@ -24,7 +24,7 @@ jest.mock('@solana/web3.js', () => {
 // Mock SPL Governance functions
 jest.mock('@solana/spl-governance', () => ({
   createRealm: jest.fn().mockResolvedValue({
-    realmId: 'realm123',
+    realmId: 'realm123', 
     authority: 'mockAuthorityPubkey'
   }),
   createProposal: jest.fn().mockResolvedValue({
