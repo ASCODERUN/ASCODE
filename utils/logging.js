@@ -11,7 +11,7 @@ const logLevels = {
   debug: 5,
   silly: 6,
 };
-
+ 
 const logColors = {
   error: 'red',
   warn: 'yellow',
