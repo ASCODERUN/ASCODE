@@ -8,7 +8,7 @@ describe('Mobile End-to-End Tests for DApp', () => {
   // Define test user credentials or wallet details (mocked for testing)
   const TEST_WALLET_ADDRESS = 'mockWalletAddress123';
 
-  // Before all tests, set up the mobile viewport
+  // Before all tests, set up the mobile viewport 
   before(() => {
     // Set viewport to emulate a mobile device (e.g., iPhone X)
     cy.viewport('iphone-x');
