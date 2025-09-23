@@ -19,7 +19,7 @@ permissions:
   checks: write
   pull-requests: write
 
-# Define environment variables for reuse across jobs
+# Define environment variables for reuse across jobs 
 env:
   RUST_VERSION: '1.74.0'
   PYTHON_VERSION: '3.11'
