@@ -1,8 +1,8 @@
 {
   "general": {
-    "protocolName": "Sonaun AI Governance",
+    "protocolName": "Sereon AI Governance",
     "version": "1.0.0",
-    "description": "Governance configuration for Sonaun AI on Solana network",
+    "description": "Governance configuration for Sereon AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable governance module
     "network": "devnet" // Options: mainnet, testnet, devnet
