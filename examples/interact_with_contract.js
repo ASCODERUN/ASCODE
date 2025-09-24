@@ -11,7 +11,7 @@ const fs = require('fs');
 dotenv.config(); 
 
 // Network configuration (use devnet for testing, switch to mainnet-beta for production)
-const NETWORK = 'https://api.devnet.solana.com';
+const NETWORK = 'https://api.devnet.solana.com'; 
 const connection = new Connection(NETWORK, 'confirmed');
 
 // Wallet configuration (private key from environment or file for testing)
