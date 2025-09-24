@@ -4,7 +4,7 @@ name: Code Linting Pipeline
 on: 
   push:
     branches:
-      - main
+      - main 
       - develop
       - feature/**
   pull_request:
