@@ -1,39 +1,30 @@
-# Fravem
+# Sereon
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Fravem-blue?logo=google-chrome)](https://fravem.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-Fravem-blue?logo=twitter)](https://x.com/Fravemlab)
+[![Website](https://img.shields.io/badge/Website-Sereon-blue?logo=google-chrome)](https://sereon.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-Sereon-blue?logo=twitter)](https://x.com/Sereonmeme)
 
-**Fravem** 
+**Sereon** 
 
-Pumpfun live streaming is evolving, but the distribution of Creator Rewards remains too traditional.
-We bring a new vision: the Raw Stone Protocol.
+Sereon is an on-chain interaction protocol built on Pumpfun livestreams.
+Its design goal is simple: to ensure that Creator Rewards are no longer static distributions, but directly linked to livestream data.
 
-In Fravem, Creator Rewards are no longer split directly.
-They take the form of a raw stone, waiting for the community to forge it together on-chain.
+In Sereon, every livestream interaction—whether trading volume, number of comments, or overall activity—is recorded on-chain in real time, forming a transparent reward curve. Rewards are not released all at once, but are gradually unlocked in stages based on these data metrics.
 
-Every chat message and every trade is a cut on the raw stone.
-The more interactions, the more unique its shape, color, and brilliance become.
+This means creators must keep streaming, and communities must keep engaging, for rewards to be fully unlocked. Creators gain more stable value, while community contributions are instantly quantified and recorded on-chain.
 
-In the end, a one-of-a-kind Raw Stone NFT is forged by the entire community.
-It not only carries the rewards but also preserves the memory of the live interaction itself.
+The focus of Sereon is not on narrative, but on mechanism itself:
 
-Rewards are not released all at once.
-Some are unlocked instantly, some are locked inside the Raw Stone NFT, and some remain as fragments to be polished in the next stream.
+Rewards tied to data
 
-This means creators must keep streaming, and the community must keep engaging, for rewards to be fully unlocked.
+Transparent unlocking process
 
-Unlike traditional “buyback-and-burn,” the Raw Stone Protocol allows fragments to be traded or combined.
-The reward release process itself becomes a strategic game.
+Driven by both creators and community
 
-We call this on-chain live experience the Raw Stone Show —
-a raw stone that glows, cracks, and gradually takes shape, finally shining as a unique NFT.
+Real-time on-chain feedback
 
-The Raw Stone Protocol is not just a distribution tool; it is an on-chain ritual.
-Every live stream is a collective act of forging by the community.
-
-This is the fusion of finance and narrative — the next evolution of Pumpfun live streaming.
+In short: Sereon links creator rewards with livestream data, turning community participation into sustainably released on-chain value.
