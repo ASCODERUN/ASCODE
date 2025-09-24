@@ -1,11 +1,11 @@
 {
   "version": "0.1.0",
-  "name": "VIS1ON_ai",
+  "name": "Genvum_ai",
   "instructions": [
     {
       "name": "initializeRealm",
       "docs": [
-        "Initializes a new governance realm for VIS1ON with specified parameters.",
+        "Initializes a new governance realm for Genvum with specified parameters.",
         "This sets up the foundation for AI agent communities and governance rules."
       ],
       "accounts": [
