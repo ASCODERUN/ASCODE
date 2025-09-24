@@ -1,27 +1,25 @@
-# Sonaun
+# Genvum
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Sonaun-blue?logo=google-chrome)](https://sonaun.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-Sonaun-blue?logo=twitter)](https://x.com/Sonaunfun)
+[![Website](https://img.shields.io/badge/Website-Genvum-blue?logo=google-chrome)](https://genvum.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-Genvum-blue?logo=twitter)](https://x.com/Genvumtech)
 
-**Sonaun** 
+**Genvum** 
 
-Welcome to Sonaun, where every echo becomes value.
+Genvum is the first Gene Incubation Protocol, a blockchain-native system designed to incubate unknown life through livestreaming.
 
-It introduces a unique sonar mapping mechanism, making Creator Rewards no longer just passively distributed numbers, but dynamic asset forms that continuously evolve on-chain in real time.
+On Pumpfun, every action from the community is no longer just data, but transformed into the primal genes of life, driving its division, growth, and evolution. You are not a viewer, you are the gene.
 
-In the past, livestreams and on-chain assets were separated. Creator Rewards were merely one-way incentives, lacking any deep connection with the community. Sonaun changes this by turning interaction itself into the source of value. 
+Buying, selling, holding, and interacting all inscribe the lifeform’s “genetic blueprint”; market fluctuations and community heat become its growth nutrients; sudden bursts of activity may trigger unpredictable evolution events.
 
-Through sonar mapping, Creator Rewards evolve with every echo of participation, ultimately forming a real-time expression of on-chain value.
+This mechanism ensures the lifeform does not grow according to a preset script, but instead divides, mutates, and evolves in real time based on community behavior. At the same time, Creator Rewards are no longer mere revenue sharing—they are injected directly as nutrients into the incubation process, allowing value flows to feed the lifeform’s growth and making every participant not only a gene, but also a driver.
 
-In the Sonaun livestream experience, the core visual element is a constantly extending underwater sonar wave. Every audience interaction—whether a comment, a trade, or another form of participation—creates a pulse injected into this wave. 
+When the incubation cycle reaches its end, the lifeform will be born in a new form, carrying the genetic imprints and value contributions of all participants, becoming a true on-chain creation of the community.
 
-As engagement increases, the sonar wave visibly changes: higher peaks reflect increased trading activity, spreading ripples represent rising community momentum, and color shifts from blue to purple and even gold, symbolizing value growth.
+At its core, Genvum is not about watching, but about shaping together.
 
-This means livestreaming is no longer just about content output, but about the real-time flow of value. Every voice and action from the community directly shapes the sonar wave, is recorded on-chain, and is transformed into a continuously growing form of value.
-
-In short, Sonaun uses sonar mapping to turn interaction into echoes, and to transform Creator Rewards into real-time evolving value, enabling the community to actively participate in the creation of on-chain assets.
+This is an experiment of origin, evolution, and the unknown.
