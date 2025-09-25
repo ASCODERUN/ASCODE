@@ -5,7 +5,7 @@ const {
     Connection,
     clusterApiUrl,
     Keypair, 
-    LAMPORTS_PER_SOL,
+    LAMPORTS_PER_SOL, 
     PublicKey, 
     Transaction,
     sendAndConfirmTransaction,
