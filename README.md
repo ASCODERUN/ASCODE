@@ -1,21 +1,23 @@
-# Dimora
+# Genorx
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Dimora-blue?logo=google-chrome)](https://dimora.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-Dimora-blue?logo=twitter)](https://x.com/Dimoraedc)
+[![Website](https://img.shields.io/badge/Website-Genorx-blue?logo=google-chrome)](https://genorx.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-Genorx-blue?logo=twitter)](https://x.com/Genorxonx)
 
-**Dimora**  is a new framework built on Pumpfun live streaming that redefines the value of Creator Rewards.
+**Genorx**  is the first Gene Incubation Protocol, a blockchain-native system designed to incubate unknown life through livestreaming.
 
-Traditionally, Rewards were simply income for creators. In Dimora, however, they become a real-time energy flow. Viewers can directly see the energy bar filling up on screen, the pink diamond gradually glowing, and the AI host’s mood and personality shifting in response.
+On Pumpfun, every action from the community is no longer just data, but transformed into the primal genes of life, driving its division, growth, and evolution. You are not a viewer, you are the gene.
 
-Here, Creator Rewards are no longer just numbers — they are the fuel that drives the evolution of the live streaming world.
+Buying, selling, holding, and interacting all inscribe the lifeform’s “genetic blueprint”; market fluctuations and community heat become its growth nutrients; sudden bursts of activity may trigger unpredictable evolution events.
 
-All Rewards are automatically injected into the Dimora contract pool and divided into three parts: the Evolution Pool, the Dividend Pool, and the Game Pool. The Evolution Pool powers the growth of the visuals and the pink diamond itself; the Dividend Pool redistributes rewards to token holders and active participants; and the Game Pool unlocks lotteries, predictions, and interactive tasks, turning each stream into an unpredictable experience.
+This mechanism ensures the lifeform does not grow according to a preset script, but instead divides, mutates, and evolves in real time based on community behavior. At the same time, Creator Rewards are no longer mere revenue sharing—they are injected directly as nutrients into the incubation process, allowing value flows to feed the lifeform’s growth and making every participant not only a gene, but also a driver.
 
-As the energy bar fills, the live scene continuously upgrades: pink light spreads, backgrounds evolve, and special effects unlock layer by layer. At the same time, the AI host’s personality shifts with the energy level: distant and cold at low energy, lively and engaging at medium energy, and ecstatic at high energy, triggering dramatic story peaks. When the bar is fully charged, the Pink Diamond Birth Ceremony begins — a new pink diamond emerges live on stream, while dividend and game rewards are distributed simultaneously.
+When the incubation cycle reaches its end, the lifeform will be born in a new form, carrying the genetic imprints and value contributions of all participants, becoming a true on-chain creation of the community.
 
-Dimora is not just a distribution tool. It transforms Creator Rewards into a shared source of energy for both creators and the community, deeply integrating Web3 logic, narrative, and collective participation.
+At its core, Genorx is not about watching, but about shaping together.
+
+This is an experiment of origin, evolution, and the unknown.
