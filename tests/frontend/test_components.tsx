@@ -5,7 +5,7 @@ import { Button } from '../components/Button';
 import { Input } from '../components/Input';
 import { Modal } from '../components/Modal';
 import { UserProfile } from '../components/UserProfile';
-import { ThemeProvider } from '../context/ThemeContext';
+import { ThemeProvider } from '../context/ThemeContext'; 
 
 // Mock components and dependencies for testing
 const mockOnClick = vi.fn();
