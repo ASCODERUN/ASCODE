@@ -1,4 +1,4 @@
-import logger from './logging.js';
+import logger from './logging.js'; 
 import { handleError } from './error_handling.js';
 
 class WebSocketError extends Error {
