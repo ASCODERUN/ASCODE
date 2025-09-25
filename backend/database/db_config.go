@@ -3,7 +3,7 @@ package db
 import (
     "database/sql"
     "fmt"
-    "log"
+    "log" 
     "os"
     "sync"
     "time"
