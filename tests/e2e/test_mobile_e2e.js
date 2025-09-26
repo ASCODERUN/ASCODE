@@ -4,7 +4,7 @@
 describe('Mobile End-to-End Tests for DApp', () => {
   // Define base URL for the DApp (adjust based on your environment) 
   const BASE_URL = 'http://localhost:3000';
-
+ 
   // Define test user credentials or wallet details (mocked for testing)
   const TEST_WALLET_ADDRESS = 'mockWalletAddress123';
 
