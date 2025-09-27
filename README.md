@@ -1,18 +1,18 @@
-# Dicron
+# Eschin
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Dicron-blue?logo=google-chrome)](https://dicronbet.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-Dicron-blue?logo=twitter)](https://x.com/DicronBetfun)
+[![Website](https://img.shields.io/badge/Website-Eschin-blue?logo=google-chrome)](https://eschin.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-Eschin-blue?logo=twitter)](https://x.com/Whubeeflow)
 
-**Dicron**  is an open probabilistic protocol that connects Polymarket’s prediction layer with on-chain execution.
+**Eschin**  is an open probabilistic protocol that connects Polymarket’s prediction layer with on-chain execution.
 It transforms market belief into programmable behavior, allowing decentralized systems to act not by fixed rules, but by the collective intelligence of participants.
 
-In traditional blockchains, every transaction and contract call is deterministic — the same input always leads to the same output. Dicron challenges this foundation by introducing programmable uncertainty, enabling a new class of contracts that respond to probability, sentiment, and real-time prediction signals.
+In traditional blockchains, every transaction and contract call is deterministic — the same input always leads to the same output. Eschin challenges this foundation by introducing programmable uncertainty, enabling a new class of contracts that respond to probability, sentiment, and real-time prediction signals.
 
-By integrating Polymarket’s live odds into its Dice Engine, Dicron allows developers to bias randomness, weight outcomes, and route different execution paths based on belief data. The result is a blockchain that breathes: adaptive, unpredictable, and aligned with real-world probabilities.
+By integrating Polymarket’s live odds into its Dice Engine, Eschin allows developers to bias randomness, weight outcomes, and route different execution paths based on belief data. The result is a blockchain that breathes: adaptive, unpredictable, and aligned with real-world probabilities.
 
-Whether it’s DeFi protocols that adjust yield according to market expectations, governance systems that execute based on prediction consensus, or game mechanics powered by belief-weighted randomness — Dicron provides the framework for a new probabilistic economy where markets don’t just forecast the future; they define it.
+Whether it’s DeFi protocols that adjust yield according to market expectations, governance systems that execute based on prediction consensus, or game mechanics powered by belief-weighted randomness — Eschin provides the framework for a new probabilistic economy where markets don’t just forecast the future; they define it.
