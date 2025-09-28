@@ -1,18 +1,23 @@
-# Eschin
+# Whubee
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Eschin-blue?logo=google-chrome)](https://eschin.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-Eschin-blue?logo=twitter)](https://x.com/Whubeeflow)
+[![Website](https://img.shields.io/badge/Website-Whubee-blue?logo=google-chrome)](https://whubee.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-Whubee-blue?logo=twitter)](https://x.com/Whubeedc)
 
-**Eschin**  is an open probabilistic protocol that connects Polymarket’s prediction layer with on-chain execution.
-It transforms market belief into programmable behavior, allowing decentralized systems to act not by fixed rules, but by the collective intelligence of participants.
+**Whubee**  is a liquidity gravity protocol built on the Hyperliquid framework, designed around the invisible structure of on-chain capital flow. It guides market liquidity toward balance and structural consistency under the influence of gravity.
 
-In traditional blockchains, every transaction and contract call is deterministic — the same input always leads to the same output. Eschin challenges this foundation by introducing programmable uncertainty, enabling a new class of contracts that respond to probability, sentiment, and real-time prediction signals.
+Traditional finance views liquidity as speed — fast, volatile, and emotion-driven. Whubee sees it differently: liquidity is not chaos, but an ordered movement governed by gravitational law. It transforms market behavior from short-term fluctuations into measurable and comprehensible structures, allowing capital to find natural equilibrium through the forces of liquidity gravity.
 
-By integrating Polymarket’s live odds into its Dice Engine, Eschin allows developers to bias randomness, weight outcomes, and route different execution paths based on belief data. The result is a blockchain that breathes: adaptive, unpredictable, and aligned with real-world probabilities.
+At the core of Whubee lies the Gravity Engine, which analyzes metrics such as market depth, total value locked, and trading inertia to calculate the mass and structural strength of liquidity, generating the core indicator known as the G Index. This index abstracts the market away from fragmented volatility, revealing an underlying structure that can be measured and understood.
 
-Whether it’s DeFi protocols that adjust yield according to market expectations, governance systems that execute based on prediction consensus, or game mechanics powered by belief-weighted randomness — Eschin provides the framework for a new probabilistic economy where markets don’t just forecast the future; they define it.
+Whubee visualizes this invisible structure through the Gravity Map, showing how liquidity clusters, disperses, and curves within the market, exposing regions of balance and imbalance. Based on this gravitational topology, Gravity Vaults automatically allocate incentives according to gravitational weight, rewarding higher-quality liquidity and allowing the market’s structure to reinforce itself through feedback.
+
+When liquidity imbalance occurs, the Flow Equilibrium mechanism automatically adjusts parameters to restore stability. All computations and distributions are executed transparently on-chain, ensuring verifiability and trust.
+
+Whubee’s governance system manages core parameters through on-chain consensus and time-locked execution, ensuring neutrality and long-term stability. As data accumulates, the Gravity Intelligence layer continuously learns from market behavior, optimizing models and parameters, enabling the system to self-correct and evolve.
+
+Whubee does not create liquidity — it understands it. Built upon the Hyperliquid framework, it transforms speed into structure, volatility into order, and allows the market to reveal its own gravity.
