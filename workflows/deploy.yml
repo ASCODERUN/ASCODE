@@ -2,7 +2,7 @@ name: Deployment Pipeline
 
 # Define when the workflow should run
 on:
-  push:
+  push: 
     branches: 
       - main
       - release/** 
