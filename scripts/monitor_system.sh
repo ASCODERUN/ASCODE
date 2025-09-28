@@ -4,7 +4,7 @@
 # Script to monitor system health, CPU, and memory usage
  
 # Exit on any error to prevent partial execution 
-set -e
+set -e 
  
 # Default configuration settings
 CONFIG_DIR="./config"
