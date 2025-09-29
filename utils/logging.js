@@ -4,7 +4,7 @@ import config from './config.js';
 
 const logLevels = {
   error: 0,
-  warn: 1,
+  warn: 1, 
   info: 2,
   http: 3,
   verbose: 4,
