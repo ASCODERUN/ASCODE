@@ -1,4 +1,4 @@
-// test_mobile_e2e.js
+// test_mobile_e2e.js 
 // End-to-End tests for mobile responsiveness and functionality using Cypress
 
 describe('Mobile End-to-End Tests for DApp', () => {
