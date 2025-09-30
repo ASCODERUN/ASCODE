@@ -5,7 +5,7 @@ class AppError extends Error {
     super(message);
     this.name = this.constructor.name;
     this.statusCode = statusCode || 500;
-    this.errorCode = errorCode || 'UNKNOWN_ERROR';
+    this.errorCode = errorCode || 'UNKNOWN_ERROR'; 
     this.details = details;
     Error.captureStackTrace(this, this.constructor);
   }
