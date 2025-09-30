@@ -1,4 +1,4 @@
--- Enable UUID extension for generating unique identifiers (PostgreSQL specific)
+-- Enable UUID extension for generating unique identifiers (PostgreSQL specific) 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 -- Users table to store user information, including Web3 wallet details
