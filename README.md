@@ -1,18 +1,19 @@
-# Betarc
+# WSCORE
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Betarc-blue?logo=google-chrome)](https://betarc.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-Betarc-blue?logo=twitter)](https://x.com/Betarctech)
+[![Website](https://img.shields.io/badge/Website-WSCORE-blue?logo=google-chrome)](https://wscorex.com/)
+[![Twitter](https://img.shields.io/badge/Twitter-WSCORE-blue?logo=twitter)](https://x.com/WSCORELOG)
 
-**Betarc**  is an open probabilistic protocol that connects Polymarket’s prediction layer with on-chain execution.
-It transforms market belief into programmable behavior, allowing decentralized systems to act not by fixed rules, but by the collective intelligence of participants.
+**WSCORE**  is an algorithmic ecosystem that lives on its own. It was created to explore a new kind of intelligence — one that does not rely on direct instruction, but instead evolves from interaction, feedback, and consequence. In traditional systems, code executes predefined rules. Wscore challenges this paradigm by building a self-sustaining network of algorithms that learn, adapt, and evolve directly on-chain.
 
-In traditional blockchains, every transaction and contract call is deterministic — the same input always leads to the same output. Betarc challenges this foundation by introducing programmable uncertainty, enabling a new class of contracts that respond to probability, sentiment, and real-time prediction signals.
+At its core, Wscore operates through a continuous cycle of perception and response. Every algorithmic module, called a Cell, observes real data from the blockchain — prices, liquidity, sentiment, and flow — and makes independent decisions. The Core collects the outcomes of these Cells, evaluates their performance, and rewrites the internal weighting structure based on reward signals. Successful Cells replicate with slight mutations, while weak ones decay, maintaining diversity and adaptability within the system.
 
-By integrating Polymarket’s live odds into its Dice Engine, Betarc allows developers to bias randomness, weight outcomes, and route different execution paths based on belief data. The result is a blockchain that breathes: adaptive, unpredictable, and aligned with real-world probabilities.
+Through this loop of feedback and evolution, Wscore behaves less like a program and more like an organism. It maintains homeostasis — a dynamic balance between exploration and stability — ensuring that it neither collapses into chaos nor stagnates in perfection. Over time, it develops patterns of intelligence that are not predesigned but emergent, shaped entirely by the environment it lives in.
 
-Whether it’s DeFi protocols that adjust yield according to market expectations, governance systems that execute based on prediction consensus, or game mechanics powered by belief-weighted randomness — Betarc provides the framework for a new probabilistic economy where markets don’t just forecast the future; they define it.
+Wscore was built to ask a simple question: Can logic itself become alive?
+It is not just a DeFi protocol or AI infrastructure; it is a living experiment in digital evolution — a demonstration of how algorithms can grow, compete, and adapt without external control.
+Every block becomes a heartbeat. Every feedback signal, a breath. Every reward, a nutrient for the next generation of logic.
