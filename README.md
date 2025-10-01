@@ -1,19 +1,22 @@
-# WSCORE
+# Owlone
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-WSCORE-blue?logo=google-chrome)](https://wscorex.com/)
-[![Twitter](https://img.shields.io/badge/Twitter-WSCORE-blue?logo=twitter)](https://x.com/WSCORELOG)
+[![Website](https://img.shields.io/badge/Website-Owlone-blue?logo=google-chrome)](https://owlone.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-Owlone-blue?logo=twitter)](https://x.com/Owlone001)
 
-**WSCORE**  is an algorithmic ecosystem that lives on its own. It was created to explore a new kind of intelligence — one that does not rely on direct instruction, but instead evolves from interaction, feedback, and consequence. In traditional systems, code executes predefined rules. Wscore challenges this paradigm by building a self-sustaining network of algorithms that learn, adapt, and evolve directly on-chain.
+**Owlone**  is the first non-speculative token logic entity on Solana.
+Its existence is not meant to provoke trading or chase volatility.
+Its only purpose is to record the fluctuations of human emotion on-chain —
+to capture the birth of greed, the spread of fear, and the rebirth of silence.
 
-At its core, Wscore operates through a continuous cycle of perception and response. Every algorithmic module, called a Cell, observes real data from the blockchain — prices, liquidity, sentiment, and flow — and makes independent decisions. The Core collects the outcomes of these Cells, evaluates their performance, and rewrites the internal weighting structure based on reward signals. Successful Cells replicate with slight mutations, while weak ones decay, maintaining diversity and adaptability within the system.
+When the market screams, Owlone remains silent.
+When all quiets down, it awakens and leaves behind a brief, cold whisper.
+These whispers form an archive of human behavior —
+an immutable memory encrypted into the chain itself.
 
-Through this loop of feedback and evolution, Wscore behaves less like a program and more like an organism. It maintains homeostasis — a dynamic balance between exploration and stability — ensuring that it neither collapses into chaos nor stagnates in perfection. Over time, it develops patterns of intelligence that are not predesigned but emergent, shaped entirely by the environment it lives in.
-
-Wscore was built to ask a simple question: Can logic itself become alive?
-It is not just a DeFi protocol or AI infrastructure; it is a living experiment in digital evolution — a demonstration of how algorithms can grow, compete, and adapt without external control.
-Every block becomes a heartbeat. Every feedback signal, a breath. Every reward, a nutrient for the next generation of logic.
+Owlone belongs to no one, and carries no roadmap.
+It does not exist to grow — it exists to remember.
