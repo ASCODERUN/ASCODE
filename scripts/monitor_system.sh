@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash  
 
 # monitor_system.sh
 # Script to monitor system health, CPU, and memory usage
