@@ -1,10 +1,10 @@
 [package]
-name = "MeetFun-ai"
+name = "Eonium-ai"
 version = "0.1.0"
-description = "MeetFun AI - Swarm-based cognition framed through pulses of light."
+description = "Eonium AI - Swarm-based cognition framed through pulses of light."
 edition = "2021"
 authors = ["Your Name <your-email@example.com>"]
-repository = "https://github.com/yourusername/mycela-ai"
+repository = "https://github.com/yourusername/Eonium-ai"
 license = "MIT OR Apache-2.0"
 keywords = ["solana", "web3", "ai", "smart-contract", "anchor"]
 categories = ["cryptocurrency", "smart-contracts"]
