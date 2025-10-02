@@ -8,7 +8,7 @@ set -e
 
 # Default environment and configuration settings
 DEFAULT_ENV="development"
-CONFIG_DIR="./config"
+CONFIG_DIR="./config" 
 LOG_DIR="./logs"
 DOCS_OUTPUT_DIR="./docs/api"
 TEMP_DIR="./temp" 
