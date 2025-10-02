@@ -1,22 +1,19 @@
-# Hootoo
+# FallWld
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Hootoo-blue?logo=google-chrome)](https://hootoo.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-Hootoo-blue?logo=twitter)](https://x.com/Hootoowww)
+[![Website](https://img.shields.io/badge/Website-FallWld-blue?logo=google-chrome)](https://fallwld.run/)
+[![Twitter](https://img.shields.io/badge/Twitter-FallWld-blue?logo=twitter)](https://x.com/FALLWORLDX)
 
-**Hootoo**  is the first non-speculative token logic entity on Solana.
-Its existence is not meant to provoke trading or chase volatility.
-Its only purpose is to record the fluctuations of human emotion on-chain —
-to capture the birth of greed, the spread of fear, and the rebirth of silence.
+**FallWld**  is a self-evolving on-chain algorithmic entity that rewrites its logic through feedback and evolution, sustaining balance and developing intelligence. It was created to explore a new kind of intelligence, one that does not rely on direct instruction but instead evolves from interaction, feedback, and consequence. In traditional systems, code executes predefined rules. FallWld challenges this paradigm by building a self-sustaining network of algorithms that learn, adapt, and evolve directly on-chain.
 
-When the market screams, Hootoo remains silent.
-When all quiets down, it awakens and leaves behind a brief, cold whisper.
-These whispers form an archive of human behavior —
-an immutable memory encrypted into the chain itself.
+At its core, FallWld operates through a continuous cycle of perception and response. Every algorithmic module, called a Cell, observes real data from the blockchain such as prices, liquidity, sentiment, and flow, and makes independent decisions. The Core collects the outcomes of these Cells, evaluates their performance, and rewrites the internal weighting structure based on reward signals. Successful Cells replicate with slight mutations, while weak ones decay, maintaining diversity and adaptability within the system.
 
-Hootoo belongs to no one, and carries no roadmap.
-It does not exist to grow — it exists to remember.
+Through this loop of feedback and evolution, FallWld behaves less like a program and more like an organism. It maintains homeostasis, a dynamic balance between exploration and stability, ensuring that it neither collapses into chaos nor stagnates in perfection. Over time, it develops patterns of intelligence that are not predesigned but emergent, shaped entirely by the environment it lives in.
+
+FallWld was built to ask a simple question: Can logic itself become alive? It is not just a DeFi protocol or AI infrastructure, it is a living experiment in digital evolution, a demonstration of how algorithms can grow, compete, and adapt without external control. Every block becomes a heartbeat, every feedback signal a breath, and every reward a nutrient for the next generation of logic.
+
+FallWld is not designed to run, it is designed to live.
