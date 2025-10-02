@@ -1,4 +1,4 @@
-import logger from './logging.js'; 
+import logger from './logging.js';  
 
 class AppError extends Error {
   constructor(message, statusCode, errorCode, details = {}) {
