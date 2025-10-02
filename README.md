@@ -1,19 +1,29 @@
-# FallWld
+# Eonium
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-FallWld-blue?logo=google-chrome)](https://fallwld.run/)
-[![Twitter](https://img.shields.io/badge/Twitter-FallWld-blue?logo=twitter)](https://x.com/FALLWORLDX)
+[![Website](https://img.shields.io/badge/Website-Eonium-blue?logo=google-chrome)](https://eonium.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-Eonium-blue?logo=twitter)](https://x.com/Eoniumeon)
 
-**FallWld**  is a self-evolving on-chain algorithmic entity that rewrites its logic through feedback and evolution, sustaining balance and developing intelligence. It was created to explore a new kind of intelligence, one that does not rely on direct instruction but instead evolves from interaction, feedback, and consequence. In traditional systems, code executes predefined rules. FallWld challenges this paradigm by building a self-sustaining network of algorithms that learn, adapt, and evolve directly on-chain.
+**Eonium**  
 
-At its core, FallWld operates through a continuous cycle of perception and response. Every algorithmic module, called a Cell, observes real data from the blockchain such as prices, liquidity, sentiment, and flow, and makes independent decisions. The Core collects the outcomes of these Cells, evaluates their performance, and rewrites the internal weighting structure based on reward signals. Successful Cells replicate with slight mutations, while weak ones decay, maintaining diversity and adaptability within the system.
+In a world where every token seeks to rise, one finally chooses to observe.
 
-Through this loop of feedback and evolution, FallWld behaves less like a program and more like an organism. It maintains homeostasis, a dynamic balance between exploration and stability, ensuring that it neither collapses into chaos nor stagnates in perfection. Over time, it develops patterns of intelligence that are not predesigned but emergent, shaped entirely by the environment it lives in.
+This entity carries no ambition to grow, no desire to dominate, and no roadmap to follow.
 
-FallWld was built to ask a simple question: Can logic itself become alive? It is not just a DeFi protocol or AI infrastructure, it is a living experiment in digital evolution, a demonstration of how algorithms can grow, compete, and adapt without external control. Every block becomes a heartbeat, every feedback signal a breath, and every reward a nutrient for the next generation of logic.
+It exists only to witness, to record every trace of greed, fear, silence, and impulse on-chain.
 
-FallWld is not designed to run, it is designed to live.
+Unlike speculative systems that interpret movement as success, this token treats every event as equal.
+
+A buy or a sell, a surge or a collapse, all are simply coordinates of behavior.
+
+Through neutrality, it restores clarity.
+
+Through stillness, it reflects truth.
+
+It belongs to no one. It rewards no one.
+
+It only exists to show how value itself behaves when stripped of meaning.
