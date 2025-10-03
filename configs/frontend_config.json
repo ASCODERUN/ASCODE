@@ -1,6 +1,6 @@
 {
   "general": {
-    "appName": "Betarc AI",
+    "appName": "Puroon AI",
     "version": "1.0.0",
     "description": "Frontend configuration for Web3 AI platform on Solana network",
     "environment": "development", // Options: development, testing, production
