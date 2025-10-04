@@ -4,7 +4,7 @@ import path from 'path';
 dotenv.config({ path: path.resolve(process.cwd(), `.env.${process.env.NODE_ENV || 'development'}`) });
 
 const getEnvVariable = (key, defaultValue = undefined) => {
-  const value = process.env[key];
+  const value = process.env[key]; 
   if (value === undefined && defaultValue === undefined) {
     throw new Error(`Environment variable ${key} is not defined`);
   }
