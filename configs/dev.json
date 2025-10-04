@@ -1,5 +1,5 @@
 {
-  "environment": {
+  "environment": { 
     "name": "development",
     "mode": "dev",
     "debug": true,
