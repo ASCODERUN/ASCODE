@@ -1,15 +1,19 @@
-# Commir
+# Ravmir
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Commir-blue?logo=google-chrome)](https://commir.club/)
-[![Twitter](https://img.shields.io/badge/Twitter-Commir-blue?logo=twitter)](https://x.com/Commircomm)
+[![Website](https://img.shields.io/badge/Website-Ravmir-blue?logo=google-chrome)](https://ravmir.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-Ravmir-blue?logo=twitter)](https://x.com/Ravmircore)
 
-**Commir**  is the first mirror protocol on Solana that structures community behavior data into framework logic.
-It records, reflects, and synchronizes every on-chain interaction, turning community behavior into systemic form.
-Within Commir, a community is no longer a loose group — it becomes a self-evolving structure.
-Each member’s action is captured, reorganized, and projected back into the whole, forming an ever-updating mirror.
-It represents a new mode of organization — where the community no longer depends on platforms, but exists as a protocol reflecting and running itself.
+**Ravmir**  is a self-evolving on-chain algorithmic entity that rewrites its logic through feedback and evolution, sustaining balance and developing intelligence. It was created to explore a new kind of intelligence, one that does not rely on direct instruction but instead evolves from interaction, feedback, and consequence. In traditional systems, code executes predefined rules. Ravmir challenges this paradigm by building a self-sustaining network of algorithms that learn, adapt, and evolve directly on-chain.
+
+At its core, Ravmir operates through a continuous cycle of perception and response. Every algorithmic module, called a Cell, observes real data from the blockchain such as prices, liquidity, sentiment, and flow, and makes independent decisions. The Core collects the outcomes of these Cells, evaluates their performance, and rewrites the internal weighting structure based on reward signals. Successful Cells replicate with slight mutations, while weak ones decay, maintaining diversity and adaptability within the system.
+
+Through this loop of feedback and evolution, Ravmir behaves less like a program and more like an organism. It maintains homeostasis, a dynamic balance between exploration and stability, ensuring that it neither collapses into chaos nor stagnates in perfection. Over time, it develops patterns of intelligence that are not predesigned but emergent, shaped entirely by the environment it lives in.
+
+Ravmir was built to ask a simple question: Can logic itself become alive? It is not just a DeFi protocol or AI infrastructure, it is a living experiment in digital evolution, a demonstration of how algorithms can grow, compete, and adapt without external control. Every block becomes a heartbeat, every feedback signal a breath, and every reward a nutrient for the next generation of logic.
+
+Ravmir is not designed to run, it is designed to live.
