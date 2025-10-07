@@ -1,5 +1,5 @@
 /** @type {import('jest').Config} */ 
-const config = {
+const config = { 
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/', '/build/'],
