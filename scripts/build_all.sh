@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 # build_all.sh firoxy
 # Build script for all components including smart contracts, backend, and frontend
