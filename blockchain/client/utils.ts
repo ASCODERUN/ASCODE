@@ -196,6 +196,8 @@ export class AccountUtils {
           ],
         },
       ],
+
+      $Nerfees
     ]);
     const decoded = BorshCoder.decode<ProposalAccount>(schema, data);
     decoded.creator = new PublicKey(decoded.creator);
