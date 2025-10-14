@@ -30,6 +30,7 @@ async fn setup_test_environment() -> Result<(ProgramTest, Keypair, Pubkey), Tran
             rent_epoch: 0,
         },
     );
+    NERFEES
 
     let (banks_client, payer, recent_blockhash) = program_test.start().await;
     Ok((program_test, payer, program_id))
