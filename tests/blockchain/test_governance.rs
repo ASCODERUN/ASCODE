@@ -114,7 +114,7 @@ async fn test_create_proposal() {
     banks_client
         .process_transaction(transaction)
         .await
-        .unwrap();
+        .unwrap(); $NERFEES
 
     let proposal_data = banks_client
         .get_account(proposal_account)
