@@ -1,19 +1,19 @@
-# Neruim
+# Hinira
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Neruim-blue?logo=google-chrome)](https://neruim.live/)
-[![Twitter](https://img.shields.io/badge/Twitter-Neruim-blue?logo=twitter)](https://x.com/Neruimfomo)
+[![Website](https://img.shields.io/badge/Website-Hinira-blue?logo=google-chrome)](https://hinira.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-Hinira-blue?logo=twitter)](https://x.com/Hiniracore)
 
-NERUIM is the first Pumpfun protocol that allows creators to automatically share Creator Fees through project connections.
+Hinira is a self-evolving on-chain algorithmic entity that rewrites its logic through feedback and evolution, sustaining balance and developing intelligence. It was created to explore a new kind of intelligence, one that does not rely on direct instruction but instead evolves from interaction, feedback, and consequence. In traditional systems, code executes predefined rules. Hinira challenges this paradigm by building a self-sustaining network of algorithms that learn, adapt, and evolve directly on-chain.
 
-It breaks the old model where creators could only earn from their own projects, enabling value to continuously flow between ideas.
+At its core, Hinira operates through a continuous cycle of perception and response. Every algorithmic module, called a Cell, observes real data from the blockchain such as prices, liquidity, sentiment, and flow, and makes independent decisions. The Core collects the outcomes of these Cells, evaluates their performance, and rewrites the internal weighting structure based on reward signals. Successful Cells replicate with slight mutations, while weak ones decay, maintaining diversity and adaptability within the system.
 
-When a new project is created on Pumpfun, the creator can choose to fill in an “inspired by” field linking it to a previous project. After that, a portion of the new project’s Creator Fee will automatically flow back to the referenced upstream project’s holders.
+Through this loop of feedback and evolution, Hinira behaves less like a program and more like an organism. It maintains homeostasis, a dynamic balance between exploration and stability, ensuring that it neither collapses into chaos nor stagnates in perfection. Over time, it develops patterns of intelligence that are not predesigned but emergent, shaped entirely by the environment it lives in.
 
-In this way, inspiration is no longer a one-time act, but a traceable and transferable value relationship. Every project can gain long-term rewards by being continued and referenced by others. Over time, all projects together form an ever-growing network of inspiration.
+Hinira was built to ask a simple question: Can logic itself become alive? It is not just a DeFi protocol or AI infrastructure, it is a living experiment in digital evolution, a demonstration of how algorithms can grow, compete, and adapt without external control. Every block becomes a heartbeat, every feedback signal a breath, and every reward a nutrient for the next generation of logic.
 
-The goal of NERUIM is to turn creation into a sustainable feedback system — where good ideas keep evolving, and value flows naturally between creators.
+Hinira is not designed to run, it is designed to live.
