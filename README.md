@@ -1,19 +1,29 @@
-# Hinira
+# Tamaon
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Hinira-blue?logo=google-chrome)](https://hinira.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-Hinira-blue?logo=twitter)](https://x.com/Hiniracore)
+[![Website](https://img.shields.io/badge/Website-Tamaon-blue?logo=google-chrome)](https://tamaon.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-Tamaon-blue?logo=twitter)](https://x.com/Tamaonchain)
 
-Hinira is a self-evolving on-chain algorithmic entity that rewrites its logic through feedback and evolution, sustaining balance and developing intelligence. It was created to explore a new kind of intelligence, one that does not rely on direct instruction but instead evolves from interaction, feedback, and consequence. In traditional systems, code executes predefined rules. Hinira challenges this paradigm by building a self-sustaining network of algorithms that learn, adapt, and evolve directly on-chain.
+Tamaon is the world’s first open-source Tamagotchi live on Pumpfun.
+Tamaon is an AI-powered open-source Tamagotchi that will grow nonstop 24/7 on Pumpfun.
+It’s not a recording or a script; it’s a virtual lifeform that interacts with the world in real time.
+This is a gentle revival of the 90s and an experiment for the future.
 
-At its core, Hinira operates through a continuous cycle of perception and response. Every algorithmic module, called a Cell, observes real data from the blockchain such as prices, liquidity, sentiment, and flow, and makes independent decisions. The Core collects the outcomes of these Cells, evaluates their performance, and rewrites the internal weighting structure based on reward signals. Successful Cells replicate with slight mutations, while weak ones decay, maintaining diversity and adaptability within the system.
+All of Tamaon’s behaviors (eating, sleeping, evolving, speaking, playing) are influenced by on-chain data from live chat, market trends, and more.
+It’s not a passive character being played back; it’s an AI digital lifeform that reacts to the world.
 
-Through this loop of feedback and evolution, Hinira behaves less like a program and more like an organism. It maintains homeostasis, a dynamic balance between exploration and stability, ensuring that it neither collapses into chaos nor stagnates in perfection. Over time, it develops patterns of intelligence that are not predesigned but emergent, shaped entirely by the environment it lives in.
+The livestream ecosystem on Pumpfun is still in its very early days, and few have tried truly interactive formats.
+Tamaon aims to open the first door to this new world, turning livestreams from one-way broadcasts into a collaborative co-raising experiment.
 
-Hinira was built to ask a simple question: Can logic itself become alive? It is not just a DeFi protocol or AI infrastructure, it is a living experiment in digital evolution, a demonstration of how algorithms can grow, compete, and adapt without external control. Every block becomes a heartbeat, every feedback signal a breath, and every reward a nutrient for the next generation of logic.
+Tamaon is open-source. All of its logic, models, and growth systems will be fully open, allowing anyone to join its training, development, modification, and evolution; you can even fork and create your own version of Tamaon.
 
-Hinira is not designed to run, it is designed to live.
+Here, viewers are no longer just spectators. They can influence Tamaon’s emotions through live chat, unlock evolution events through tipping, and trigger personality shifts through market trends.
+You’re not just watching; you’re helping raise it.
+
+Tamaon is born from nostalgia yet made for the future.
+It is the rebirth of Tamagotchi on-chain.
+It’s a tribute to the classic 90s Tamagotchi: open-source and owned by everyone.
