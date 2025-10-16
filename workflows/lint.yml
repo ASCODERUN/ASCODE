@@ -1,4 +1,4 @@
-name: Code Linting Pipeline 
+name: Code Linting Pipeline  
 
 # Define when the workflow should run 
 on: 
