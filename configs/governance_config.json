@@ -1,16 +1,16 @@
 {
   "general": {
-    "protocolName": "Eschin AI Governance",
+    "protocolName": "Tamaon AI Governance",
     "version": "1.0.0",
-    "description": "Governance configuration for Eschin AI on Solana network",
+    "description": "Governance configuration for Tamaon AI on Solana network",
     "environment": "development", // Options: development, testing, production
     "enabled": true, // Enable governance module
     "network": "devnet" // Options: mainnet, testnet, devnet
   },
   "token": {
     "governanceToken": {
-      "symbol": "hootis",
-      "name": "hootis Token",
+      "symbol": "Tamaon",
+      "name": "Tamaon Token",
       "address": "${GOVERNANCE_TOKEN_ADDRESS}", // Placeholder for token contract address on Solana
       "decimals": 9, // Decimal places for token precision
       "totalSupply": 1000000000, // Total supply of governance tokens
