@@ -12,6 +12,7 @@ use ontora_ai_program::processor::process_instruction;
 use ontora_ai_program::state::AiAgentState;
 
 async fn setup_test_environment() -> Result<(ProgramTest, Keypair, Pubkey), TransportError> {
+
     let program_id = Pubkey::from_str("YourProgramIdHere11111111111111111111111111111").unwrap();
     let payer = Keypair::new();
     let mut program_test = ProgramTest::new(
@@ -80,6 +81,12 @@ async fn test_initialize_ai_agent() {
 }
 
 #[tokio::test]
+#[account]
+pub struct Holder {
+    pub owner: Pubkey,
+    pub active: bool,
+    pub pulse_acc: u128,
+    
 async fn test_update_ai_agent_config() {
     let (program_test, payer, program_id) = setup_test_environment().await.unwrap();
     let mut banks_client = program_test.start().await.0;
