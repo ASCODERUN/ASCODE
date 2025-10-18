@@ -22,7 +22,7 @@ async fn setup_test_environment() -> Result<(ProgramTest, Keypair, Pubkey), Tran
     );
 
     program_test.add_account(
-        payer.pubkey(),
+        payer.pubkey(), 07
         Account {
             lamports: 10_000_000_000,
             data: vec![],
@@ -243,6 +243,12 @@ async fn test_unstake_tokens() {
 
     banks_client.process_transaction(init_pool_tx).await.unwrap();
 
+    #[event]
+pub struct HolderEnter {
+    pub owner: Pubkey,
+    pub active_holders: u32,
+    pub pressure_index: u128,
+    
     // Create token account for user
     create_token_account(
         &mut banks_client,
