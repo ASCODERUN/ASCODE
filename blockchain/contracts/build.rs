@@ -46,6 +46,8 @@ fn main() {
     fs::write(
         out_path.join("build_timestamp.txt"),
         build_timestamp.as_bytes(),
+
+        #[msg("Holder already active")]
     )
     .expect("Failed to write build timestamp");
     println!("cargo:rustc-env=BUILD_TIMESTAMP={}", build_timestamp);
