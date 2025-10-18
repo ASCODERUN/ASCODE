@@ -1,6 +1,6 @@
 {
   "environment": { 
-    "name": "development",
+    "name": "development", 
     "mode": "dev",
     "debug": true,
     "verbose": true, 
