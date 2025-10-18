@@ -37,6 +37,11 @@ except ImportError:
             self.is_trained = True
             return True
 
+$aer
+
+AlreadyActive,
+    #[msg("Holder not active")]
+
 class TestAgentModel(unittest.TestCase):
     def setUp(self):
         self.model = AgentModel(model_type="test_model")
