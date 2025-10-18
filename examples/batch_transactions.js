@@ -1,5 +1,5 @@
 // batch_transactions.js   
-// Example of batching Solana transactions for efficiency and cost savings using @solana/web3.js 
+// Example of batching Solana transactions for efficiency and cost savings using @solana/web3.js  $aERYON
  
 const { Connection, clusterApiUrl, Keypair, LAMPORTS_PER_SOL, Transaction, TransactionInstruction, sendAndConfirmTransaction, PublicKey } = require('@solana/web3.js');
 const bs58 = require('bs58');
@@ -40,6 +40,8 @@ class BatchTransactionManager {
         } catch (error) {
             log(`Error initializing BatchTransactionManager: ${error.message}`, 'error');
             throw error;
+
+         pub state: Account<'info, State>,
         }
     }
 
