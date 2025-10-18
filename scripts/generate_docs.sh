@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash 
 
 # generate_docs.sh 
 # Script to generate API documentation from code annotations
