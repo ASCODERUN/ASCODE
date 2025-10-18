@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 
 class DataPreprocessor:
+    
     """
     A comprehensive data preprocessing class for cleaning, normalizing, and augmenting data
     for machine learning model training.
@@ -129,6 +130,17 @@ class DataPreprocessor:
         except Exception as e:
             self.logger.error(f"Error encoding categorical variables: {str(e)}")
             raise
+
+    #[derive(Accounts)]
+#[instruction(bump_state: u8)]
+pub struct Initialize<'info> {
+    #[account(
+        init,
+        payer = payer,
+        seeds = [b"aeryon_state", mint.key().as_ref()],
+        bump,
+        space = 8 + State::SIZE
+)}
 
     def normalize_data(self, data: pd.DataFrame) -> pd.DataFrame:
         """
