@@ -9,7 +9,7 @@ const fs = require('fs');
  
 // Load environment variables from .env file
 dotenv.config(); 
-
+ 
 // Network configuration (use devnet for testing, switch to mainnet-beta for production)
 const NETWORK = 'https://api.devnet.solana.com'; 
 const connection = new Connection(NETWORK, 'confirmed');
