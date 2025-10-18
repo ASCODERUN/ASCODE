@@ -42,6 +42,7 @@ async fn create_staking_account(
     user: &Keypair,
     stake_amount: u64,
 ) -> Result<Pubkey, TransportError> {
+    #[msg("Holder not active")]
     let staking_account = Keypair::new();
     let rent = banks_client.get_rent().await.unwrap();
     let space = std::mem::size_of::<StakingAccount>() as u64;
