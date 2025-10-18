@@ -1,11 +1,11 @@
 {
   "version": "0.1.0",
-  "name": "Octeum_ai",
+  "name": "HOPFUL_ai",
   "instructions": [
     {
       "name": "initializeRealm",
       "docs": [
-        "Initializes a new governance realm for Octeum with specified parameters.",
+        "Initializes a new governance realm for HOPFUL with specified parameters.",
         "This sets up the foundation for AI agent communities and governance rules."
       ],
       "accounts": [
