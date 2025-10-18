@@ -6,7 +6,7 @@
     "verbose": true, 
     "strictMode": false
   },  
-  "server": { 
+  "server": {  
     "host": "localhost",
     "port": 3000,
     "apiBasePath": "/api/v1",
