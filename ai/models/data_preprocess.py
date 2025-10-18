@@ -58,6 +58,12 @@ class DataPreprocessor:
             raise
 
     def identify_columns(self, data: pd.DataFrame, threshold: float = 0.5) -> None:
+let state = &mut ctx.accounts.state;
+        let holder = &mut ctx.accounts.holder;
+        require!(!holder.active, AeryonError::AlreadyActive);
+        holder.owner = ctx.accounts.owner.key();
+        holder.active = true;
+        
         """
         Identify numerical and categorical columns based on data types and unique value ratio.
         
