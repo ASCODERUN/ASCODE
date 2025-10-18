@@ -193,6 +193,18 @@ pub struct Initialize<'info> {
             self.logger.error(f"Error augmenting data: {str(e)}")
             raise
 
+ pub fn record_pulse(ctx: Context<RecordPulse>, amount: u64, dir: PulseDir) -> Result<()> {
+        let state = &mut ctx.accounts.state;
+        let mint = &ctx.accounts.mint;
+        state.total_supply = mint.supply;
+        let energy = amount as u128;
+        state.cum_pulse = state.cum_pulse.saturating_add(energy);
+        state.last_update_slot = Clock::get()?.slot;
+        recompute_pressure(state)?;
+        emit!(PulseRecorded {
+
+             )} $Aeryon
+
     def preprocess_pipeline(self, data: pd.DataFrame, augment: bool = False, 
                            augment_method: str = 'noise', augment_factor: float = 0.1) -> pd.DataFrame:
         """
