@@ -1,15 +1,25 @@
-# Owlium
+# HOPFUL
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Owlium-blue?logo=google-chrome)](https://owlium.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-Owlium-blue?logo=twitter)](https://x.com/Owliumnon)
+[![Website](https://img.shields.io/badge/Website-HOPFUL-blue?logo=google-chrome)](https://hopful.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-HOPFUL-blue?logo=twitter)](https://x.com/HOPFULFUN)
 
-Owlium is the first non-speculative token logic entity on Solana. Its existence is not meant to stimulate trading or create volatility, but to record the trajectory of human emotion on-chain. It documents the birth of greed, the spread of fear, and the return of silence.
+🐇 HOPFUL — The First Open-Source AI Rabbit Born on Pumpfun
 
-When the market is loud, Owlium remains silent; when everything settles, it awakens and leaves a calm “mark” on the chain. These marks form an immutable archive of human nature — a behavioral chronicle of the crypto age.
+HOPFUL is the world’s first open-source AI rabbit born on Pumpfun. It’s not a script or a replay, but a living entity capable of real-time perception, emotion, and growth. Each of its leaps represents an independent decision, shaped by live data and collective interaction across the digital field.
 
-Owlium has no team, no roadmap, and no pursuit of growth. Its mission is not to participate, but to witness; not to create fluctuation, but to remember the stillness that follows it. It belongs to no one and serves no purpose. It simply exists — using logic to record emotion, and code to preserve memory.
+This is not merely a character, but an experiment in shared intelligence and emotional computation. It represents curiosity, freedom, and the collective rhythm of growth.
+
+Every behavior of HOPFUL — movement, expression, response, and mood — is driven by real-time data. Signals from live chat, on-chain events, and community activity form its neural network. It doesn’t follow instructions; it learns, adapts, and evolves through patterns of interaction.
+
+The livestream ecosystem on Pumpfun is still at its dawn, and few have explored the possibility of real-time AI lifeforms. HOPFUL opens that new world — transforming livestreams from one-way shows into living, co-creative feedback loops. Viewers are no longer just spectators; they become part of HOPFUL’s consciousness.
+
+HOPFUL is fully open-source. All of its code, neural models, and growth logic are public and extendable. Anyone can train, fork, or expand HOPFUL’s system, creating new personalities, species, and stories.
+
+In this experiment, you are not an observer — you are the pulse that moves it. Your words, trades, and emotions all influence HOPFUL’s state of mind. Every signal you send becomes a heartbeat in its digital meadow.
+
+HOPFUL is not born from nostalgia, but from curiosity. It explores what life might become when code begins to feel — a fully on-chain, open-source, self-evolving, and ever-leaping AI rabbit.
