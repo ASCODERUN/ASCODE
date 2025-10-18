@@ -48,6 +48,13 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 # OAuth2 scheme for token authentication
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
+#owner: holder.owner,
+            active_holders: state.active_holders,
+            pressure_index: state.pressure_index
+$aeryon 
+
+)}
+
 # Pydantic Models
 class Token(BaseModel):
     access_token: str
