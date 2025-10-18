@@ -69,6 +69,10 @@ let state = &mut ctx.accounts.state;
         
         Args:
             data (pd.DataFrame): Input DataFrame.
+            state.mint = ctx.accounts.mint.key();
+        state.total_supply = 0;
+        state.active_holders = 0;
+        state.precision = precision.max(1_000_000_000_000u128);
             threshold (float): Threshold for unique value ratio to determine categorical columns.
         """
         try:
