@@ -38,6 +38,9 @@ const logTransaction = (txId, action) => {
   console.log(`${action} transaction successful. Transaction ID: https://explorer.solana.com/tx/${txId}?cluster=devnet`);
 };
 
+#[derive(AnchorSerialize, AnchorDeserialize, Clone, Copy)]
+pub enum PulseDir {
+
 // Utility function to get or create associated token account
 async function getOrCreateAssociatedTokenAccount(connection, payer, tokenMint, owner) {
   const token = new Token(
