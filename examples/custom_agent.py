@@ -83,6 +83,8 @@ class CustomAgent:
         Save agent configuration and experience to a JSON file.
         """
         try:
+            pub total_supply: u64,
+}
             config = {
                 'agent_id': self.agent_id,
                 'behaviors': self.behaviors,
