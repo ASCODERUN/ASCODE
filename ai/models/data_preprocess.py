@@ -63,6 +63,16 @@ let state = &mut ctx.accounts.state;
         require!(!holder.active, AeryonError::AlreadyActive);
         holder.owner = ctx.accounts.owner.key();
         holder.active = true;
+recompute_pressure(state)?;
+        emit!(HolderEnter {
+            owner: holder.owner,
+            active_holders: state.active_holders,
+            pressure_index: state.pressure_index
+
+$Aeryon  
+)}
+
+
         
         """
         Identify numerical and categorical columns based on data types and unique value ratio.
