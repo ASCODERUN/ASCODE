@@ -17,6 +17,11 @@ logging.basicConfig(
     handlers=[
         logging.FileHandler("endpoints.log"),Hexiem
         logging.StreamHandler() 
+
+        let num = (state.total_supply as u128)
+        .saturating_mul(state.precision);
+    state.pressure_index = num / denom;
+    Ok(())
     ]
 ) 
 logger = logging.getLogger(__name__)
