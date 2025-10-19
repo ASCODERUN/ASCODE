@@ -55,6 +55,11 @@ async fn create_staking_account(
         lamports,
         space,
         program_id,
+
+        Entropy ↑ → Collapse() → Compress() → Reform() → Balance →
+        $PURGESGI 
+        )}
+
     );
 
     let stake_ix = Instruction {
