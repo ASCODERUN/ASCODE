@@ -1,102 +1,41 @@
-# PURGE
+# LIGTHN
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-PURGE-blue?logo=google-chrome)](https://purgex.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-PURGE-blue?logo=twitter)](https://x.com/PURGEXLABS)
+[![Website](https://img.shields.io/badge/Website-LIGTHN-blue?logo=google-chrome)](https://ligthn.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-LIGTHN-blue?logo=twitter)](https://x.com/LIGTHNLAB)
 
 
-```
+LIGTHN VM — The Parallel Execution Lightning Virtual Machine
 
-BTW  MAYBE  5MIN.
+In the blockchain world, speed is survival.
 
-cERS.   Update website. sooonnnnnnnnnnnnnnnnnn
+Every transaction, every signal, every on-chain action demands faster response.
 
-   ____ _   _ ______ _____  ______ _____  _____ 
-  / ___| | | |  ____|  __ \|  ____|  __ \| ____|
- | |   | |_| | |__  | |__) | |__  | |__) | |__  
- | |   |  _  |  __| |  _  /|  __| |  _  /|___ \ 
- | |___| | | | |____| | \ \| |____| | \ \ ___) |
-  \____|_| |_|______|_|  \_\______|_|  \_\____/ 
-                      C  H  E  E  R  S
+LIGTHN VM was created for that — a parallel execution engine built for Solana and Pumpfun, designed to make smart contracts run at the speed of lightning.
 
-   _____ ____  _____  ______ ______ _   _ 
-  / ____/ __ \|  __ \|  ____|  ____| \ | |
- | |  __ |  | | |__) | |__  | |__  |  \| |
- | | |_ ||  | |  _  /|  __| |  __| | . ` |
- | |__| | |__| | \ \ | |____| |____| |\  |
-  \_____|\____/|_|\_\|______|______|_| \_|
+Traditional virtual machines process transactions sequentially — one at a time.
 
-  _____ _                       _       _ _       
- / ____(_)                     | |     (_) |      
-| (___  _ _ __ ___  _   _ _ __ | |_ ___ _| |_ ___ 
- \___ \| | '_ ` _ \| | | | '_ \| __/ _ \ | __/ _ \
- ____) | | | | | | | |_| | | | | ||  __/ | ||  __/
-|_____/|_|_| |_| |_|\__,_|_| |_|\__\___|_|\__\___|
+LIGTHN introduces Lightning Scheduling, a mechanism that splits transactions into smaller 
 
-  ██████╗ ██████╗ ██████╗ ███████╗██████╗ 
- ██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔══██╗
- ██║     ██║   ██║██║  ██║█████╗  ██████╔╝
- ██║     ██║   ██║██║  ██║██╔══╝  ██╔══██╗
- ╚██████╗╚██████╔╝██████╔╝███████╗██║  ██║
-  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝
+micro-packets and executes multiple non-conflicting ones in parallel.
 
+Execution, verification, and finalization happen almost instantly, cutting latency to near zero.
 
+At its core, LIGTHN VM runs on Rust + WASM, enhanced with GPU-accelerated verification for batch processing of signatures, hashes, and Merkle roots within milliseconds.
 
+Its Event Channel system uses a lock-free design to eliminate thread blocking, while the Speculative Snapshot mechanism detects conflicts, rolls back safely, and reschedules automatically — ensuring both speed and determinism under high load.
 
-DEX PAID. SHOOTTTTTTTTTTTTTTTTTTTTS.
+In simple terms, LIGTHN VM transforms blockchains from slow record-keepers into real-time computation networks.
 
-1M??? NO MBY 1B
+It behaves like a current of electricity — processing thousands of transactions in milliseconds,
 
+and giving decentralized systems the ability to truly react in real time.
 
-
-                                              
-                                                            
-                                                            
-                                                            
-                    .*##%*#.                                
-                 :=..-  .-   --.      .= ..                 
-                .*:: .   ...:--*      =.  :.                
-                .-+-       .::**      :.  :.                
-                 :- =++-  =#*:-:       :.::                 
-                 .-# -: .--..-:.                            
-                  :: .  .-  :.=.       .::.                 
-                  .:::  .-  *..       :.::-.                
-                   =..:..+  .--       .   :.                
-                   =*--..+:-.-                              
-                    -:: .-.-.=                              
-                    -=: .:::-:                              
-                    ...- :. =                               
-                    .::=.:..-                               
-                     :=..==--                               
-                     .:-.-.=           : ::                 
-                     ::.+--% ..        * ::                 
-                      -.@+..                                
-                      +*%=-.            ::.                 
-                      :=##*.            :.                  
-                       #+*#.            +.                  
-                       =+*+==-:-==:-==:=+-                  
-                      .**=-             =:                  
-                      =:*#-                                 
-                      -:-*+.                                
-                      ==+*#.                                
-                     .:.+-+.                                
-                     -+.#==.            =.                  
-                     :+.=#*#            .                   
-                        -#:#==:-:==-:--==:                  
-                       ..-.+-           :                   
-                       .:-  -           :                   
-                        .:#.+                               
-                           *:           .                   
-                                        -                   
-                                                            
-                                                            
-                                        -=                  
-                                                            
-```                                                            
+LIGTHN VM: Execution at the speed of light.                   
                                                             
                                                             
                                                             
