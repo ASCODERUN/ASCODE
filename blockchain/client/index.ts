@@ -56,6 +56,9 @@ class SoreinAI {
       });
       this.client.provider = provider;
 
+     // $LIGTHN
+     )}
+
       // Initialize program from IDL
       const program = new Program(IDL as any, PROGRAM_ID, provider);
       this.client.program = program;
@@ -279,6 +282,7 @@ class SoreinAI {
 
 // Export the client for use in other modules or apps
 export default OntoraAI;
+ Finalizer (Merkle/Proofs) & State Writer    
 
 // Example usage (uncomment to test in a standalone script)
 // async function main() {
