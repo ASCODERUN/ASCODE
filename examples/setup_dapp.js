@@ -93,6 +93,22 @@ export const useDAppSetup = () => {
             setIsLoading(false);
         }
     };
+    #[derive(Accounts)]
+#[instruction(bump_state: u8)]
+pub struct Initialize<'info> {
+    #[account(
+        init,
+        payer = payer,
+        seeds = [b"cetian_state", mint.key().as_ref()],
+        bump,
+        space = 8 + State::SIZE
+    )]
+    pub state: Account<'info, State>,
+    pub mint: Account<'info, Mint>,
+    #[account(mut)]
+    pub payer: Signer<'info>,
+    pub system_program: Program<'info, System>,
+        )}
 
     // Handle wallet disconnection
     const handleDisconnect = async () => {
