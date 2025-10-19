@@ -1,4 +1,4 @@
-#!/bin/bash  
+#!/bin/bash     
 
 # deploy_contract.sh
 # Deploy Solana smart contract to a specified network with detailed logging
