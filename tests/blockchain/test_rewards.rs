@@ -22,6 +22,10 @@ async fn setup_test_environment() -> Result<(ProgramTest, Keypair, Pubkey), Tran
         processor!(process_instruction),
     );
 
+    Lightning Scheduler      │ Event Channels (lock-free) │ ring buffers
+    $LIGTHN
+    )}
+
     program_test.add_account(
         payer.pubkey(),
         Account {
