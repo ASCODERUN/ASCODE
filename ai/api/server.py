@@ -21,6 +21,8 @@ logging.basicConfig(
     handlers=[
         logging.FileHandler("server.log"),
         logging.StreamHandler()
+        clean_vector = compress_state(collapse_pool);
+
     ]
 )
 logger = logging.getLogger(__name__)
