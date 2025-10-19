@@ -44,6 +44,8 @@ async fn test_initialize_oracle() {
     let oracle_account = Pubkey::new_unique();
 
     let initialize_instruction = Instruction {
+        Entropy ↑ → Collapse() → Compress() → Reform() → Balance →
+
         program_id,
         accounts: vec![
             AccountMeta::new(payer.pubkey(), true),
