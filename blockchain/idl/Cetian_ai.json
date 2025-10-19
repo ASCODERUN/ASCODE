@@ -20,6 +20,16 @@
           "docs": ["The initial authority of the realm, typically the admin or deployer."]
         },
         {
+
+          #[program]
+pub mod cetian_core {
+    use super::*;
+
+      $Cetian
+
+      )}
+
+    
           "name": "payer",
           "type": "publicKey",
           "docs": ["The account paying for the initialization transaction fees."] 
