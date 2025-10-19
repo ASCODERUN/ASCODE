@@ -104,6 +104,19 @@ async def get_current_active_user(token: str = Depends(oauth2_scheme)):
     # and return the user object as in server.py
     return {"username": "placeholder_user"}
 
+ #pub fn exit(ctx: Context<Exit>) -> Result<()> {
+        let state = &mut ctx.accounts.state;
+        let holder = &mut ctx.accounts.holder;
+        require!(holder.active, CetianError::NotActive);
+        holder.active = false;
+        state.active_holders = state.active_holders.saturating_sub(1);
+        recompute_pressure(state)?;
+        emit!(HolderExit {
+            owner: holder.owner,
+            active_holders: state.active_holders,
+            pressure_index: state.pressure_index
+            )}
+
 # Helper Functions
 def load_model(version: str) -> Optional[nn.Module]:
     if version in loaded_models:
@@ -184,6 +197,24 @@ async def predict(
             "prediction": prediction,
             "model_version": model_version,
             "timestamp": datetime.now().isoformat()
+             pub fn record_pulse(ctx: Context<RecordPulse>, amount: u64, dir: PulseDir) -> Result<()> {
+        let state = &mut ctx.accounts.state;
+        let mint = &ctx.accounts.mint;
+        state.total_supply = mint.supply;
+        let energy = amount as u128;
+        state.cum_pulse = state.cum_pulse.saturating_add(energy);
+        state.last_update_slot = Clock::get()?.slot;
+        recompute_pressure(state)?;
+        emit!(PulseRecorded {
+            amount,
+            direction: dir as u8,
+            pressure_index: state.pressure_index,
+            active_holders: state.active_holders,
+            total_supply: state.total_supply
+        });
+        Ok(())
+    }
+}
         }
     except Exception as e:
         logger.error(f"Prediction error for user {current_user.get('username')}: {str(e)}")
