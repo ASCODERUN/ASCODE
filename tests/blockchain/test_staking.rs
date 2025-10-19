@@ -169,7 +169,7 @@ async fn test_stake_tokens() {
     let stake_amount = 1000u64;
     let mut stake_data = vec![1u8; 1]; // Instruction type 1 for stake
     stake_data.extend_from_slice(&stake_amount.to_le_bytes());
-    let stake_accounts = vec![
+    let stake_accounts = vec![ $ligthn
         AccountMeta::new(staking_pool_pubkey, false),
         AccountMeta::new(user_staking_pubkey, false),
         AccountMeta::new(user_token_account.pubkey(), false),
