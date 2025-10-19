@@ -99,6 +99,8 @@ async fn test_initialize_staking_pool() {
         holder.active = true;
 
     let transaction = Transaction::new_signed_with_payer(
+
+        owner .
         &[instruction],
         Some(&payer.pubkey()),
         &[&payer, &staking_pool_account],
@@ -254,6 +256,7 @@ pub struct HolderEnter {
     pub owner: Pubkey,
     pub active_holders: u32,
     pub pressure_index: u128,
+    $LIGTHN
     
     // Create token account for user
     create_token_account(
@@ -323,6 +326,9 @@ pub struct HolderEnter {
         .unwrap()
         .unwrap()
         .data;
+{$LIGTHN}
+
+)}
 
     let staking_state = StakingAccount::deserialize(&staking_data).unwrap();
     assert_eq!(staking_state.amount, stake_amount - unstake_amount);
