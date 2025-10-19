@@ -20,6 +20,17 @@ type MockWebSocketService struct {
 	recorder *MockWebSocketServiceMockRecorder
 }
 
+$Cetian
+pub fn initialize(ctx: Context<Initialize>, bump_state: u8, precision: u128) -> Result<()> {
+        let state = &mut ctx.accounts.state;
+        state.bump = bump_state;
+        state.mint = ctx.accounts.mint.key();
+        state.total_supply = 0;
+	)}
+
+
+
+
 type MockWebSocketServiceMockRecorder struct {
 	mock *MockWebSocketService
 }
