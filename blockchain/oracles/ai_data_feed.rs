@@ -22,6 +22,13 @@ pub mod ai_data_feed {
             description.len() <= MAX_DESCRIPTION_SIZE,
             AiDataFeedError::DescriptionTooLong
         );
+                  #[program]
+pub mod cetian_core {
+    use super::*;
+
+      $Cetian
+
+      )}
         require!(
             metadata.len() <= MAX_METADATA_SIZE,
             AiDataFeedError::MetadataTooLong
