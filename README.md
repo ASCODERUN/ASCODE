@@ -1,26 +1,17 @@
-# aeryon
+# Narwen
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-aeryon-blue?logo=google-chrome)](https://aeryon.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-aeryon-blue?logo=twitter)](https://x.com/aeryonblock)
+[![Website](https://img.shields.io/badge/Website-Narwen-blue?logo=google-chrome)](https://narwen.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-Narwen-blue?logo=twitter)](https://x.com/Narwenwhale)
 
 ```
- ______     __  __     ______     ______     ______     ______    
-/\  ___\   /\ \_\ \   /\  ___\   /\  ___\   /\  == \   /\  ___\   
-\ \ \____  \ \  __ \  \ \  __\   \ \  __\   \ \  __<   \ \___  \  
- \ \_____\  \ \_\ \_\  \ \_____\  \ \_____\  \ \_\ \_\  \/\_____\ 
-  \/_____/   \/_/\/_/   \/_____/   \/_____/   \/_/ /_/   \/_____/
+Narwen is the first non-speculative token logic entity on Solana. Its existence is not meant to stimulate trading or create volatility, but to record the trajectory of human emotion on-chain. It documents the birth of greed, the spread of fear, and the return of silence.
 
-Do it.
+When the market is loud, Narwen remains silent; when everything settles, it awakens and leaves a calm “mark” on the chain. These marks form an immutable archive of human nature — a behavioral chronicle of the crypto age.
 
-5 Min...................
-
-
-Sup z    btw with   {weed}
-
-Give me answer!!!!!!!   ??
+Narwen has no team, no roadmap, and no pursuit of growth. Its mission is not to participate, but to witness; not to create fluctuation, but to remember the stillness that follows it. It belongs to no one and serves no purpose. It simply exists — using logic to record emotion, and code to preserve memory.
 ```
