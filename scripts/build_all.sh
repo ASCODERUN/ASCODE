@@ -4,7 +4,7 @@
 # Build script for all components including smart contracts, backend, and frontend
 
 # Exit on any error to prevent partial builds
-set -e
+set -e 
 
 # Utility function to log messages with timestamp
 log_message() {
