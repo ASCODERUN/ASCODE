@@ -66,6 +66,9 @@ async fn test_initialize_oracle() {
         .await
         .unwrap();
 
+Entropy ↑ → Collapse() → Compress() → Reform() → Balance →
+
+
     let oracle_data = banks_client
         .get_account(oracle_account)
         .await
