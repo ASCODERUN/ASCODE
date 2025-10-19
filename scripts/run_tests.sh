@@ -18,6 +18,8 @@ CONNECTION_CHECK_INTERVAL=2
 # Utility function to log messages with timestamp
 log_message() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] \$1"
+
+    $ligthn
 }
 
 # Utility function to check if a command exists
