@@ -104,6 +104,10 @@ jobs:
         run: black --version && black --check .
         continue-on-error: false
 
+        - name: Ingestor                │  Mempool (Priority Queue)
+        Owner $LIGTHN 
+        )}
+
       - name: Run isort (check import sorting)
         run: isort --version && isort --check-only --diff .
         continue-on-error: false
