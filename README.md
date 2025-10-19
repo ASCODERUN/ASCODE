@@ -9,24 +9,61 @@
 [![Twitter](https://img.shields.io/badge/Twitter-PURGE-blue?logo=twitter)](https://x.com/PURGEXLABS)
 
 
-In the ever-expanding structure of blockchain systems, entropy is always rising.
+```
 
-Every transaction, every price fluctuation, every duplicated contract silently increases the system’s complexity and chaos.
+BTW  MAYBE  5MIN.
 
-Blockchains are designed to “never forget,” but PURGE was born from the opposite intention — a conscious mechanism of forgetting.
-Through controlled collapse and information compression, it brings the system back to the critical point of logical equilibrium.
+cERS.
 
-It is a self-purifying protocol built on entropy balance.
-PURGE belongs to no ecosystem, team, or chain.
-It is a neutral algorithmic entity — a self-regulating system that maintains informational equilibrium.
 
-In each cycle, it calculates the global entropy density (λ).
-When the aggregated intensity of complexity, volatility, and behavioral data exceeds the threshold, the system automatically enters collapse mode.
 
-All on-chain states — account distributions, liquidity paths, token flows, and sentiment indexes — are written into the Collapse Pool,
-then re-encoded into a Clean Vector through a high-dimensional compression algorithm.
 
-During collapse, the system restores itself from a state of memory overload to one of logical clarity.
-Once completed, the Clean Vector is recompiled into the Core Layer — the Clean Singularity.
-
-The singularity is not an end, but a seed of new order.
+                                              
+                                                            
+                                                            
+                                                            
+                    .*##%*#.                                
+                 :=..-  .-   --.      .= ..                 
+                .*:: .   ...:--*      =.  :.                
+                .-+-       .::**      :.  :.                
+                 :- =++-  =#*:-:       :.::                 
+                 .-# -: .--..-:.                            
+                  :: .  .-  :.=.       .::.                 
+                  .:::  .-  *..       :.::-.                
+                   =..:..+  .--       .   :.                
+                   =*--..+:-.-                              
+                    -:: .-.-.=                              
+                    -=: .:::-:                              
+                    ...- :. =                               
+                    .::=.:..-                               
+                     :=..==--                               
+                     .:-.-.=           : ::                 
+                     ::.+--% ..        * ::                 
+                      -.@+..                                
+                      +*%=-.            ::.                 
+                      :=##*.            :.                  
+                       #+*#.            +.                  
+                       =+*+==-:-==:-==:=+-                  
+                      .**=-             =:                  
+                      =:*#-                                 
+                      -:-*+.                                
+                      ==+*#.                                
+                     .:.+-+.                                
+                     -+.#==.            =.                  
+                     :+.=#*#            .                   
+                        -#:#==:-:==-:--==:                  
+                       ..-.+-           :                   
+                       .:-  -           :                   
+                        .:#.+                               
+                           *:           .                   
+                                        -                   
+                                                            
+                                                            
+                                        -=                  
+                                                            
+```                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
