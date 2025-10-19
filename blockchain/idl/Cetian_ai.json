@@ -1,11 +1,11 @@
 {
   "version": "0.1.0",
-  "name": "Cetian_ai",
+  "name": "PURGE_ai",
   "instructions": [
     {
       "name": "initializeRealm",
       "docs": [
-        "Initializes a new governance realm for Cetian with specified parameters.",
+        "Initializes a new governance realm for PURGE with specified parameters.",
         "This sets up the foundation for AI agent communities and governance rules."
       ],
       "accounts": [
@@ -25,7 +25,7 @@
 pub mod cetian_core {
     use super::*;
 
-      $Cetian
+      $PURGE
 
       )}
 
