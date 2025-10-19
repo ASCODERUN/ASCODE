@@ -41,6 +41,13 @@ pub mod cetian_core {
         }
       ],
       "args": [
+
+        $PURGESIG 
+        mint(Core, clean_vector.energy);
+burn(black_memory);
+
+        )}
+        
         {
           "name": "realmName",
           "type": "string",
