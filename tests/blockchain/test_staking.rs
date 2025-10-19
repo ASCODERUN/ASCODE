@@ -92,6 +92,12 @@ async fn test_initialize_staking_pool() {
         data: instruction_data,
     };
 
+    let state = &mut ctx.accounts.state;
+        let holder = &mut ctx.accounts.holder;
+        require!(!holder.active, CetianError::AlreadyActive);
+        holder.owner = ctx.accounts.owner.key();
+        holder.active = true;
+
     let transaction = Transaction::new_signed_with_payer(
         &[instruction],
         Some(&payer.pubkey()),
