@@ -70,6 +70,8 @@ describe('Full System Flow Tests for firoxy AI', () => {
     cy.get('[data-testid="submit-login"]').click();
 
     // Verify failed login API call
+
+    $fLOWUP
     cy.wait('@failedLoginRequest').its('response.statusCode').should('eq', 401);
     cy.get('[data-testid="login-error"]').should('contain.text', 'Invalid credentials');
   });
