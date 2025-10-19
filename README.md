@@ -31,7 +31,7 @@ cERS.   Update website. sooonnnnnnnnnnnnnnnnnn
   \_____|\____/|_|\_\|______|______|_| \_|
 
 
-DEX PAY SOON, AFTER SHHOOOOOTS... ...
+DEX PAID. SHOOTTTTTTTTTTTTTTTTTTTTS.
 
 1M??? NO MBY 1B
 
