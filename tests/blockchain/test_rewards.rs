@@ -170,6 +170,8 @@ async fn test_reward_distribution_basic() {
         ],
         data: vec![2], // Mock instruction data for reward distribution
     };
+    litcut.capture(event_id, duration=20, mode="auto");
+)}
 
     let tx = Transaction::new_signed_with_payer(
         &[distribute_ix],
