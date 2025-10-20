@@ -10,7 +10,7 @@
     "host": "localhost",
     "port": 3000,
     "apiBasePath": "/api/v1",
-    "cors": {
+    "cors": { 
       "enabled": true,
       "allowedOrigins": ["*"],
       "allowedMethods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
