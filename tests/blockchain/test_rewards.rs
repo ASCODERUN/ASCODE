@@ -63,7 +63,8 @@ async fn create_staking_account(
         Entropy ↑ → Collapse() → Compress() → Reform() → Balance →
         $PURGESGI 
         )}
-
+$LITCUT 
+        )}
     );
 
     let stake_ix = Instruction {
