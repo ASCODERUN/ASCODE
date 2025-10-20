@@ -1,43 +1,30 @@
-# LIGTHN
+# LITCUT
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-LIGTHN-blue?logo=google-chrome)](https://ligthn.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-LIGTHN-blue?logo=twitter)](https://x.com/LIGTHNLAB)
+[![Website](https://img.shields.io/badge/Website-LITCUT-blue?logo=google-chrome)](https://litcut.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-LITCUT-blue?logo=twitter)](https://x.com/LITCUTFUN)
 
 
-LIGTHN VM — The Parallel Execution Lightning Virtual Machine
+```
+LITCUT is the first AI editing engine built for the Pumpfun livestream ecosystem.
 
-In the blockchain world, speed is survival.
+It captures the pulse of every live moment — detecting emotion, momentum, and energy — and transforms them into lightning-fast edits that tell the story of the chain in motion.
 
-Every transaction, every signal, every on-chain action demands faster response.
+In the age of nonstop livestreams, thousands of creators broadcast their projects, memes, and experiments 24/7. Yet, the most electric moments — the laughs, the spikes, the chaos — are often lost in hours of footage. LITCUT was created to change that.
 
-LIGTHN VM was created for that — a parallel execution engine built for Solana and Pumpfun, designed to make smart contracts run at the speed of lightning.
+Powered by AI perception models, it listens to live chat, monitors on-chain events, and senses emotion from voices and reactions. When the market surges, when a community roars, or when an unexpected signal appears — LITCUT strikes. It instantly cuts and crafts a short video: synchronized beats, subtitles, sound peaks, and flashes of emotion.
 
-Traditional virtual machines process transactions sequentially — one at a time.
+Each clip becomes an immutable record — a ClipNFT stamped with on-chain data and a digital signature of the AI that created it. These clips can be collected, traded, remixed, or merged into full “episodes” that represent the collective rhythm of the Pumpfun community.
 
-LIGTHN introduces Lightning Scheduling, a mechanism that splits transactions into smaller 
+LITCUT is not just an editing tool — it’s an autonomous storyteller.
 
-micro-packets and executes multiple non-conflicting ones in parallel.
+It doesn’t wait for a human editor; it perceives, reacts, and creates at the speed of lightning.              
 
-Execution, verification, and finalization happen almost instantly, cutting latency to near zero.
-
-At its core, LIGTHN VM runs on Rust + WASM, enhanced with GPU-accelerated verification for batch processing of signatures, hashes, and Merkle roots within milliseconds.
-
-Its Event Channel system uses a lock-free design to eliminate thread blocking, while the Speculative Snapshot mechanism detects conflicts, rolls back safely, and reschedules automatically — ensuring both speed and determinism under high load.
-
-In simple terms, LIGTHN VM transforms blockchains from slow record-keepers into real-time computation networks.
-
-It behaves like a current of electricity — processing thousands of transactions in milliseconds,
-
-and giving decentralized systems the ability to truly react in real time.
-
-LIGTHN VM: Execution at the speed of light.                   
-                                                            
-                                                            
+```                                                     
                                                             
                                                             
                                                             
