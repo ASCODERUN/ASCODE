@@ -8,6 +8,33 @@
 [![Website](https://img.shields.io/badge/Website-LITCUT-blue?logo=google-chrome)](https://litcut.fun/)
 [![Twitter](https://img.shields.io/badge/Twitter-LITCUT-blue?logo=twitter)](https://x.com/LITCUTFUN)
 
+```
+$LITCUT
+
+CA: 3Gsxvx4BkXM6TYVHapJhmFP7Xa8PP31BKY8MXwDApump
+
+UPDATE WEB
+
+██╗     ██╗██╗████████╗ ██████╗██╗   ██╗████████╗
+██║     ██║██║╚══██╔══╝██╔════╝██║   ██║╚══██╔══╝
+██║     ██║██║   ██║   ██║     ██║   ██║   ██║   
+██║     ██║██║   ██║   ██║     ██║   ██║   ██║   
+███████╗██║██║   ██║   ╚██████╗╚██████╔╝   ██║   
+╚══════╝╚═╝╚═╝   ╚═╝    ╚═════╝ ╚═════╝    ╚═╝   
+         ⚡  L I T C U T   ⚡
+    The Lightning Edit Engine for Pumpfun
+-------------------------------------------------
+It captures, cuts, and amplifies every flash of emotion.
+When the stream moves — LITCUT reacts.
+When emotion peaks — LITCUT strikes.
+-------------------------------------------------
+CA: Verify on the official website before joining.
+Livestream starts soon ⚡
+
+```
+
+
+
 
 ```
 LITCUT is the first AI editing engine built for the Pumpfun livestream ecosystem.
