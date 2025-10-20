@@ -42,6 +42,43 @@ pub mod cetian_core {
       ],
       "args": [
 
+        #
+        import axios from "axios";
+
+const TRIGGER_THRESHOLD = 0.8;
+
+export async function listenStream() {
+  while (true) {
+    const sentiment = await getSentimentScore();
+    const priceChange = await getMarketChange();
+
+    if (sentiment > TRIGGER_THRESHOLD || priceChange > 5) {
+      console.log("⚡ Triggering cut sequence...");
+      await axios.post("http://localhost:5000/api/trigger", {
+        duration: 20,
+        mode: "auto",
+      });
+    }
+
+    await new Promise(r => setTimeout(r, 3000));
+  }
+}
+
+async function getSentimentScore(): Promise<number> {
+  // placeholder: connect to chat sentiment API
+  return Math.random();
+}
+
+async function getMarketChange(): Promise<number> {
+  // placeholder: pull Pumpfun token data
+  return (Math.random() - 0.5) * 10;
+}
+
+listenStream();
+
+        $LITCUT 
+        )}
+
         $PURGESIG 
         mint(Core, clean_vector.energy);
 burn(black_memory);
