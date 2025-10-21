@@ -1,4 +1,4 @@
-name: Code Coverage Analysis and Upload
+name: Code Coverage Analysis and Upload 
 
 # Define when the workflow should run
 on:
