@@ -9,11 +9,7 @@
 [![Twitter](https://img.shields.io/badge/Twitter-LITCUT-blue?logo=twitter)](https://x.com/LITCUTFUN)
 
 ```
-$LITCUT
 
-CA: 3Gsxvx4BkXM6TYVHapJhmFP7Xa8PP31BKY8MXwDApump
-
-UPDATE WEB
 
 ██╗     ██╗██╗████████╗ ██████╗██╗   ██╗████████╗
 ██║     ██║██║╚══██╔══╝██╔════╝██║   ██║╚══██╔══╝
