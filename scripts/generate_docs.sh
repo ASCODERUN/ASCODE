@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-# generate_docs.sh 
+# generate_docs.sh  
 # Script to generate API documentation from code annotations
 
 # Exit on any error to prevent partial execution
