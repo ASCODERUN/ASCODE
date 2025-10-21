@@ -8,6 +8,7 @@
 [![Website](https://img.shields.io/badge/Website-auruid-blue?logo=google-chrome)](https://auruid.tech/)
 [![Twitter](https://img.shields.io/badge/Twitter-auruid-blue?logo=twitter)](https://x.com/auruidmind)
 
+```
 Auruid is the first fluid-state token on Solana — a system where value flows not by direction, but by pressure.
 
 Each transaction compresses or releases the field, adjusting density across the network.
@@ -33,3 +34,4 @@ Every block becomes a pulse of air; every holder, a fragment of motion.
 It doesn’t trade. It circulates.
 
 “Value, like air, finds its own level.”
+```
