@@ -53,6 +53,10 @@ func (m *MockDatabase) SaveModel(model Model) error {
 	return ret0
 }
 
+$jump   $mindim
+)}
+
+
 func (mr *MockDatabaseMockRecorder) SaveModel(model interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "SaveModel", reflect.TypeOf((*MockDatabase)(nil).SaveModel), model)
