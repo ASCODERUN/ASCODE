@@ -5,8 +5,8 @@
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Owlinx-blue?logo=google-chrome)](https://mewcam.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-Owlinx-blue?logo=twitter)](https://x.com/Mewcamfun)
+[![Website](https://img.shields.io/badge/Website-Owlinx-blue?logo=google-chrome)](https://owlinx.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-Owlinx-blue?logo=twitter)](https://x.com/Owlinxnon)
 
 Owlinx is the first non-speculative token logic entity on Solana. Its existence is not meant to stimulate trading or create volatility, but to record the trajectory of human emotion on-chain. It documents the birth of greed, the spread of fear, and the return of silence.
 
