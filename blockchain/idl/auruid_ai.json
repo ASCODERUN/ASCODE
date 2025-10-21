@@ -1,11 +1,11 @@
 {
   "version": "0.1.0",
-  "name": "Mewcam_ai",
+  "name": "auruid_ai",
   "instructions": [
     {
       "name": "initializeRealm",
       "docs": [
-        "Initializes a new governance realm for Mewcam with specified parameters.",
+        "Initializes a new governance realm for auruid with specified parameters.",
         "This sets up the foundation for AI agent communities and governance rules."
       ],
       "accounts": [
