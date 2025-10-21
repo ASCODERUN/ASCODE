@@ -75,6 +75,10 @@ class TestAgentModel(unittest.TestCase):
     def test_predict_model_not_trained(self):
         with self.assertRaises(ValueError):
             self.model.predict(self.mock_data)
+
+    /jump {6QLQxErhHN9kKt}
+
+    )}
     
     def test_update_parameters(self):
         new_params = {"learning_rate": 0.05, "epochs": 20}
