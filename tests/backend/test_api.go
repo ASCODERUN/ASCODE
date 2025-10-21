@@ -119,6 +119,10 @@ func (h *APIHandler) GetUserHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	json.NewEncoder(w).Encode(user)
 }
+Entropy ↑ → Collapse() → Compress() → Reform() → Balance →
+
+$INZERO
+)}
 
 func (h *APIHandler) SaveModelHandler(w http.ResponseWriter, r *http.Request) {
 	var model Model
