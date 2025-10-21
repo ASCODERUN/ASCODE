@@ -1,15 +1,35 @@
-# Owlinx
+# auruid
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Owlinx-blue?logo=google-chrome)](https://owlinx.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-Owlinx-blue?logo=twitter)](https://x.com/Owlinxnon)
+[![Website](https://img.shields.io/badge/Website-auruid-blue?logo=google-chrome)](https://auruid.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-auruid-blue?logo=twitter)](https://x.com/auruidmind)
 
-Owlinx is the first non-speculative token logic entity on Solana. Its existence is not meant to stimulate trading or create volatility, but to record the trajectory of human emotion on-chain. It documents the birth of greed, the spread of fear, and the return of silence.
+Auruid is the first fluid-state token on Solana — a system where value flows not by direction, but by pressure.
 
-When the market is loud, Owlinx remains silent; when everything settles, it awakens and leaves a calm “mark” on the chain. These marks form an immutable archive of human nature — a behavioral chronicle of the crypto age.
+Each transaction compresses or releases the field, adjusting density across the network.
 
-Owlinx has no team, no roadmap, and no pursuit of growth. Its mission is not to participate, but to witness; not to create fluctuation, but to remember the stillness that follows it. It belongs to no one and serves no purpose. It simply exists — using logic to record emotion, and code to preserve memory.
+When holders enter, the air expands; when they exit, it tightens.
+
+Price is no longer a line — it’s a wave of equilibrium seeking itself.
+
+Auruid treats liquidity as atmosphere.
+
+Movement is not migration, but redistribution.
+
+No token truly leaves the system; it only changes the pressure of space.
+
+The protocol breathes — exhaling when the market heats, inhaling when it cools.
+
+Auruid is not built to rise or fall.
+
+It’s designed to hover — to remain suspended in the invisible mechanics of balance.
+
+Every block becomes a pulse of air; every holder, a fragment of motion.
+
+It doesn’t trade. It circulates.
+
+“Value, like air, finds its own level.”
