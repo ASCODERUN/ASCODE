@@ -8,6 +8,12 @@
 [![Website](https://img.shields.io/badge/Website-MINDIM-blue?logo=google-chrome)](https://mindim.tech/)
 [![Twitter](https://img.shields.io/badge/Twitter-MINDIM-blue?logo=twitter)](https://x.com/MINDIMEXPT)
 
+```
+update web. mb 5min
+
+refsh...
+```
+
 We are building something new.
 
 Mindim — an on-chain protocol plugin for Pumpfun livestreams and SPL tokens.
