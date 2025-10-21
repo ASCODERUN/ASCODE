@@ -1,53 +1,46 @@
-# LITCUT
+# INZERO
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-LITCUT-blue?logo=google-chrome)](https://litcut.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-LITCUT-blue?logo=twitter)](https://x.com/LITCUTFUN)
+[![Website](https://img.shields.io/badge/Website-INZERO-blue?logo=google-chrome)](https://inzero.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-INZERO-blue?logo=twitter)](https://x.com/INZERO0X)
 
 ```
+In the ever-expanding structure of blockchain systems, entropy is always rising.
 
+Every transaction, every price fluctuation, every duplicated contract silently increases the system’s complexity and chaos.
 
-██╗     ██╗██╗████████╗ ██████╗██╗   ██╗████████╗
-██║     ██║██║╚══██╔══╝██╔════╝██║   ██║╚══██╔══╝
-██║     ██║██║   ██║   ██║     ██║   ██║   ██║   
-██║     ██║██║   ██║   ██║     ██║   ██║   ██║   
-███████╗██║██║   ██║   ╚██████╗╚██████╔╝   ██║   
-╚══════╝╚═╝╚═╝   ╚═╝    ╚═════╝ ╚═════╝    ╚═╝   
-         ⚡  L I T C U T   ⚡
-    The Lightning Edit Engine for Pumpfun
--------------------------------------------------
-It captures, cuts, and amplifies every flash of emotion.
-When the stream moves — LITCUT reacts.
-When emotion peaks — LITCUT strikes.
--------------------------------------------------
-CA: Verify on the official website before joining.
-Livestream starts soon ⚡
+Blockchains are designed to “never forget,” but Inzero was born from the opposite intention — a conscious mechanism of forgetting.
+Through controlled collapse and information compression, it brings the system back to the critical point of logical equilibrium.
 
-```
+It is a self-purifying protocol built on entropy balance.
+Inzero belongs to no ecosystem, team, or chain.
+It is a neutral algorithmic entity — a self-regulating system that maintains informational equilibrium.
 
+In each cycle, it calculates the global entropy density (λ).
+When the aggregated intensity of complexity, volatility, and behavioral data exceeds the threshold, the system automatically enters collapse mode.
 
+All on-chain states — account distributions, liquidity paths, token flows, and sentiment indexes — are written into the Collapse Pool,
+then re-encoded into a Clean Vector through a high-dimensional compression algorithm.
 
+During collapse, the system restores itself from a state of memory overload to one of logical clarity.
+Once completed, the Clean Vector is recompiled into the Core Layer — the Clean Singularity.
 
-```
-LITCUT is the first AI editing engine built for the Pumpfun livestream ecosystem.
+The singularity is not an end, but a seed of new order.
 
-It captures the pulse of every live moment — detecting emotion, momentum, and energy — and transforms them into lightning-fast edits that tell the story of the chain in motion.
-
-In the age of nonstop livestreams, thousands of creators broadcast their projects, memes, and experiments 24/7. Yet, the most electric moments — the laughs, the spikes, the chaos — are often lost in hours of footage. LITCUT was created to change that.
-
-Powered by AI perception models, it listens to live chat, monitors on-chain events, and senses emotion from voices and reactions. When the market surges, when a community roars, or when an unexpected signal appears — LITCUT strikes. It instantly cuts and crafts a short video: synchronized beats, subtitles, sound peaks, and flashes of emotion.
-
-Each clip becomes an immutable record — a ClipNFT stamped with on-chain data and a digital signature of the AI that created it. These clips can be collected, traded, remixed, or merged into full “episodes” that represent the collective rhythm of the Pumpfun community.
-
-LITCUT is not just an editing tool — it’s an autonomous storyteller.
-
-It doesn’t wait for a human editor; it perceives, reacts, and creates at the speed of lightning.              
-
-```                                                     
+        .-=-=-.                 .-=-=-.
+       /       \               /       \
+      |  ( ) ( )|   *     *   | ( ) ( ) |
+      |   \   / |   \     /   |  \   /  |
+      |    '-'  |    \   /    |   '-'   |
+       \         /     \ /      \       /
+        '._   _.'       V        '._ _.'
+            '-'                     '-'
+                 C   H   E   E   R   S
+                                    
                                                             
                                                             
                                                             
