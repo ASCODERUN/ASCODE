@@ -9,6 +9,20 @@
 [![Twitter](https://img.shields.io/badge/Twitter-INZERO-blue?logo=twitter)](https://x.com/INZERO0X)
 
 ```
+
+  _____ _                       _       _ _       
+ / ____(_)                     | |     (_) |      
+| (___  _ _ __ ___  _   _ _ __ | |_ ___ _| |_ ___ 
+ \___ \| | '_ ` _ \| | | | '_ \| __/ _ \ | __/ _ \
+ ____) | | | | | | | |_| | | | | ||  __/ | ||  __/
+|_____/|_|_| |_| |_|\__,_|_| |_|\__\___|_|\__\___|
+
+
+CA: F8g3nBzYFzEiHvsnhjoan5QwEzpvonZGjiSos6LVpump
+
+)}
+
+
 In the ever-expanding structure of blockchain systems, entropy is always rising.
 
 Every transaction, every price fluctuation, every duplicated contract silently increases the system’s complexity and chaos.
