@@ -1,4 +1,4 @@
-// marketplace_listing.js 
+// marketplace_listing.js  
 // Example of listing an AI agent or service on a Solana-based marketplace (JavaScript)
 
 const {
