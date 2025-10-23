@@ -66,6 +66,21 @@ class SolanaUtils {
     }
   }
 
+  # package.json
+{
+  "name": "arcaidx-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "ws": "tsx src/ws-server.ts",
+    "overlay": "serve overlay -l 5174",
+    "lint": "eslint ."
+    ）}
+
+  
+
   async getTokenBalance(tokenMintAddress, ownerPublicKeyString) {
     try {
       const ownerPublicKey = new PublicKey(ownerPublicKeyString);
