@@ -1,37 +1,51 @@
-# Memode
+# CUTFUN
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Memode-blue?logo=google-chrome)](https://memode.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-Memode-blue?logo=twitter)](https://x.com/Memodefun)
+[![Website](https://img.shields.io/badge/Website-CUTFUN-blue?logo=google-chrome)](https://cutfun.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-CUTFUN-blue?logo=twitter)](https://x.com/CUTFUNLAB)
 
 ```
 
-[Trade] → [Fragment Encoding] → [Recombination] → [Pattern Growth] → [Evolution Pulse]
-       ↺——————————————————————————————————————————————↻
+┌───────────────────────────────────────────────────────────────┐
+│                        CUTFUN Engine                          │
+│         Real-Time AI Editing System for Pumpfun Livestreams   │
+├──────────────────────────┬────────────────────────────────────┤
+│ Event Listener           │ Stream Analyzer                    │
+│ chat / market / audio    │ emotion, trend, and spike detection │
+├──────────────┬───────────┴──────────────┬─────────────────────┤
+│ Trigger Core │  Temporal Buffer         │  Context Mapper     │
+│ thresholding │  keeps ±10s of stream    │ links signals + data│
+├──────────────┴──────────┬───────────────┴─────────────────────┤
+│ Lightning Editor Engine │ Beat Synchronizer                   │
+│ auto-cut, sync, render  │ rhythm alignment, waveform tracking  │
+├──────────────┬──────────┴───────────────┬─────────────────────┤
+│ Caption Synth│ Visual Composer          │ Sound Enhancer      │
+│ AI subtitles │ filters + flash effects  │ EQ + normalization  │
+├──────────────┴──────────┬───────────────┴─────────────────────┤
+│ Output Manager           │ Clip Registry                      │
+│ save/export              │ metadata, hash, indexing            │
+├──────────────────────────┴────────────────────────────────────┤
+│ Distribution Gateway → Pumpfun Feed / X / TikTok              │
+│ automatic broadcast & viral propagation                       │
+└───────────────────────────────────────────────────────────────┘
+
 
 ```
-Memode is an experimental project on Pumpfun that treats market behavior as a living system.
+⚡ CUTFUN — The Lightning Edit Engine
+CUTFUN is the first AI editing engine built for the Pumpfun livestream ecosystem.
+It captures the pulse of every live moment — detecting emotion, momentum, and energy — and transforms them into lightning-fast edits that tell the story of the chain in motion.
 
-It transforms trading activity into a form of digital biology — every transaction functions as a piece of DNA that contributes to the organism’s evolution.
+In the age of nonstop livestreams, thousands of creators broadcast their projects, memes, and experiments 24/7. Yet, the most electric moments — the laughs, the spikes, the chaos — are often lost in hours of footage. CUTFUN was created to change that.
 
-Unlike typical tokens that track price, Memode focuses on behavioral memory.
+Powered by AI perception models, it listens to live chat, monitors on-chain events, and senses emotion from voices and reactions. When the market surges, when a community roars, or when an unexpected signal appears — CUTFUN strikes. It instantly cuts and crafts a short video: synchronized beats, subtitles, sound peaks, and flashes of emotion.
 
-Each buy, sell, and movement on-chain is recorded as a “memory fragment.”
+CUTFUN is not just an editing tool — it’s an autonomous storyteller.
+It doesn’t wait for a human editor; it perceives, reacts, and creates at the speed of lightning.
 
-These fragments are continuously recombined based on volatility and activity, forming new behavioral patterns.
-
-As participation increases, the system’s internal structure becomes more complex, creating an adaptive logic layer that evolves over time.
-
-Memode doesn’t just display market data — it grows from it.
-
-Volatility acts as mutation.
-
-Repetition builds memory.
-
-Each participant becomes part of the organism’s genetic structure.
-
-Over time, Memode forms a complete evolutionary record of the market — a transparent, on-chain organism shaped by human actions, emotion, and interaction.
+Every flash of emotion becomes a cut.
+Every cut becomes a signal.
+Every signal tells the story of the new internet — live, intelligent, and unstoppable.
