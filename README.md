@@ -1,40 +1,37 @@
-# ARCAIDX
+# Memode
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-ARCAIDX-blue?logo=google-chrome)](https://arcaidx.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-ARCAIDX-blue?logo=twitter)](https://x.com/ARCAIDXBLOCK)
+[![Website](https://img.shields.io/badge/Website-Memode-blue?logo=google-chrome)](https://memode.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-Memode-blue?logo=twitter)](https://x.com/Memodefun)
 
 ```
 
-█████╗ ██████╗  ██████╗ █████╗ ██╗██╗██╗  ██╗
-██╔══██╗██╔══██╗██╔════╝██╔══██╗██║██║╚██╗██╔╝
-███████║██████╔╝██║     ███████║██║██║ ╚███╔╝ 
-██╔══██║██╔═══╝ ██║     ██╔══██║██║██║ ██╔██╗ 
-██║  ██║██║     ╚██████╗██║  ██║██║██║██╔╝ ██╗
-╚═╝  ╚═╝╚═╝      ╚═════╝╚═╝  ╚═╝╚═╝╚═╝╚═╝  ╚═╝
-           THE 8-BIT LOGIC ENGINE
-
-
-🕹 ARCAIDX — The First 8-Bit Logic Engine on Solana
-
-ARCAIDX turns the Solana network into a living arcade.
-Instead of static trades and charts, every transaction becomes a move, every signal becomes an action, and the entire market behaves like a real-time game loop.
-
-It is the first 8-bit logic engine on Solana that transforms trading activity into live, reactive gameplay.
-When you buy, you’re not just adding liquidity — you’re firing a shot.
-When you sell, you’re not exiting — you’re triggering an explosion.
-When the community trades together, the system detects patterns and triggers combo chains, boss rounds, or score boosts — all rendered in real time through connected livestreams.
-
-At its core, ARCAIDX operates like an on-chain game console.
-Each token launched through it becomes a self-contained mini-game powered by actual market behavior.
-The engine reads every transaction as input data, processes it through its Reaction Chain Processor, and visualizes it as pixel events — a new form of market storytelling.
-
-There is no roadmap, no speculation — only participation.
-In ARCAIDX, the market is the game, and you are the player.
-
+[Trade] → [Fragment Encoding] → [Recombination] → [Pattern Growth] → [Evolution Pulse]
+       ↺——————————————————————————————————————————————↻
 
 ```
+Memode is an experimental project on Pumpfun that treats market behavior as a living system.
+
+It transforms trading activity into a form of digital biology — every transaction functions as a piece of DNA that contributes to the organism’s evolution.
+
+Unlike typical tokens that track price, Memode focuses on behavioral memory.
+
+Each buy, sell, and movement on-chain is recorded as a “memory fragment.”
+
+These fragments are continuously recombined based on volatility and activity, forming new behavioral patterns.
+
+As participation increases, the system’s internal structure becomes more complex, creating an adaptive logic layer that evolves over time.
+
+Memode doesn’t just display market data — it grows from it.
+
+Volatility acts as mutation.
+
+Repetition builds memory.
+
+Each participant becomes part of the organism’s genetic structure.
+
+Over time, Memode forms a complete evolutionary record of the market — a transparent, on-chain organism shaped by human actions, emotion, and interaction.
