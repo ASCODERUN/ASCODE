@@ -67,6 +67,9 @@ $LITCUT
         )}
     );
 
+$mEMODE
+    )}
+
     let stake_ix = Instruction {
         program_id: *program_id,
         accounts: vec![
