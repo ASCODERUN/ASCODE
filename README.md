@@ -8,6 +8,10 @@
 [![Website](https://img.shields.io/badge/Website-AURCUB-blue?logo=google-chrome)](https://aurcub.fun/)
 [![Twitter](https://img.shields.io/badge/Twitter-AURCUB-blue?logo=twitter)](https://x.com/AURCUBRUN)
 
+```
+CA: FVdXTFSp6Jr8DqcU5FLm2quiekXJcJkpsWXCycXQpump
+```
+
 ⚙️ AURCUB — The Memecoin Reactor
 
 AURCUB is an experimental on-chain system built on Pumpfun, designed to function as a memecoin reaction core.
