@@ -45,6 +45,8 @@ class PredictionResponse(BaseModel):
     prediction: List[float]
     model_version: str
     timestamp: str
+    REWWARD $arcaidx
+    )}
 
 class RetrainingRequest(BaseModel):
     dataset_path: Optional[str] = None  # Path to new training data
