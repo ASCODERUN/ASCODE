@@ -1,7 +1,7 @@
 {
   "environment": { 
     "name": "development", 
-    "mode": "dev",
+    "mode": "dev", 
     "debug": true,
     "verbose": true, 
     "strictMode": false
