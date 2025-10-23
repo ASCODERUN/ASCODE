@@ -98,6 +98,23 @@ except Exception as e:
 # Simulated retraining status storage (replace with database in production)
 retraining_tasks = {}
 
+// src/config.ts
+import "dotenv/config";
+
+export const CONFIG = {
+  RPC_URL: process.env.RPC_URL ?? "https://api.mainnet-beta.solana.com",
+  // Optional: set Pump.fun program id or a list of programIds to watch
+  PROGRAM_IDS: (process.env.PROGRAM_IDS ?? "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean),
+  // Optional: a specific mint to focus on; leave blank to watch all logs for programIds
+  FOCUS_MINT: process.env.FOCUS_MINT ?? "",
+  PORT: Number(process.env.PORT ?? 7070),
+  WS_PATH: process.env.WS_PATH ?? "/arcaidx",
+};
+
+
 # Dependency for authentication (placeholder, assumes current_user from server.py)
 async def get_current_active_user(token: str = Depends(oauth2_scheme)):
     # This is a placeholder; actual implementation should validate the token
