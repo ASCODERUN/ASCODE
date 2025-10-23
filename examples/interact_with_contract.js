@@ -1,4 +1,4 @@
-// interact_with_contract.js        
+// interact_with_contract.js         
 // Example of interacting with a Solana smart contract for staking and rewards using @solana/web3.js
 
 const { Connection, PublicKey, Keypair, LAMPORTS_PER_SOL } = require('@solana/web3.js');
