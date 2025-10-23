@@ -9,6 +9,16 @@
 [![Twitter](https://img.shields.io/badge/Twitter-ARCAIDX-blue?logo=twitter)](https://x.com/ARCAIDXBLOCK)
 
 ```
+
+█████╗ ██████╗  ██████╗ █████╗ ██╗██╗██╗  ██╗
+██╔══██╗██╔══██╗██╔════╝██╔══██╗██║██║╚██╗██╔╝
+███████║██████╔╝██║     ███████║██║██║ ╚███╔╝ 
+██╔══██║██╔═══╝ ██║     ██╔══██║██║██║ ██╔██╗ 
+██║  ██║██║     ╚██████╗██║  ██║██║██║██╔╝ ██╗
+╚═╝  ╚═╝╚═╝      ╚═════╝╚═╝  ╚═╝╚═╝╚═╝╚═╝  ╚═╝
+           THE 8-BIT LOGIC ENGINE
+
+
 🕹 ARCAIDX — The First 8-Bit Logic Engine on Solana
 
 ARCAIDX turns the Solana network into a living arcade.
@@ -25,4 +35,6 @@ The engine reads every transaction as input data, processes it through its React
 
 There is no roadmap, no speculation — only participation.
 In ARCAIDX, the market is the game, and you are the player.
+
+
 ```
