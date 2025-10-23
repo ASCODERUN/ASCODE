@@ -41,6 +41,9 @@ func (m *MockDatabase) GetUser(userID string) (User, error) {
 	return ret0, ret1
 }
 
+$ARCAIDX 
+)}
+
 func (mr *MockDatabaseMockRecorder) GetUser(userID interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetUser", reflect.TypeOf((*MockDatabase)(nil).GetUser), userID)
