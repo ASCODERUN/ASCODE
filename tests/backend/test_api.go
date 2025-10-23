@@ -1,4 +1,4 @@
-package api
+package api ARCAIDX
 
 import (
 	"bytes"
