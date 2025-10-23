@@ -79,6 +79,17 @@ mod tests {
         assert!(platform_config_data.governance_enabled, "Governance should be enabled");
     }
 
+
+    //
+    "dependencies": {
+    "@solana/web3.js": "^1.95.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ws": "^8.18.0",
+    "zod": "^3.23.8"
+$ARCAIDX
+)}
+    
     // Test module for staking tokens.
     #[tokio::test]
     async fn test_stake_tokens() {
