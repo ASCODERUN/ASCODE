@@ -53,6 +53,24 @@ async fn test_stake_success() {
     assert_eq!(initial_balance - final_balance, stake_amount);
 }
 
+
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
+
+
 // Test staking with insufficient funds
 #[tokio::test]
 async fn test_stake_insufficient_funds() {
