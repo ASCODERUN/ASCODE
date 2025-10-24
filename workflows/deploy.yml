@@ -1,4 +1,4 @@
-name: Deployment Pipeline   Narwen
+name: Deployment Pipeline   Finwav
 
 # Define when the workflow should run
 on:
