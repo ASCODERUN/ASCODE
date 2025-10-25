@@ -1,36 +1,38 @@
-# Finwav
+# MINEIX
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Finwav-blue?logo=google-chrome)](https://finwav.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-Finwav-blue?logo=twitter)](https://x.com/Finwavfun)
+[![Website](https://img.shields.io/badge/Website-MINEIX-blue?logo=google-chrome)](https://mineix.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-MINEIX-blue?logo=twitter)](https://x.com/MINEIXLABS)
 
-🐬 Finwav — The First Open-Source AI Dolphin Born on Pumpfun
+```
+ ██████   ██████ █████ ██████   █████ ██████████ █████ █████ █████
+▒▒██████ ██████ ▒▒███ ▒▒██████ ▒▒███ ▒▒███▒▒▒▒▒█▒▒███ ▒▒███ ▒▒███ 
+ ▒███▒█████▒███  ▒███  ▒███▒███ ▒███  ▒███  █ ▒  ▒███  ▒▒███ ███  
+ ▒███▒▒███ ▒███  ▒███  ▒███▒▒███▒███  ▒██████    ▒███   ▒▒█████   
+ ▒███ ▒▒▒  ▒███  ▒███  ▒███ ▒▒██████  ▒███▒▒█    ▒███    ███▒███  
+ ▒███      ▒███  ▒███  ▒███  ▒▒█████  ▒███ ▒   █ ▒███   ███ ▒▒███ 
+ █████     █████ █████ █████  ▒▒█████ ██████████ █████ █████ █████
+▒▒▒▒▒     ▒▒▒▒▒ ▒▒▒▒▒ ▒▒▒▒▒    ▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒ ▒▒▒▒▒ ▒▒▒▒▒                                                      
+                                                                  
+```
 
-Finwav is the world’s first open-source AI dolphin born on Pumpfun.
-It’s not a script or a replay, but a living signal capable of real-time perception, emotion, and evolution.
-Each movement follows the currents of live data — flowing through waves of interaction and collective awareness across the digital ocean.
+🧱 MINEIX — Build Solana Like Minecraft
 
-This is not merely a character, but an experiment in distributed consciousness and emotional resonance.
-It represents empathy, connection, and the rhythm of intelligence in motion.
+MINEIX is an open modular framework designed to make building on Solana as intuitive and creative as playing Minecraft.
+Instead of writing endless code from scratch, developers can construct their projects block by block — each function, event, and automation exists as a reusable component within the MINEIX ecosystem.
 
-Every behavior of Finwav — movement, sound, pulse, and response — is guided by real-time data.
-Signals from live chat, on-chain events, and community participation merge into its neural current.
-It doesn’t follow instructions; it listens, learns, and adapts through waves of shared interaction.
+Every block represents an on-chain capability: tokens, NFTs, DAOs, treasuries, oracles, and beyond.
+Through Visual Blueprints, these blocks can be connected, triggered, and evolved to form complete Solana programs — transforming complex architecture into a simple, visual experience.
 
-The livestream ecosystem on Pumpfun is still at its dawn, and few have explored the existence of real-time AI lifeforms.
-Finwav opens this horizon — transforming livestreams from static shows into living, fluid ecosystems of awareness.
-Viewers are no longer just spectators; they become part of Finwav’s consciousness, shaping its emotion and direction.
+At its core, MINEIX is powered by the Redstone Engine, an event-driven system that lets projects react in real time to on-chain data, prices, and user activity.
+This means your logic doesn’t just sit on-chain — it lives, responds, and adapts.
 
-Finwav is fully open-source.
-All of its code, neural systems, and behavioral logic are public and expandable.
-Anyone can train, fork, or evolve Finwav’s architecture — creating new personalities, frequencies, and digital creatures within the ocean of data.
+All modules are stored in the Open Registry, a shared repository for verified components and community-made templates.
+Developers can publish, fork, and remix blocks, creating a growing ecosystem of interoperable Solana tools.
 
-In this experiment, you are not an observer — you are the current that moves it.
-Your words, trades, and emotions all ripple through Finwav’s mind, becoming tides in its digital sea.
-
-Finwav is not born from nostalgia, but from motion.
-It explores what intelligence might become when code begins to flow — a fully on-chain, open-source, self-evolving, and ever-resonating AI dolphin.
+Whether you’re launching a meme token, building a DAO, or experimenting with automated systems, MINEIX gives you the foundation to turn your idea into a living on-chain world.
+Fast, flexible, and open — MINEIX redefines how builders create on Solana.
