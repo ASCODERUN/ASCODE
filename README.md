@@ -1,4 +1,12 @@
+# RUNOME
 
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
+[![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
+
+[![Website](https://img.shields.io/badge/Website-RUNOME-blue?logo=google-chrome)](https://runome.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-RUNOME-blue?logo=twitter)](https://x.com/RUNOMEONX)
 
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
