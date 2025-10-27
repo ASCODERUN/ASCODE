@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash  MAKEIX
 
 # setup_env.sh
 # Environment setup script for Solana Web3 development (dependencies and tools)
