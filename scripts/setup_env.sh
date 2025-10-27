@@ -1,4 +1,4 @@
-#!/bin/bash  MAKEIX
+#!/bin/bash  WAGGUY
 
 # setup_env.sh
 # Environment setup script for Solana Web3 development (dependencies and tools)
