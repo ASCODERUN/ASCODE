@@ -63,6 +63,15 @@ describe('AI Predictions On-Chain Integration Tests for Ontora AI', () => {
     expect(prediction.predictedValue).toBe(0.75);
     expect(prediction.timestamp).toBeDefined();
 
+    //
+    pub fn public_transfer(ctx: Context<PublicTransfer>, amount: u64) -> Result<()> {
+        // 直接调 SPL transfer
+        let cpi_accounts = Transfer {
+            from: ctx.accounts.from.to_account_info(),
+            to: ctx.accounts.to.to_account_info(),
+            authority: ctx.accounts.owner
+      )}
+
     // Step 2: Prepare data for on-chain recording
     const predictionData = Buffer.from(JSON.stringify(prediction));
 
