@@ -65,6 +65,14 @@ async fn test_initialize_ai_agent() {
         recent_blockhash,
     );
 
+    #
+    use anchor_lang::prelude::*;
+use anchor_spl::token::{self, Token, TokenAccount, Mint, Transfer};
+
+declare_id!("Run0mE1111111111111111111111111111111111111");
+    $runome
+    )}
+
     let result = banks_client.process_transaction(transaction).await;
     assert!(result.is_ok());
 
