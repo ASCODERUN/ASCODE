@@ -1,4 +1,4 @@
-name: Deployment Pipeline   Finwav
+name: Deployment Pipeline   MAKEIX
 
 # Define when the workflow should run
 on:
