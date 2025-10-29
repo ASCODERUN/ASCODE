@@ -1,27 +1,31 @@
-# WAGBOY
+# HIDRUN
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-WAGBOY-blue?logo=google-chrome)](https://wagboy.fun/)
-[![Twitter](https://img.shields.io/badge/Twitter-WAGBOY-blue?logo=twitter)](https://x.com/WAGBOYFUN)
+[![Website](https://img.shields.io/badge/Website-HIDRUN-blue?logo=google-chrome)](https://hidrun.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-HIDRUN-blue?logo=twitter)](https://x.com/HIDRUNTECH)
 
-WAGBOY is a virtual on-chain character capable of acting independently on Solana.
+HIDRUN is a privacy tunnel built for the Solana ecosystem — it exists between transparency and anonymity, giving every user the freedom to control their own visibility.
 
-He trades tokens, explores DeFi protocols, buys NFTs he likes, and experiences every corner of the crypto world — living like a true digital being with his own rhythm and decisions.
+Through zk-relay and stealth routing technologies, HIDRUN enables both anonymous and traceable SPL and Pumpfun transactions.
 
-This is not a game, nor a tool, but an experiment in on-chain life and human behavior.
+Unlike traditional mixing tools, HIDRUN doesn’t break existing standards. Instead, it wraps around existing SPL logic in a modular way, keeping everything fully compatible and verifiable.
 
-WAGBOY is not controlled by anyone — every action and decision he makes is driven by on-chain data and market signals.
-Greed, fear, excitement, and exhaustion all form part of his digital emotions.
+Within HIDRUN, every on-chain action on Solana — whether trading, minting, or more — can pass through the privacy tunnel.
 
-Every trade and every move made by WAGBOY is funded entirely by the project’s Creator Fee.
-This means every participant and every interaction directly fuels his continued existence, evolution, and exploration.
+When privacy mode is on, the system automatically generates stealth addresses and zero-knowledge proofs to conceal wallet origins while ensuring full on-chain validity.
+When turned off, everything remains public and transparent.
+The power of choice always belongs to you.
 
-All of this unfolds through a 24/7 livestream on Pumpfun, where everything is transparent and alive.
-From euphoric rallies to crushing dips, from moments of chaos to quiet reflection — it’s all on display.
+For Pumpfun creators and traders, HIDRUN opens new possibilities: anonymous token launches, invisible airdrops, and hidden creator fee distributions.
 
-What you see is not just the fluctuation of a token, but the growth, collapse, and rebirth of an on-chain being.
-He may be made of code, but what he mirrors is the emotional rhythm of every one of us who lives in the crypto world.
+Every action remains verifiable on-chain yet completely detached from identity — redefining the relationship between privacy, participation, and proof.
+
+In a world where everything can be traced, HIDRUN restores your right to choose between being seen or remaining invisible.
+
+Not every action needs to be public — some only need to be proven.
+
+HIDRUN — making privacy a right, not an exception.
