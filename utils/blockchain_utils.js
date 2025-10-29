@@ -2,7 +2,7 @@ import { Connection, PublicKey, Keypair, Transaction, SystemProgram, LAMPORTS_PE
 import { Token, TOKEN_PROGRAM_ID } from '@solana/spl-token'; 
 import bs58 from 'bs58';
 
-class SolanaUtils {  
+class SolanaUtils {   
   constructor(clusterUrl = 'https://api.devnet.solana.com') {
     this.connection = new Connection(clusterUrl, 'confirmed');
     this.wallet = null; 
