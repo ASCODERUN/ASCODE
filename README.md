@@ -24,3 +24,16 @@ Developers can publish, fork, and remix blocks, creating a growing ecosystem of 
 
 Whether you’re launching a meme token, building a DAO, or experimenting with automated systems, MINDIX gives you the foundation to turn your idea into a living on-chain world.
 Fast, flexible, and open — MINDIX redefines how builders create on Solana.
+
+```
+         ______   __  __  ____    ______  __   __     
+ /'\_/`\/\__  _\ /\ \/\ \/\  _`\ /\__  _\/\ \ /\ \    
+/\      \/_/\ \/ \ \ `\\ \ \ \/\ \/_/\ \/\ `\`\/'/'   
+\ \ \__\ \ \ \ \  \ \ , ` \ \ \ \ \ \ \ \ `\/ > <     
+ \ \ \_/\ \ \_\ \__\ \ \`\ \ \ \_\ \ \_\ \__ \/'/\`\  
+  \ \_\\ \_\/\_____\\ \_\ \_\ \____/ /\_____\/\_\\ \_\
+   \/_/ \/_/\/_____/ \/_/\/_/\/___/  \/_____/\/_/ \/_/
+                                                      
+
+```
+
