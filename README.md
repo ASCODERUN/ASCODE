@@ -1,31 +1,26 @@
-# RUNOME
+# MINDIX
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-RUNOME-blue?logo=google-chrome)](https://runome.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-RUNOME-blue?logo=twitter)](https://x.com/RUNOMEONX)
+[![Website](https://img.shields.io/badge/Website-MINDIX-blue?logo=google-chrome)](https://mindix.fun/)
+[![Twitter](https://img.shields.io/badge/Twitter-MINDIX-blue?logo=twitter)](https://x.com/MINDIXLABS)
 
-RUNOME is a privacy tunnel built for the Solana ecosystem — it exists between transparency and anonymity, giving every user the freedom to control their own visibility.
+🧱 MINDIX — Build Solana Like Minecraft
 
-Through zk-relay and stealth routing technologies, RUNOME enables both anonymous and traceable SPL and Pumpfun transactions.
+MINDIX is an open modular framework designed to make building on Solana as intuitive and creative as playing Minecraft.
+Instead of writing endless code from scratch, developers can construct their projects block by block — each function, event, and automation exists as a reusable component within the MINDIX ecosystem.
 
-Unlike traditional mixing tools, RUNOME doesn’t break existing standards. Instead, it wraps around existing SPL logic in a modular way, keeping everything fully compatible and verifiable.
+Every block represents an on-chain capability: tokens, NFTs, DAOs, treasuries, oracles, and beyond.
+Through Visual Blueprints, these blocks can be connected, triggered, and evolved to form complete Solana programs — transforming complex architecture into a simple, visual experience.
 
-Within RUNOME, every on-chain action on Solana — whether trading, minting, or more — can pass through the privacy tunnel.
+At its core, MINDIX is powered by the Redstone Engine, an event-driven system that lets projects react in real time to on-chain data, prices, and user activity.
+This means your logic doesn’t just sit on-chain — it lives, responds, and adapts.
 
-When privacy mode is on, the system automatically generates stealth addresses and zero-knowledge proofs to conceal wallet origins while ensuring full on-chain validity.
-When turned off, everything remains public and transparent.
-The power of choice always belongs to you.
+All modules are stored in the Open Registry, a shared repository for verified components and community-made templates.
+Developers can publish, fork, and remix blocks, creating a growing ecosystem of interoperable Solana tools.
 
-For Pumpfun creators and traders, RUNOME opens new possibilities: anonymous token launches, invisible airdrops, and hidden creator fee distributions.
-
-Every action remains verifiable on-chain yet completely detached from identity — redefining the relationship between privacy, participation, and proof.
-
-In a world where everything can be traced, RUNOME restores your right to choose between being seen or remaining invisible.
-
-Not every action needs to be public — some only need to be proven.
-
-RUNOME — making privacy a right, not an exception.
+Whether you’re launching a meme token, building a DAO, or experimenting with automated systems, MINDIX gives you the foundation to turn your idea into a living on-chain world.
+Fast, flexible, and open — MINDIX redefines how builders create on Solana.
