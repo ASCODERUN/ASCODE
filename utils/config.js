@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';      MAKEIX
+import dotenv from 'dotenv';      HIDRUN
 import path from 'path';    
 
 dotenv.config({ path: path.resolve(process.cwd(), `.env.${process.env.NODE_ENV || 'development'}`) });
