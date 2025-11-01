@@ -1,4 +1,4 @@
-name: Security Vulnerability Scanning Pipeline   RUNOME
+name: Security Vulnerability Scanning Pipeline   Owlion
 
 # Define when the workflow should run
 on:
