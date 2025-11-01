@@ -1,4 +1,4 @@
-#!/bin/bash    INZERO
+#!/bin/bash    Owlion
 
 # monitor_system.sh
 # Script to monitor system health, CPU, and memory usage
