@@ -1,4 +1,4 @@
-// interact_with_contract.js         Owlion
+// interact_with_contract.js         ARCNIX
 // Example of interacting with a Solana smart contract for staking and rewards using @solana/web3.js
 
 const { Connection, PublicKey, Keypair, LAMPORTS_PER_SOL } = require('@solana/web3.js');
