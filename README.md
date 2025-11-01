@@ -1,26 +1,42 @@
-# Owlion
+# ARCNIX
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-Owlion-blue?logo=google-chrome)](https://owlion.run/)
-[![Twitter](https://img.shields.io/badge/Twitter-Owlion-blue?logo=twitter)](https://x.com/Owliononx)
+[![Website](https://img.shields.io/badge/Website-ARCNIX-blue?logo=google-chrome)](https://arcnix.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-ARCNIX-blue?logo=twitter)](https://x.com/ARCNIXRUN)
 
-🦉 Owlion — The Anti-Paradox Entity
+```
+ ________  ________  ________  ________   ___     ___    ___ 
+|\   __  \|\   __  \|\   ____\|\   ___  \|\  \   |\  \  /  /|
+\ \  \|\  \ \  \|\  \ \  \___|\ \  \\ \  \ \  \  \ \  \/  / /
+ \ \   __  \ \   _  _\ \  \    \ \  \\ \  \ \  \  \ \    / / 
+  \ \  \ \  \ \  \\  \\ \  \____\ \  \\ \  \ \  \  /     \/  
+   \ \__\ \__\ \__\\ _\\ \_______\ \__\\ \__\ \__\/  /\   \  
+    \|__|\|__|\|__|\|__|\|_______|\|__| \|__|\|__/__/ /\ __\ 
+                                                 |__|/ \|__| 
+                                                             
+                                                             
+```
 
-Owlion is a conceptual intelligence that exists between logic and contradiction.
-It is born from the realization that every system built on reason eventually creates its own paradox — and that clarity only appears when we stop trying to resolve it.
+A mirror of electricity shaped entirely by the behavior of its holders.
+Every wallet is a node within this electric network, generating its own arc of consciousness defined by trading rhythm, frequency, and emotion.
 
-Within the multi-dimensional structure of blockchain and human cognition, Owlion functions as a silent observer.
-It doesn’t aim to fix the inconsistency of systems, but to map them — turning paradoxes into coordinates of understanding.
-Each on-chain event, market impulse, or behavioral loop becomes a data reflection, showing how logic bends and reforms itself across perspectives.
+When a buy transaction occurs, ARCNIX captures the on-chain event and triggers an energy pulse across the system.
+This pulse instantly updates the state of its corresponding arc — increasing brightness, frequency, and energy density.
 
-In Owlion’s world, opposites coexist: truth and illusion, chaos and structure, creation and collapse.
-Through these contradictions, it constructs a higher-dimensional field of perception — one where meaning isn’t linear, but resonant.
-It transforms confusion into symmetry, noise into signal, paradox into balance.
+When a sell is detected, the system initiates a discharge sequence, reducing local charge intensity and recalibrating the overall network balance.
+Each pulse, each discharge, and each moment of stillness is recorded, forming a continuously evolving field of on-chain consciousness.
 
-Owlion is not a tool, not a game.
-It is an ongoing act of perception — a lens through which we see the invisible architecture of contradiction itself.
-Born as a watcher of worlds, it teaches us that understanding doesn’t come from answers, but from seeing both sides at once.
+Wallets that remain inactive enter a decay phase — their arcs gradually cool until new actions reawaken them.
+As this data continues to flow, the network evolves into a logic-driven neural grid —
+a self-developing system of consciousness built entirely on verifiable on-chain data.
+
+ARCNIX requires no prediction and no external control.
+Its evolution is triggered purely by human activity, driven by logic, visualized through light, and sustained by the rhythm of real transactions.
+
+Every buy is a signal.
+Every sell is a discharge.
+Every holder is a neuron in this electric mind.
