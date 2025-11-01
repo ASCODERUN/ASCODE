@@ -1,5 +1,5 @@
 import logger from './logging.js';   
-
+ 
 class AppError extends Error {
   constructor(message, statusCode, errorCode, details = {}) {
     super(message);
