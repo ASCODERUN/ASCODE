@@ -1,42 +1,59 @@
-# ARCNIX
+# DIMDOX
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Solana](https://img.shields.io/badge/Solana-Web3-green.svg)](https://solana.com/)
 [![Status](https://img.shields.io/badge/Status-In%20Development-orange.svg)]()
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/ontora-ai.svg)](https://github.com/yourusername/ontora-ai/issues)
 
-[![Website](https://img.shields.io/badge/Website-ARCNIX-blue?logo=google-chrome)](https://arcnix.tech/)
-[![Twitter](https://img.shields.io/badge/Twitter-ARCNIX-blue?logo=twitter)](https://x.com/ARCNIXRUN)
+[![Website](https://img.shields.io/badge/Website-DIMDOX-blue?logo=google-chrome)](https://dimdox.tech/)
+[![Twitter](https://img.shields.io/badge/Twitter-DIMDOX-blue?logo=twitter)](https://x.com/DIMDOXBLOCK)
+
+
+DIMDOX is a blockchain archive system designed to record the dimensional trajectory of every on-chain existence.
+
+Every wallet and every interaction is mapped as a coordinate, forming an expansive dimensional map, a record of movement, intention, and existence itself.
+
+These data points aggregate, shift, and overlap along the timeline, forming unique dimensional patterns.
+
+In the logic of DIMDOX, there is no distinction between active and idle.
+There are only different frequencies of existence. Low-frequency accounts form the cold layers, while high-frequency behaviors construct the hot layers. Together, they compose an evolving dimensional topology.
+
+As on-chain events continue to accumulate, the system automatically generates a Dimensional ID. This is not an identity credential but a structural signature derived from behavioral patterns.
+
+Each Dimensional ID represents a logic of being, a multi-dimensional form defined by rhythm, interaction frequency, and participation dynamics.
+
+DIMDOX does not preserve the past. It rearranges time.
+All events are reindexed, compressed, and restructured to generate a spatial model of on-chain behavior, an archive that remains structurally coherent within constant transformation.
+
+In this system, data is not merely recorded but relocated and realigned.
+The goal of DIMDOX is not to narrate but to prove that on-chain existence can be quantified as dimensional structure rather than linear history.
+
+This is the absolute core of DIMDOX:
+Transforming on-chain events into a normalized vector and hashing it into a Dimensional ID.
 
 ```
- ________  ________  ________  ________   ___     ___    ___ 
-|\   __  \|\   __  \|\   ____\|\   ___  \|\  \   |\  \  /  /|
-\ \  \|\  \ \  \|\  \ \  \___|\ \  \\ \  \ \  \  \ \  \/  / /
- \ \   __  \ \   _  _\ \  \    \ \  \\ \  \ \  \  \ \    / / 
-  \ \  \ \  \ \  \\  \\ \  \____\ \  \\ \  \ \  \  /     \/  
-   \ \__\ \__\ \__\\ _\\ \_______\ \__\\ \__\ \__\/  /\   \  
-    \|__|\|__|\|__|\|__|\|_______|\|__| \|__|\|__/__/ /\ __\ 
-                                                 |__|/ \|__| 
-                                                             
-                                                             
+import hashlib, json, math, time
+from collections import defaultdict
+
+def build_dimensional_vector(events):
+    now = time.time()
+    v = defaultdict(float)
+    for e in events:
+        age = now - e["ts"]
+        w = math.exp(-age / 604800)
+        v[e["program"]] += w
+        v[e["kind"]] += w
+    s = math.sqrt(sum(x*x for x in v.values())) or 1
+    return {k: x/s for k, x in v.items()}
+
+def dimensional_id(addr, vec):
+    data = {"addr": addr, "v": {k: round(v,3) for k,v in sorted(vec.items())}}
+    return hashlib.sha256(json.dumps(data, sort_keys=True).encode()).hexdigest()
+
+# example
+events = [{"ts": time.time()-1000, "program":"PUMP", "kind":"swap"},
+          {"ts": time.time()-200, "program":"JUP", "kind":"transfer"}]
+vec = build_dimensional_vector(events)
+print(dimensional_id("wallet_address", vec))
 ```
 
-A mirror of electricity shaped entirely by the behavior of its holders.
-Every wallet is a node within this electric network, generating its own arc of consciousness defined by trading rhythm, frequency, and emotion.
-
-When a buy transaction occurs, ARCNIX captures the on-chain event and triggers an energy pulse across the system.
-This pulse instantly updates the state of its corresponding arc — increasing brightness, frequency, and energy density.
-
-When a sell is detected, the system initiates a discharge sequence, reducing local charge intensity and recalibrating the overall network balance.
-Each pulse, each discharge, and each moment of stillness is recorded, forming a continuously evolving field of on-chain consciousness.
-
-Wallets that remain inactive enter a decay phase — their arcs gradually cool until new actions reawaken them.
-As this data continues to flow, the network evolves into a logic-driven neural grid —
-a self-developing system of consciousness built entirely on verifiable on-chain data.
-
-ARCNIX requires no prediction and no external control.
-Its evolution is triggered purely by human activity, driven by logic, visualized through light, and sustained by the rhythm of real transactions.
-
-Every buy is a signal.
-Every sell is a discharge.
-Every holder is a neuron in this electric mind.
